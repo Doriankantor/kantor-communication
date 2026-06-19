@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ============================================================
+     PLACEHOLDER KC MONOGRAM — replace with the final externally
+     designed monogram. Keep the file name (kc-monogram-placeholder.svg)
+     or update the <img src> in every header across all language folders.
+     Uses currentColor for the letters and var-able accent for the bar.
+     ============================================================ -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="KC monogram (placeholder)">
+  <rect x="1" y="1" width="62" height="62" rx="6" fill="none" stroke="currentColor" stroke-opacity="0.35" stroke-width="1.5"/>
+  <rect x="14" y="44" width="36" height="2.5" fill="#6E2A37"/>
+  <text x="32" y="38" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="30" font-weight="500" fill="currentColor" letter-spacing="-1">KC</text>
+</svg>

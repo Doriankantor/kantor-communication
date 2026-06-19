@@ -1,0 +1,16 @@
+# Netlify deploy config — static site, no build step.
+# Git-based auto-deploy: connect this repo in Netlify; publish dir is the repo root.
+[build]
+  publish = "."
+  command = ""
+
+# Native Netlify Forms are detected from the deployed HTML (data-netlify="true"
+# + a hidden form-name input on each form). The Jobs form uses a native file
+# input for CV uploads (enctype="multipart/form-data"). Configure notification
+# emails to languages@kantor-communication.com (with distinct subjects per form)
+# in the Netlify dashboard: Site settings → Forms → Form notifications.
+
+[[redirects]]
+  from = "/contact"
+  to = "/#contact"
+  status = 301
