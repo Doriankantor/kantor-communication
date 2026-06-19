@@ -889,3 +889,92 @@ main + .site-footer { margin-top: 0; }
 /* §11l — Trust strip + motif border confirmation */
 .trust-strip { border-top: none; border-bottom: none; }
 .motif-band  { border-top: none; }
+
+/* --- Banner-A: three-column "Be [verb]." layout ----------------------------- */
+.banner--a .banner__cols {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media (min-width: 640px) {
+  .banner--a .banner__cols {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+}
+.banner__col {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: var(--text);
+  padding: 0 var(--sp-4);
+  text-align: center;
+}
+.banner__col em {
+  font-style: italic;
+  color: var(--accent);
+}
+@media (min-width: 640px) {
+  .banner__col + .banner__col {
+    border-left: 1px solid var(--border);
+  }
+}
+/* Mobile: no side borders, hairline dividers between stacked rows */
+@media (max-width: 639px) {
+  .banner__col { padding: var(--sp-3) 0; }
+  .banner__col + .banner__col { border-top: 1px solid var(--border); }
+}
+
+/* --- Next-section CTA links: accent color, larger, clear ------------------------ */
+.section-next a {
+  color: var(--accent) !important;
+  font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+  letter-spacing: 0.08em;
+  text-transform: none;
+}
+.section-next a:hover { color: var(--text) !important; }
+
+/* --- accent-cta: inline next-step links on jobs page ---------------------------- */
+.accent-cta {
+  display: inline-block;
+  color: var(--accent);
+  font-family: var(--sans);
+  font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  margin-top: var(--sp-4);
+}
+.accent-cta:hover { color: var(--text); }
+
+/* --- Differentiator & why-work gap reduction ------------------------------------ */
+.diffs { gap: clamp(2rem, 4vw, 3.5rem); }
+
+/* --- Academic outcomes: reduce top padding -------------------------------------- */
+[data-section="academic-outcomes"] { padding-top: calc(var(--vgap) * 0.5); }
+
+/* --- Jobs "Who we're looking for": tighten top padding -------------------------- */
+.jobs-who { padding-top: calc(var(--vgap) * 0.4); }
+
+/* --- Open positions section ----------------------------------------------------- */
+.positions { display: flex; flex-direction: column; gap: 0; }
+.positions__group {
+  border-top: 1px solid var(--border);
+  padding: var(--sp-4) 0;
+}
+.positions__group:last-child { border-bottom: 1px solid var(--border); }
+.positions__lang {
+  font-family: var(--sans); font-size: 0.72rem; letter-spacing: 0.24em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: var(--sp-2);
+}
+.positions__roles { display: flex; flex-direction: column; gap: var(--sp-2); }
+@media (min-width: 640px) {
+  .positions__roles { flex-direction: row; gap: var(--sp-5); }
+}
+.positions__role {
+  font-family: var(--serif); font-size: clamp(1rem, 1.2vw, 1.15rem);
+  color: var(--text); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;
+}
+.positions__role::after { content: " →"; color: var(--accent); font-size: 0.9em; }
+.positions__role:hover { color: var(--accent); }
