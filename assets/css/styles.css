@@ -306,6 +306,11 @@ em { font-style: italic; color: var(--accent); }
 .banner--a .banner__text { font-size: var(--fs-banner); }
 .banner--b { background: var(--bg-band); }
 .banner--b .banner__text { font-size: clamp(1.9rem, 1.2rem + 3vw, 3.2rem); color: var(--text); max-width: 22ch; }
+/* Statement band two-column layout (data-section="statement") */
+[data-section="statement"] .statement-inner { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-5); align-items: center; }
+[data-section="statement"] .statement-text { max-width: none; }
+[data-section="statement"] .statement-video { aspect-ratio: 16/9; background: var(--bg-accent); border: 1px solid var(--border); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; text-align: center; font-size: var(--fs-xs); color: var(--text-muted); padding: var(--sp-3); }
+@media (max-width: 639px) { [data-section="statement"] .statement-inner { grid-template-columns: 1fr; } }
 /* Closing statement band — short display line at the bottom of the home page */
 .banner--close { background: var(--bg-accent); }
 .banner--close .banner__text { font-size: var(--fs-banner); max-width: 18ch; }
