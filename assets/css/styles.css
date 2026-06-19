@@ -67,6 +67,7 @@
   --radius-lg: 4px;
 
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --vgap: clamp(4rem, 8vw, 9rem);
 }
 
 /* ==========================================================================
@@ -242,8 +243,8 @@ em { font-style: italic; color: var(--accent); }
    5. Capability ticker
    ========================================================================== */
 .ticker {
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  border-top: none;
+  border-bottom: none;
   overflow: hidden;
   padding: var(--sp-2) 0;
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
@@ -562,7 +563,7 @@ main + .site-footer { margin-top: 0; }
    ========================================================================== */
 
 /* --- Trust strip: four hairline-divided columns with Roman numerals ---------- */
-.trust-strip { border-top: 2px solid var(--text); background: var(--bg); }
+.trust-strip { background: var(--bg); }
 .trust-strip__list {
   list-style: none; margin: 0; padding: 0;
   display: grid; grid-template-columns: 1fr;
@@ -571,15 +572,22 @@ main + .site-footer { margin-top: 0; }
 @media (min-width: 1000px) { .trust-strip__list { grid-template-columns: repeat(4, 1fr); } }
 .trust-strip__item {
   padding: var(--sp-4) var(--sp-3);
-  border-bottom: 1px solid var(--border);
+  position: relative;
 }
 @media (min-width: 640px) {
-  .trust-strip__item:nth-child(odd) { border-right: 1px solid var(--border); }
+  .trust-strip__item:nth-child(even)::before {
+    content: ""; position: absolute;
+    left: 0; top: 10%; height: 80%; width: 1px;
+    background: var(--border);
+  }
 }
 @media (min-width: 1000px) {
-  .trust-strip__item { border-bottom: none; border-right: 1px solid var(--border); }
-  .trust-strip__item:nth-child(odd) { border-right: 1px solid var(--border); }
-  .trust-strip__item:last-child { border-right: none; }
+  .trust-strip__item:nth-child(even)::before { content: none; }
+  .trust-strip__item + .trust-strip__item::before {
+    content: ""; position: absolute;
+    left: 0; top: 10%; height: 80%; width: 1px;
+    background: var(--border);
+  }
 }
 .trust-strip__num {
   font-family: var(--serif); font-style: italic;
@@ -842,3 +850,52 @@ main + .site-footer { margin-top: 0; }
 .marquee { padding: clamp(2.25rem, 4vw, var(--sp-5)) 0; margin: clamp(1.5rem,3vw,var(--sp-4)) 0; }
 .marquee__track { animation-duration: 64s; }
 .marquee__item { font-size: clamp(1.3rem, 1rem + 1.6vw, 2.3rem); }
+
+/* --- Section spacing patches ----------------------------------------------- */
+[data-section="cards"]   { padding-bottom: calc(var(--vgap) * 0.45); }
+[data-section="founder"] { padding-top:    calc(var(--vgap) * 0.45); }
+[data-section="closing"] { padding-bottom: calc(var(--vgap) * 0.5); }
+
+/* --- Footer brand row ------------------------------------------------------ */
+.footer__brand-row { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.3rem; }
+.footer__brand-row img { height: 2rem; width: auto; filter: invert(1) grayscale(1) brightness(1.6); mix-blend-mode: screen; }
+.footer__brand-row span { font-family: var(--sans); font-size: 0.85rem; color: var(--bg); letter-spacing: 0.01em; }
+.footer__domain { font-family: var(--sans); font-size: 0.8rem; color: color-mix(in oklab, var(--bg) 78%, transparent); margin-bottom: 0.6rem; }
+.footer__contact { font-family: var(--sans); font-size: 0.8rem; color: color-mix(in oklab, var(--bg) 78%, transparent); }
+.footer__contact a { color: var(--bg); }
+.footer__contact a:hover { color: var(--accent-line); }
+
+/* §11g — Footer legal row */
+.footer__legal { font-family: var(--sans); font-size: 0.8rem; color: color-mix(in oklab, var(--bg) 60%, transparent); margin-top: var(--sp-1); }
+.footer__legal a { color: color-mix(in oklab, var(--bg) 78%, transparent); }
+.footer__legal a:hover { color: var(--bg); }
+
+/* §11h — Closing CTAs: equal visual weight — both use identical thin-rule style */
+[data-section="closing"] .btn {
+  border: 1.5px solid var(--bg); color: var(--bg); background: transparent; min-width: 14rem;
+}
+[data-section="closing"] .btn:hover { background: var(--bg); color: var(--text); border-color: var(--bg); }
+
+/* §11i — FAQ filter toggle */
+.faq__filter { display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; }
+.faq__filter-btn {
+  font-family: var(--sans); font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+  border: 1px solid var(--border-strong); padding: 0.4rem 1rem; background: transparent;
+  cursor: pointer; color: var(--text-muted); border-radius: var(--radius); transition: border-color 0.2s, color 0.2s;
+}
+.faq__filter-btn.active { border-color: var(--accent); color: var(--accent); }
+.faq__filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+.hidden { display: none !important; }
+
+/* §11k — Jobs hero: pull-quote + video side by side */
+[data-section="jobs-hero"] { padding-top: calc(var(--vgap) * 0.5); }
+@media (min-width: 760px) {
+  [data-section="jobs-hero"] .twocol {
+    display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-5); align-items: start;
+  }
+}
+[data-section="jobs-hero"] .pullquote__text { font-size: clamp(1rem, 1.6vw, 1.25rem); }
+
+/* §11l — Trust strip + motif border confirmation */
+.trust-strip { border-top: none; border-bottom: none; }
+.motif-band  { border-top: none; }

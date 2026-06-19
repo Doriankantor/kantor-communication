@@ -49,14 +49,17 @@
       </div>
     </section>
 
-    <!-- ===================== FOUNDER PULL-QUOTE (medium) ===================== -->
-    <section class="section reveal" aria-label="Founder statement">
+    <!-- ===================== FOUNDER PULL-QUOTE + VIDEO (side by side) ===================== -->
+    <section class="section reveal" data-section="jobs-hero" aria-label="Founder statement">
       <div class="container">
-        <figure class="pullquote pullquote--medium">
-          <span class="pullquote__mark" aria-hidden="true">“</span>
-          <blockquote class="pullquote__text">Language mastery is a strategic asset — and great educators know how to unlock it. It shapes credibility, expands influence, and opens doors for our clients. I've worked in English, German, Spanish, and Hungarian across four countries, and I've seen the impact of true professional fluency. That's why we don't hire simple grammar instructors. We hire communications professionals who build intercultural intelligence, elevate performance under pressure, and give people the confidence to perform when it matters most. If that's the kind of impact you believe you can make, you'll thrive here.</blockquote>
-          <figcaption class="pullquote__cite">— <strong>Dorian Kantor</strong></figcaption>
-        </figure>
+        <div class="twocol">
+          <figure class="pullquote pullquote--medium">
+            <span class="pullquote__mark" aria-hidden="true">&ldquo;</span>
+            <blockquote class="pullquote__text">Language mastery is a strategic asset — and great educators know how to unlock it. It shapes credibility, expands influence, and opens doors for our clients. I've worked in English, German, Spanish, and Hungarian across four countries, and I've seen the impact of true professional fluency. That's why we don't hire simple grammar instructors. We hire communications professionals who build intercultural intelligence, elevate performance under pressure, and give people the confidence to perform when it matters most. If that's the kind of impact you believe you can make, you'll thrive here.</blockquote>
+            <figcaption class="pullquote__cite">— <strong>Dorian Kantor</strong></figcaption>
+          </figure>
+          <div class="founder-video" role="img" aria-label="Welcome video — Dorian Kantor speaks to prospective team members">Welcome video — placeholder · Dorian Kantor speaking to prospective team members</div>
+        </div>
       </div>
     </section>
 
@@ -167,17 +170,22 @@
   <!-- ============================ FOOTER ============================ -->
   <footer class="site-footer">
     <div class="container site-footer__inner">
-      <img class="site-footer__logo" src="assets/img/kcc-logo.jpg" alt="" aria-hidden="true" />
-      <p class="site-footer__line">Kantor Communication Consulting — <a href="https://kantor-communication.com">kantor-communication.com</a></p>
-      <p class="site-footer__contact">Email: <a href="mailto:languages@kantor-communication.com">languages@kantor-communication.com</a> · Phone: <a href="tel:+491707070045">+49 170 7070045</a> · Standort: Düsseldorf · Berlin</p>
+      <div class="footer__brand-row">
+        <img src="assets/img/kcc-logo.jpg" alt="" aria-hidden="true" />
+        <span>Kantor Communication Consulting</span>
+      </div>
+      <div class="footer__domain">kantor-communication.com</div>
+      <div class="footer__contact">Email: <a href="mailto:languages@kantor-communication.com">languages@kantor-communication.com</a> · Phone: <a href="tel:+491707070045">+49 170 7070045</a> · <span data-i18n="location">Location</span>: Düsseldorf · Berlin</div>
+      <div class="footer__legal">
+        <a href="impressum.html" data-i18n="legal">Legal Notice</a> ·
+        <a href="datenschutz.html" data-i18n="privacy">Privacy Policy</a>
+      </div>
       <ul class="site-footer__nav">
         <li><a href="index.html#principal">About</a></li>
         <li><a href="consulting.html">Consulting</a></li>
         <li><a href="education.html">Education</a></li>
         <li><a href="jobs.html">Jobs</a></li>
         <li><a href="faq.html">FAQ</a></li>
-        <li><a href="impressum.html">Impressum</a></li>
-        <li><a href="datenschutz.html">Datenschutz</a></li>
       </ul>
     </div>
   </footer>

@@ -45,7 +45,7 @@
     <!-- ============================ HERO ============================ -->
     <section class="hero">
       <div class="container">
-        <p class="hero__mark">KCC</p>
+        <p class="eyebrow">WELCOME TO KANTOR COMMUNICATION CONSULTING</p>
         <h1 class="hero__statement">
           Perfecting communication so it becomes <em>influence.</em>
           <span class="line-2">Advisory and instruction for leaders, institutions, and learners — in the language each moment demands.</span>
@@ -140,7 +140,7 @@
     </section>
 
     <!-- ========================== THE SPLIT ========================== -->
-    <section class="section reveal">
+    <section class="section reveal" data-section="cards">
       <div class="container">
         <div class="split">
           <a class="card card--flagship" href="consulting.html">
@@ -170,9 +170,9 @@
     </section>
 
     <!-- ======================= THE PRINCIPAL (About) ======================= -->
-    <section class="section principal reveal band" id="principal" aria-label="Founder & About">
+    <section class="section principal reveal band" id="principal" data-section="founder" aria-label="Founder and Director">
       <div class="container">
-        <p class="eyebrow">Founder &amp; About</p>
+        <p class="eyebrow">Founder and Director</p>
         <div class="principal__grid">
           <div class="principal__media">
             <div class="principal__photo">
@@ -192,7 +192,7 @@
     </section>
 
     <!-- ======================= CLOSING SECTION ======================= -->
-    <section class="section--closing reveal" id="contact" aria-label="In any room, in any language">
+    <section class="section--closing reveal" id="contact" data-section="closing" aria-label="In any room, in any language">
       <div class="container">
         <p class="eyebrow center">In any room, in any language</p>
         <h2 class="closing__headline">Be understood. Command the room. <em>Succeed.</em></h2>
@@ -207,17 +207,22 @@
   <!-- ============================ FOOTER ============================ -->
   <footer class="site-footer">
     <div class="container site-footer__inner">
-      <img class="site-footer__logo" src="assets/img/kcc-logo.jpg" alt="" aria-hidden="true" />
-      <p class="site-footer__line">Kantor Communication Consulting — <a href="https://kantor-communication.com">kantor-communication.com</a></p>
-      <p class="site-footer__contact">Email: <a href="mailto:languages@kantor-communication.com">languages@kantor-communication.com</a> · Phone: <a href="tel:+491707070045">+49 170 7070045</a> · Standort: Düsseldorf · Berlin</p>
+      <div class="footer__brand-row">
+        <img src="assets/img/kcc-logo.jpg" alt="" aria-hidden="true" />
+        <span>Kantor Communication Consulting</span>
+      </div>
+      <div class="footer__domain">kantor-communication.com</div>
+      <div class="footer__contact">Email: <a href="mailto:languages@kantor-communication.com">languages@kantor-communication.com</a> · Phone: <a href="tel:+491707070045">+49 170 7070045</a> · <span data-i18n="location">Location</span>: Düsseldorf · Berlin</div>
+      <div class="footer__legal">
+        <a href="impressum.html" data-i18n="legal">Legal Notice</a> ·
+        <a href="datenschutz.html" data-i18n="privacy">Privacy Policy</a>
+      </div>
       <ul class="site-footer__nav">
         <li><a href="index.html#principal">About</a></li>
         <li><a href="consulting.html">Consulting</a></li>
         <li><a href="education.html">Education</a></li>
         <li><a href="jobs.html">Jobs</a></li>
         <li><a href="faq.html">FAQ</a></li>
-        <li><a href="impressum.html">Impressum</a></li>
-        <li><a href="datenschutz.html">Datenschutz</a></li>
       </ul>
     </div>
   </footer>
