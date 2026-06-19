@@ -539,17 +539,9 @@ section { scroll-margin-top: 90px; }
 /* Inverted footer: solid ink background, ivory text. */
 .site-footer { padding: var(--sp-5) 0; margin-top: var(--sp-6); background: var(--text); color: var(--bg); }
 main + .site-footer { margin-top: 0; }
-.site-footer__inner { display: flex; flex-direction: column; align-items: flex-start; gap: var(--sp-2); }
-.site-footer__line { color: var(--bg); font-size: var(--fs-sm); margin: 0; }
-.site-footer__line a { color: var(--bg); }
-.site-footer__line a:hover { color: var(--accent-line); }
-/* black-on-white logo on dark footer: invert to white + screen so its bg drops out */
-.site-footer__logo { height: 72px; width: auto; margin-bottom: var(--sp-2); filter: invert(1) grayscale(1) brightness(1.6); mix-blend-mode: screen; }
-.site-footer__contact { color: color-mix(in oklab, var(--bg) 78%, transparent); font-size: var(--fs-sm); margin: 0; }
-.site-footer__contact a { color: var(--bg); }
-.site-footer__contact a:hover { color: var(--accent-line); }
-.site-footer__nav { display: flex; flex-wrap: wrap; gap: var(--sp-3); list-style: none; margin: var(--sp-2) 0 0; padding: 0; }
-.site-footer__nav a { color: color-mix(in oklab, var(--bg) 70%, transparent); font-size: var(--fs-sm); }
+.site-footer__inner { display: flex; flex-direction: column; align-items: flex-start; gap: 0.6rem; }
+.site-footer__nav { display: flex; flex-wrap: wrap; gap: 1.5rem; list-style: none; margin: 1rem 0 0; padding: 0; }
+.site-footer__nav a { font-family: var(--sans); font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: color-mix(in oklab, var(--bg) 70%, transparent); text-decoration: none; }
 .site-footer__nav a:hover { color: var(--bg); }
 
 /* Draft-translation banner */
@@ -857,17 +849,15 @@ main + .site-footer { margin-top: 0; }
 [data-section="closing"] { padding-bottom: calc(var(--vgap) * 0.5); }
 
 /* --- Footer brand row ------------------------------------------------------ */
-.footer__brand-row { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.3rem; }
+.footer__brand-row { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.4rem; }
 .footer__brand-row img { height: 2rem; width: auto; filter: invert(1) grayscale(1) brightness(1.6); mix-blend-mode: screen; }
 .footer__brand-row span { font-family: var(--sans); font-size: 0.85rem; color: var(--bg); letter-spacing: 0.01em; }
-.footer__domain { font-family: var(--sans); font-size: 0.8rem; color: color-mix(in oklab, var(--bg) 78%, transparent); margin-bottom: 0.6rem; }
-.footer__contact { font-family: var(--sans); font-size: 0.8rem; color: color-mix(in oklab, var(--bg) 78%, transparent); }
-.footer__contact a { color: var(--bg); }
-.footer__contact a:hover { color: var(--accent-line); }
-
-/* §11g — Footer legal row */
-.footer__legal { font-family: var(--sans); font-size: 0.8rem; color: color-mix(in oklab, var(--bg) 60%, transparent); margin-top: var(--sp-1); }
-.footer__legal a { color: color-mix(in oklab, var(--bg) 78%, transparent); }
+.footer__domain { font-family: var(--sans); font-size: 0.8rem; color: color-mix(in oklab, var(--bg) 60%, transparent); }
+.footer__contact { font-family: var(--sans); font-size: 0.8rem; color: color-mix(in oklab, var(--bg) 70%, transparent); }
+.footer__contact a { color: color-mix(in oklab, var(--bg) 70%, transparent); text-decoration: underline; }
+.footer__contact a:hover { color: var(--bg); }
+.footer__legal { font-family: var(--sans); font-size: 0.75rem; color: color-mix(in oklab, var(--bg) 60%, transparent); }
+.footer__legal a { color: color-mix(in oklab, var(--bg) 60%, transparent); text-decoration: underline; }
 .footer__legal a:hover { color: var(--bg); }
 
 /* §11h — Closing CTAs: equal visual weight — both use identical thin-rule style */

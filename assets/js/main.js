@@ -115,4 +115,43 @@
       });
     });
   }
+  /* ---- Footer i18n: translate data-i18n elements from the page lang attr -- */
+  var I18N = {
+    en: {
+      'email-label': 'Email', 'phone-label': 'Phone', 'location': 'Location',
+      'legal': 'Legal Notice', 'privacy': 'Privacy Policy',
+      'nav-about': 'About', 'nav-consulting': 'Consulting',
+      'nav-education': 'Education', 'nav-jobs': 'Jobs',
+      'nav-faq': 'FAQ', 'nav-contact': 'Contact'
+    },
+    de: {
+      'email-label': 'E-Mail', 'phone-label': 'Telefon', 'location': 'Standort',
+      'legal': 'Impressum', 'privacy': 'Datenschutzerklärung',
+      'nav-about': 'Über uns', 'nav-consulting': 'Beratung',
+      'nav-education': 'Bildung', 'nav-jobs': 'Stellen',
+      'nav-faq': 'FAQ', 'nav-contact': 'Kontakt'
+    },
+    hu: {
+      'email-label': 'E-mail', 'phone-label': 'Telefon', 'location': 'Helyszín',
+      'legal': 'Jogi nyilatkozat', 'privacy': 'Adatvédelmi nyilatkozat',
+      'nav-about': 'Rólunk', 'nav-consulting': 'Tanácsadás',
+      'nav-education': 'Oktatás', 'nav-jobs': 'Állások',
+      'nav-faq': 'GYIK', 'nav-contact': 'Kapcsolat'
+    },
+    es: {
+      'email-label': 'Correo electrónico', 'phone-label': 'Teléfono', 'location': 'Ubicación',
+      'legal': 'Aviso legal', 'privacy': 'Política de privacidad',
+      'nav-about': 'Sobre nosotros', 'nav-consulting': 'Consultoría',
+      'nav-education': 'Educación', 'nav-jobs': 'Empleo',
+      'nav-faq': 'FAQ', 'nav-contact': 'Contacto'
+    }
+  };
+  (function applyI18n(lang) {
+    var table = I18N[lang] || I18N.en;
+    document.querySelectorAll('[data-i18n]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n');
+      if (table[key]) el.textContent = table[key];
+    });
+  })(document.documentElement.lang.slice(0, 2).toLowerCase());
+
 })();
