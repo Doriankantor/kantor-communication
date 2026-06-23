@@ -11,8 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
-<body>
-  <div class="draft-banner" role="note">Gépi nyersfordítás — emberi ellenőrzés szükséges.</div>
+<body data-page="education">
   <a class="skip-link" href="#main">Ugrás a tartalomhoz</a>
 
   <!-- ============================ HEADER ============================ -->
@@ -49,95 +48,141 @@
         <div class="founder-intro">
           <div class="founder-intro__text">
             <h1>Oktatás</h1>
-            <p class="lead">A nyelvtanulás nem nyelvtani szabályok gyűjtögetéséről szól. Arról szól, hogy ki tudja mondani, amit gondol, megértse, amit hall, és magabiztosnak érezze magát mindkettőben. Módszerünk az első órától kommunikatív: felépítjük a ténylegesen szükséges szókincset, valódi használaton keresztül fejlesztjük a folyékonyságot, és növeljük azt a magabiztosságot, amely a tudást beszéddé alakítja.</p>
+            <p class="lead">A nyelvtanulás nem nyelvtani szabályok gyűjtögetéséről szól. Arról szól, hogy ki tudja mondani, amit gondol, megértse, amit hall, és mindkettőben magabiztos legyen. Módszerünk az első órától kommunikatív: felépítjük a valóban szükséges szókincset, valós használaton keresztül fejlesztjük a folyékonyságot, és növeljük azt a magabiztosságot, amely a tudást beszéddé alakítja.</p>
           </div>
           <!-- OPTIONAL: short founder video — Dorian speaking to learners in a warmer register.
                Real recorded footage; HeyGen used only to localize into DE/HU/ES. Minimal chrome. -->
-          <div class="founder-video" role="img" aria-label="Founder video (placeholder) — Dorian Kantor welcomes learners">Alapítói videó — helykitöltő · Dorian Kantor köszönti a tanulókat</div>
+          <div class="founder-video" hidden role="img" aria-label="Founder video (placeholder) — Dorian Kantor welcomes learners">Alapítói videó — helykitöltő · Dorian Kantor köszönti a tanulókat</div>
         </div>
         <div class="measure" style="margin-top:var(--sp-4);">
-          <p class="muted">Minden tanuló a saját szintjére kiválasztott anyagokból tanul — nem egy mindenkinek egyformán szóló tananyagból. És minden oktató minőségellenőrzött és a tanítási módszertanunkra képzett, így az élmény következetes, bárkivel is tanul.</p>
-          <p class="muted">Ez az irány a közösség tagjainak szól — bármilyen korú és bármilyen hivatású tanulóknak.</p>
+          <p class="muted">Minden tanuló a saját szintjéhez kiválasztott anyagokból tanul — nem egy mindenkire ráhúzott tantervből. Minden oktatónk minőségellenőrzött és a tanítási módszertanunk szerint képzett, így az élmény következetes marad, bárkivel is tanul.</p>
+          <p class="muted">Ez a képzési irány a közösség tagjainak szól — bármilyen korú és hivatású tanulóknak.</p>
         </div>
       </div>
     </section>
 
+    <!-- ====================== JUMP INDEX ====================== -->
+    <nav class="jump-index" aria-label="Ezen az oldalon">
+      <div class="container">
+        <ul class="jump-index__list">
+          <li><a href="#how-it-works"><span class="jump-index__num">01</span> Hogyan működnek az órák</a></li>
+          <li><a href="#what-sets-apart"><span class="jump-index__num">02</span> Ami megkülönböztet minket</a></li>
+          <li><a href="#testimonials"><span class="jump-index__num">03</span> Ajánlások</a></li>
+          <li><a href="#contact-education"><span class="jump-index__num">04</span> Ingyenes első konzultáció foglalása</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <!-- ====================== FOUNDER STATEMENT (pull-quote) ====================== -->
-    <section class="section reveal" aria-label="Founder statement">
+    <section class="section reveal" data-section="quote" aria-label="Founder statement">
       <div class="container">
         <figure class="pullquote">
           <span class="pullquote__mark" aria-hidden="true">"</span>
-          <blockquote class="pullquote__text">A nyelvtanulás életem egyik legmeghatározóbb, erőt adó élménye volt. Négy nyelvet beszélek folyékonyan — angolul, németül, spanyolul és magyarul —, és mindegyiken éltem és dolgoztam. Ezt kívánjuk Önnek is: nem csupán szavakat és szabályokat, hanem interkulturális kompetenciát és a magabiztosságot ahhoz, hogy valóban kapcsolatot teremtsen.</blockquote>
+          <blockquote class="pullquote__text">A nyelvtanulás életem egyik legmélyebben megerősítő élménye volt. Négy nyelven beszélek folyékonyan — angolul, németül, spanyolul és magyarul —, és mindegyik nyelven éltem és dolgoztam. Ezt szeretnénk Önnek is: nem csupán szavakat és szabályokat, hanem interkulturális kompetenciát és a valódi kapcsolódáshoz szükséges magabiztosságot.</blockquote>
           <figcaption class="pullquote__cite">— <strong>Dorian Kantor</strong>, alapító</figcaption>
         </figure>
-        <p class="crossborder__text" style="max-width:62ch; margin-top:var(--sp-3);">Többet tanítunk a nyelvi készségeknél. Interkulturális kompetenciát építünk — azt a kulturális megértést, amely egy helyes mondatot valódi kapcsolattá alakít —, mert tudni, hogyan kell valamit mondani, csak fele annak, hogy megértsék.</p>
+        <p class="crossborder__text" style="max-width:62ch; margin-top:var(--sp-3);">A nyelvi készségeknél többet tanítunk. Interkulturális kompetenciát építünk — azt a kulturális megértést, amely egy helyes mondatból valódi kapcsolatot teremt —, mert tudni, hogyan kell valamit mondani, csak a fele annak, hogy meg is értsék.</p>
+        <p class="section-next"><a href="#how-it-works">Nézze meg, hogyan működnek az óráink <span class="arrow" aria-hidden="true">↓</span></a></p>
       </div>
     </section>
 
     <!-- ====================== HOW LESSONS WORK ====================== -->
-    <section class="section--tight reveal" aria-label="How lessons work">
+    <section class="section--tight reveal" id="how-it-works" data-section="how-it-works" aria-label="How lessons work">
       <div class="container">
         <div class="panel measure">
           <p class="eyebrow">Hogyan zajlanak az órák</p>
           <ul class="feature-list">
-            <li><strong>Kommunikatív módszer</strong> — a szókincs építésére, a folyékonyság fejlesztésére és a valós használatban való magabiztosság növelésére összpontosítva.</li>
-            <li><strong>Az Ön szintjéhez igazított anyagok</strong> — Önnek kiválasztva, nem egy általános kurzusból kiemelve.</li>
-            <li><strong>Képzett oktatók</strong> — minőségellenőrzöttek és a módszertanunkra képzettek.</li>
+            <li><strong>Kommunikatív módszer</strong> — a szókincs építésére, a folyékonyság fejlesztésére és a valós használatban szerzett magabiztosság növelésére összpontosítva.</li>
+            <li><strong>Az Ön szintjéhez igazított anyagok</strong> — Önnek kiválasztva, nem általános kurzusból átvéve.</li>
+            <li>Minőségellenőrzött, módszertanunk szerint képzett oktatók.</li>
             <li><strong>50 perces órák.</strong></li>
-            <li><strong>Házi feladat kérésre</strong> — annyi feladat, amennyit az órák között szeretne végezni.</li>
+            <li><strong>Házi feladat kérésre</strong> — az órák közötti vállalni kívánt munkamennyiséghez igazítva.</li>
             <li><strong>Rugalmas csomagok</strong> — heti egytől öt óráig.</li>
           </ul>
         </div>
+        <p class="section-next"><a href="#what-sets-apart">Nézze meg, mi különböztet meg minket <span class="arrow" aria-hidden="true">↓</span></a></p>
       </div>
     </section>
 
     <!-- ============== WHAT SETS KC EDUCATION APART (differentiators) ============== -->
-    <section class="section reveal" aria-label="What sets KC Education apart">
+    <section class="section reveal" id="what-sets-apart" data-section="what-sets-apart" aria-label="What sets KC Education apart">
       <div class="container">
-        <p class="eyebrow">Miben más a KC Oktatás</p>
+        <p class="eyebrow">Miben más a KC Education</p>
         <div class="diffs">
-          <div class="diff"><span class="diff__index">01</span><div class="diff__body"><span class="diff__lead">Önre szabott rugalmasság.</span><p class="diff__support">Online és bárhol is van, az Ön céljaihoz igazított anyaggal, az életéhez illeszkedő időbeosztással és rendszeres visszajelzéssel, hogy az órák folyamatosan Önhöz alkalmazkodjanak.</p></div></div>
-          <div class="diff"><span class="diff__index">02</span><div class="diff__body"><span class="diff__lead">Ellenőrzött, képzett tanárok.</span><p class="diff__support">Minden tanárt ellenőrzünk és a saját, házon belüli módszertanunkra képezünk — így a minőség sosem azon múlik, kihez kerül.</p></div></div>
-          <div class="diff"><span class="diff__index">03</span><div class="diff__body"><span class="diff__lead">Valós tapasztalat.</span><p class="diff__support">Tanáraink valódi szakmai tapasztalatot, külföldi munkatapasztalatot és erős tudományos képesítést hoznak — anyanyelvi vagy kétnyelvű szinten, és olyan emberek, akik valóban a nyelvben éltek.</p></div></div>
-          <div class="diff"><span class="diff__index">04</span><div class="diff__body"><span class="diff__lead">Interkulturális kompetencia, nem csupán nyelv.</span><p class="diff__support">Abban segítünk, hogy kultúrákon át megértsék, ne csupán nyelvtanilag legyen helyes — mert tudni, hogyan kell valamit mondani, csak fele annak, hogy megértsék.</p></div></div>
-          <div class="diff"><span class="diff__index">05</span><div class="diff__body"><span class="diff__lead">Közösen formált órák.</span><p class="diff__support">Az óráit Önnel együtt alakítjuk ki, azon témák és helyzetek köré, amelyek az Ön életében számítanak, így a tanulás mindig releváns marad.</p></div></div>
-          <div class="diff"><span class="diff__index">06</span><div class="diff__body"><span class="diff__lead">Először a magabiztosság.</span><p class="diff__support">Azt a magabiztosságot építjük, amely a tudását valóban kimondott szavakká alakítja — bármilyen korú vagy hivatású tanulónak.</p></div></div>
-          <div class="diff"><span class="diff__index">07</span><div class="diff__body"><span class="diff__lead">Öt nyelv, egy helyen.</span><p class="diff__support">Angol, német, magyar, spanyol és olasz egy fedél alatt, anyanyelvi vagy kétnyelvű szintű tanárokkal — akár egy nyelvvel kezd, akár többet épít.</p></div></div>
+          <div class="diff"><span class="diff__index">01</span><div class="diff__body"><span class="diff__lead">Önre szabott rugalmasság.</span><p class="diff__support">Online és bárhol, ahol Ön van, az Ön céljaihoz igazított anyaggal, az életéhez illeszkedő időbeosztással és rendszeres visszajelzéssel, hogy az órák folyamatosan Önhöz igazodjanak.</p></div></div>
+          <div class="diff"><span class="diff__index">02</span><div class="diff__body"><span class="diff__lead">Ellenőrzött, képzett tanárok.</span><p class="diff__support">Minden tanárt előzetesen kiválasztunk és saját, házon belüli módszertanunk szerint képezünk — így a minőség soha nem azon múlik, kihez kerül.</p></div></div>
+          <div class="diff"><span class="diff__index">03</span><div class="diff__body"><span class="diff__lead">Valós tapasztalat.</span><p class="diff__support">Tanáraink valódi szakmai tapasztalatot, külföldi munkatapasztalatot és erős tudományos hátteret hoznak — anyanyelvi vagy kétnyelvű szinten, olyan emberekként, akik valóban éltek a nyelvben.</p></div></div>
+          <div class="diff"><span class="diff__index">04</span><div class="diff__body"><span class="diff__lead">Interkulturális kompetencia, nem csupán nyelv.</span><p class="diff__support">Abban segítünk, hogy kultúrákon át is megértsék, ne pusztán nyelvtanilag legyen helyes — mert tudni, hogyan kell valamit mondani, csak a fele annak, hogy meg is értsék.</p></div></div>
+          <div class="diff"><span class="diff__index">05</span><div class="diff__body"><span class="diff__lead">Közösen kialakított órák.</span><p class="diff__support">Az óráit Önnel együtt, az Ön életében fontos témák és helyzetek köré alakítjuk, így a tanulás mindig releváns marad.</p></div></div>
+          <div class="diff"><span class="diff__index">06</span><div class="diff__body"><span class="diff__lead">A magabiztosság az első.</span><p class="diff__support">Azt a magabiztosságot építjük, amely a tudását valóban kimondott szavakká alakítja — bármilyen korú vagy hivatású tanulók számára.</p></div></div>
+          <div class="diff"><span class="diff__index">07</span><div class="diff__body"><span class="diff__lead">Öt nyelv, egy helyen.</span><p class="diff__support">Angol, német, magyar, spanyol és olasz egy helyen, anyanyelvi vagy kétnyelvű szintű tanárokkal — akár egy nyelvet kezd el, akár több nyelvet épít párhuzamosan.</p></div></div>
         </div>
+        <p class="section-next"><a href="#testimonials">Olvassa el, mit mondanak diákjaink <span class="arrow" aria-hidden="true">↓</span></a></p>
       </div>
     </section>
 
     <!-- ====================== TESTIMONIALS & REVIEWS (Education) ====================== -->
-    <section class="section band reveal" aria-label="Testimonials and reviews">
+    <section class="section band reveal" id="testimonials" data-section="testimonials" aria-label="Testimonials and reviews">
       <div class="container">
         <p class="eyebrow">Ajánlások és értékelések</p>
-        <!-- PLACEHOLDER: the Education audience WILL leave public reviews, so the live
-             Google rating badge belongs here. Embed the real Google badge + "See all
-             reviews on Google" link once a Google Business Profile is set up. Seed 8–10
-             genuine reviews BEFORE featuring the badge anywhere. Pull 4–6 strongest quotes. -->
-        <div class="google-badge" role="img" aria-label="Google rating badge — placeholder">
+        <div class="google-badge" role="img" aria-label="5,0 — 10 vélemény">
           <span class="google-badge__stars" aria-hidden="true">★★★★★</span>
-          <span class="google-badge__text">Google-értékelés — jelvény helykitöltő (ágyazza be az élő értékelést, amint összegyűltek a vélemények)</span>
+          <span class="google-badge__text">5,0 · 10 vélemény</span>
         </div>
         <div class="testimonials__grid">
           <figure class="quote">
             <p class="quote__stars" aria-hidden="true">★★★★★</p>
-            <blockquote class="quote__text">„[Tanulói idézet — konkrétan a fejlődésről, a magabiztosságról vagy a tanárról.]"</blockquote>
-            <figcaption class="quote__cite">— [Keresztnév · Google]</figcaption>
+            <blockquote class="quote__text">"Dorian is an extremely competent and dedicated English teacher who designs his lessons with great care and expertise. Each class is well thought out, varied, and tailored to my needs and goals. I am particularly impressed by his patient and motivating manner, which he displays in every lesson (regardless of the time). He takes the time to explain everything clearly and addresses questions or uncertainties. This makes it easy for me to continuously improve and develop new language skills. I really look forward to the next lesson every time!"</blockquote>
+            <figcaption class="quote__cite">— Maxi K. · Electrical engineer, sales specialist · Germany</figcaption>
           </figure>
           <figure class="quote">
             <p class="quote__stars" aria-hidden="true">★★★★★</p>
-            <blockquote class="quote__text">„[Idézet.]"</blockquote>
-            <figcaption class="quote__cite">— [Keresztnév · Google]</figcaption>
+            <blockquote class="quote__text">"I really enjoy my lessons with Dorian. Every session is engaging and never feels repetitive, which makes learning much more motivating. He always takes the time to address my questions and focuses on my individual gaps, which helps me improve quickly and efficiently. Dorian is also very flexible and consistently well-prepared for each lesson. What I appreciate most is that we don't just stick to standard topics. We often explore new and interesting subjects, so I'm not only improving my English but also expanding my general knowledge at the same time. :) I can highly recommend him to anyone looking for dynamic, personalized, and inspiring English lessons."</blockquote>
+            <figcaption class="quote__cite">— Nina K. · Insurance services specialist · Germany</figcaption>
           </figure>
           <figure class="quote">
             <p class="quote__stars" aria-hidden="true">★★★★★</p>
-            <blockquote class="quote__text">„[Idézet.]"</blockquote>
-            <figcaption class="quote__cite">— [Keresztnév · Google]</figcaption>
+            <blockquote class="quote__text">"Dorian is a highly dedicated and well-prepared English teacher. He designs his lessons in a way that appropriately responds to students' needs and effectively motivates them to engage in learning. Because he has a strong academic background, he is one of the best teachers for anyone who wants to develop their academic English. I wholeheartedly recommend him."</blockquote>
+            <figcaption class="quote__cite">— Kento M. · University professor · Japan</figcaption>
+          </figure>
+          <figure class="quote">
+            <p class="quote__stars" aria-hidden="true">★★★★★</p>
+            <blockquote class="quote__text">"Dorian is a friendly and helpful teacher. Every time, we work on exciting tasks and discuss current topics. I can confidently recommend him to anyone who would like to improve their language skills :)"</blockquote>
+            <figcaption class="quote__cite">— László B. · IT professional · Hungary</figcaption>
+          </figure>
+          <figure class="quote">
+            <p class="quote__stars" aria-hidden="true">★★★★★</p>
+            <blockquote class="quote__text">"Dorian immediately alleviated all my doubts and fears with his open manner from the very first lesson. I look forward to our lessons every time, even if the day has been stressful, and I enjoy the conversations with him about so many interesting topics."</blockquote>
+            <figcaption class="quote__cite">— Eike G. · Medical doctor · Germany</figcaption>
+          </figure>
+          <figure class="quote">
+            <p class="quote__stars" aria-hidden="true">★★★★★</p>
+            <blockquote class="quote__text">"An amazing tutor! Friendly, cheerful, supportive. We have very enjoyable conversations in both legal language and everyday English. I am very fortunate to have encountered a tutor like him."</blockquote>
+            <figcaption class="quote__cite">— Ahmet S. · University professor · Turkey</figcaption>
+          </figure>
+          <figure class="quote">
+            <p class="quote__stars" aria-hidden="true">★★★★★</p>
+            <blockquote class="quote__text">"Dorian is very nice, incredibly dedicated, super competent, friendly, and possesses a high level of language teaching."</blockquote>
+            <figcaption class="quote__cite">— Agnes T. · Nurse · Austria</figcaption>
+          </figure>
+          <figure class="quote">
+            <p class="quote__stars" aria-hidden="true">★★★★★</p>
+            <blockquote class="quote__text">"Dorian is an outstanding English teacher with a strong academic background. Highly professional, and committed to helping students achieve real progress."</blockquote>
+            <figcaption class="quote__cite">— Romulo F. · Financial services specialist · Argentina</figcaption>
+          </figure>
+          <figure class="quote">
+            <p class="quote__stars" aria-hidden="true">★★★★★</p>
+            <blockquote class="quote__text">"My goal is to improve my communication in English conversations. That's why Dorian and I talk about a wide variety of topics during the sessions. Dorian creates a very relaxed learning atmosphere where you feel comfortable. He also gives helpful tips and provides great new input through small exercises, whether it's about grammar or improving expression in English. I am very happy with the progress I make with Dorian :)"</blockquote>
+            <figcaption class="quote__cite">— Pia M. · Medical specialist · Germany</figcaption>
+          </figure>
+          <figure class="quote">
+            <p class="quote__stars" aria-hidden="true">★★★★★</p>
+            <blockquote class="quote__text">"Dorian is an incredibly organized and patient teacher. At the beginning, when I was still getting used to the platform, he was very understanding and suportive, which made the transition much smoother. He's also very kind, always making sure I feel comfortable and confident to express myself in English, even when I don't know how to say a sentence. The atmosphere he creates in class is encouraging, helping in learning journey. I also appreciate how he adapts each lesson to my individual needs, making the content relevant in my context. His approach makes a huge difference for me. I'm truly grateful to found him as an English teacher."</blockquote>
+            <figcaption class="quote__cite">— Adriano P. · Sales specialist, Ph.D. student · Brazil</figcaption>
           </figure>
         </div>
-        <!-- TODO: link to the public Google reviews page once the profile exists -->
-        <p style="margin-top:var(--sp-3);"><a class="btn btn--ghost" href="#" aria-label="See all reviews on Google">Összes vélemény megtekintése a Google-on →</a></p>
+        <p style="margin-top:var(--sp-3);"><a class="btn btn--ghost" href="#" aria-label="Összes vélemény megtekintése a Google-on">Összes vélemény megtekintése a Google-on →</a></p>
+        <p class="section-next"><a href="#contact-education">Foglalja le ingyenes első konzultációját <span class="arrow" aria-hidden="true">↓</span></a></p>
       </div>
     </section>
 
@@ -145,9 +190,9 @@
     <section class="section reveal" id="contact-education" aria-label="Book your free first consultation">
       <div class="container">
         <div class="form-wrap">
-          <p class="eyebrow">Kezdjük el</p>
+          <p class="eyebrow">Kezdje el</p>
           <h2>Foglalja le ingyenes első konzultációját</h2>
-          <p class="form-microcopy">Kezdje egy ingyenes, kötelezettség nélküli beszélgetéssel a szintjéről, a céljairól és az időbeosztásáról — körülbelül 15–20 perc. Javaslunk Önnek megfelelő kiindulópontot.</p>
+          <p class="form-microcopy">Kezdje egy ingyenes, kötelezettség nélküli beszélgetéssel a szintjéről, céljairól és időbeosztásáról — körülbelül 15–20 percben. Javaslatot teszünk az Önnek megfelelő kiindulópontra.</p>
 
           <!-- Native Netlify form. Set notification email + subject in
                Netlify → Forms → Notifications (route to languages@kantor-communication.com). -->
@@ -168,7 +213,7 @@
 
             <div class="field--row">
               <div class="field">
-                <label for="e-lang">A nyelv, amelyet tanulni szeretne <span class="req" aria-hidden="true">*</span></label>
+                <label for="e-lang">A tanulni kívánt nyelv <span class="req" aria-hidden="true">*</span></label>
                 <select id="e-lang" name="language" required>
                   <option value="" disabled selected>Válasszon nyelvet…</option>
                   <option>EN</option>
@@ -186,18 +231,18 @@
                   <option>Kezdő</option>
                   <option>Középhaladó</option>
                   <option>Haladó</option>
-                  <option>Nem biztos</option>
+                  <option>Nem tudom biztosan</option>
                 </select>
               </div>
             </div>
 
             <div class="field">
-              <label for="e-goal">Az Ön fő célja</label>
+              <label for="e-goal">Fő célja</label>
               <input id="e-goal" name="goal" type="text" placeholder="pl. folyékonyság, magabiztosság, munka, tanulás, utazás" />
             </div>
 
             <div class="field">
-              <label for="e-freq">Kívánt gyakoriság <span class="req" aria-hidden="true">*</span></label>
+              <label for="e-freq">Preferált gyakoriság <span class="req" aria-hidden="true">*</span></label>
               <select id="e-freq" name="frequency" required>
                 <option value="" disabled selected>Válasszon gyakoriságot…</option>
                 <option>Heti 1 óra</option>
@@ -210,15 +255,15 @@
             </div>
 
             <div class="field">
-              <label for="e-notes">Van még valami, amit tudnunk kellene? <span class="hint">(nem kötelező)</span></label>
+              <label for="e-notes">Van még valami, amit tudnunk kell? <span class="hint">(nem kötelező)</span></label>
               <textarea id="e-notes" name="notes" placeholder=" "></textarea>
             </div>
 
             <button class="btn" type="submit">Ingyenes konzultáció foglalása</button>
             <ul class="reassure">
-              <li>Ingyenes és kötelezettség nélküli</li>
-              <li>Válasz egy munkanapon belül</li>
-              <li>Nincs spam</li>
+              <li>Ingyenes és kötelezettségmentes</li>
+              <li>Egy munkanapon belül válaszolunk</li>
+              <li>Nem küldünk spamet</li>
             </ul>
             <p class="form-status" role="status" aria-live="polite"></p>
           </form>
@@ -238,8 +283,8 @@
       <div class="footer__domain">kantor-communication.com</div>
       <div class="footer__contact"><span data-i18n="email-label">E-mail</span>: <a href="mailto:languages@kantor-communication.com">languages@kantor-communication.com</a> · <span data-i18n="phone-label">Telefon</span>: <a href="tel:+491707070045">+49 170 7070045</a> · <span data-i18n="location">Helyszín</span>: Düsseldorf / Berlin · Budapest · Bogotá · Washington, DC</div>
       <div class="footer__legal">
-        <a href="../impressum.html" data-i18n="legal">Jogi nyilatkozat</a> ·
-        <a href="../datenschutz.html" data-i18n="privacy">Adatvédelmi nyilatkozat</a>
+        <a href="../impressum.html" data-i18n="legal">Jogi közlemény</a> ·
+        <a href="../datenschutz.html" data-i18n="privacy">Adatvédelmi irányelvek</a>
       </div>
       <ul class="site-footer__nav">
         <li><a href="index.html#principal" data-i18n="nav-about">Rólunk</a></li>

@@ -11,8 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
-<body>
-  <div class="draft-banner" role="note">Traducción automática preliminar — requiere revisión humana.</div>
+<body data-page="education">
   <a class="skip-link" href="#main">Saltar al contenido</a>
 
   <!-- ============================ HEADER ============================ -->
@@ -26,7 +25,7 @@
       <nav class="site-nav" id="site-nav" aria-label="Principal">
         <ul class="site-nav__links">
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="consulting.html">Consultoría de Comunicación</a></li>
+          <li><a href="consulting.html">Consultoría de comunicación</a></li>
           <li><a href="education.html" aria-current="page">Educación</a></li>
           <li><a href="jobs.html">Empleo</a></li>
           <li><a href="#contact-education">Contacto</a></li>
@@ -49,95 +48,141 @@
         <div class="founder-intro">
           <div class="founder-intro__text">
             <h1>Educación</h1>
-            <p class="lead">Aprender un idioma no consiste en coleccionar reglas gramaticales. Consiste en poder decir lo que uno quiere decir, entender lo que uno escucha y sentirse seguro al hacer ambas cosas. Nuestro método es comunicativo desde la primera lección: desarrollamos el vocabulario que usted realmente necesita, cultivamos la fluidez mediante el uso real y hacemos crecer la confianza que convierte el conocimiento en habla.</p>
+            <p class="lead">Aprender un idioma no consiste en coleccionar reglas gramaticales. Consiste en poder decir lo que uno quiere decir, entender lo que uno escucha y sentirse seguro al hacer ambas cosas. Nuestro método es comunicativo desde la primera clase: desarrollamos el vocabulario que usted realmente necesita, cultivamos la fluidez mediante el uso real y fortalecemos la confianza que convierte el conocimiento en habla.</p>
           </div>
           <!-- OPTIONAL: short founder video — Dorian speaking to learners in a warmer register.
                Real recorded footage; HeyGen used only to localize into DE/HU/ES. Minimal chrome. -->
-          <div class="founder-video" role="img" aria-label="Vídeo del fundador (marcador de posición) — Dorian Kantor da la bienvenida a los estudiantes">Vídeo del fundador — marcador de posición · Dorian Kantor da la bienvenida a los estudiantes</div>
+          <div class="founder-video" hidden role="img" aria-label="Vídeo del fundador (marcador de posición) — Dorian Kantor da la bienvenida a los estudiantes">Vídeo del fundador — marcador de posición · Dorian Kantor da la bienvenida a los estudiantes</div>
         </div>
         <div class="measure" style="margin-top:var(--sp-4);">
-          <p class="muted">Cada estudiante aprende con materiales elegidos para su nivel específico — no un plan de estudios único para todos. Y cada instructor está sujeto a control de calidad y formado en nuestra metodología de enseñanza, de modo que la experiencia es coherente sea quien sea con quien estudie.</p>
+          <p class="muted">Cada estudiante aprende con materiales elegidos para su nivel específico — no con un programa genérico. Y cada instructor está sujeto a control de calidad y formado en nuestra metodología de enseñanza, de modo que la experiencia es coherente, independientemente de con quién estudie.</p>
           <p class="muted">Esta vía es para los miembros de la comunidad — estudiantes de cualquier edad y cualquier profesión.</p>
         </div>
       </div>
     </section>
 
+    <!-- ====================== JUMP INDEX ====================== -->
+    <nav class="jump-index" aria-label="En esta página">
+      <div class="container">
+        <ul class="jump-index__list">
+          <li><a href="#how-it-works"><span class="jump-index__num">01</span> Cómo Funciona</a></li>
+          <li><a href="#what-sets-apart"><span class="jump-index__num">02</span> Qué Nos Distingue</a></li>
+          <li><a href="#testimonials"><span class="jump-index__num">03</span> Testimonios</a></li>
+          <li><a href="#contact-education"><span class="jump-index__num">04</span> Reserve una Consulta Gratuita</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <!-- ====================== FOUNDER STATEMENT (pull-quote) ====================== -->
-    <section class="section reveal" aria-label="Declaración del fundador">
+    <section class="section reveal" data-section="quote" aria-label="Declaración del fundador">
       <div class="container">
         <figure class="pullquote">
           <span class="pullquote__mark" aria-hidden="true">"</span>
-          <blockquote class="pullquote__text">Aprender un idioma ha sido una de las experiencias más profundamente transformadoras de mi vida. Domino con fluidez cuatro — inglés, alemán, español y húngaro — y he vivido y trabajado en todos ellos. Eso es lo que queremos para usted: no solo palabras y reglas, sino competencia intercultural y la confianza para conectar de verdad.</blockquote>
+          <blockquote class="pullquote__text">Aprender un idioma ha sido una de las experiencias más profundamente transformadoras de mi vida. Domino cuatro idiomas con fluidez — inglés, alemán, español y húngaro — y he vivido y trabajado en todos ellos. Eso es lo que queremos para usted: no solo palabras y reglas, sino competencia intercultural y la confianza para conectar de verdad.</blockquote>
           <figcaption class="pullquote__cite">— <strong>Dorian Kantor</strong>, fundador</figcaption>
         </figure>
-        <p class="crossborder__text" style="max-width:62ch; margin-top:var(--sp-3);">Enseñamos algo más que competencias lingüísticas. Construimos competencia intercultural — la comprensión cultural que convierte una frase correcta en una conexión real — porque saber cómo decir algo es solo la mitad de hacerse entender.</p>
+        <p class="crossborder__text" style="max-width:62ch; margin-top:var(--sp-3);">Enseñamos algo más que competencias lingüísticas. Desarrollamos competencia intercultural — la comprensión cultural que convierte una frase correcta en una conexión real — porque saber cómo decir algo es solo la mitad de hacerse entender.</p>
+        <p class="section-next"><a href="#how-it-works">Así funcionan nuestras clases <span class="arrow" aria-hidden="true">↓</span></a></p>
       </div>
     </section>
 
     <!-- ====================== HOW LESSONS WORK ====================== -->
-    <section class="section--tight reveal" aria-label="Cómo funcionan las lecciones">
+    <section class="section--tight reveal" id="how-it-works" data-section="how-it-works" aria-label="Cómo funcionan las clases">
       <div class="container">
         <div class="panel measure">
-          <p class="eyebrow">Cómo funcionan las lecciones</p>
+          <p class="eyebrow">Cómo funcionan las clases</p>
           <ul class="feature-list">
-            <li><strong>Método comunicativo</strong> — centrado en desarrollar vocabulario, cultivar la fluidez y hacer crecer la confianza en el uso real.</li>
+            <li><strong>Método comunicativo</strong> — centrado en desarrollar vocabulario, cultivar la fluidez y fortalecer la confianza en el uso real.</li>
             <li><strong>Materiales adaptados a su nivel</strong> — seleccionados para usted, no extraídos de un curso genérico.</li>
-            <li><strong>Instructores formados</strong> — sujetos a control de calidad y formados en nuestra metodología.</li>
-            <li><strong>Lecciones de 50 minutos.</strong></li>
-            <li><strong>Tareas a petición</strong> — asignadas según cuánto desee hacer entre lecciones.</li>
-            <li><strong>Paquetes flexibles</strong> — de una a cinco lecciones por semana.</li>
+            <li><strong>Profesores formados</strong> — sujetos a control de calidad y formados en nuestra metodología.</li>
+            <li><strong>Clases de 50 minutos.</strong></li>
+            <li><strong>Tareas bajo petición</strong> — asignadas según cuánto desee hacer entre clases.</li>
+            <li><strong>Paquetes flexibles</strong> — de una a cinco clases por semana.</li>
           </ul>
         </div>
+        <p class="section-next"><a href="#what-sets-apart">Lo que nos distingue <span class="arrow" aria-hidden="true">↓</span></a></p>
       </div>
     </section>
 
     <!-- ============== WHAT SETS KC EDUCATION APART (differentiators) ============== -->
-    <section class="section reveal" aria-label="Qué distingue a KC Education">
+    <section class="section reveal" id="what-sets-apart" data-section="what-sets-apart" aria-label="Qué distingue a KC Education">
       <div class="container">
         <p class="eyebrow">Qué distingue a KC Education</p>
         <div class="diffs">
-          <div class="diff"><span class="diff__index">01</span><div class="diff__body"><span class="diff__lead">Flexibilidad pensada en torno a usted.</span><p class="diff__support">En línea y dondequiera que esté, con material adaptado a sus objetivos, una planificación que encaja con su vida y comentarios periódicos para que las lecciones sigan ajustándose a usted.</p></div></div>
-          <div class="diff"><span class="diff__index">02</span><div class="diff__body"><span class="diff__lead">Profesores seleccionados y formados.</span><p class="diff__support">Cada profesor es seleccionado y formado en nuestra metodología propia — así la calidad nunca depende de quién le toque.</p></div></div>
-          <div class="diff"><span class="diff__index">03</span><div class="diff__body"><span class="diff__lead">Experiencia del mundo real.</span><p class="diff__support">Nuestros profesores aportan auténtica experiencia profesional, experiencia laboral en el extranjero y sólidas credenciales académicas — de nivel nativo o bilingüe, y personas que de verdad han vivido en el idioma.</p></div></div>
-          <div class="diff"><span class="diff__index">04</span><div class="diff__body"><span class="diff__lead">Competencia intercultural, no solo idioma.</span><p class="diff__support">Le ayudamos a hacerse entender entre culturas, no solo a ser gramaticalmente correcto — porque saber cómo decir algo es solo la mitad de hacerse entender.</p></div></div>
-          <div class="diff"><span class="diff__index">05</span><div class="diff__body"><span class="diff__lead">Lecciones creadas en conjunto.</span><p class="diff__support">Sus lecciones se diseñan con usted, en torno a los temas y situaciones que importan en su vida, para que el aprendizaje sea siempre relevante.</p></div></div>
+          <div class="diff"><span class="diff__index">01</span><div class="diff__body"><span class="diff__lead">Flexibilidad pensada en torno a usted.</span><p class="diff__support">En línea y dondequiera que esté, con material adaptado a sus objetivos, horarios que encajan con su vida y comentarios periódicos para que las clases sigan ajustándose a usted.</p></div></div>
+          <div class="diff"><span class="diff__index">02</span><div class="diff__body"><span class="diff__lead">Profesores seleccionados y formados.</span><p class="diff__support">Cada profesor es seleccionado y formado en nuestra metodología propia — así la calidad nunca depende de qué profesor se le asigne.</p></div></div>
+          <div class="diff"><span class="diff__index">03</span><div class="diff__body"><span class="diff__lead">Experiencia del mundo real.</span><p class="diff__support">Nuestros profesores aportan auténtica experiencia profesional, experiencia laboral en el extranjero y sólidas credenciales académicas — de nivel nativo o bilingüe, y personas que de verdad han vivido el idioma.</p></div></div>
+          <div class="diff"><span class="diff__index">04</span><div class="diff__body"><span class="diff__lead">Competencia intercultural, no solo idioma.</span><p class="diff__support">Le ayudamos a hacerse entender en distintas culturas, no solo a expresarse con corrección gramatical — porque saber cómo decir algo es solo la mitad de hacerse entender.</p></div></div>
+          <div class="diff"><span class="diff__index">05</span><div class="diff__body"><span class="diff__lead">Clases diseñadas conjuntamente.</span><p class="diff__support">Sus clases se diseñan con usted, en torno a los temas y situaciones que importan en su vida, para que el aprendizaje sea siempre relevante.</p></div></div>
           <div class="diff"><span class="diff__index">06</span><div class="diff__body"><span class="diff__lead">La confianza primero.</span><p class="diff__support">Construimos la confianza que convierte lo que usted sabe en lo que realmente dice — para estudiantes de cualquier edad o profesión.</p></div></div>
           <div class="diff"><span class="diff__index">07</span><div class="diff__body"><span class="diff__lead">Cinco idiomas, un solo lugar.</span><p class="diff__support">Inglés, alemán, húngaro, español e italiano bajo un mismo techo, con profesores de nivel nativo o bilingüe — ya sea que empiece un idioma o desarrolle varios.</p></div></div>
         </div>
+        <p class="section-next"><a href="#testimonials">Lo que dicen nuestros estudiantes <span class="arrow" aria-hidden="true">↓</span></a></p>
       </div>
     </section>
 
     <!-- ====================== TESTIMONIALS & REVIEWS (Education) ====================== -->
-    <section class="section band reveal" aria-label="Testimonios y reseñas">
+    <section class="section band reveal" id="testimonials" data-section="testimonials" aria-label="Testimonios y reseñas">
       <div class="container">
         <p class="eyebrow">Testimonios y reseñas</p>
-        <!-- PLACEHOLDER: the Education audience WILL leave public reviews, so the live
-             Google rating badge belongs here. Embed the real Google badge + "See all
-             reviews on Google" link once a Google Business Profile is set up. Seed 8–10
-             genuine reviews BEFORE featuring the badge anywhere. Pull 4–6 strongest quotes. -->
-        <div class="google-badge" role="img" aria-label="Distintivo de valoración de Google — marcador de posición">
+        <div class="google-badge" role="img" aria-label="5,0 — 10 reseñas">
           <span class="google-badge__stars" aria-hidden="true">★★★★★</span>
-          <span class="google-badge__text">Valoración de Google — marcador de posición del distintivo (incruste la valoración en vivo una vez sembradas las reseñas)</span>
+          <span class="google-badge__text">5,0 · 10 reseñas</span>
         </div>
         <div class="testimonials__grid">
           <figure class="quote">
             <p class="quote__stars" aria-hidden="true">★★★★★</p>
-            <blockquote class="quote__text">«[Cita de estudiante — específica sobre el progreso, la confianza o el profesor.]»</blockquote>
-            <figcaption class="quote__cite">— [Nombre · Google]</figcaption>
+            <blockquote class="quote__text">"Dorian is an extremely competent and dedicated English teacher who designs his lessons with great care and expertise. Each class is well thought out, varied, and tailored to my needs and goals. I am particularly impressed by his patient and motivating manner, which he displays in every lesson (regardless of the time). He takes the time to explain everything clearly and addresses questions or uncertainties. This makes it easy for me to continuously improve and develop new language skills. I really look forward to the next lesson every time!"</blockquote>
+            <figcaption class="quote__cite">— Maxi K. · Electrical engineer, sales specialist · Germany</figcaption>
           </figure>
           <figure class="quote">
             <p class="quote__stars" aria-hidden="true">★★★★★</p>
-            <blockquote class="quote__text">«[Cita.]»</blockquote>
-            <figcaption class="quote__cite">— [Nombre · Google]</figcaption>
+            <blockquote class="quote__text">"I really enjoy my lessons with Dorian. Every session is engaging and never feels repetitive, which makes learning much more motivating. He always takes the time to address my questions and focuses on my individual gaps, which helps me improve quickly and efficiently. Dorian is also very flexible and consistently well-prepared for each lesson. What I appreciate most is that we don't just stick to standard topics. We often explore new and interesting subjects, so I'm not only improving my English but also expanding my general knowledge at the same time. :) I can highly recommend him to anyone looking for dynamic, personalized, and inspiring English lessons."</blockquote>
+            <figcaption class="quote__cite">— Nina K. · Insurance services specialist · Germany</figcaption>
           </figure>
           <figure class="quote">
             <p class="quote__stars" aria-hidden="true">★★★★★</p>
-            <blockquote class="quote__text">«[Cita.]»</blockquote>
-            <figcaption class="quote__cite">— [Nombre · Google]</figcaption>
+            <blockquote class="quote__text">"Dorian is a highly dedicated and well-prepared English teacher. He designs his lessons in a way that appropriately responds to students' needs and effectively motivates them to engage in learning. Because he has a strong academic background, he is one of the best teachers for anyone who wants to develop their academic English. I wholeheartedly recommend him."</blockquote>
+            <figcaption class="quote__cite">— Kento M. · University professor · Japan</figcaption>
+          </figure>
+          <figure class="quote">
+            <p class="quote__stars" aria-hidden="true">★★★★★</p>
+            <blockquote class="quote__text">"Dorian is a friendly and helpful teacher. Every time, we work on exciting tasks and discuss current topics. I can confidently recommend him to anyone who would like to improve their language skills :)"</blockquote>
+            <figcaption class="quote__cite">— László B. · IT professional · Hungary</figcaption>
+          </figure>
+          <figure class="quote">
+            <p class="quote__stars" aria-hidden="true">★★★★★</p>
+            <blockquote class="quote__text">"Dorian immediately alleviated all my doubts and fears with his open manner from the very first lesson. I look forward to our lessons every time, even if the day has been stressful, and I enjoy the conversations with him about so many interesting topics."</blockquote>
+            <figcaption class="quote__cite">— Eike G. · Medical doctor · Germany</figcaption>
+          </figure>
+          <figure class="quote">
+            <p class="quote__stars" aria-hidden="true">★★★★★</p>
+            <blockquote class="quote__text">"An amazing tutor! Friendly, cheerful, supportive. We have very enjoyable conversations in both legal language and everyday English. I am very fortunate to have encountered a tutor like him."</blockquote>
+            <figcaption class="quote__cite">— Ahmet S. · University professor · Turkey</figcaption>
+          </figure>
+          <figure class="quote">
+            <p class="quote__stars" aria-hidden="true">★★★★★</p>
+            <blockquote class="quote__text">"Dorian is very nice, incredibly dedicated, super competent, friendly, and possesses a high level of language teaching."</blockquote>
+            <figcaption class="quote__cite">— Agnes T. · Nurse · Austria</figcaption>
+          </figure>
+          <figure class="quote">
+            <p class="quote__stars" aria-hidden="true">★★★★★</p>
+            <blockquote class="quote__text">"Dorian is an outstanding English teacher with a strong academic background. Highly professional, and committed to helping students achieve real progress."</blockquote>
+            <figcaption class="quote__cite">— Romulo F. · Financial services specialist · Argentina</figcaption>
+          </figure>
+          <figure class="quote">
+            <p class="quote__stars" aria-hidden="true">★★★★★</p>
+            <blockquote class="quote__text">"My goal is to improve my communication in English conversations. That's why Dorian and I talk about a wide variety of topics during the sessions. Dorian creates a very relaxed learning atmosphere where you feel comfortable. He also gives helpful tips and provides great new input through small exercises, whether it's about grammar or improving expression in English. I am very happy with the progress I make with Dorian :)"</blockquote>
+            <figcaption class="quote__cite">— Pia M. · Medical specialist · Germany</figcaption>
+          </figure>
+          <figure class="quote">
+            <p class="quote__stars" aria-hidden="true">★★★★★</p>
+            <blockquote class="quote__text">"Dorian is an incredibly organized and patient teacher. At the beginning, when I was still getting used to the platform, he was very understanding and suportive, which made the transition much smoother. He's also very kind, always making sure I feel comfortable and confident to express myself in English, even when I don't know how to say a sentence. The atmosphere he creates in class is encouraging, helping in learning journey. I also appreciate how he adapts each lesson to my individual needs, making the content relevant in my context. His approach makes a huge difference for me. I'm truly grateful to found him as an English teacher."</blockquote>
+            <figcaption class="quote__cite">— Adriano P. · Sales specialist, Ph.D. student · Brazil</figcaption>
           </figure>
         </div>
-        <!-- TODO: link to the public Google reviews page once the profile exists -->
         <p style="margin-top:var(--sp-3);"><a class="btn btn--ghost" href="#" aria-label="Ver todas las reseñas en Google">Ver todas las reseñas en Google →</a></p>
+        <p class="section-next"><a href="#contact-education">Reserve su primera consulta gratuita <span class="arrow" aria-hidden="true">↓</span></a></p>
       </div>
     </section>
 
@@ -186,7 +231,7 @@
                   <option>Principiante</option>
                   <option>Intermedio</option>
                   <option>Avanzado</option>
-                  <option>No estoy seguro</option>
+                  <option>No lo sé</option>
                 </select>
               </div>
             </div>
@@ -200,12 +245,12 @@
               <label for="e-freq">Frecuencia preferida <span class="req" aria-hidden="true">*</span></label>
               <select id="e-freq" name="frequency" required>
                 <option value="" disabled selected>Seleccione una frecuencia…</option>
-                <option>1 lección por semana</option>
-                <option>2 lecciones por semana</option>
-                <option>3 lecciones por semana</option>
-                <option>4 lecciones por semana</option>
-                <option>5 lecciones por semana</option>
-                <option>Aún no estoy seguro</option>
+                <option>1 clase por semana</option>
+                <option>2 clases por semana</option>
+                <option>3 clases por semana</option>
+                <option>4 clases por semana</option>
+                <option>5 clases por semana</option>
+                <option>Aún no lo sé</option>
               </select>
             </div>
 

@@ -11,8 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
-<body>
-  <div class="draft-banner" role="note">Maschinelle Erstübersetzung — von einer Person zu prüfen.</div>
+<body data-page="education">
   <a class="skip-link" href="#main">Zum Inhalt springen</a>
 
   <!-- ============================ HEADER ============================ -->
@@ -53,7 +52,7 @@
           </div>
           <!-- OPTIONAL: short founder video — Dorian speaking to learners in a warmer register.
                Real recorded footage; HeyGen used only to localize into DE/HU/ES. Minimal chrome. -->
-          <div class="founder-video" role="img" aria-label="Gründervideo (Platzhalter) — Dorian Kantor begrüßt Lernende">Gründervideo — Platzhalter · Dorian Kantor begrüßt Lernende</div>
+          <div class="founder-video" hidden role="img" aria-label="Gründervideo (Platzhalter) — Dorian Kantor begrüßt Lernende">Gründervideo — Platzhalter · Dorian Kantor begrüßt Lernende</div>
         </div>
         <div class="measure" style="margin-top:var(--sp-4);">
           <p class="muted">Jede und jeder Lernende lernt mit Materialien, die für das jeweilige Niveau ausgewählt sind — kein Einheitslehrplan. Und jede Lehrkraft ist qualitätsgeprüft und in unserer Lehrmethodik geschult, sodass die Erfahrung einheitlich ist, egal bei wem Sie lernen.</p>
@@ -62,8 +61,20 @@
       </div>
     </section>
 
+    <!-- ====================== JUMP INDEX ====================== -->
+    <nav class="jump-index" aria-label="Auf dieser Seite">
+      <div class="container">
+        <ul class="jump-index__list">
+          <li><a href="#how-it-works"><span class="jump-index__num">01</span> So funktioniert der Unterricht</a></li>
+          <li><a href="#what-sets-apart"><span class="jump-index__num">02</span> Was uns auszeichnet</a></li>
+          <li><a href="#testimonials"><span class="jump-index__num">03</span> Erfahrungsberichte</a></li>
+          <li><a href="#contact-education"><span class="jump-index__num">04</span> Kostenloses Erstgespräch buchen</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <!-- ====================== FOUNDER STATEMENT (pull-quote) ====================== -->
-    <section class="section reveal" aria-label="Founder statement">
+    <section class="section reveal" data-section="quote" aria-label="Founder statement">
       <div class="container">
         <figure class="pullquote">
           <span class="pullquote__mark" aria-hidden="true">"</span>
@@ -71,11 +82,12 @@
           <figcaption class="pullquote__cite">— <strong>Dorian Kantor</strong>, Gründer</figcaption>
         </figure>
         <p class="crossborder__text" style="max-width:62ch; margin-top:var(--sp-3);">Wir vermitteln mehr als Sprachkenntnisse. Wir bauen interkulturelle Kompetenz auf — das kulturelle Verständnis, das aus einem korrekten Satz eine echte Verbindung macht — denn zu wissen, wie man etwas sagt, ist nur die halbe Miete, um verstanden zu werden.</p>
+        <p class="section-next"><a href="#how-it-works">So funktionieren unsere Stunden <span class="arrow" aria-hidden="true">↓</span></a></p>
       </div>
     </section>
 
     <!-- ====================== HOW LESSONS WORK ====================== -->
-    <section class="section--tight reveal" aria-label="How lessons work">
+    <section class="section--tight reveal" id="how-it-works" data-section="how-it-works" aria-label="How lessons work">
       <div class="container">
         <div class="panel measure">
           <p class="eyebrow">So läuft der Unterricht ab</p>
@@ -88,11 +100,12 @@
             <li><strong>Flexible Pakete</strong> — von einer bis zu fünf Unterrichtseinheiten pro Woche.</li>
           </ul>
         </div>
+        <p class="section-next"><a href="#what-sets-apart">Was uns unterscheidet <span class="arrow" aria-hidden="true">↓</span></a></p>
       </div>
     </section>
 
     <!-- ============== WHAT SETS KC EDUCATION APART (differentiators) ============== -->
-    <section class="section reveal" aria-label="What sets KC Education apart">
+    <section class="section reveal" id="what-sets-apart" data-section="what-sets-apart" aria-label="What sets KC Education apart">
       <div class="container">
         <p class="eyebrow">Was KC Education auszeichnet</p>
         <div class="diffs">
@@ -104,40 +117,72 @@
           <div class="diff"><span class="diff__index">06</span><div class="diff__body"><span class="diff__lead">Selbstvertrauen zuerst.</span><p class="diff__support">Wir bauen das Selbstvertrauen auf, das aus Ihrem Wissen das macht, was Sie tatsächlich sagen — für Lernende jeden Alters und jeder Profession.</p></div></div>
           <div class="diff"><span class="diff__index">07</span><div class="diff__body"><span class="diff__lead">Fünf Sprachen, ein Ort.</span><p class="diff__support">Englisch, Deutsch, Ungarisch, Spanisch und Italienisch unter einem Dach, mit Lehrkräften auf muttersprachlichem oder bilingualem Niveau — egal, ob Sie eine Sprache beginnen oder mehrere aufbauen.</p></div></div>
         </div>
+        <p class="section-next"><a href="#testimonials">Was unsere Schüler sagen <span class="arrow" aria-hidden="true">↓</span></a></p>
       </div>
     </section>
 
     <!-- ====================== TESTIMONIALS & REVIEWS (Education) ====================== -->
-    <section class="section band reveal" aria-label="Testimonials and reviews">
+    <section class="section band reveal" id="testimonials" data-section="testimonials" aria-label="Testimonials and reviews">
       <div class="container">
         <p class="eyebrow">Erfahrungsberichte &amp; Bewertungen</p>
-        <!-- PLACEHOLDER: the Education audience WILL leave public reviews, so the live
-             Google rating badge belongs here. Embed the real Google badge + "See all
-             reviews on Google" link once a Google Business Profile is set up. Seed 8–10
-             genuine reviews BEFORE featuring the badge anywhere. Pull 4–6 strongest quotes. -->
-        <div class="google-badge" role="img" aria-label="Google-Bewertungssiegel — Platzhalter">
+        <div class="google-badge" role="img" aria-label="5,0 — 10 Bewertungen">
           <span class="google-badge__stars" aria-hidden="true">★★★★★</span>
-          <span class="google-badge__text">Google-Bewertung — Siegel-Platzhalter (Live-Bewertung einbetten, sobald Bewertungen vorliegen)</span>
+          <span class="google-badge__text">5,0 · 10 Bewertungen</span>
         </div>
         <div class="testimonials__grid">
           <figure class="quote">
             <p class="quote__stars" aria-hidden="true">★★★★★</p>
-            <blockquote class="quote__text">„[Zitat einer lernenden Person — konkret zu Fortschritt, Selbstvertrauen oder der Lehrkraft.]"</blockquote>
-            <figcaption class="quote__cite">— [Vorname · Google]</figcaption>
+            <blockquote class="quote__text">"Dorian is an extremely competent and dedicated English teacher who designs his lessons with great care and expertise. Each class is well thought out, varied, and tailored to my needs and goals. I am particularly impressed by his patient and motivating manner, which he displays in every lesson (regardless of the time). He takes the time to explain everything clearly and addresses questions or uncertainties. This makes it easy for me to continuously improve and develop new language skills. I really look forward to the next lesson every time!"</blockquote>
+            <figcaption class="quote__cite">— Maxi K. · Electrical engineer, sales specialist · Germany</figcaption>
           </figure>
           <figure class="quote">
             <p class="quote__stars" aria-hidden="true">★★★★★</p>
-            <blockquote class="quote__text">„[Zitat.]"</blockquote>
-            <figcaption class="quote__cite">— [Vorname · Google]</figcaption>
+            <blockquote class="quote__text">"I really enjoy my lessons with Dorian. Every session is engaging and never feels repetitive, which makes learning much more motivating. He always takes the time to address my questions and focuses on my individual gaps, which helps me improve quickly and efficiently. Dorian is also very flexible and consistently well-prepared for each lesson. What I appreciate most is that we don't just stick to standard topics. We often explore new and interesting subjects, so I'm not only improving my English but also expanding my general knowledge at the same time. :) I can highly recommend him to anyone looking for dynamic, personalized, and inspiring English lessons."</blockquote>
+            <figcaption class="quote__cite">— Nina K. · Insurance services specialist · Germany</figcaption>
           </figure>
           <figure class="quote">
             <p class="quote__stars" aria-hidden="true">★★★★★</p>
-            <blockquote class="quote__text">„[Zitat.]"</blockquote>
-            <figcaption class="quote__cite">— [Vorname · Google]</figcaption>
+            <blockquote class="quote__text">"Dorian is a highly dedicated and well-prepared English teacher. He designs his lessons in a way that appropriately responds to students' needs and effectively motivates them to engage in learning. Because he has a strong academic background, he is one of the best teachers for anyone who wants to develop their academic English. I wholeheartedly recommend him."</blockquote>
+            <figcaption class="quote__cite">— Kento M. · University professor · Japan</figcaption>
+          </figure>
+          <figure class="quote">
+            <p class="quote__stars" aria-hidden="true">★★★★★</p>
+            <blockquote class="quote__text">"Dorian is a friendly and helpful teacher. Every time, we work on exciting tasks and discuss current topics. I can confidently recommend him to anyone who would like to improve their language skills :)"</blockquote>
+            <figcaption class="quote__cite">— László B. · IT professional · Hungary</figcaption>
+          </figure>
+          <figure class="quote">
+            <p class="quote__stars" aria-hidden="true">★★★★★</p>
+            <blockquote class="quote__text">"Dorian immediately alleviated all my doubts and fears with his open manner from the very first lesson. I look forward to our lessons every time, even if the day has been stressful, and I enjoy the conversations with him about so many interesting topics."</blockquote>
+            <figcaption class="quote__cite">— Eike G. · Medical doctor · Germany</figcaption>
+          </figure>
+          <figure class="quote">
+            <p class="quote__stars" aria-hidden="true">★★★★★</p>
+            <blockquote class="quote__text">"An amazing tutor! Friendly, cheerful, supportive. We have very enjoyable conversations in both legal language and everyday English. I am very fortunate to have encountered a tutor like him."</blockquote>
+            <figcaption class="quote__cite">— Ahmet S. · University professor · Turkey</figcaption>
+          </figure>
+          <figure class="quote">
+            <p class="quote__stars" aria-hidden="true">★★★★★</p>
+            <blockquote class="quote__text">"Dorian is very nice, incredibly dedicated, super competent, friendly, and possesses a high level of language teaching."</blockquote>
+            <figcaption class="quote__cite">— Agnes T. · Nurse · Austria</figcaption>
+          </figure>
+          <figure class="quote">
+            <p class="quote__stars" aria-hidden="true">★★★★★</p>
+            <blockquote class="quote__text">"Dorian is an outstanding English teacher with a strong academic background. Highly professional, and committed to helping students achieve real progress."</blockquote>
+            <figcaption class="quote__cite">— Romulo F. · Financial services specialist · Argentina</figcaption>
+          </figure>
+          <figure class="quote">
+            <p class="quote__stars" aria-hidden="true">★★★★★</p>
+            <blockquote class="quote__text">"My goal is to improve my communication in English conversations. That's why Dorian and I talk about a wide variety of topics during the sessions. Dorian creates a very relaxed learning atmosphere where you feel comfortable. He also gives helpful tips and provides great new input through small exercises, whether it's about grammar or improving expression in English. I am very happy with the progress I make with Dorian :)"</blockquote>
+            <figcaption class="quote__cite">— Pia M. · Medical specialist · Germany</figcaption>
+          </figure>
+          <figure class="quote">
+            <p class="quote__stars" aria-hidden="true">★★★★★</p>
+            <blockquote class="quote__text">"Dorian is an incredibly organized and patient teacher. At the beginning, when I was still getting used to the platform, he was very understanding and suportive, which made the transition much smoother. He's also very kind, always making sure I feel comfortable and confident to express myself in English, even when I don't know how to say a sentence. The atmosphere he creates in class is encouraging, helping in learning journey. I also appreciate how he adapts each lesson to my individual needs, making the content relevant in my context. His approach makes a huge difference for me. I'm truly grateful to found him as an English teacher."</blockquote>
+            <figcaption class="quote__cite">— Adriano P. · Sales specialist, Ph.D. student · Brazil</figcaption>
           </figure>
         </div>
-        <!-- TODO: link to the public Google reviews page once the profile exists -->
         <p style="margin-top:var(--sp-3);"><a class="btn btn--ghost" href="#" aria-label="Alle Bewertungen auf Google ansehen">Alle Bewertungen auf Google ansehen →</a></p>
+        <p class="section-next"><a href="#contact-education">Kostenlose Erstberatung buchen <span class="arrow" aria-hidden="true">↓</span></a></p>
       </div>
     </section>
 
@@ -183,7 +228,7 @@
                 <label for="e-level">Aktuelles Niveau <span class="req" aria-hidden="true">*</span></label>
                 <select id="e-level" name="level" required>
                   <option value="" disabled selected>Niveau auswählen…</option>
-                  <option>Anfänger</option>
+                  <option>Anfängerniveau</option>
                   <option>Mittelstufe</option>
                   <option>Fortgeschritten</option>
                   <option>Nicht sicher</option>

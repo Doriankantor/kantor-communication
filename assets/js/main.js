@@ -133,7 +133,7 @@
     },
     hu: {
       'email-label': 'E-mail', 'phone-label': 'Telefon', 'location': 'Helyszín',
-      'legal': 'Jogi nyilatkozat', 'privacy': 'Adatvédelmi nyilatkozat',
+      'legal': 'Jogi közlemény', 'privacy': 'Adatvédelmi irányelvek',
       'nav-about': 'Rólunk', 'nav-consulting': 'Tanácsadás',
       'nav-education': 'Oktatás', 'nav-jobs': 'Állások',
       'nav-faq': 'GYIK', 'nav-contact': 'Kapcsolat'
