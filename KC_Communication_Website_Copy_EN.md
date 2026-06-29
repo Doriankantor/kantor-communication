@@ -44,7 +44,7 @@ Düsseldorf / Berlin · Budapest · Bogotá · Washington, DC
 | Privacy Policy | Privacy Policy | Datenschutzerklärung | Adatvédelmi nyilatkozat | Política de privacidad |
 | About (footer nav) | About | Über uns | Rólunk | Sobre nosotros |
 | Consulting (footer nav) | Consulting | Beratung | Tanácsadás | Consultoría |
-| Education (footer nav) | Education | Bildung | Oktatás | Educación |
+| Language School (footer nav) | Language School | Sprachschule | Nyelviskola | Escuela de idiomas |
 | Jobs (footer nav) | Jobs | Stellen | Állások | Empleo |
 | FAQ (footer nav) | FAQ | FAQ | GYIK | FAQ |
 | Contact (footer nav) | Contact | Kontakt | Kapcsolat | Contacto |
@@ -130,9 +130,9 @@ Lead & Align · Negotiate & Persuade · Present at the Highest Level · Write wi
 For organizations and the people who lead them. Strategic communication advisory built on real corporate, institutional, and academic experience — so what you say carries authority across languages, cultures, and high-stakes settings.
 → **Explore Communication Consulting**
 
-**Card 2 — Education**
+**Card 2 — Language School**
 For learners of any age or profession. A communicative method that builds vocabulary, fluency, and the confidence to use them — taught by instructors trained in our approach.
-→ **Explore Education**
+→ **Explore the Language School**
 
 ### Banner B (statement band, below the cards — set large)
 > ## Expertise is only as strong as how you communicate it.
@@ -666,3 +666,5 @@ Fields:
 1. DE `de/index.html` + this file: "der Freie Universität Berlin" → "der Freien Universität Berlin"
 2. ES `es/index.html` + this file: "consultor de defensas" → "consultor de defensa"
 3. ES `es/index.html`: "Reserve una llamada de descubrimiento" → "Reserve una llamada exploratoria"
+
+2026-06-21 — 'Education' vertical relabelled 'Language School' (Sprachschule/Nyelviskola/Escuela de idiomas) across nav, titles, home card, jobs track option, and section headings, all four languages. Filename education.html unchanged.

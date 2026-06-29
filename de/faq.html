@@ -51,43 +51,48 @@
 
     <section class="section--tight" aria-label="Questions and answers">
       <div class="container">
+        <div class="faq__filter" aria-label="Fragen nach Bereich filtern">
+          <button class="faq__filter-btn active" data-filter="all">Alle</button>
+          <button class="faq__filter-btn" data-filter="consulting">Beratung</button>
+          <button class="faq__filter-btn" data-filter="education">Sprachschule</button>
+        </div>
         <div class="faq">
-          <details class="faq__item" open>
+          <details class="faq__item" data-tag="both" open>
             <summary>Was kostet es? <span class="faq__tag">Beide</span><span class="chev" aria-hidden="true">›</span></summary>
-            <p class="faq__answer">Da jede Zusammenarbeit auf Ihre Ziele, Ihr Niveau und Ihr Format zugeschnitten ist, schlagen wir die Preise als maßgeschneidertes Paket statt als feste Liste vor. <span class="faq__tag">Beratung</span> Für die Beratung empfehlen wir das passende Paket nach einem kurzen Erstgespräch. <span class="faq__tag">Bildung</span> Für den Unterricht schlagen wir das passende Paket in Ihrem kostenlosen Erstgespräch vor. So bleibt die Arbeit auf das fokussiert, was Sie wirklich brauchen.</p>
+            <p class="faq__answer">Da jede Zusammenarbeit auf Ihre Ziele, Ihr Niveau und Ihr Format zugeschnitten ist, schlagen wir die Preise als maßgeschneidertes Paket statt als feste Liste vor. <span class="faq__tag">Beratung</span> Für die Beratung empfehlen wir das passende Paket nach einem kurzen Erstgespräch. <span class="faq__tag">Sprachschule</span> Für den Unterricht schlagen wir das passende Paket in Ihrem kostenlosen Erstgespräch vor. So bleibt die Arbeit auf das fokussiert, was Sie wirklich brauchen.</p>
           </details>
 
-          <details class="faq__item">
+          <details class="faq__item" data-tag="both">
             <summary>Wie legen wir los? <span class="faq__tag">Beide</span><span class="chev" aria-hidden="true">›</span></summary>
             <p class="faq__answer">Mit einem kostenlosen, unverbindlichen Erstgespräch — etwa 15–20 Minuten — um Ihr Niveau, Ihre Ziele und Ihren Zeitrahmen zu verstehen. Von dort aus schlagen wir vor, wie wir zusammenarbeiten würden.</p>
           </details>
 
-          <details class="faq__item">
+          <details class="faq__item" data-tag="both">
             <summary>Welche Sprachen bieten Sie an? <span class="faq__tag">Beide</span><span class="chev" aria-hidden="true">›</span></summary>
             <p class="faq__answer">Englisch, Deutsch, Ungarisch, Spanisch und Italienisch.</p>
           </details>
 
-          <details class="faq__item">
-            <summary>Mit welchen Niveaus arbeiten Sie? <span class="faq__tag">Bildung · Beratung</span><span class="chev" aria-hidden="true">›</span></summary>
-            <p class="faq__answer"><span class="faq__tag">Bildung</span> Alle Niveaus, von Anfänger bis Fortgeschritten. Den richtigen Ausgangspunkt finden wir gemeinsam im ersten Gespräch. <span class="faq__tag">Beratung</span> Unsere Beratung ist auf fortgeschrittene Fachleute, Führungskräfte, Institutionen und Forschende ausgerichtet.</p>
+          <details class="faq__item" data-tag="both">
+            <summary>Mit welchen Niveaus arbeiten Sie? <span class="faq__tag">Sprachschule · Beratung</span><span class="chev" aria-hidden="true">›</span></summary>
+            <p class="faq__answer"><span class="faq__tag">Sprachschule</span> Alle Niveaus, von Anfänger bis Fortgeschritten. Den richtigen Ausgangspunkt finden wir gemeinsam im ersten Gespräch. <span class="faq__tag">Beratung</span> Unsere Beratung ist auf fortgeschrittene Fachleute, Führungskräfte, Institutionen und Forschende ausgerichtet.</p>
           </details>
 
-          <details class="faq__item">
+          <details class="faq__item" data-tag="both">
             <summary>Wie lange dauert eine Sitzung? <span class="faq__tag">Beide</span><span class="chev" aria-hidden="true">›</span></summary>
             <p class="faq__answer">Unterrichtseinheiten in der Bildung dauern 50 Minuten. Beratungssitzungen sind auf die jeweilige Zusammenarbeit zugeschnitten.</p>
           </details>
 
-          <details class="faq__item">
+          <details class="faq__item" data-tag="both">
             <summary>Wie flexibel ist die Terminplanung? <span class="faq__tag">Beide</span><span class="chev" aria-hidden="true">›</span></summary>
             <p class="faq__answer">Sehr. Wir richten uns nach Ihrem Kalender — frühe Morgenstunden, Abende oder Wochenenden — und stimmen die Zeiten direkt mit Ihrer Trainerin oder Ihrem Trainer ab.</p>
           </details>
 
-          <details class="faq__item">
+          <details class="faq__item" data-tag="both">
             <summary>Ist es online oder vor Ort? <span class="faq__tag">Beide</span><span class="chev" aria-hidden="true">›</span></summary>
             <p class="faq__answer">In erster Linie online, was es uns ermöglicht, mit Ihnen zu arbeiten, wo immer Sie sind; konkrete Vereinbarungen werden im ersten Gespräch besprochen.</p>
           </details>
 
-          <details class="faq__item">
+          <details class="faq__item" data-tag="consulting">
             <summary>Ist alles vertraulich? <span class="faq__tag">Beratung</span><span class="chev" aria-hidden="true">›</span></summary>
             <p class="faq__answer">Ja. Beratungsmandate sind durchgehend vertraulich.</p>
           </details>
