@@ -162,10 +162,10 @@
                enctype="multipart/form-data" is required for the file field. Configure the
                notification email + subject ("KCC Jobs application — [name]") in
                Netlify → Forms → Notifications (route to languages@kantor-communication.com). -->
-          <form class="form" name="jobs-application" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" data-kc-form>
-            <input type="hidden" name="form-name" value="jobs-application" />
-            <input type="hidden" name="subject" value="KCC Jobs application" />
-            <p class="visually-hidden" aria-hidden="true"><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
+          <form class="form" name="jobs-application" method="POST" action="https://formspree.io/f/xdaqnqaw" enctype="multipart/form-data" data-kc-form>
+            <input type="hidden" name="_subject" value="KCC Jobs application" />
+            <input type="hidden" name="_next" value="https://kantor-communication.com/hu/thanks" />
+            <p class="visually-hidden" aria-hidden="true"><label>Don't fill this out if you're human: <input name="_gotcha" /></label></p>
             <div class="field--row">
               <div class="field">
                 <label for="j-name">Név <span class="req" aria-hidden="true">*</span></label>
