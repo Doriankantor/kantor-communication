@@ -97,16 +97,25 @@
   }
   /* ---- FAQ filter toggle ------------------------------------------------ */
   var faqFilterBtns = document.querySelectorAll('.faq__filter-btn');
-  var faqItems = document.querySelectorAll('.faq__item[data-tag]');
+  var faqItems = document.querySelectorAll('.faq__item[data-track]');
   if (faqFilterBtns.length) {
+    // Apply default Consulting filter on load
+    Array.prototype.forEach.call(faqItems, function (item) {
+      var track = item.getAttribute('data-track');
+      if (track === 'consulting' || track === 'both') {
+        item.classList.remove('hidden');
+      } else {
+        item.classList.add('hidden');
+      }
+    });
     Array.prototype.forEach.call(faqFilterBtns, function (btn) {
       btn.addEventListener('click', function () {
         var filter = btn.getAttribute('data-filter');
         Array.prototype.forEach.call(faqFilterBtns, function (b) { b.classList.remove('active'); });
         btn.classList.add('active');
         Array.prototype.forEach.call(faqItems, function (item) {
-          var tag = item.getAttribute('data-tag');
-          if (filter === 'all' || tag === filter || tag === 'both') {
+          var track = item.getAttribute('data-track');
+          if (filter === 'all' || track === filter || track === 'both') {
             item.classList.remove('hidden');
           } else {
             item.classList.add('hidden');

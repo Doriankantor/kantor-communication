@@ -5,10 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FAQ — Kantor Communication Consulting</title>
   <meta name="description" content="Frequently asked questions about KC's communication consulting and language education — pricing, getting started, languages, levels, scheduling, and confidentiality." />
-  <link rel="icon" href="assets/img/kcc-logo.jpg" type="image/jpeg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="assets/img/kcc-logo.jpg" type="image/jpeg" />  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -44,55 +41,70 @@
       <div class="container">
         <p class="eyebrow">FAQ</p>
         <h1>Frequently asked questions</h1>
-        <p class="lead measure">Answers for both tracks. Tags mark whether an answer applies to <strong>Consulting</strong>, <strong>Education</strong>, or both.</p>
+        <p class="lead measure">Answers for both tracks — choose Consulting or Language School above.</p>
       </div>
     </section>
 
     <section class="section--tight" aria-label="Questions and answers">
       <div class="container">
         <div class="faq__filter" aria-label="Filter questions by track">
-          <button class="faq__filter-btn active" data-filter="all">All</button>
-          <button class="faq__filter-btn" data-filter="consulting">Consulting</button>
+          <button class="faq__filter-btn" data-filter="all">All</button>
+          <button class="faq__filter-btn active" data-filter="consulting">Consulting</button>
           <button class="faq__filter-btn" data-filter="education">Language School</button>
         </div>
         <div class="faq">
-          <details class="faq__item" data-tag="both" open>
-            <summary>What does it cost? <span class="faq__tag">Both</span><span class="chev" aria-hidden="true">›</span></summary>
-            <p class="faq__answer">Because every engagement is scoped to your goals, level, and format, we propose pricing as a tailored package rather than a fixed list. <span class="faq__tag">Consulting</span> For consulting, we recommend the right package after a short discovery call. <span class="faq__tag">Language School</span> For lessons, we suggest the right package in your free first consultation. This keeps the work focused on what you actually need.</p>
+          <details class="faq__item" data-track="consulting" open>
+            <summary>What does it cost? <span class="chev" aria-hidden="true">›</span></summary>
+            <p class="faq__answer">Because every engagement is scoped to your goals, audience, and format, we propose pricing as a tailored package rather than a fixed list. We recommend the right package after a short discovery call, so the work stays focused on what you actually need.</p>
           </details>
 
-          <details class="faq__item" data-tag="both">
-            <summary>How do we get started? <span class="faq__tag">Both</span><span class="chev" aria-hidden="true">›</span></summary>
+          <details class="faq__item" data-track="education">
+            <summary>What does it cost? <span class="chev" aria-hidden="true">›</span></summary>
+            <p class="faq__answer">Because every course is scoped to your goals, level, and format, we propose pricing as a tailored package rather than a fixed list. We suggest the right package in your free first consultation, so the work stays focused on what you actually need.</p>
+          </details>
+
+          <details class="faq__item" data-track="both">
+            <summary>How do we get started? <span class="chev" aria-hidden="true">›</span></summary>
             <p class="faq__answer">With a free, no-obligation first conversation — about 15–20 minutes — to understand your level, your goals, and your timeline. From there we propose how we'd work together.</p>
           </details>
 
-          <details class="faq__item" data-tag="both">
-            <summary>Which languages do you offer? <span class="faq__tag">Both</span><span class="chev" aria-hidden="true">›</span></summary>
+          <details class="faq__item" data-track="both">
+            <summary>Which languages do you offer? <span class="chev" aria-hidden="true">›</span></summary>
             <p class="faq__answer">English, German, Hungarian, Spanish, and Italian.</p>
           </details>
 
-          <details class="faq__item" data-tag="both">
-            <summary>What levels do you work with? <span class="faq__tag">Language School · Consulting</span><span class="chev" aria-hidden="true">›</span></summary>
-            <p class="faq__answer"><span class="faq__tag">Language School</span> All levels, from beginner to advanced. We find the right starting point together in the first consultation. <span class="faq__tag">Consulting</span> Our consulting work is designed for advanced professionals, executives, institutions, and researchers.</p>
+          <details class="faq__item" data-track="consulting">
+            <summary>What levels do you work with? <span class="chev" aria-hidden="true">›</span></summary>
+            <p class="faq__answer">Our consulting work is designed for professionals, executives, institutions, and researchers who already work in the language and want to communicate in it with more precision and authority.</p>
           </details>
 
-          <details class="faq__item" data-tag="both">
-            <summary>How long is a session? <span class="faq__tag">Both</span><span class="chev" aria-hidden="true">›</span></summary>
-            <p class="faq__answer">Education lessons are 50 minutes. Consulting sessions are scoped to the engagement.</p>
+          <details class="faq__item" data-track="education">
+            <summary>What levels do you work with? <span class="chev" aria-hidden="true">›</span></summary>
+            <p class="faq__answer">All levels, from beginner to advanced. We find the right starting point together in the first consultation.</p>
           </details>
 
-          <details class="faq__item" data-tag="both">
-            <summary>How flexible is scheduling? <span class="faq__tag">Both</span><span class="chev" aria-hidden="true">›</span></summary>
+          <details class="faq__item" data-track="consulting">
+            <summary>How long is a session? <span class="chev" aria-hidden="true">›</span></summary>
+            <p class="faq__answer">Consulting sessions are scoped to the engagement.</p>
+          </details>
+
+          <details class="faq__item" data-track="education">
+            <summary>How long is a lesson? <span class="chev" aria-hidden="true">›</span></summary>
+            <p class="faq__answer">Lessons are 50 minutes.</p>
+          </details>
+
+          <details class="faq__item" data-track="both">
+            <summary>How flexible is scheduling? <span class="chev" aria-hidden="true">›</span></summary>
             <p class="faq__answer">Very. We work around your calendar — early mornings, evenings, or weekends — and arrange times directly with your trainer.</p>
           </details>
 
-          <details class="faq__item" data-tag="both">
-            <summary>Is it online or in person? <span class="faq__tag">Both</span><span class="chev" aria-hidden="true">›</span></summary>
+          <details class="faq__item" data-track="both">
+            <summary>Is it online or in person? <span class="chev" aria-hidden="true">›</span></summary>
             <p class="faq__answer">Primarily online, which lets us work with you wherever you are; specific arrangements are discussed in the first conversation.</p>
           </details>
 
-          <details class="faq__item" data-tag="consulting">
-            <summary>Is everything confidential? <span class="faq__tag">Consulting</span><span class="chev" aria-hidden="true">›</span></summary>
+          <details class="faq__item" data-track="consulting">
+            <summary>Is everything confidential? <span class="chev" aria-hidden="true">›</span></summary>
             <p class="faq__answer">Yes. Consulting engagements are confidential throughout.</p>
           </details>
         </div>

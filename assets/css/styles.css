@@ -6,8 +6,56 @@
    To re-theme the accent, change --accent (and --accent-strong/-soft) in :root.
    ========================================================================== */
 
-/* ---- Fonts (variable Google Fonts, with system fallbacks) ---------------- */
-@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap');
+/* ---- Fonts (self-hosted woff2, latin + latin-ext subsets) ---------------- */
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../fonts/spectral-v15-latin_latin-ext-300.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/spectral-v15-latin_latin-ext-regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Spectral';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/spectral-v15-latin_latin-ext-italic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/spectral-v15-latin_latin-ext-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/inter-v20-latin_latin-ext-regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/inter-v20-latin_latin-ext-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/inter-v20-latin_latin-ext-600.woff2') format('woff2');
+}
 
 /* ==========================================================================
    1. Design tokens
@@ -697,11 +745,6 @@ main + .site-footer { margin-top: 0; }
 .faq__item > summary .chev { color: var(--accent); flex: none; transition: transform 0.25s var(--ease); }
 .faq__item[open] > summary .chev { transform: rotate(90deg); }
 .faq__answer { color: var(--text-muted); max-width: 70ch; padding: 0 0 var(--sp-3); margin: 0; }
-.faq__tag {
-  display: inline-block; font-size: var(--fs-xs); letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--accent); border: 1px solid var(--accent-line); border-radius: 2px;
-  padding: 0.05rem 0.4rem; margin-left: 0.5rem; vertical-align: middle;
-}
 
 /* --- Legal pages ---------------------------------------------------------- */
 .legal { max-width: var(--maxw-text); }

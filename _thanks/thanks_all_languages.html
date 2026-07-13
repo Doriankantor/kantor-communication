@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+  THANKS PAGES — content + redirect spec for all 4 languages. Reference draft.
+  Code will build each real page from the matching site shell (index.html / de/index.html /
+  hu/index.html / es/index.html), insert the <main> content below, AND add the meta-refresh
+  line into that page's <head>. The auto-redirect target is language-specific (see each block).
+  Styling here is standalone-only; the site CSS restyles it.
+-->
+<html lang="en">
+<head><meta charset="UTF-8" /><title>Thanks — reference</title>
+<style>body{background:#F8F6F2;color:#1F2328;font-family:Georgia,serif;line-height:1.6;margin:0;padding:3rem 1.25rem}
+.container{max-width:40rem;margin:0 auto;text-align:center}h1{font-weight:600}a{color:#A87C3D}
+.muted{color:#6b6b6b;font-size:.95rem;margin-top:1.5rem}hr{border:0;border-top:1px solid #ddd;margin:3rem 0}</style>
+</head>
+<body>
+
+<!-- ========== EN  →  /thanks   (head needs: <meta http-equiv="refresh" content="10;url=/">) ========== -->
+<main class="container" id="EN">
+  <section class="section"><div class="container measure">
+    <h1>Thank you for reaching out.</h1>
+    <p>We've received your message and will be in touch as soon as possible.</p>
+    <p class="muted">You'll be returned to the homepage in a few seconds, or
+      <a href="/">click here</a> to go now.</p>
+  </div></section>
+</main>
+
+<hr>
+
+<!-- ========== DE  →  /de/thanks   (head needs: <meta http-equiv="refresh" content="10;url=/de/">) ========== -->
+<main class="container" id="DE">
+  <section class="section"><div class="container measure">
+    <h1>Vielen Dank für Ihre Nachricht.</h1>
+    <p>Wir haben Ihre Nachricht erhalten und melden uns so bald wie möglich bei Ihnen.</p>
+    <p class="muted">Sie werden in wenigen Sekunden zur Startseite weitergeleitet, oder
+      <a href="/de/">klicken Sie hier</a>, um sofort zurückzukehren.</p>
+  </div></section>
+</main>
+
+<hr>
+
+<!-- ========== HU  →  /hu/thanks   (head needs: <meta http-equiv="refresh" content="10;url=/hu/">) ========== -->
+<main class="container" id="HU">
+  <section class="section"><div class="container measure">
+    <h1>Köszönjük megkeresését.</h1>
+    <p>Megkaptuk üzenetét, és a lehető leghamarabb felvesszük Önnel a kapcsolatot.</p>
+    <p class="muted">Néhány másodperc múlva visszairányítjuk a kezdőlapra, vagy
+      <a href="/hu/">kattintson ide</a> az azonnali visszatéréshez.</p>
+  </div></section>
+</main>
+
+<hr>
+
+<!-- ========== ES  →  /es/thanks   (head needs: <meta http-equiv="refresh" content="10;url=/es/">) ========== -->
+<main class="container" id="ES">
+  <section class="section"><div class="container measure">
+    <h1>Gracias por ponerse en contacto.</h1>
+    <p>Hemos recibido su mensaje y nos pondremos en contacto con usted lo antes posible.</p>
+    <p class="muted">Se le redirigirá a la página de inicio en unos segundos, o
+      <a href="/es/">haga clic aquí</a> para volver ahora.</p>
+  </div></section>
+</main>
+
+</body>
+</html>
