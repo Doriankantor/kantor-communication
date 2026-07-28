@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sprachschule — Kantor Communication Consulting</title>
   <meta name="description" content="Eine kommunikative Methode, die Wortschatz, Sprachfluss und Selbstvertrauen aufbaut — unterrichtet von geschulten Lehrkräften, mit auf Ihr Niveau abgestimmten Materialien." />
-  <link rel="icon" href="../assets/img/kcc-logo.jpg" type="image/jpeg" />  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" />  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="../assets/css/kcc-theme.css" />
 </head>
 <body data-page="education">
   <a class="skip-link" href="#main">Zum Inhalt springen</a>
@@ -15,7 +18,7 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a class="wordmark" href="index.html" aria-label="Kantor Communication Consulting — home">
-        <img class="wordmark__mono" src="../assets/img/kcc-logo.jpg" alt="" aria-hidden="true" />
+        <img class="wordmark__mono" src="../assets/img/kcc-logo.svg" alt="" aria-hidden="true" />
         <span class="wordmark__name"><b>Kantor</b> Communication Consulting</span>
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menü</button>
@@ -25,7 +28,7 @@
           <li><a href="consulting.html">Kommunikationsberatung</a></li>
           <li><a href="education.html" aria-current="page">Sprachschule</a></li>
           <li><a href="jobs.html">Jobs</a></li>
-          <li><a href="#contact-education">Kontakt</a></li>
+          <li><a href="#talk">Kontakt</a></li>
         </ul>
         <div class="lang-switcher" aria-label="Language">
           <a href="../education.html" hreflang="en">EN</a><span class="sep">/</span>
@@ -41,42 +44,51 @@
     <!-- ===================== FOUNDER INTRO (video + company intro) ===================== -->
     <section class="page-intro" aria-label="Sprachschule">
       <div class="container">
-        <p class="eyebrow">Sprachschule</p>
-        <div class="founder-intro">
-          <div class="founder-intro__text">
-            <h1>Sprachschule</h1>
-            <p class="lead">Eine Sprache zu lernen bedeutet nicht, Grammatikregeln zu sammeln. Es bedeutet, sagen zu können, was man meint, zu verstehen, was man hört, und sich bei beidem sicher zu fühlen. Unsere Methode ist von der ersten Stunde an kommunikativ: Wir bauen den Wortschatz auf, den Sie wirklich brauchen, entwickeln Sprachfluss durch echten Gebrauch und lassen das Selbstvertrauen wachsen, das Wissen in Sprache verwandelt.</p>
+        <p class="eyebrow center">Sprachschule</p>
+        <h1 class="page-intro__statement">Sprache aufbauen, damit sie zu <em>Selbstvertrauen</em> wird.
+          <span class="page-intro__sub">Kommunikativer Unterricht von der ersten Stunde an &mdash; für jedes Niveau, jeden Beruf, jedes Alter.</span>
+        </h1>
+      </div>
+      <div class="seam seam--intro" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ THE METHOD — beside the founder video ============
+         The original lead carried two triads inside one sentence each. Surfaced,
+         they are scanned rather than parsed. Same words. -->
+    <section class="section intro-prose reveal" aria-label="Wie wir unterrichten">
+      <div class="container">
+        <div class="intro-prose__grid">
+          <div class="intro-prose__text">
+            <p class="intro-prose__lead">Eine Sprache zu lernen bedeutet nicht, Grammatikregeln zu sammeln. Es bedeutet, sagen zu können, was man meint, zu verstehen, was man hört, und sich bei beidem sicher zu fühlen.</p>
+            <p class="claim">Unsere Methode ist von der ersten Stunde an kommunikativ:</p>
+            <ul class="pointlist">
+              <li>Wir bauen den Wortschatz auf, den Sie wirklich brauchen.</li>
+              <li>Wir entwickeln Sprachfluss durch echten Gebrauch.</li>
+              <li>Wir lassen das Selbstvertrauen wachsen, das Wissen in Sprache verwandelt.</li>
+            </ul>
           </div>
-          <!-- OPTIONAL: short founder video — Dorian speaking to learners in a warmer register.
-               Real recorded footage; HeyGen used only to localize into DE/HU/ES. Minimal chrome. -->
-          <div class="founder-video" hidden role="img" aria-label="Gründervideo (Platzhalter) — Dorian Kantor begrüßt Lernende">Gründervideo — Platzhalter · Dorian Kantor begrüßt Lernende</div>
-        </div>
-        <div class="measure" style="margin-top:var(--sp-4);">
-          <p class="muted">Jede und jeder Lernende lernt mit Materialien, die für das jeweilige Niveau ausgewählt sind — kein Einheitslehrplan. Und jede Lehrkraft ist qualitätsgeprüft und in unserer Lehrmethodik geschult, sodass die Erfahrung einheitlich ist, egal bei wem Sie lernen.</p>
-          <p class="muted">Dieser Bereich richtet sich an Mitglieder der Gemeinschaft — Lernende jeden Alters und jeder Profession.</p>
+          <!-- Real recorded footage; HeyGen used only to localize into DE/HU/ES.
+               Put the `hidden` attribute back until the video exists. -->
+          <div class="founder-video" hidden role="img" aria-label="Gründervideo (Platzhalter) &mdash; Dorian Kantor begrüßt Lernende">Gründervideo &mdash; Platzhalter &middot; Dorian Kantor begrüßt Lernende</div>
         </div>
       </div>
     </section>
 
-    <!-- ====================== JUMP INDEX ====================== -->
-    <nav class="jump-index" aria-label="Auf dieser Seite">
-      <div class="container">
-        <ul class="jump-index__list">
-          <li><a href="#how-it-works"><span class="jump-index__num">01</span> So funktioniert der Unterricht</a></li>
-          <li><a href="#what-sets-apart"><span class="jump-index__num">02</span> Was uns auszeichnet</a></li>
-          <li><a href="#testimonials"><span class="jump-index__num">03</span> Erfahrungsberichte</a></li>
-          <li><a href="#contact-education"><span class="jump-index__num">04</span> Kostenloses Erstgespräch buchen</a></li>
-        </ul>
+    <!-- ============ WHO IT IS FOR, AND WHAT IS CONSISTENT ============ -->
+    <section class="stakes band reveal" aria-label="Für wen dieser Bereich ist">
+      <div class="container stakes--split">
+        <p class="stakes__lead">Dieser Bereich richtet sich an Mitglieder der Gemeinschaft &mdash; Lernende jeden Alters und jeder Profession.</p>
+        <p class="stakes__body">Jede und jeder Lernende lernt mit Materialien, die für das jeweilige Niveau ausgewählt sind &mdash; kein Einheitslehrplan. Und jede Lehrkraft ist qualitätsgeprüft und in unserer Lehrmethodik geschult, sodass die Erfahrung einheitlich ist, egal bei wem Sie lernen.</p>
       </div>
-    </nav>
+    </section>
 
     <!-- ====================== FOUNDER STATEMENT (pull-quote) ====================== -->
     <section class="section reveal" data-section="quote" aria-label="Founder statement">
       <div class="container">
-        <figure class="pullquote">
+        <figure class="pullquote pullquote--medium">
           <span class="pullquote__mark" aria-hidden="true">"</span>
           <blockquote class="pullquote__text">Eine Sprache zu lernen war eine der zutiefst bestärkenden Erfahrungen meines Lebens. Ich spreche vier fließend — Englisch, Deutsch, Spanisch und Ungarisch — und habe in allen gelebt und gearbeitet. Genau das wünschen wir uns für Sie: nicht nur Wörter und Regeln, sondern interkulturelle Kompetenz und das Selbstvertrauen, sich wirklich zu verbinden.</blockquote>
-          <figcaption class="pullquote__cite">— <strong>Dorian Kantor</strong>, Gründer</figcaption>
+          <figcaption class="pullquote__cite">— <strong>Dorian Kantor</strong><span class="pullquote__role">Gründer, Studienleiter</span></figcaption>
         </figure>
         <p class="crossborder__text" style="max-width:62ch; margin-top:var(--sp-3);">Wir vermitteln mehr als Sprachkenntnisse. Wir bauen interkulturelle Kompetenz auf — das kulturelle Verständnis, das aus einem korrekten Satz eine echte Verbindung macht — denn zu wissen, wie man etwas sagt, ist nur die halbe Miete, um verstanden zu werden.</p>
         <p class="section-next"><a href="#how-it-works">So funktionieren unsere Stunden <span class="arrow" aria-hidden="true">↓</span></a></p>
@@ -178,8 +190,22 @@
             <figcaption class="quote__cite">— Adriano P. · Sales specialist, Ph.D. student · Brazil</figcaption>
           </figure>
         </div>
-        <p style="margin-top:var(--sp-3);"><a class="btn btn--ghost" href="#" aria-label="Alle Bewertungen auf Google ansehen">Alle Bewertungen auf Google ansehen →</a></p>
-        <p class="section-next"><a href="#contact-education">Kostenlose Erstberatung buchen <span class="arrow" aria-hidden="true">↓</span></a></p>
+        <p style="margin-top:var(--sp-3);" hidden><a class="btn btn--ghost" href="#" aria-label="Alle Bewertungen auf Google ansehen">Alle Bewertungen auf Google ansehen →</a></p>
+        <p class="section-next"><a href="#talk">Kostenlose Erstberatung buchen <span class="arrow" aria-hidden="true">↓</span></a></p>
+      </div>
+    </section>
+
+    <!-- ====================== INVITATION ====================== -->
+    <section class="section reveal" id="talk" aria-label="Sprechen wir über Ihre Lernziele">
+      <div class="container">
+        <div class="form-wrap">
+          <h2>Sprechen wir über Ihre Lernziele.</h2>
+          <p class="form-microcopy">Vereinbaren Sie ein Erstgespräch oder senden Sie uns eine Nachricht — ganz wie Sie möchten.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:var(--sp-3);margin-top:var(--sp-3);">
+            <a class="btn" href="https://scheduler.zoom.us/dorian-kantor/kantor-communication" target="_blank" rel="noopener">Zoom-Termin buchen</a>
+            <a class="btn btn--ghost" href="#contact-education">Nachricht senden</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -274,7 +300,7 @@
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <div class="footer__brand-row">
-        <img src="../assets/img/kcc-logo.jpg" alt="" aria-hidden="true" />
+        <img src="../assets/img/kcc-logo.svg" alt="" aria-hidden="true" />
         <span>Kantor Communication Consulting</span>
       </div>
       <div class="footer__domain">kantor-communication.com</div>
@@ -295,5 +321,6 @@
   </footer>
 
   <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/kcc-theme.js"></script>
 </body>
 </html>

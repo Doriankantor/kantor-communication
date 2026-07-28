@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Állások — Kantor Communication Consulting</title>
   <meta name="description" content="Dolgozzon velünk. Csatlakozzon kommunikációs szakemberek növekvő csapatához, amely haladó tanulókkal, szakemberekkel, vezetőkkel és kutatókkal dolgozik öt nyelven." />
-  <link rel="icon" href="../assets/img/kcc-logo.jpg" type="image/jpeg" />  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" />  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="../assets/css/kcc-theme.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Ugrás a tartalomhoz</a>
@@ -15,7 +18,7 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a class="wordmark" href="index.html" aria-label="Kantor Communication Consulting — home">
-        <img class="wordmark__mono" src="../assets/img/kcc-logo.jpg" alt="" aria-hidden="true" />
+        <img class="wordmark__mono" src="../assets/img/kcc-logo.svg" alt="" aria-hidden="true" />
         <span class="wordmark__name"><b>Kantor</b> Communication Consulting</span>
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menü</button>
@@ -41,10 +44,12 @@
     <!-- ========================= HERO ========================= -->
     <section class="page-intro" aria-label="Come work with us">
       <div class="container">
-        <p class="eyebrow">Karrierlehetőségek a KCC-nél</p>
-        <h1>Dolgozzon velünk</h1>
-        <p class="lead measure">Csatlakozzon kommunikációs szakembereink növekvő csapatához, amely haladó tanulókkal, szakemberekkel, vezetőkkel és kutatókkal dolgozik öt nyelven.</p>
+        <p class="eyebrow center">Karrierlehetőségek a KCC-nél</p>
+        <h1 class="page-intro__statement">Dolgozzon <em>velünk.</em>
+          <span class="page-intro__sub">Kommunikációs szakemberek növekvő csapata, amely tanulókkal és vezetőkkel dolgozik, hogy valódi különbséget tegyen a személyes és szakmai sikerben.</span>
+        </h1>
       </div>
+      <div class="seam seam--intro" aria-hidden="true"></div>
     </section>
 
     <!-- ===================== FOUNDER PULL-QUOTE (medium) ===================== -->
@@ -54,7 +59,7 @@
         <figure class="pullquote pullquote--medium">
           <span class="pullquote__mark" aria-hidden="true">"</span>
           <blockquote class="pullquote__text">A magas szintű nyelvtudás stratégiai eszköz — és a kiváló oktatók tudják, hogyan lehet ezt felszabadítani. Hitelességet teremt, befolyást növel, és ajtókat nyit ügyfeleink előtt. Négy országban dolgoztam angolul, németül, spanyolul és magyarul, és láttam, milyen hatása van a valódi szakmai folyékonyságnak. Ezért nem egyszerű nyelvtantanárokat keresünk. Olyan kommunikációs szakembereket alkalmazunk, akik interkulturális intelligenciát építenek, nyomás alatt is emelik a teljesítményt, és magabiztosságot adnak az embereknek ahhoz, hogy akkor teljesítsenek, amikor a leginkább számít. Ha úgy gondolja, ilyen hatást tud elérni, nálunk jó helyen lesz.</blockquote>
-          <figcaption class="pullquote__cite">— <strong>Dorian Kantor</strong></figcaption>
+          <figcaption class="pullquote__cite">— <strong>Dorian Kantor</strong><span class="pullquote__role">Alapító, tanulmányi igazgató</span></figcaption>
         </figure>
         <div class="founder-video" hidden role="img" aria-label="Üdvözlő videó — Dorian Kantor a leendő csapattagokhoz szól">Üdvözlő videó — helykitöltő · Dorian Kantor a leendő csapattagokhoz szól</div>
         </div>
@@ -71,7 +76,12 @@
       <div class="container">
         <div class="panel measure">
           <p class="eyebrow">Kiket keresünk</p>
-          <p class="muted" style="margin-bottom:0;">Tapasztalt, képzett tanárokat és kommunikációs coachokat keresünk, akik otthonosan mozognak haladó (C1+), szakmai, vezetői vagy tudományos tanulókkal — és akik angolul, németül, spanyolul, magyarul vagy olaszul anyanyelvi vagy ahhoz közeli szinten beszélnek. A tanításban, coachingban, fordításban vagy szakmai kommunikációban szerzett háttér jelentős előnyt jelent.</p>
+          <ul class="pointlist pointlist--tight" style="margin-top:0;">
+            <li>Tapasztalt, képzett tanárok és kommunikációs coachok.</li>
+            <li>Otthonosan mozognak haladó (C1+), szakmai, vezetői vagy tudományos tanulók körében.</li>
+            <li>Anyanyelvi vagy közel anyanyelvi szinten beszélnek angolul, németül, spanyolul, magyarul, olaszul, arabul, kínaiul vagy törökül.</li>
+          </ul>
+          <p class="muted" style="margin:var(--sp-2) 0 0;">A tanításban, coachingban, fordításban vagy szakmai kommunikációban szerzett háttér jelentős előnyt jelent.</p>
         </div>
       </div>
     </section>
@@ -141,6 +151,30 @@
             <div class="positions__roles">
               <a href="#apply" class="positions__role">Tanár — olasz</a>
               <a href="#apply" class="positions__role">Kommunikációs tanácsadó — olasz</a>
+            </div>
+          </div>
+
+          <div class="positions__group">
+            <p class="positions__lang">Arab</p>
+            <div class="positions__roles">
+              <a href="#apply" class="positions__role">Tanár &mdash; arab</a>
+              <a href="#apply" class="positions__role">Kommunikációs tanácsadó &mdash; arab</a>
+            </div>
+          </div>
+
+          <div class="positions__group">
+            <p class="positions__lang">Kínai</p>
+            <div class="positions__roles">
+              <a href="#apply" class="positions__role">Tanár &mdash; kínai</a>
+              <a href="#apply" class="positions__role">Kommunikációs tanácsadó &mdash; kínai</a>
+            </div>
+          </div>
+
+          <div class="positions__group">
+            <p class="positions__lang">Török</p>
+            <div class="positions__roles">
+              <a href="#apply" class="positions__role">Tanár &mdash; török</a>
+              <a href="#apply" class="positions__role">Kommunikációs tanácsadó &mdash; török</a>
             </div>
           </div>
 
@@ -231,7 +265,7 @@
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <div class="footer__brand-row">
-        <img src="../assets/img/kcc-logo.jpg" alt="" aria-hidden="true" />
+        <img src="../assets/img/kcc-logo.svg" alt="" aria-hidden="true" />
         <span>Kantor Communication Consulting</span>
       </div>
       <div class="footer__domain">kantor-communication.com</div>
@@ -252,5 +286,6 @@
   </footer>
 
   <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/kcc-theme.js"></script>
 </body>
 </html>

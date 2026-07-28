@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Consultoría de comunicación — Kantor Communication Consulting</title>
   <meta name="description" content="Asesoría estratégica de comunicación para directivos, instituciones e investigadores. Le preparamos para la conversación, el documento o la audiencia que tiene ante usted — a través de idiomas y culturas." />
-  <link rel="icon" href="../assets/img/kcc-logo.jpg" type="image/jpeg" />  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" />  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="../assets/css/kcc-theme.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -15,7 +18,7 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a class="wordmark" href="index.html" aria-label="Kantor Communication Consulting — inicio">
-        <img class="wordmark__mono" src="../assets/img/kcc-logo.jpg" alt="" aria-hidden="true" />
+        <img class="wordmark__mono" src="../assets/img/kcc-logo.svg" alt="" aria-hidden="true" />
         <span class="wordmark__name"><b>Kantor</b> Communication Consulting</span>
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menú</button>
@@ -25,7 +28,7 @@
           <li><a href="consulting.html" aria-current="page">Consultoría de comunicación</a></li>
           <li><a href="education.html">Escuela de idiomas</a></li>
           <li><a href="jobs.html">Empleo</a></li>
-          <li><a href="#contact-consulting">Contacto</a></li>
+          <li><a href="#talk">Contacto</a></li>
         </ul>
         <div class="lang-switcher" aria-label="Idioma">
           <a href="../consulting.html" hreflang="en">EN</a><span class="sep">/</span>
@@ -41,25 +44,40 @@
     <!-- ===================== FOUNDER VIDEO + COMPANY INTRO (Page intro) ===================== -->
     <section class="page-intro" aria-label="Consultoría de comunicación">
       <div class="container">
-        <p class="eyebrow">Consultoría de comunicación</p>
-        <div class="founder-intro">
-          <div class="founder-intro__text">
-            <h1>Consultoría de comunicación</h1>
-            <p class="lead">La mayoría de los reveses profesionales no se deben a falta de conocimiento experto. Son fallos de comunicación — el argumento correcto expuesto en el registro equivocado, la posición sólida debilitada en la presentación, el mensaje que no resiste el paso de un idioma o una cultura a otra.</p>
+        <p class="eyebrow center">Consultoría de comunicación</p>
+        <h1 class="page-intro__statement">Perfeccionar la pericia para que se convierta en <em>autoridad.</em>
+          <span class="page-intro__sub">Precisión, tono y aplomo &mdash; para las conversaciones que deciden los resultados.</span>
+        </h1>
+      </div>
+      <div class="seam seam--intro" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ THE COST, then THE REFRAME — beside the founder video ============
+         The reframe's three failure modes were buried in one sentence; surfaced
+         as a list they are scanned instead of parsed. Same words. -->
+    <section class="section intro-prose reveal" aria-label="Lo que está en juego">
+      <div class="container">
+        <div class="intro-prose__grid">
+          <div class="intro-prose__text">
+            <p class="intro-prose__lead">Cuando lo malinterpretan — o si se bloquea en un momento de alta exigencia — el costo se mide en contratos perdidos, una carrera estancada o una ponencia magistral que no logra impacto ante las personas que más importan.</p>
+            <p class="claim">La mayoría de los reveses profesionales no se deben a falta de conocimiento experto. Son fallos de comunicación.</p>
+            <ul class="pointlist">
+              <li>El argumento correcto expuesto en el registro equivocado.</li>
+              <li>La posición sólida debilitada en la presentación.</li>
+              <li>El mensaje que no resiste el paso de un idioma o una cultura a otra.</li>
+            </ul>
           </div>
-          <!-- OPTIONAL: short founder video — Dorian speaking to the consulting audience.
-               Real recorded footage; HeyGen used only to localize into DE/HU/ES. -->
+          <!-- Real recorded footage; HeyGen used only to localize into DE/HU/ES.
+               Put the `hidden` attribute back until the video exists. -->
           <div class="founder-video" hidden role="img" aria-label="Vídeo del fundador (marcador de posición) — Dorian Kantor presenta la práctica de consultoría">Vídeo del fundador — marcador de posición · Dorian Kantor presenta KCC Consulting</div>
         </div>
-        <p class="muted measure" style="margin-top:var(--sp-4);">Trabajamos con directivos, instituciones e investigadores para cerrar esa brecha. Nuestra asesoría es práctica y confidencial: le preparamos para la conversación, el documento o el público específico que tiene ante usted, y desarrollamos la habilidad subyacente para que el siguiente desafío sea más fácil. Trabajamos entre idiomas y contextos culturales, que es donde la mayoría de los profesionales internacionales son más vulnerables.</p>
       </div>
     </section>
 
-    <!-- ====================== THE STAKES ====================== -->
-    <section class="stakes band reveal" aria-label="Lo que está en juego">
-      <div class="container stakes--split">
-        <p class="stakes__lead">Cuando lo malinterpretan — o si se bloquea en un momento de alta exigencia — el costo se mide en contratos perdidos, una carrera estancada o una ponencia magistral que no logra impacto ante las personas que más importan.</p>
-        <p class="stakes__body">Nuestros servicios de comunicación profesional no son clases de idiomas, ni están concebidos como tales. Son herramientas pensadas para estar a la altura del momento: preparación construida en torno a su material real, lenguaje probado bajo condiciones reales, documentos sensibles tratados con discreción, y un especialista que ha estado donde usted está a punto de estar. Nuestros paquetes de servicios son inversiones en su éxito — en llegar preparado a una situación de alta exigencia, estar a la altura de las circunstancias y aprovechar la oportunidad.</p>
+    <!-- ============ WHAT WE DO — one paragraph, given room ============ -->
+    <section class="stakes band reveal" aria-label="Lo que hacemos">
+      <div class="container">
+        <p class="stakes__lead" style="max-width:64ch;margin-inline:auto;text-align:center;">Trabajamos con directivos, instituciones e investigadores para cerrar esa brecha. Nuestra asesoría es práctica y confidencial: le preparamos para la conversación, el documento o el público específico que tiene ante usted, y desarrollamos la habilidad subyacente para que el siguiente desafío sea más fácil. Trabajamos entre idiomas y contextos culturales, que es donde la mayoría de los profesionales internacionales son más vulnerables.</p>
       </div>
     </section>
 
@@ -72,7 +90,9 @@
           <li><a href="#what-sets-apart"><span class="jump-index__num">03</span> Qué nos distingue</a></li>
           <li><a href="#outcomes"><span class="jump-index__num">04</span> Resultados profesionales</a></li>
           <li><a href="#workshops"><span class="jump-index__num">05</span> Talleres intensivos</a></li>
+          <!-- HIDDEN 2026 — Cross-Border Partnerships, re-enable when it becomes a real offering
           <li><a href="#partnerships"><span class="jump-index__num">06</span> Alianzas transfronterizas</a></li>
+          -->
           <li hidden><a href="#testimonials"><span class="jump-index__num">07</span> Lo que dicen nuestros clientes</a></li>
         </ul>
       </div>
@@ -124,13 +144,22 @@
         <header class="group-divider"><h2 class="group-divider__title">Servicios premium, formadores de alto nivel</h2></header>
         <p class="measure"><strong>Cómo trabajamos.</strong> Cada colaboración comienza con una llamada exploratoria para entender lo que está en juego, el público y el resultado que usted necesita. A partir de ahí proponemos un alcance focalizado con el paquete de servicios adecuado. Confidencial en todo momento. Nuestras sesiones están diseñadas para aumentar la confianza, la fluidez y la precisión — y se construyen de forma conjunta entre el formador y el cliente, de modo que todo se mantenga centrado y pertinente para su trabajo. Utilizamos material desarrollado internamente y lo adaptamos a su campo, ya sea que necesite mejores herramientas y resultados de comunicación en política, medicina, negocios, educación o más allá.</p>
 
+        <p class="claim" style="margin-top:var(--sp-4);">Nuestros servicios de comunicación profesional no son clases de idiomas, ni están concebidos como tales. Son herramientas pensadas para estar a la altura del momento:</p>
+        <ul class="pointlist pointlist--tight measure">
+          <li>Preparación construida en torno a su material real.</li>
+          <li>Lenguaje probado bajo condiciones reales.</li>
+          <li>Documentos sensibles tratados con discreción.</li>
+          <li>Un especialista que ha estado donde usted está a punto de estar.</li>
+        </ul>
+        <p class="muted measure" style="margin-top:var(--sp-2);">Nuestros paquetes de servicios son inversiones en su éxito &mdash; en llegar preparado a una situación de alta exigencia, estar a la altura de las circunstancias y aprovechar la oportunidad.</p>
+
         <figure class="pullquote pullquote--medium pullquote--right">
           <span class="pullquote__mark" aria-hidden="true">"</span>
-          <blockquote class="pullquote__text">Dominar un idioma es un activo estratégico. Refuerza la credibilidad, amplía la influencia y abre oportunidades. He trabajado en inglés, alemán, español y húngaro en cuatro países, y he visto el impacto de primera mano. Nuestro enfoque va más allá de la gramática — desarrollamos la competencia intercultural y la fluidez profesional necesarias para sobresalir bajo presión.</blockquote>
-          <figcaption class="pullquote__cite">— <strong>Dorian Kantor</strong></figcaption>
+          <blockquote class="pullquote__text">Dominar un idioma es un activo estratégico. Refuerza la credibilidad, amplía la influencia y abre oportunidades. He trabajado en inglés, alemán, español y húngaro en cuatro países, y he visto el impacto de primera mano. Nuestro enfoque va más allá de la gramática. Construimos un lenguaje preciso, portado con aplomo y autoridad, a la altura de la presión de los momentos en que se deciden carreras y contratos.</blockquote>
+          <figcaption class="pullquote__cite">— <strong>Dorian Kantor</strong><span class="pullquote__role">Fundador, director de estudios</span></figcaption>
         </figure>
 
-        <p class="stakes__lead" style="max-width:34ch;">No le enseñamos un idioma — le preparamos para dominar la sala en ese idioma.</p>
+        <p class="stakes__lead" style="max-width:34ch;">No le enseñamos simplemente un idioma — le preparamos para dominar la sala en ese idioma.</p>
         <p class="crossborder__text" style="margin-bottom:var(--sp-5);">Consultoría de comunicación profesional para líderes que ya operan internacionalmente y necesitan que su mensaje llegue con precisión, autoridad y fluidez cultural.</p>
         <div class="diffs">
           <div class="diff"><span class="diff__index">01</span><div class="diff__body"><span class="diff__lead">Competencia intercultural</span><p class="diff__support">Navegue por las reglas no escritas de las reuniones, las negociaciones y la correspondencia entre culturas, para que su intención nunca se pierda en la traducción ni se interprete en un registro equivocado.</p></div></div>
@@ -157,6 +186,12 @@
           <div class="diff"><span class="diff__index">07</span><div class="diff__body"><span class="diff__lead">Orientado a resultados.</span><p class="diff__support">Le preparamos para un resultado específico — la ponencia magistral, la negociación, la defensa, el traslado — no para un curso abierto sin línea de meta.</p></div></div>
         </div>
         <p class="section-next"><a href="#outcomes">Vea los resultados que conseguimos para distintos clientes <span class="arrow" aria-hidden="true">↓</span></a></p>
+      </div>
+    </section>
+
+    <section class="banner banner--b reveal" aria-label="Statement">
+      <div class="container">
+        <p class="banner__text">Dar a la pericia las palabras que <em>merece.</em></p>
       </div>
     </section>
 
@@ -345,11 +380,14 @@
           <div class="workshop"><h3 class="workshop__name">Preparación para el traslado</h3><p class="workshop__desc">Preparación comunicativa y cultural para un traslado a un nuevo país.</p></div>
           <div class="workshop"><h3 class="workshop__name">Expansión de mercado</h3><p class="workshop__desc">La dimensión comunicativa e intercultural de la entrada en un nuevo mercado.</p></div>
         </div>
+        <!-- HIDDEN 2026 — Cross-Border Partnerships, re-enable when it becomes a real offering
         <p class="section-next"><a href="#partnerships">Vea cómo colaboramos más allá de las fronteras <span class="arrow" aria-hidden="true">↓</span></a></p>
+        -->
       </div>
     </section>
 
     <!-- ====================== 06 · CROSS-BORDER PARTNERSHIPS ====================== -->
+    <!-- HIDDEN 2026 — Cross-Border Partnerships, re-enable when it becomes a real offering
     <section class="section reveal" id="partnerships" aria-label="Alianzas transfronterizas">
       <div class="container">
         <header class="group-divider"><h2 class="group-divider__title">Alianzas transfronterizas</h2></header>
@@ -357,6 +395,7 @@
         <p class="section-next" hidden><a href="#testimonials">Conozca la experiencia de las personas con las que hemos trabajado <span class="arrow" aria-hidden="true">↓</span></a></p>
       </div>
     </section>
+    -->
 
     <!-- ====================== 07 · TESTIMONIALS ====================== -->
     <section class="section band reveal" id="testimonials" hidden aria-label="Lo que dicen nuestros clientes">
@@ -377,7 +416,21 @@
             <figcaption class="quote__cite">— [Nombre o cargo, organización o sector]</figcaption>
           </figure>
         </div>
-        <p class="section-next"><a href="#contact-consulting">¿Quiere empezar? Reserve una llamada exploratoria <span class="arrow" aria-hidden="true">↓</span></a></p>
+        <p class="section-next"><a href="#talk">¿Quiere empezar? Reserve una llamada exploratoria <span class="arrow" aria-hidden="true">↓</span></a></p>
+      </div>
+    </section>
+
+    <!-- ====================== INVITATION ====================== -->
+    <section class="section reveal" id="talk" aria-label="Hablemos de sus objetivos de comunicación">
+      <div class="container">
+        <div class="form-wrap">
+          <h2>Hablemos de sus objetivos de comunicación.</h2>
+          <p class="form-microcopy">Reserve una primera llamada o envíenos un mensaje, lo que prefiera.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:var(--sp-3);margin-top:var(--sp-3);">
+            <a class="btn" href="https://scheduler.zoom.us/dorian-kantor/kantor-communication" target="_blank" rel="noopener">Reservar una llamada por Zoom</a>
+            <a class="btn btn--ghost" href="#contact-consulting">Enviar un mensaje</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -463,7 +516,7 @@
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <div class="footer__brand-row">
-        <img src="../assets/img/kcc-logo.jpg" alt="" aria-hidden="true" />
+        <img src="../assets/img/kcc-logo.svg" alt="" aria-hidden="true" />
         <span>Kantor Communication Consulting</span>
       </div>
       <div class="footer__domain">kantor-communication.com</div>
@@ -484,5 +537,6 @@
   </footer>
 
   <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/kcc-theme.js"></script>
 </body>
 </html>

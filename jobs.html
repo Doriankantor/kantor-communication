@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jobs — Kantor Communication Consulting</title>
   <meta name="description" content="Come work with us. Join a growing team of communication specialists working with advanced learners, professionals, executives, and researchers across five languages." />
-  <link rel="icon" href="assets/img/kcc-logo.jpg" type="image/jpeg" />  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/kcc-theme.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -14,7 +17,7 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a class="wordmark" href="index.html" aria-label="Kantor Communication Consulting — home">
-        <img class="wordmark__mono" src="assets/img/kcc-logo.jpg" alt="" aria-hidden="true" />
+        <img class="wordmark__mono" src="assets/img/kcc-logo.svg" alt="" aria-hidden="true" />
         <span class="wordmark__name"><b>Kantor</b> Communication Consulting</span>
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
@@ -40,10 +43,12 @@
     <!-- ========================= HERO ========================= -->
     <section class="page-intro" aria-label="Come work with us">
       <div class="container">
-        <p class="eyebrow">Careers at KCC</p>
-        <h1>Come work with us</h1>
-        <p class="lead measure">Join a growing team of communication specialists working with advanced learners, professionals, executives, and researchers across five languages.</p>
+        <p class="eyebrow center">Careers at KCC</p>
+        <h1 class="page-intro__statement">Come work with <em>us.</em>
+          <span class="page-intro__sub">A growing team of communication specialists, working with learners and leaders to make a real difference in personal and career success.</span>
+        </h1>
       </div>
+      <div class="seam seam--intro" aria-hidden="true"></div>
     </section>
 
     <!-- ===================== FOUNDER PULL-QUOTE + VIDEO (side by side) ===================== -->
@@ -53,7 +58,7 @@
           <figure class="pullquote pullquote--medium">
             <span class="pullquote__mark" aria-hidden="true">&ldquo;</span>
             <blockquote class="pullquote__text">Language mastery is a strategic asset — and great educators know how to unlock it. It shapes credibility, expands influence, and opens doors for our clients. I've worked in English, German, Spanish, and Hungarian across four countries, and I've seen the impact of true professional fluency. That's why we don't hire simple grammar instructors. We hire communications professionals who build intercultural intelligence, elevate performance under pressure, and give people the confidence to perform when it matters most. If that's the kind of impact you believe you can make, you'll thrive here.</blockquote>
-            <figcaption class="pullquote__cite">— <strong>Dorian Kantor</strong></figcaption>
+            <figcaption class="pullquote__cite">— <strong>Dorian Kantor</strong><span class="pullquote__role">Founder, Director of Studies</span></figcaption>
           </figure>
           <div class="founder-video" hidden role="img" aria-label="Welcome video — Dorian Kantor speaks to prospective team members">Welcome video — placeholder · Dorian Kantor speaking to prospective team members</div>
         </div>
@@ -70,7 +75,12 @@
       <div class="container">
         <div class="panel measure">
           <p class="eyebrow">Who we're looking for</p>
-          <p class="muted" style="margin-bottom:0;">Experienced, qualified teachers and communication coaches who are comfortable with advanced (C1+), professional, executive, or academic learners — and who are native or near-native in English, German, Spanish, Hungarian, or Italian. A background in teaching, coaching, translation, or professional communication is a strong plus.</p>
+          <ul class="pointlist pointlist--tight" style="margin-top:0;">
+            <li>Experienced, qualified teachers and communication coaches.</li>
+            <li>Comfortable with advanced (C1+), professional, executive, or academic learners.</li>
+            <li>Native or near-native in English, German, Spanish, Hungarian, Italian, Arabic, Chinese, or Turkish.</li>
+          </ul>
+          <p class="muted" style="margin:var(--sp-2) 0 0;">A background in teaching, coaching, translation, or professional communication is a strong plus.</p>
         </div>
       </div>
     </section>
@@ -140,6 +150,30 @@
             <div class="positions__roles">
               <a href="#apply" class="positions__role">Teacher — Italian</a>
               <a href="#apply" class="positions__role">Communication Consultant — Italian</a>
+            </div>
+          </div>
+
+          <div class="positions__group">
+            <p class="positions__lang">Arabic</p>
+            <div class="positions__roles">
+              <a href="#apply" class="positions__role">Teacher &mdash; Arabic</a>
+              <a href="#apply" class="positions__role">Communication Consultant &mdash; Arabic</a>
+            </div>
+          </div>
+
+          <div class="positions__group">
+            <p class="positions__lang">Chinese</p>
+            <div class="positions__roles">
+              <a href="#apply" class="positions__role">Teacher &mdash; Chinese</a>
+              <a href="#apply" class="positions__role">Communication Consultant &mdash; Chinese</a>
+            </div>
+          </div>
+
+          <div class="positions__group">
+            <p class="positions__lang">Turkish</p>
+            <div class="positions__roles">
+              <a href="#apply" class="positions__role">Teacher &mdash; Turkish</a>
+              <a href="#apply" class="positions__role">Communication Consultant &mdash; Turkish</a>
             </div>
           </div>
 
@@ -230,7 +264,7 @@
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <div class="footer__brand-row">
-        <img src="assets/img/kcc-logo.jpg" alt="" aria-hidden="true" />
+        <img src="assets/img/kcc-logo.svg" alt="" aria-hidden="true" />
         <span>Kantor Communication Consulting</span>
       </div>
       <div class="footer__domain">kantor-communication.com</div>
@@ -251,5 +285,6 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/kcc-theme.js"></script>
 </body>
 </html>

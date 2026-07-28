@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kommunikationsberatung — Kantor Communication Consulting</title>
   <meta name="description" content="Strategische Kommunikationsberatung für Führungskräfte, Institutionen und Forschende. Wir bereiten Sie auf das Gespräch, das Dokument oder das Publikum vor, das vor Ihnen liegt — über Sprachen und Kulturen hinweg." />
-  <link rel="icon" href="../assets/img/kcc-logo.jpg" type="image/jpeg" />  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" />  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <link rel="stylesheet" href="../assets/css/kcc-theme.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Zum Inhalt springen</a>
@@ -15,7 +18,7 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a class="wordmark" href="index.html" aria-label="Kantor Communication Consulting — home">
-        <img class="wordmark__mono" src="../assets/img/kcc-logo.jpg" alt="" aria-hidden="true" />
+        <img class="wordmark__mono" src="../assets/img/kcc-logo.svg" alt="" aria-hidden="true" />
         <span class="wordmark__name"><b>Kantor</b> Communication Consulting</span>
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menü</button>
@@ -25,7 +28,7 @@
           <li><a href="consulting.html" aria-current="page">Kommunikationsberatung</a></li>
           <li><a href="education.html">Sprachschule</a></li>
           <li><a href="jobs.html">Jobs</a></li>
-          <li><a href="#contact-consulting">Kontakt</a></li>
+          <li><a href="#talk">Kontakt</a></li>
         </ul>
         <div class="lang-switcher" aria-label="Language">
           <a href="../consulting.html" hreflang="en">EN</a><span class="sep">/</span>
@@ -41,25 +44,40 @@
     <!-- ===================== FOUNDER VIDEO + COMPANY INTRO (Page intro) ===================== -->
     <section class="page-intro" aria-label="Kommunikationsberatung">
       <div class="container">
-        <p class="eyebrow">Kommunikationsberatung</p>
-        <div class="founder-intro">
-          <div class="founder-intro__text">
-            <h1>Kommunikationsberatung</h1>
-            <p class="lead">Die meisten beruflichen Rückschläge sind kein Scheitern an mangelnder Expertise. Sie sind Kommunikationsversagen — das richtige Argument im falschen Register, die starke Position durch den Auftritt geschwächt, die Botschaft, die den Transfer über Sprache oder Kultur hinweg nicht übersteht.</p>
+        <p class="eyebrow center">Kommunikationsberatung</p>
+        <h1 class="page-intro__statement">Expertise verfeinern, damit sie zu <em>Autorität</em> wird.
+          <span class="page-intro__sub">Präzision, Ton und Souveränität &mdash; für die Gespräche, die über den Ausgang entscheiden.</span>
+        </h1>
+      </div>
+      <div class="seam seam--intro" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ THE COST, then THE REFRAME — beside the founder video ============
+         The reframe's three failure modes were buried in one sentence; surfaced
+         as a list they are scanned instead of parsed. Same words. -->
+    <section class="section intro-prose reveal" aria-label="Was auf dem Spiel steht">
+      <div class="container">
+        <div class="intro-prose__grid">
+          <div class="intro-prose__text">
+            <p class="intro-prose__lead">Wenn Sie missverstanden werden — oder in einem entscheidenden Moment nicht abrufen können, was Sie können — entstehen Kosten: verlorene Aufträge, eine ins Stocken geratene Karriere oder eine Keynote, die vor genau den Menschen verpufft, auf die es am meisten ankommt.</p>
+            <p class="claim">Die meisten beruflichen Rückschläge sind kein Scheitern an mangelnder Expertise. Sie sind Kommunikationsversagen.</p>
+            <ul class="pointlist">
+              <li>Das richtige Argument, im falschen Register vorgetragen.</li>
+              <li>Die starke Position, im Auftritt geschwächt.</li>
+              <li>Die Botschaft, die den Transfer über Sprache oder Kultur hinweg nicht übersteht.</li>
+            </ul>
           </div>
-          <!-- OPTIONAL: short founder video — Dorian speaking to the consulting audience.
-               Real recorded footage; HeyGen used only to localize into DE/HU/ES. -->
-          <div class="founder-video" hidden role="img" aria-label="Gründervideo (Platzhalter) — Dorian Kantor stellt die Beratungspraxis vor">Gründervideo — Platzhalter · Dorian Kantor stellt KCC Consulting vor</div>
+          <!-- Real recorded footage; HeyGen used only to localize into DE/HU/ES.
+               Put the `hidden` attribute back until the video exists. -->
+          <div class="founder-video" hidden role="img" aria-label="Gründervideo (Platzhalter) &mdash; Dorian Kantor stellt die Beratungspraxis vor">Gründervideo &mdash; Platzhalter &middot; Dorian Kantor stellt KCC Consulting vor</div>
         </div>
-        <p class="muted measure" style="margin-top:var(--sp-4);">Wir arbeiten mit Führungskräften, Institutionen und Forschenden, um diese Lücke zu schließen. Unsere Beratung ist praxisnah und vertraulich: Wir bereiten Sie auf das konkrete Gespräch, Dokument oder Publikum vor, das vor Ihnen liegt, und bauen zugleich die zugrunde liegende Kompetenz auf, damit der nächste Moment leichter wird. Wir arbeiten über Sprachen und kulturelle Kontexte hinweg — genau dort, wo die meisten internationalen Fachleute am stärksten exponiert sind.</p>
       </div>
     </section>
 
-    <!-- ====================== THE STAKES ====================== -->
-    <section class="stakes band reveal" aria-label="Was auf dem Spiel steht">
-      <div class="container stakes--split">
-        <p class="stakes__lead">Wenn Sie missverstanden werden — oder in einem entscheidenden Moment nicht abrufen können, was Sie können — entstehen Kosten: verlorene Aufträge, eine ins Stocken geratene Karriere oder eine Keynote, die vor genau den Menschen verpufft, auf die es am meisten ankommt.</p>
-        <p class="stakes__body">Unsere Mandate in der beruflichen Kommunikation sind keine Sprachstunden und auch nicht als solche konzipiert. Sie sind Werkzeuge für den entscheidenden Moment: Vorbereitung auf der Grundlage Ihres realen Materials, Sprache, die unter realen Bedingungen belastbar gemacht wird, sensible Dokumente, die mit Diskretion behandelt werden, und eine Fachperson, die bereits dort gestanden hat, wo Sie demnächst stehen werden. Unsere Leistungspakete sind Investitionen in Ihren Erfolg — damit Sie vorbereitet in eine entscheidende Situation gehen, der Aufgabe gewachsen sind und die Gelegenheit nutzen.</p>
+    <!-- ============ WHAT WE DO — one paragraph, given room ============ -->
+    <section class="stakes band reveal" aria-label="Was wir tun">
+      <div class="container">
+        <p class="stakes__lead" style="max-width:64ch;margin-inline:auto;text-align:center;">Wir arbeiten mit Führungskräften, Institutionen und Forschenden, um diese Lücke zu schließen. Unsere Beratung ist praxisnah und vertraulich: Wir bereiten Sie auf das konkrete Gespräch, Dokument oder Publikum vor, das vor Ihnen liegt, und bauen zugleich die zugrunde liegende Kompetenz auf, damit der nächste Moment leichter wird. Wir arbeiten über Sprachen und kulturelle Kontexte hinweg — genau dort, wo die meisten internationalen Fachleute am stärksten exponiert sind.</p>
       </div>
     </section>
 
@@ -72,7 +90,9 @@
           <li><a href="#what-sets-apart"><span class="jump-index__num">03</span> Was uns auszeichnet</a></li>
           <li><a href="#outcomes"><span class="jump-index__num">04</span> Berufliche Ergebnisse</a></li>
           <li><a href="#workshops"><span class="jump-index__num">05</span> Intensiv-Workshops</a></li>
+          <!-- HIDDEN 2026 — Cross-Border Partnerships, re-enable when it becomes a real offering
           <li><a href="#partnerships"><span class="jump-index__num">06</span> Grenzüberschreitende Partnerschaften</a></li>
+          -->
           <li hidden><a href="#testimonials"><span class="jump-index__num">07</span> Referenzen</a></li>
         </ul>
       </div>
@@ -124,13 +144,22 @@
         <header class="group-divider"><h2 class="group-divider__title">Erstklassige Leistungen, erstklassige Trainerinnen und Trainer</h2></header>
         <p class="measure"><strong>So arbeiten wir.</strong> Jede Zusammenarbeit beginnt mit einem Erstgespräch, um die Tragweite, das Publikum und das von Ihnen benötigte Ergebnis zu verstehen. Von dort aus schlagen wir einen fokussierten Leistungsumfang mit dem passenden Leistungspaket vor. Durchgehend vertraulich. Unsere Sitzungen sind darauf ausgelegt, Selbstsicherheit, Sprachgewandtheit und Präzision zu steigern — und werden gemeinsam von Trainerin oder Trainer und Kundin oder Kunde gestaltet, damit alles auf den Punkt und für Ihre Arbeit relevant bleibt. Wir verwenden intern entwickeltes Material und passen es an Ihr Fachgebiet an, ganz gleich, ob Sie stärkere Kommunikationswerkzeuge und Ergebnisse in Politik, Medizin, Wirtschaft, Bildung oder darüber hinaus benötigen.</p>
 
+        <p class="claim" style="margin-top:var(--sp-4);">Unsere Mandate in der beruflichen Kommunikation sind keine Sprachstunden und auch nicht als solche konzipiert. Sie sind Werkzeuge für den entscheidenden Moment:</p>
+        <ul class="pointlist pointlist--tight measure">
+          <li>Vorbereitung auf der Grundlage Ihres realen Materials.</li>
+          <li>Sprache, die unter realen Bedingungen belastbar gemacht wird.</li>
+          <li>Sensible Dokumente, mit Diskretion behandelt.</li>
+          <li>Eine Fachperson, die bereits dort gestanden hat, wo Sie demnächst stehen werden.</li>
+        </ul>
+        <p class="muted measure" style="margin-top:var(--sp-2);">Unsere Leistungspakete sind Investitionen in Ihren Erfolg &mdash; damit Sie vorbereitet in eine entscheidende Situation gehen, der Aufgabe gewachsen sind und die Gelegenheit nutzen.</p>
+
         <figure class="pullquote pullquote--medium pullquote--right">
           <span class="pullquote__mark" aria-hidden="true">"</span>
-          <blockquote class="pullquote__text">Sprachbeherrschung ist ein strategischer Vorteil. Sie prägt Glaubwürdigkeit, erweitert Einfluss und eröffnet Chancen. Ich habe auf Englisch, Deutsch, Spanisch und Ungarisch in vier Ländern gearbeitet und die Wirkung aus erster Hand erlebt. Unser Ansatz geht über Grammatik hinaus — wir bauen interkulturelle Kompetenz und die professionelle Sprachsouveränität auf, die nötig ist, um unter Druck zu überzeugen.</blockquote>
-          <figcaption class="pullquote__cite">— <strong>Dorian Kantor</strong></figcaption>
+          <blockquote class="pullquote__text">Sprachbeherrschung ist ein strategischer Vorteil. Sie prägt Glaubwürdigkeit, erweitert Einfluss und eröffnet Chancen. Ich habe auf Englisch, Deutsch, Spanisch und Ungarisch in vier Ländern gearbeitet und die Wirkung aus erster Hand erlebt. Unser Ansatz geht über Grammatik hinaus. Wir formen Sprache, die präzise ist, mit Souveränität und Autorität getragen wird und dem Druck jener Momente gewachsen ist, in denen über Karrieren und Verträge entschieden wird.</blockquote>
+          <figcaption class="pullquote__cite">— <strong>Dorian Kantor</strong><span class="pullquote__role">Gründer, Studienleiter</span></figcaption>
         </figure>
 
-        <p class="stakes__lead" style="max-width:34ch;">Wir bringen Ihnen keine Sprache bei — wir befähigen Sie, in ihr souverän aufzutreten.</p>
+        <p class="stakes__lead" style="max-width:34ch;">Wir bringen Ihnen nicht einfach eine Sprache bei — wir befähigen Sie, in ihr souverän aufzutreten.</p>
         <p class="crossborder__text" style="margin-bottom:var(--sp-5);">Professionelle Kommunikationsberatung für Führungspersönlichkeiten, die bereits international agieren und deren Botschaft mit Präzision, Autorität und kultureller Souveränität ankommen muss.</p>
         <div class="diffs">
           <div class="diff"><span class="diff__index">01</span><div class="diff__body"><span class="diff__lead">Interkulturelle Kompetenz</span><p class="diff__support">Bewegen Sie sich sicher durch die ungeschriebenen Regeln von Meetings, Verhandlungen und Korrespondenz über Kulturen hinweg, sodass Ihre Absicht nie in der Übersetzung verloren geht oder als unpassender Ton missverstanden wird.</p></div></div>
@@ -157,6 +186,12 @@
           <div class="diff"><span class="diff__index">07</span><div class="diff__body"><span class="diff__lead">Ergebnisorientiert.</span><p class="diff__support">Wir bereiten Sie auf ein konkretes Ergebnis vor — die Keynote, die Verhandlung, die Verteidigung, den Umzug — nicht auf einen offenen Kurs ohne Ziellinie.</p></div></div>
         </div>
         <p class="section-next"><a href="#outcomes">Sehen Sie die Ergebnisse, die wir für verschiedene Kundinnen und Kunden liefern <span class="arrow" aria-hidden="true">↓</span></a></p>
+      </div>
+    </section>
+
+    <section class="banner banner--b reveal" aria-label="Statement">
+      <div class="container">
+        <p class="banner__text">Der Expertise die Worte geben, die sie <em>verdient.</em></p>
       </div>
     </section>
 
@@ -345,11 +380,14 @@
           <div class="workshop"><h3 class="workshop__name">Vorbereitung auf den Umzug</h3><p class="workshop__desc">Kommunikative und kulturelle Vorbereitung für den Umzug in ein neues Land.</p></div>
           <div class="workshop"><h3 class="workshop__name">Markterschließung</h3><p class="workshop__desc">Die kommunikative und interkulturelle Dimension des Eintritts in einen neuen Markt.</p></div>
         </div>
+        <!-- HIDDEN 2026 — Cross-Border Partnerships, re-enable when it becomes a real offering
         <p class="section-next"><a href="#partnerships">Sehen Sie, wie wir über Grenzen hinweg zusammenarbeiten <span class="arrow" aria-hidden="true">↓</span></a></p>
+        -->
       </div>
     </section>
 
     <!-- ====================== 06 · CROSS-BORDER PARTNERSHIPS ====================== -->
+    <!-- HIDDEN 2026 — Cross-Border Partnerships, re-enable when it becomes a real offering
     <section class="section reveal" id="partnerships" aria-label="Grenzüberschreitende Partnerschaften">
       <div class="container">
         <header class="group-divider"><h2 class="group-divider__title">Grenzüberschreitende Partnerschaften</h2></header>
@@ -357,6 +395,7 @@
         <p class="section-next" hidden><a href="#testimonials">Lesen Sie, was Menschen sagen, mit denen wir gearbeitet haben <span class="arrow" aria-hidden="true">↓</span></a></p>
       </div>
     </section>
+    -->
 
     <!-- ====================== 07 · TESTIMONIALS ====================== -->
     <section class="section band reveal" id="testimonials" hidden aria-label="Referenzen">
@@ -377,7 +416,21 @@
             <figcaption class="quote__cite">— [Name oder Funktion, Organisation oder Branche]</figcaption>
           </figure>
         </div>
-        <p class="section-next"><a href="#contact-consulting">Bereit für den nächsten Schritt? Vereinbaren Sie ein Erstgespräch <span class="arrow" aria-hidden="true">↓</span></a></p>
+        <p class="section-next"><a href="#talk">Bereit für den nächsten Schritt? Vereinbaren Sie ein Erstgespräch <span class="arrow" aria-hidden="true">↓</span></a></p>
+      </div>
+    </section>
+
+    <!-- ====================== INVITATION ====================== -->
+    <section class="section reveal" id="talk" aria-label="Sprechen wir über Ihre Kommunikationsziele">
+      <div class="container">
+        <div class="form-wrap">
+          <h2>Sprechen wir über Ihre Kommunikationsziele.</h2>
+          <p class="form-microcopy">Vereinbaren Sie ein Erstgespräch oder senden Sie uns eine Nachricht — ganz wie Sie möchten.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:var(--sp-3);margin-top:var(--sp-3);">
+            <a class="btn" href="https://scheduler.zoom.us/dorian-kantor/kantor-communication" target="_blank" rel="noopener">Zoom-Termin buchen</a>
+            <a class="btn btn--ghost" href="#contact-consulting">Nachricht senden</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -463,7 +516,7 @@
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <div class="footer__brand-row">
-        <img src="../assets/img/kcc-logo.jpg" alt="" aria-hidden="true" />
+        <img src="../assets/img/kcc-logo.svg" alt="" aria-hidden="true" />
         <span>Kantor Communication Consulting</span>
       </div>
       <div class="footer__domain">kantor-communication.com</div>
@@ -484,5 +537,6 @@
   </footer>
 
   <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/kcc-theme.js"></script>
 </body>
 </html>

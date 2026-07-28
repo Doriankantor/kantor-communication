@@ -1,0 +1,629 @@
+/* ==========================================================================
+   KCC THEME OVERRIDE — v2 (oxblood bookends)
+   Load AFTER assets/css/styles.css. Everything here is either a token change
+   or a new rule; nothing in styles.css needs deleting to try it.
+   When you're happy, these fold back into styles.css proper.
+   ========================================================================== */
+
+:root{
+  /* --- 1. WARM THE INK RAMP ---------------------------------------------
+     Was cool (#1F2328 has blue as its highest channel) sitting on warm ivory
+     paper — that mismatch is what read as clinical. Contrast is unchanged to
+     slightly better: 15.0:1 vs 14.6:1 on --bg. */
+  --text:#23201C;
+  --text-muted:#6E675D;        /* 5.2:1 on --bg */
+  --text-faint:#9C948A;
+
+  /* --- 2. THE OXBLOOD GROUND -------------------------------------------
+     Deliberately NOT --text: body copy must stay a warm near-neutral or the
+     whole page tints. Only the bookends carry the colour. */
+  --ink-ground:#2E1A1D;        /* ivory on this = 15.2:1 */
+  --ink-raised:#3A2226;
+  --ink-text:#F1EDE6;
+  --ink-muted:#B0A79B;
+  --ink-hair:rgba(241,237,230,.15);
+
+  /* --- 3. BRASS THAT PASSES AA -----------------------------------------
+     --accent #A87C3D is 3.5:1 on ivory and 4.0:1 on oxblood — fine for large
+     display type and borders, FAILS for body and small text. Use these. */
+  --accent-strong:#8A6531;     /* 4.9:1 on ivory  — small text on light */
+  --accent-on-ink:#C89A5A;     /* 6.4:1 on oxblood — small text on dark  */
+}
+
+/* Existing small-text uses of --accent that currently fail AA */
+.card__tag,.card-reviews-ref a,.card__cta,.cta-scroll,.form-status,
+.next-link,.accent-cta,.section-next a{ color:var(--accent-strong); }
+
+/* ==========================================================================
+   HEADER — three states
+   1. at rest            transparent, ivory type on the ink intro
+   2. scrolled, on ink   dark frost, so page copy passing under stays separate
+   3. past the intro     the light smoked-ivory bar
+   ========================================================================== */
+.site-header{
+  background:transparent;border-bottom:1px solid transparent;
+  transition:background .35s var(--ease),border-color .35s var(--ease);
+}
+.site-header.is-over-ink .wordmark__name,
+.site-header.is-over-ink .site-nav__links a{ color:color-mix(in oklab,var(--ink-text) 82%,transparent); }
+.site-header.is-over-ink .site-nav__links a:hover{ color:var(--ink-text); }
+.site-header.is-over-ink .site-nav__links a[aria-current="page"]{ color:var(--ink-text); }
+/* mix-blend-mode:multiply kills the logo's white box on light — but dies on
+   dark. Over the intro it uses the invert/screen trick the footer already uses. */
+.site-header.is-over-ink .wordmark__mono{ mix-blend-mode:screen;filter:invert(1) grayscale(1) brightness(1.7); }
+.site-header.is-over-ink .lang-switcher a{ color:color-mix(in oklab,var(--ink-text) 55%,transparent); }
+.site-header.is-over-ink .lang-switcher a[aria-current="true"]{ color:var(--accent-on-ink); }
+.site-header.is-over-ink .nav-toggle{ color:var(--ink-text);border-color:var(--ink-hair); }
+
+.site-header.is-over-ink.is-veiled{
+  background:linear-gradient(to bottom,
+    color-mix(in srgb, var(--ink-ground) 90%, transparent) 0%,
+    color-mix(in srgb, var(--ink-ground) 76%, transparent) 60%,
+    color-mix(in srgb, var(--ink-ground) 54%, transparent) 100%);
+  backdrop-filter:saturate(125%) blur(16px);
+  -webkit-backdrop-filter:saturate(125%) blur(16px);
+  border-bottom-color:color-mix(in srgb, var(--accent) 26%, transparent);
+}
+.site-header.is-scrolled{
+  background:linear-gradient(to bottom,
+    color-mix(in srgb, var(--ink-ground) 13%, rgba(248,246,242,.93)) 0%,
+    color-mix(in srgb, var(--ink-ground) 8%,  rgba(248,246,242,.82)) 62%,
+    color-mix(in srgb, var(--ink-ground) 5%,  rgba(248,246,242,.66)) 100%);
+  backdrop-filter:saturate(155%) blur(18px);
+  -webkit-backdrop-filter:saturate(155%) blur(18px);
+  border-bottom-color:color-mix(in srgb, var(--accent) 34%, transparent);
+}
+/* grain + a soft bleed so the bar never ends on a hard line */
+.site-header::before{
+  content:"";position:absolute;inset:0;z-index:-1;opacity:0;pointer-events:none;
+  transition:opacity .35s var(--ease);mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.site-header.is-scrolled::before{ opacity:.10; }
+.site-header.is-over-ink.is-veiled::before{ opacity:.15;mix-blend-mode:overlay; }
+.site-header::after{
+  content:"";position:absolute;left:0;right:0;top:100%;height:20px;z-index:-1;
+  opacity:0;transition:opacity .35s var(--ease);pointer-events:none;
+  background:linear-gradient(to bottom, color-mix(in srgb, var(--ink-ground) 7%, transparent), transparent);
+}
+.site-header.is-scrolled::after{ opacity:1; }
+.site-header.is-over-ink.is-veiled::after{
+  opacity:1;background:linear-gradient(to bottom, color-mix(in srgb, var(--ink-ground) 58%, transparent), transparent);
+}
+
+/* ==========================================================================
+   BOOKEND 1 — .page-intro becomes the interior-page ink hero
+   Same device as the homepage hero, compressed: these are page headers, not
+   statements, so the corona is tighter and the block is much shorter.
+   ========================================================================== */
+.page-intro{
+  position:relative;isolation:isolate;overflow:hidden;
+  color:var(--ink-text);
+  margin-top:-73px;                                   /* slide under the sticky bar */
+  padding:calc(73px + clamp(3rem,6vw,5.5rem)) 0 clamp(6rem,11vw,9rem);
+  background-color:var(--ink-ground);
+  background-image:radial-gradient(64% 54% at 50% 4%,
+    rgba(200,154,90,.30) 0%, rgba(168,124,61,.17) 34%, rgba(168,124,61,.05) 60%, transparent 80%);
+}
+.page-intro::before{                                   /* the grid the light falls on */
+  content:"";position:absolute;inset:0;z-index:0;opacity:.45;pointer-events:none;
+  background-image:linear-gradient(to right,var(--ink-hair) 1px,transparent 1px),
+                   linear-gradient(to bottom,var(--ink-hair) 1px,transparent 1px);
+  background-size:78px 78px;
+  -webkit-mask-image:radial-gradient(66% 58% at 50% 8%,#000,transparent 78%);
+          mask-image:radial-gradient(66% 58% at 50% 8%,#000,transparent 78%);
+}
+.page-intro::after{                                    /* the seam into the page */
+  content:"";position:absolute;left:0;right:0;bottom:0;z-index:1;pointer-events:none;
+  height:clamp(5rem,12vh,9rem);
+  background:linear-gradient(to bottom,
+    color-mix(in srgb, var(--bg) 0%,  transparent) 0%,
+    color-mix(in srgb, var(--bg) 6%,  transparent) 26%,
+    color-mix(in srgb, var(--bg) 18%, transparent) 44%,
+    color-mix(in srgb, var(--bg) 38%, transparent) 60%,
+    color-mix(in srgb, var(--bg) 64%, transparent) 74%,
+    color-mix(in srgb, var(--bg) 86%, transparent) 87%,
+    var(--bg) 100%);
+}
+.page-intro > .container{ position:relative;z-index:2; }
+.page-intro h1{ color:var(--ink-text); }
+.page-intro h1 em{ color:var(--accent-on-ink);font-style:italic; }
+.page-intro .lead{ color:var(--ink-muted); }
+.page-intro .eyebrow{ color:color-mix(in oklab,var(--ink-text) 68%,transparent); }
+.page-intro .eyebrow::before,.page-intro .eyebrow.center::after{ background:var(--accent-on-ink); }
+
+/* The section straight after the intro must not re-declare a light background
+   over the fade, or the seam gets a visible edge. */
+.page-intro + .section,
+.page-intro + .section--tight,
+.page-intro + .stakes{ margin-top:0; }
+
+/* the fine paper grain that sits in the seam */
+.seam{
+  position:absolute;left:0;right:0;z-index:2;pointer-events:none;opacity:.14;
+  mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23g)'/%3E%3C/svg%3E");
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 38%,#000 66%,transparent 100%);
+          mask-image:linear-gradient(to bottom,transparent 0%,#000 38%,#000 66%,transparent 100%);
+}
+.seam--intro{ bottom:0;height:clamp(5rem,12vh,9rem); }
+
+/* ==========================================================================
+   BOOKEND 2 — the footer carries the close on interior pages
+   The homepage has the finale; here the footer alone is the dark close, so
+   forms stay on paper where they are easiest to fill in.
+   ========================================================================== */
+.site-footer{
+  position:relative;
+  padding:clamp(2.5rem,4vw,3.5rem) 0 var(--sp-4);
+  background:var(--ink-ground);color:var(--ink-text);
+}
+/* THE SEAM into the footer. Seven stops, completing at FULL ink at the join —
+   the earlier version stopped at 62% against a 100% footer, and that 38% step
+   was the hard line. Length now matches the hero seam rather than a third of it.
+   On the homepage this renders ink-over-ink (the finale is already oxblood),
+   so it is invisible there and costs nothing. */
+.site-footer::before{
+  content:"";position:absolute;left:0;right:0;bottom:100%;
+  height:clamp(6rem,14vh,10.5rem);pointer-events:none;
+  background:linear-gradient(to bottom,
+    color-mix(in srgb, var(--ink-ground) 0%,  transparent) 0%,
+    color-mix(in srgb, var(--ink-ground) 6%,  transparent) 26%,
+    color-mix(in srgb, var(--ink-ground) 18%, transparent) 44%,
+    color-mix(in srgb, var(--ink-ground) 38%, transparent) 60%,
+    color-mix(in srgb, var(--ink-ground) 64%, transparent) 74%,
+    color-mix(in srgb, var(--ink-ground) 86%, transparent) 87%,
+    var(--ink-ground) 100%);
+}
+/* the same paper grain the hero seam uses, so both transitions match */
+.site-footer::after{
+  content:"";position:absolute;left:0;right:0;bottom:100%;
+  height:clamp(6rem,14vh,10.5rem);pointer-events:none;
+  opacity:.12;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23g)'/%3E%3C/svg%3E");
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 40%,#000 72%,transparent 100%);
+          mask-image:linear-gradient(to bottom,transparent 0%,#000 40%,#000 72%,transparent 100%);
+}
+
+/* Header wordmark: same reservation. width:auto collapses to zero when the
+   image is missing or still loading, which shunts the name left. */
+.wordmark__mono{
+  height:34px;width:auto;min-width:34px;flex:0 0 auto;
+}
+.wordmark{ min-height:34px; }
+
+/* Reserve the logo's space unconditionally. width:auto collapses to zero if the
+   image is missing or still loading, which shunts the wordmark left; an explicit
+   box keeps the row stable either way. */
+.footer__brand-row img{
+  height:2rem;width:auto;min-width:2rem;flex:0 0 auto;
+}
+.footer__brand-row{ min-height:2rem;align-items:center; }
+
+.site-footer__nav a{ color:color-mix(in oklab,var(--ink-text) 70%,transparent); }
+.site-footer__nav a:hover{ color:var(--ink-text); }
+.footer__brand-row span{ color:var(--ink-text); }
+.footer__domain,.footer__contact,.footer__legal{ color:color-mix(in oklab,var(--ink-text) 65%,transparent); }
+.footer__contact a,.footer__legal a{ color:color-mix(in oklab,var(--ink-text) 72%,transparent); }
+.footer__contact a:hover,.footer__legal a:hover{ color:var(--ink-text); }
+
+/* ==========================================================================
+   RUNNING BANDS — match speeds, and never stop on hover
+   ========================================================================== */
+.marquee__track{ animation-duration:38s; }
+.ticker:hover .ticker__track,.ticker:focus-within .ticker__track,
+.marquee:hover .marquee__track,.marquee:focus-within .marquee__track{ animation-play-state:running; }
+
+/* ==========================================================================
+   Quality floor
+   ========================================================================== */
+@media (prefers-reduced-motion:reduce){
+  .seam{ opacity:.10; }
+  .site-header{ transition:none; }
+}
+
+/* ==========================================================================
+   INTERIOR HERO — homepage grammar, compressed
+   One statement line with a brass italic turn, plus a single subtitle. The
+   page's prose lives on paper below, not in the dark.
+   ========================================================================== */
+.page-intro{ text-align:center; }
+.page-intro .eyebrow{ justify-content:center; }
+
+/* The page name, sized to actually announce the page rather than whisper it.
+   Still the eyebrow device (tracked caps between brass rules), just at a scale
+   that reads as a title. */
+.page-intro .eyebrow{
+  font-size:clamp(.86rem,.72rem + .5vw,1.08rem);
+  letter-spacing:.3em;
+  color:color-mix(in oklab,var(--ink-text) 88%,transparent);
+  margin-bottom:var(--sp-4);
+}
+.page-intro .eyebrow::before,.page-intro .eyebrow::after{ width:clamp(42px,7vw,90px); }
+.page-intro__statement{
+  font-family:var(--serif);font-weight:300;
+  font-size:clamp(2.1rem,1.4rem + 3.2vw,3.6rem);
+  line-height:1.1;letter-spacing:-.02em;
+  color:var(--ink-text);max-width:20ch;margin:0 auto;
+}
+.page-intro__statement em{ color:var(--accent-on-ink);font-style:italic; }
+.page-intro__sub{
+  display:block;font-family:var(--serif);font-weight:300;
+  font-size:clamp(1.05rem,.85rem + 1vw,1.45rem);
+  line-height:1.35;letter-spacing:-.005em;
+  color:var(--ink-muted);max-width:46ch;margin:var(--sp-3) auto 0;
+}
+
+/* The problem/approach prose that used to sit in the dark. First paragraph
+   larger so the two read as statement then explanation, not two equal blocks. */
+.intro-prose{ padding-top:clamp(2.5rem,5vw,var(--sp-5)); }
+/* Text and founder video side by side: breaks the wall of prose, and gives the
+   video the one place on the page where it genuinely belongs.
+   NOTE: both paragraphs are constrained by the COLUMN, never by their own ch
+   measure — 62ch on a 1.45rem serif and 62ch on a 1.1875rem sans are ~130px
+   apart, and centring both produced a phantom indent. */
+.intro-prose__grid{ display:grid;grid-template-columns:1fr;gap:var(--sp-4);align-items:center; }
+@media (min-width:860px){
+  .intro-prose__grid{ grid-template-columns:1.1fr .9fr;gap:var(--sp-5); }
+}
+.intro-prose__lead{
+  font-family:var(--serif);font-size:var(--fs-lead);line-height:1.45;
+  color:var(--text);max-width:none;margin:0 0 var(--sp-3);
+}
+.intro-prose__body{
+  color:var(--text-muted);max-width:none;margin:0;
+}
+.intro-prose .founder-video{ margin:0; }
+
+/* ==========================================================================
+   POINT LIST — surfacing lists that were hidden inside prose
+   Two paragraphs on this page ended in lists buried after a dash or a colon.
+   The structure was already there; it just had to be read rather than scanned.
+   Compact by design — .diffs is the airy version for standalone sections.
+   ========================================================================== */
+.pointlist{ list-style:none;margin:var(--sp-2) 0 0;padding:0; }
+.pointlist li{
+  position:relative;font-family:var(--serif);font-size:var(--fs-body);
+  line-height:1.4;color:var(--text);
+  padding:.6rem 0 .6rem 1.6rem;border-bottom:1px solid var(--border);
+}
+.pointlist li:last-child{ border-bottom:0; }
+.pointlist li::before{
+  content:"";position:absolute;left:0;top:1.15em;
+  width:.7rem;height:1px;background:var(--accent);
+}
+.pointlist--tight li{ padding-top:.45rem;padding-bottom:.45rem; }
+
+/* the claim that introduces a point list */
+.claim{
+  font-family:var(--serif);font-size:var(--fs-lead);line-height:1.35;
+  color:var(--text);margin:0;
+}
+
+/* ==========================================================================
+   PULL-QUOTE ATTRIBUTION — one form everywhere
+   Name on the cite line, role beneath it in muted small caps-ish sans. Piling
+   "Dorian Kantor, Founder, Director of Studies" onto one line gives two commas
+   in a row; splitting it also matches the principal block on the homepage.
+   ========================================================================== */
+.pullquote__role{
+  display:block;font-family:var(--sans);font-size:var(--fs-xs);
+  letter-spacing:.09em;text-transform:uppercase;
+  color:var(--text-faint);margin-top:.3rem;font-weight:400;
+}
+
+/* ==========================================================================
+   OPEN POSITIONS — bigger, and two columns
+   Role links were clamp(1rem,1.2vw,1.15rem) — barely above body text for what
+   is the page's primary call to action. Enlarged; and with eight language
+   groups a single column would run for two screens, so they pair up on wide
+   viewports. Roles stack inside each cell, since "Communication Consultant —
+   Hungarian" will not sit beside a sibling in a half-width column.
+   ========================================================================== */
+.positions{
+  display:grid;grid-template-columns:1fr;gap:0;
+  border-bottom:1px solid var(--border);
+}
+@media (min-width:900px){
+  .positions{ grid-template-columns:1fr 1fr;column-gap:clamp(2rem,4vw,var(--sp-5)); }
+}
+.positions__group{ border-top:1px solid var(--border);padding:var(--sp-3) 0; }
+.positions__group:last-child{ border-bottom:0; }
+.positions__lang{
+  font-size:.84rem;letter-spacing:.22em;color:var(--accent-strong);
+  margin-bottom:var(--sp-2);
+}
+.positions__roles{ display:flex;flex-direction:column;gap:.55rem; }
+@media (min-width:640px){ .positions__roles{ flex-direction:column;gap:.55rem; } }
+.positions__role{
+  font-size:clamp(1.15rem,1rem + .75vw,1.55rem);
+  line-height:1.25;
+}
+.positions__role::after{ font-size:.8em; }
+
+/* ==========================================================================
+   HIDDEN FOUNDER VIDEO
+   The placeholders ship with the `hidden` attribute until the footage exists.
+   Without this the two-column grid keeps an empty second cell and the prose
+   sits in half the page for no reason.
+   ========================================================================== */
+.founder-video[hidden]{ display:none !important; }
+@media (min-width:860px){
+  .intro-prose__grid:has(.founder-video[hidden]){ grid-template-columns:1fr; }
+}
+/* Fallback for engines without :has() — the text column simply gets a measure. */
+@supports not selector(:has(*)){
+  .intro-prose__text{ max-width:68ch; }
+}
+
+
+/* ==========================================================================
+   HOMEPAGE ONLY — ink hero, stat panel, client marquee, globe finale
+   Everything above this line applies site-wide.
+   ========================================================================== */
+
+/* --- ink hero --- */
+.hero{position:relative;isolation:isolate;color:var(--ink-text);
+  margin-top:-72px;padding:calc(72px + clamp(5rem,11vw,10rem)) 0 clamp(9rem,16vw,13rem);overflow:hidden;
+  background-color:var(--ink-ground);
+  background-image:radial-gradient(58% 46% at 50% 8%,
+    rgba(200,154,90,.36) 0%, rgba(168,124,61,.21) 32%, rgba(168,124,61,.06) 58%, transparent 78%)}
+/* the grid — barely there, gives the light something to fall on */
+.hero::before{content:"";position:absolute;inset:0;z-index:0;opacity:.5;pointer-events:none;
+  background-image:linear-gradient(to right,var(--ink-hair) 1px,transparent 1px),
+                   linear-gradient(to bottom,var(--ink-hair) 1px,transparent 1px);
+  background-size:78px 78px;
+  -webkit-mask-image:radial-gradient(62% 52% at 50% 12%,#000,transparent 76%);
+          mask-image:radial-gradient(62% 52% at 50% 12%,#000,transparent 76%)}
+/* THE SEAM — oxblood dissolving into the cream band. Seven stops so the ramp
+   eases instead of banding; the last stop is exactly the band colour. */
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;z-index:1;pointer-events:none;
+  height:clamp(7rem,17vh,13rem);
+  background:linear-gradient(to bottom,
+    color-mix(in srgb, var(--bg-band) 0%,  transparent) 0%,
+    color-mix(in srgb, var(--bg-band) 6%,  transparent) 26%,
+    color-mix(in srgb, var(--bg-band) 18%, transparent) 44%,
+    color-mix(in srgb, var(--bg-band) 38%, transparent) 60%,
+    color-mix(in srgb, var(--bg-band) 64%, transparent) 74%,
+    color-mix(in srgb, var(--bg-band) 86%, transparent) 87%,
+    var(--bg-band) 100%)}
+.seam--hero{bottom:0;height:clamp(7rem,17vh,13rem)}
+.hero__inner{position:relative;z-index:3}
+.hero .eyebrow{color:color-mix(in oklab,var(--ink-text) 68%,transparent);justify-content:center}
+.hero .eyebrow::before,.hero .eyebrow.center::after{background:var(--accent-on-ink)}
+.hero__inner{text-align:center}
+.hero__statement{font-family:var(--serif);font-weight:300;font-size:var(--fs-hero);line-height:1.1;
+  letter-spacing:-.02em;color:var(--ink-text);max-width:22ch;margin:0 auto}
+.hero__statement em{color:var(--accent-on-ink)}
+.hero__sub{display:block;font-family:var(--serif);font-size:clamp(1.15rem,.9rem + 1.4vw,1.75rem);
+  line-height:1.3;color:var(--ink-muted);max-width:44ch;margin:var(--sp-3) auto 0;letter-spacing:-.005em}
+
+
+/* --- INK SEAM -------------------------------------------------------------
+   The gradient does the transition. This layer only adds fine paper grain
+   concentrated in the seam, so the fade has texture rather than being a clean
+   mechanical ramp. No SVG filters: feDisplacementMap on a stretched viewBox
+   smears the noise by different factors per axis and tears at the edges. */
+.seam{position:absolute;left:0;right:0;z-index:2;pointer-events:none;opacity:.14;
+  mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23g)'/%3E%3C/svg%3E");
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0%,#000 38%,#000 66%,transparent 100%);
+          mask-image:linear-gradient(to bottom,transparent 0%,#000 38%,#000 66%,transparent 100%)}
+
+/* ===================== LIGHT MIDDLE — unchanged from your CSS ===================== */
+
+/* --- stat panel --- */
+.stat{padding:var(--sp-4) var(--sp-3);position:relative;text-align:center}
+@media (min-width:640px){.stat:nth-child(even)::before{content:"";position:absolute;left:0;top:12%;height:76%;width:1px;background:var(--border)}}
+@media (min-width:1000px){.stat:nth-child(even)::before{content:none}
+  .stat + .stat::before{content:"";position:absolute;left:0;top:12%;height:76%;width:1px;background:var(--border)}}
+.stat__fig{font-family:var(--serif);font-weight:400;font-size:clamp(3rem,2rem + 4.4vw,5.25rem);line-height:.95;
+  letter-spacing:-.03em;color:var(--accent-strong);display:block;margin:0 0 var(--sp-2)}
+.stat__stars{font-size:clamp(1.5rem,1rem + 2.2vw,2.4rem);letter-spacing:.08em;line-height:1.3;color:var(--accent-strong);display:block;margin:0 0 var(--sp-2)}
+.stat__head{font-family:var(--serif);font-size:clamp(1.02rem,.9rem + .5vw,1.25rem);margin:0 0 .35rem;line-height:1.25}
+.stat__body{color:var(--text-muted);font-size:var(--fs-sm);margin:0;line-height:1.5}
+.stat__body a{color:var(--accent-strong);text-decoration:underline;text-underline-offset:2px}
+.stat__grow{display:block;font-family:var(--sans);font-size:var(--fs-xs);letter-spacing:.16em;text-transform:uppercase;color:var(--text-faint);margin-top:.5rem}
+
+/* --- CLIENT MARQUEE ------------------------------------------------------
+   The label sits OUTSIDE .marquee: the horizontal mask that feathers the
+   scrolling track was also feathering the label's edges, and the track's
+   overflow context was fighting it. Now the band holds two separate children. */
+
+/* --- client marquee --- */
+.marquee-band{background:var(--bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+  padding:clamp(1.5rem,3vw,var(--sp-4)) 0}
+.marquee__label{font-family:var(--sans);font-size:var(--fs-xs);font-weight:600;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--text-faint);text-align:center;
+  text-indent:.24em;  /* offsets the trailing letter-space so it optically centres */
+  margin:0 0 var(--sp-3)}
+.marquee{overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);
+          mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.marquee__track{display:flex;width:max-content;animation:ticker-scroll 38s linear infinite}
+.marquee__item{font-family:var(--serif);font-size:clamp(1.3rem,1rem + 1.6vw,2.3rem);white-space:nowrap;padding:0 1.2rem;display:inline-flex;align-items:center;color:var(--text)}
+.marquee__item::after{content:"\00B7";color:var(--accent);margin-left:2.4rem}
+.marquee__static{display:none}
+@media (prefers-reduced-motion:reduce){
+  .marquee__track{display:none}
+  .marquee__static{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem 1.3rem;font-family:var(--serif)}
+  .marquee__static .marquee__item{white-space:normal;padding:0;font-size:1.2rem}
+  .marquee__static .marquee__item:last-child::after{content:""}
+}
+.motif-band{border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.motif__label{font-family:var(--sans);font-size:var(--fs-xs);letter-spacing:.2em;text-transform:uppercase;color:var(--text-faint);margin:0 0 var(--sp-2)}
+.motif__rotator{position:relative;display:block}
+.motif__phrase{font-family:var(--serif);font-size:clamp(1.8rem,1.1rem + 3.4vw,3.6rem);letter-spacing:-.02em;
+  line-height:1.05;position:absolute;left:0;top:0;opacity:0;transition:opacity .9s var(--ease);white-space:nowrap}
+.motif__phrase.is-active{opacity:1;position:relative}
+.motif__static{display:none}
+.ticker{overflow:hidden;padding:var(--sp-2) 0;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+          mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.ticker__track{display:flex;width:max-content;animation:ticker-scroll 38s linear infinite}
+.ticker__item{font-family:var(--serif);font-size:clamp(1.1rem,.9rem + .9vw,1.6rem);white-space:nowrap;padding:0 1.4rem;display:inline-flex;align-items:center}
+.ticker__item::after{content:"\00B7";color:var(--accent);margin-left:2.8rem;font-size:1.2em}
+@keyframes ticker-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.ticker__static{display:none}
+@media (prefers-reduced-motion:reduce){
+  .ticker__track{display:none}
+  .ticker__static{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem;font-family:var(--serif);justify-content:center}
+  .motif__rotator{display:none}
+  .motif__static{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;font-family:var(--serif);font-size:clamp(1.4rem,1rem + 1.6vw,2.2rem)}
+}
+
+/* --- finale + globe --- */
+.finale{position:relative;isolation:isolate;overflow:hidden;text-align:center;
+  padding:clamp(3rem,7vw,var(--sp-6)) 0 clamp(2.5rem,4vw,4rem);
+  background:linear-gradient(to bottom,
+    var(--bg-band) 0%,
+    var(--bg-band) 27%,
+    color-mix(in srgb, var(--ink-ground) 14%, var(--bg-band)) 39%,
+    color-mix(in srgb, var(--ink-ground) 42%, var(--bg-band)) 48%,
+    color-mix(in srgb, var(--ink-ground) 74%, var(--bg-band)) 56%,
+    color-mix(in srgb, var(--ink-ground) 93%, var(--bg-band)) 62%,
+    var(--ink-ground) 69%,
+    var(--ink-ground) 100%)}
+.seam--finale{top:28%;height:28%}
+/* brass wash pooling in the dark half, under the sinking sphere */
+.finale::before{content:"";position:absolute;left:-10%;right:-10%;top:44%;height:56%;z-index:0;pointer-events:none;
+  background:radial-gradient(46% 62% at 50% 34%,rgba(168,124,61,.20),transparent 72%)}
+.finale > *{position:relative;z-index:2}
+
+/* --- the sphere --- */
+.globe-stage{position:relative;z-index:1;width:min(100%,560px);margin:0 auto clamp(-7rem,-11vw,-4rem);
+  /* the dissolve: the drawing fades out as it enters the dark half */
+  -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 48%,rgba(0,0,0,.72) 66%,rgba(0,0,0,.28) 83%,transparent 97%);
+          mask-image:linear-gradient(to bottom,#000 0%,#000 48%,rgba(0,0,0,.72) 66%,rgba(0,0,0,.28) 83%,transparent 97%)}
+.globe{width:100%;height:auto;overflow:visible}
+.globe__disc{fill:color-mix(in srgb, var(--text) 3%, transparent)}
+.globe__limb{fill:none;stroke:color-mix(in srgb, var(--text) 26%, transparent);stroke-width:1}
+.globe__grat{fill:none;stroke:color-mix(in srgb, var(--text) 13%, transparent);stroke-width:.65}
+.globe__coast{fill:none;stroke:color-mix(in srgb, var(--text) 34%, transparent);stroke-width:.9;
+  stroke-linejoin:round;stroke-linecap:round}
+.globe__dot{fill:var(--accent-strong);cursor:pointer;transition:r .2s var(--ease)}
+.globe__halo{fill:var(--accent);pointer-events:none}
+.globe__city:hover .globe__dot,.globe__city.is-lit .globe__dot{r:6}
+.globe__city:focus-visible{outline:none}
+.globe__city:focus-visible .globe__dot{r:6;stroke:var(--text);stroke-width:1.5}
+.globe-tip{position:absolute;z-index:6;pointer-events:none;opacity:0;transform:translate(-50%,-124%);
+  background:var(--bg);border:1px solid var(--border-strong);border-radius:var(--radius);
+  padding:.45rem .7rem;white-space:nowrap;transition:opacity .2s var(--ease);
+  box-shadow:0 8px 22px rgba(60,45,25,.16)}
+.globe-tip.is-open{opacity:1}
+.globe-tip__name{font-family:var(--serif);font-size:1rem;color:var(--text);display:block}
+.globe-tip__place{font-family:var(--sans);font-size:var(--fs-xs);color:var(--text-muted);display:block}
+.finale__caption{font-family:var(--sans);font-size:var(--fs-xs);font-weight:600;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--text-faint);margin:0 0 clamp(1rem,2vw,var(--sp-3))}
+/* everything below the seam sits on oxblood */
+.finale__close{color:var(--ink-text);padding-top:clamp(5rem,9vw,7rem)}
+.finale__close .eyebrow{color:color-mix(in oklab,var(--ink-text) 65%,transparent);justify-content:center}
+.finale__close .eyebrow::before,.finale__close .eyebrow.center::after{background:var(--accent-on-ink)}
+.closing__headline{font-family:var(--serif);font-weight:300;font-size:var(--fs-banner);line-height:1.08;
+  letter-spacing:-.02em;color:var(--ink-text);max-width:20ch;margin:var(--sp-3) auto}
+.closing__headline em{color:var(--accent-on-ink)}
+.closing__tracks{display:flex;flex-wrap:wrap;gap:var(--sp-4);justify-content:center;align-items:center;margin-top:var(--sp-4)}
+.closing__track{display:flex;flex-direction:column;align-items:center;gap:var(--sp-2)}
+.closing__caption{font-family:var(--sans);font-size:var(--fs-xs);color:color-mix(in oklab,var(--ink-text) 55%,transparent)}
+.btn{font-family:var(--sans);font-weight:600;font-size:var(--fs-sm);letter-spacing:.08em;text-transform:uppercase;
+  border:1.5px solid var(--ink-text);color:var(--ink-text);background:transparent;padding:.85rem 1.6rem;border-radius:1px;
+  min-width:14rem;text-align:center;display:inline-block;transition:background .2s var(--ease),color .2s var(--ease)}
+.btn:hover{background:var(--ink-text);color:var(--ink-ground)}
+.closing__divider--v{display:block;flex-shrink:0;width:1.5px;height:5rem}
+.closing__divider--h{display:none}
+@media (max-width:640px){.closing__tracks{flex-direction:column}.closing__divider--v{display:none}.closing__divider--h{display:block;width:6rem;height:1.5px}}
+
+/* ================================ FOOTER ================================ */
+
+
+/* ==========================================================================
+   HOMEPAGE CARDS (Option C) — appended, overrides the earlier card rules
+   ========================================================================== */
+/* ==========================================================================
+   CARDS — equal size, guaranteed
+   The originals had no inner wrapper: title/body/CTA were direct children of
+   the card, so flex:1 on the body had nothing to push against and the CTA
+   floated. Now .card is the flex frame, .card__inner is the column, and the
+   body absorbs slack so both CTAs sit on the same baseline.
+   ========================================================================== */
+.split{ display:grid;gap:var(--sp-3);grid-template-columns:1fr; }
+@media (min-width:860px){
+  .split{ grid-template-columns:1fr 1fr;gap:var(--sp-4);align-items:stretch; }
+}
+.card{
+  position:relative;isolation:isolate;display:flex;flex-direction:column;
+  min-height:clamp(300px,26vw,380px);
+  padding:clamp(1.75rem,3vw,var(--sp-4));
+  border-radius:0 var(--radius-lg) var(--radius-lg) 0;
+  text-decoration:none;overflow:hidden;height:100%;
+  transition:transform .3s var(--ease),border-color .3s var(--ease),box-shadow .3s var(--ease);
+}
+.card__inner{ position:relative;z-index:1;display:flex;flex-direction:column;flex:1;width:100%; }
+.card__title{
+  display:block;font-family:var(--serif);font-size:var(--fs-h2);
+  line-height:1.12;margin:0 0 var(--sp-2);
+  /* hyphens:auto was for German compounds; in English it broke
+     "Communication Con-sulting". Now opt-in per language. */
+  hyphens:manual;overflow-wrap:break-word;
+}
+html[lang="de"] .card__title{ hyphens:auto; }
+.card__body{ display:block;margin:0 0 var(--sp-3);flex:1 1 auto; }
+.card__cta{
+  font-family:var(--sans);font-weight:500;display:inline-flex;align-items:center;
+  gap:.5rem;align-self:flex-start;text-decoration:none;margin-top:auto;
+}
+.card__cta .arrow{ transition:transform .25s var(--ease); }
+.card:hover .card__cta .arrow{ transform:translateX(4px); }
+.card__cta--stretch::after{ content:"";position:absolute;inset:0;z-index:2; }
+.card-reviews-ref{
+  position:relative;z-index:3;align-self:flex-start;
+  margin:var(--sp-2) 0 0;font-family:var(--sans);font-size:var(--fs-xs);letter-spacing:.03em;
+}
+.card::before{ content:none; }
+
+/* ===== OPTION C — ivory, but with real ink presence =====
+   Heavier brass edge, ink-toned title, warm-tinted shadow that deepens on
+   hover. No third dark zone, so the finale stays the page's only arrival. */
+.card{
+  background:var(--bg-raised);color:var(--text);
+  border-top:1px solid var(--border);
+  border-right:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  border-left:6px solid var(--accent);
+  box-shadow:0 2px 10px rgba(60,45,25,.05),0 1px 2px rgba(60,45,25,.04);
+}
+.card__title{ color:var(--text); }
+.card__body{ color:var(--text-muted); }
+.card__cta,.card-reviews-ref a{ color:var(--accent-strong); }
+/* the ink presence: a brass wash from the bound edge, deepening on hover */
+.card::before{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:linear-gradient(100deg,rgba(46,26,29,.055) 0%,rgba(168,124,61,.05) 18%,transparent 52%);
+  transition:opacity .35s var(--ease);opacity:1;
+}
+.card::after{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:0;
+  background:linear-gradient(100deg,rgba(46,26,29,.10) 0%,rgba(168,124,61,.11) 22%,transparent 62%);
+  transition:opacity .35s var(--ease);
+}
+.card:hover::after,.card:focus-within::after{ opacity:1; }
+.card:hover,.card:focus-within{
+  transform:translateY(-3px);
+  border-left-color:var(--ink-ground);
+  border-top-color:var(--accent-line);border-right-color:var(--accent-line);border-bottom-color:var(--accent-line);
+  box-shadow:0 14px 34px rgba(46,26,29,.16),0 2px 6px rgba(46,26,29,.09);
+}
+.card a:focus-visible,.card-reviews-ref a:focus-visible{ outline:2px solid var(--accent-strong);outline-offset:3px; }
+
+
+/* ==========================================================================
+   GLOBE PINS — hover targets
+   The visible dots are 3.2-4.4px. That is a hard target on a rotating sphere,
+   so each pin gets an invisible 11px hit area. `pointer-events:none` on the
+   halo keeps the ring from stealing the hover.
+   ========================================================================== */
+.globe__city{ cursor:default; }
+.globe__hit{ fill:transparent;stroke:none;pointer-events:all; }
+.globe__halo{ pointer-events:none; }
+.globe__dot{ pointer-events:none; }
+.globe-tip{ pointer-events:none; }

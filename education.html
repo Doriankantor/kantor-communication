@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Language School — Kantor Communication Consulting</title>
   <meta name="description" content="A communicative method that builds vocabulary, fluency, and confidence — taught by trained instructors, with materials matched to your level." />
-  <link rel="icon" href="assets/img/kcc-logo.jpg" type="image/jpeg" />  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/kcc-theme.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -14,7 +17,7 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a class="wordmark" href="index.html" aria-label="Kantor Communication Consulting — home">
-        <img class="wordmark__mono" src="assets/img/kcc-logo.jpg" alt="" aria-hidden="true" />
+        <img class="wordmark__mono" src="assets/img/kcc-logo.svg" alt="" aria-hidden="true" />
         <span class="wordmark__name"><b>Kantor</b> Communication Consulting</span>
       </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
@@ -24,7 +27,7 @@
           <li><a href="consulting.html">Communication Consulting</a></li>
           <li><a href="education.html" aria-current="page">Language School</a></li>
           <li><a href="jobs.html">Jobs</a></li>
-          <li><a href="#contact-education">Contact</a></li>
+          <li><a href="#talk">Contact</a></li>
         </ul>
         <div class="lang-switcher" aria-label="Language">
           <a href="education.html" aria-current="true" hreflang="en">EN</a><span class="sep">/</span>
@@ -40,41 +43,51 @@
     <!-- ===================== FOUNDER INTRO (video + company intro) ===================== -->
     <section class="page-intro" aria-label="Language School">
       <div class="container">
-        <p class="eyebrow">Language School</p>
-        <div class="founder-intro">
-          <div class="founder-intro__text">
-            <h1>Language School</h1>
-            <p class="lead">Learning a language is not about collecting grammar rules. It is about being able to say what you mean, understand what you hear, and feel confident doing both. Our method is communicative from the first lesson: we build the vocabulary you actually need, develop fluency through real use, and grow the confidence that turns knowledge into speech.</p>
+        <p class="eyebrow center">Language School</p>
+        <h1 class="page-intro__statement">Building language so it becomes <em>confidence.</em>
+          <span class="page-intro__sub">Communicative instruction from the first lesson &mdash; for any level, any profession, any age.</span>
+        </h1>
+      </div>
+      <div class="seam seam--intro" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ THE METHOD — beside the founder video ============
+         The original lead carried two triads inside one sentence each. Surfaced,
+         they are scanned rather than parsed. Same words. -->
+    <section class="section intro-prose reveal" aria-label="How we teach">
+      <div class="container">
+        <div class="intro-prose__grid">
+          <div class="intro-prose__text">
+            <p class="intro-prose__lead">Learning a language is not about collecting grammar rules. It is about being able to say what you mean, understand what you hear, and feel confident doing both.</p>
+            <p class="claim">Our method is communicative from the first lesson:</p>
+            <ul class="pointlist">
+              <li>We build the vocabulary you actually need.</li>
+              <li>We develop fluency through real use.</li>
+              <li>We grow the confidence that turns knowledge into speech.</li>
+            </ul>
           </div>
-          <!-- OPTIONAL: short founder video — Dorian speaking to learners in a warmer register.
-               Real recorded footage; HeyGen used only to localize into DE/HU/ES. Minimal chrome. -->
-          <div class="founder-video" hidden role="img" aria-label="Founder video (placeholder) — Dorian Kantor welcomes learners">Founder video — placeholder · Dorian Kantor welcomes learners</div>
-        </div>
-        <div class="measure" style="margin-top:var(--sp-4);">
-          <p class="muted">Every student learns from materials chosen for their specific level — not a one-size-fits-all syllabus. And every instructor is quality-controlled and trained in our teaching methodology, so the experience is consistent whoever you study with.</p>
-          <p class="muted">This track is for members of the community — learners of any age and any profession.</p>
+          <!-- Real recorded footage; HeyGen used only to localize into DE/HU/ES.
+               Put the `hidden` attribute back until the video exists. -->
+          <div class="founder-video" hidden role="img" aria-label="Founder video (placeholder) &mdash; Dorian Kantor welcomes learners">Founder video &mdash; placeholder &middot; Dorian Kantor welcomes learners</div>
         </div>
       </div>
     </section>
 
-    <nav class="jump-index" aria-label="On this page">
-      <div class="container">
-        <ul class="jump-index__list">
-          <li><a href="#how-it-works"><span class="jump-index__num">01</span> How lessons work</a></li>
-          <li><a href="#what-sets-apart"><span class="jump-index__num">02</span> What sets us apart</a></li>
-          <li><a href="#testimonials"><span class="jump-index__num">03</span> Testimonials</a></li>
-          <li><a href="#contact-education"><span class="jump-index__num">04</span> Book your free first consultation</a></li>
-        </ul>
+    <!-- ============ WHO IT IS FOR, AND WHAT IS CONSISTENT ============ -->
+    <section class="stakes band reveal" aria-label="Who this is for">
+      <div class="container stakes--split">
+        <p class="stakes__lead">This track is for members of the community &mdash; learners of any age and any profession.</p>
+        <p class="stakes__body">Every student learns from materials chosen for their specific level &mdash; not a one-size-fits-all syllabus. And every instructor is quality-controlled and trained in our teaching methodology, so the experience is consistent whoever you study with.</p>
       </div>
-    </nav>
+    </section>
 
     <!-- ====================== FOUNDER STATEMENT (pull-quote) ====================== -->
     <section class="section reveal" aria-label="Founder statement">
       <div class="container">
-        <figure class="pullquote">
+        <figure class="pullquote pullquote--medium">
           <span class="pullquote__mark" aria-hidden="true">"</span>
           <blockquote class="pullquote__text">Learning a language has been one of the most deeply empowering experiences of my life. I am fluent in four — English, German, Spanish, and Hungarian — and I have lived and worked in all of them. That is what we want for you: not just words and rules, but intercultural competence and the confidence to truly connect.</blockquote>
-          <figcaption class="pullquote__cite">— <strong>Dorian Kantor</strong>, founder</figcaption>
+          <figcaption class="pullquote__cite">— <strong>Dorian Kantor</strong><span class="pullquote__role">Founder, Director of Studies</span></figcaption>
         </figure>
         <p class="crossborder__text" style="max-width:62ch; margin-top:var(--sp-3);">We teach more than language skills. We build intercultural competence — the cultural understanding that turns a correct sentence into a real connection — because knowing how to say something is only half of being understood.</p>
         <p class="section-next"><a href="#how-it-works">How our lessons work <span class="arrow" aria-hidden="true">↓</span></a></p>
@@ -176,8 +189,22 @@
             <figcaption class="quote__cite">— Adriano P. · Sales specialist, Ph.D. student · Brazil</figcaption>
           </figure>
         </div>
-        <p style="margin-top:var(--sp-3);"><a class="btn btn--ghost" href="#" aria-label="See all reviews on Google">See all reviews on Google →</a></p>
-        <p class="section-next"><a href="#contact-education">Book your free first consultation <span class="arrow" aria-hidden="true">↓</span></a></p>
+        <p style="margin-top:var(--sp-3);" hidden><a class="btn btn--ghost" href="#" aria-label="See all reviews on Google">See all reviews on Google →</a></p>
+        <p class="section-next"><a href="#talk">Book your free first consultation <span class="arrow" aria-hidden="true">↓</span></a></p>
+      </div>
+    </section>
+
+    <!-- ====================== INVITATION ====================== -->
+    <section class="section reveal" id="talk" aria-label="Let's talk about your learning goals">
+      <div class="container">
+        <div class="form-wrap">
+          <h2>Let's talk about your learning goals.</h2>
+          <p class="form-microcopy">Book an initial call, or send us a message — whichever you prefer.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:var(--sp-3);margin-top:var(--sp-3);">
+            <a class="btn" href="https://scheduler.zoom.us/dorian-kantor/kantor-communication" target="_blank" rel="noopener">Book a Zoom call</a>
+            <a class="btn btn--ghost" href="#contact-education">Send a message</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -272,7 +299,7 @@
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <div class="footer__brand-row">
-        <img src="assets/img/kcc-logo.jpg" alt="" aria-hidden="true" />
+        <img src="assets/img/kcc-logo.svg" alt="" aria-hidden="true" />
         <span>Kantor Communication Consulting</span>
       </div>
       <div class="footer__domain">kantor-communication.com</div>
@@ -293,5 +320,6 @@
   </footer>
 
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/kcc-theme.js"></script>
 </body>
 </html>
