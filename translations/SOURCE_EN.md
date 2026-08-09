@@ -355,3 +355,36 @@ Body copy on these pages is **UNCHANGED** — reuse the existing DE/ES/HU transl
 - Update the header nav and footer to match **SHARED** above (brand wordmark, add Brand & Marketing + About, rename to Language Institute).
 
 - On the **Language Institute** page (education.html) apply the `Language School → Language Institute` rename everywhere in the body/title/headings, using your chosen term in each language (e.g. DE “Sprachinstitut” instead of “Sprachschule” — experts to confirm).
+
+
+---
+
+## SUPPLEMENT v2 — strings missed by the first extraction (translate these too)
+
+These were not in v1 (they live in <span>/<a>/<option> elements the extractor skipped).
+Numbering continues so existing markers stay valid. For German these were already filled
+in and should be spot-checked by the reviewer.
+
+### HOME
+- **[KC-HOME-072]** _(NEW · pillar body — Consulting)_ — EN: Advisory for leaders and organizations who already command the language — sharpening the message, the strategy, and the delivery so it lands in the highest-stakes rooms.
+- **[KC-HOME-073]** _(NEW · pillar body — Brand & Marketing)_ — EN: Positioning, messaging, and websites for people already trusted in the room — and now built to be seen and understood at scale, in every market they enter.
+- **[KC-HOME-074]** _(NEW · ticker)_ — EN: Lead &amp; Align
+- **[KC-HOME-075]** _(NEW · ticker)_ — EN: Negotiate &amp; Persuade
+- **[KC-HOME-076]** _(NEW · ticker)_ — EN: Present at the Highest Level
+- **[KC-HOME-077]** _(NEW · ticker)_ — EN: Write with Authority
+- **[KC-HOME-078]** _(NEW · ticker)_ — EN: Work Across Borders
+- **[KC-HOME-079]** _(NEW · ticker)_ — EN: Engage Public &amp; Media
+- **[KC-HOME-080]** _(NEW · finale caption, appears x3)_ — EN: Book a Zoom call or send a message
+- Finale buttons reuse the nav terms: Consulting / Brand & Marketing / Language Institute.
+
+### ABOUT
+- Closing buttons reuse the nav terms: Consulting / Brand & Marketing / Language Institute.
+
+### BRAND & MARKETING (contact form)
+- **[KC-MKTG-144]** _(NEW · label)_ — EN: Organization
+- **[KC-MKTG-145]** _(NEW · label)_ — EN: What do you need?
+- **[KC-MKTG-146]** _(NEW · select placeholder)_ — EN: Select an area…
+- **[KC-MKTG-147]** _(NEW · label)_ — EN: Briefly, what's the situation or goal?
+- **[KC-MKTG-148]** _(NEW · button)_ — EN: Book a Zoom call
+- Select options reuse the deliverable titles already translated: Positioning & messaging · Website & digital presence · Multilingual marketing & localization · Content, editorial & thought leadership · Brand & visual identity · Campaign & launch communication · plus "Not sure yet".
+- Field label "Name" is usually identical across languages.
