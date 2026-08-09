@@ -5,6 +5,20 @@
 (function () {
   'use strict';
 
+  /* Mobile nav toggle (data-open pattern, matches the interior pages). */
+  var navToggle = document.querySelector('.nav-toggle'),
+      siteNav = document.getElementById('site-nav');
+  if (navToggle && siteNav) {
+    navToggle.addEventListener('click', function () {
+      var open = siteNav.getAttribute('data-open') === 'true';
+      siteNav.setAttribute('data-open', String(!open));
+      navToggle.setAttribute('aria-expanded', String(!open));
+    });
+    siteNav.addEventListener('click', function (e) {
+      if (e.target.closest('a')) { siteNav.setAttribute('data-open', 'false'); navToggle.setAttribute('aria-expanded', 'false'); }
+    });
+  }
+
   /* Header: ivory over the dark hero/intro, frosted light bar past it. */
   var hdr = document.getElementById('hdr'),
       intro = document.querySelector('.hero, .page-intro');
