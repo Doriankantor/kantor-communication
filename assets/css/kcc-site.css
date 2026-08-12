@@ -98,6 +98,10 @@ img,svg{max-width:100%;display:block}
 .logo-use{height:100%;width:100%;display:block;fill:currentColor}
 .wordmark__name{font-family:var(--serif);font-size:1.02rem;letter-spacing:.01em;color:inherit}
 .wordmark__name b{font-weight:600}
+/* transparent monogram — show the variant that suits the header background */
+.wordmark__mono.wm--light{display:none}
+.site-header:not(.is-over-ink) .wm--dark{display:none}
+.site-header:not(.is-over-ink) .wm--light{display:inline-flex}
 .site-nav{display:flex;align-items:center;gap:1.6rem}
 .site-nav__links{display:flex;gap:1.35rem;list-style:none;margin:0;padding:0}
 .site-nav__links a{font-family:var(--sans);font-size:.92rem;color:inherit;opacity:.9}
@@ -256,6 +260,12 @@ img,svg{max-width:100%;display:block}
 .card:hover .card__cta .arrow{transform:translateX(4px)}
 .card-reviews-ref{margin:var(--sp-2) 0 0;font-size:var(--fs-xs)}
 .card-reviews-ref a{color:var(--accent-strong)}
+
+/* ===== FOUNDER (About) — photo sticky beside the scrolling bio ===== */
+.founder-grid{display:grid;grid-template-columns:1fr;gap:var(--sp-4);margin-top:var(--sp-3)}
+@media(min-width:860px){.founder-grid{grid-template-columns:300px 1fr;gap:var(--sp-5);align-items:start}}
+@media(min-width:860px){.founder-grid__media{position:sticky;top:96px}}
+.founder-photo{display:block;width:100%;height:auto;border-radius:var(--radius-lg);border:1px solid var(--border);box-shadow:0 10px 30px rgba(46,26,29,.14)}
 
 /* ===== EXPERTISE BAND (cinematic bg like AI Reality Check) ===== */
 .expertise{position:relative;isolation:isolate;overflow:hidden;text-align:center;color:var(--ink-text);
