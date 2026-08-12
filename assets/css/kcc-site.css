@@ -511,3 +511,11 @@ img,svg{max-width:100%;display:block}
 .btn--ghost:hover{background:var(--accent-soft);color:var(--accent-strong)}
 .branch .btn{border-color:var(--text);color:var(--text)}
 .branch .btn:hover{background:var(--text);color:var(--bg)}
+
+/* wordmark inherits the bar colour (ivory over the hero, ink when scrolled) — matches interior */
+.wordmark{color:inherit}
+/* current page: gold text + a gold underline, in both header states */
+.site-header.is-over-ink .site-nav__links a[aria-current="page"]{color:var(--accent-on-ink)}
+.site-header.is-scrolled .site-nav__links a[aria-current="page"]{color:var(--accent)}
+.site-nav__links a[aria-current="page"]{position:relative}
+.site-nav__links a[aria-current="page"]::after{content:"";position:absolute;left:0;right:0;bottom:-5px;height:1.5px;background:currentColor;opacity:.85}

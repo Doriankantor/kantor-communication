@@ -656,3 +656,7 @@ html[lang="de"] .card__title{ hyphens:auto; }
 .footer__contact a,.footer__legal a{text-decoration:none}
 .footer__contact a:hover,.footer__legal a:hover{text-decoration:underline}
 .wordmark__name{max-width:none}
+
+/* current page: restore the underline (user wants "you are here" underlined), gold, both states */
+.site-nav__links a[aria-current="page"]{position:relative}
+.site-nav__links a[aria-current="page"]::after{display:block;content:"";position:absolute;left:0;right:0;top:auto;bottom:-5px;height:1.5px;background:currentColor;opacity:.85}
