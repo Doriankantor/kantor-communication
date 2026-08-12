@@ -627,3 +627,32 @@ html[lang="de"] .card__title{ hyphens:auto; }
 .globe__halo{ pointer-events:none; }
 .globe__dot{ pointer-events:none; }
 .globe-tip{ pointer-events:none; }
+
+
+/* ============================================================
+   Match the interior top ribbon + footer to the home / brand
+   pages. The adaptive header already mirrors them; these fix the
+   logo (use the two transparent two-tone marks like home, not the
+   invert trick) and the footer (centered, no uppercase link row).
+   ============================================================ */
+.site-header__inner{min-height:34px;padding:1.1rem 0}
+.wordmark__mono{height:30px;width:30px;min-width:30px;mix-blend-mode:normal;filter:none}
+.wordmark__mono.wm--light{display:none}
+.site-header.is-over-ink .wordmark__mono{mix-blend-mode:normal;filter:none}
+.site-header:not(.is-over-ink) .wm--dark{display:none}
+.site-header:not(.is-over-ink) .wm--light{display:inline-flex}
+
+.site-footer__inner{align-items:center;text-align:center}
+.site-footer__nav{display:none}
+.footer__brand-row{min-height:auto;justify-content:center}
+.footer__brand-row img{filter:none;mix-blend-mode:normal;height:26px;width:26px;min-width:26px}
+.footer__domain,.footer__contact,.footer__legal{text-align:center}
+/* ribbon parity, cont. — one-line wordmark, accent (not underline) current, plain footer links */
+.wordmark__name{white-space:nowrap;font-size:1.02rem;line-height:1.1}
+.wordmark__name b{font-weight:600}
+.site-nav__links a[aria-current="page"]::after{display:none}
+.site-header.is-over-ink .site-nav__links a[aria-current="page"]{color:var(--accent-on-ink)}
+.site-header.is-scrolled .site-nav__links a[aria-current="page"]{color:var(--accent)}
+.footer__contact a,.footer__legal a{text-decoration:none}
+.footer__contact a:hover,.footer__legal a:hover{text-decoration:underline}
+.wordmark__name{max-width:none}
