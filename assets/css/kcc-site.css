@@ -519,3 +519,16 @@ img,svg{max-width:100%;display:block}
 .site-header.is-scrolled .site-nav__links a[aria-current="page"]{color:var(--accent)}
 .site-nav__links a[aria-current="page"]{position:relative}
 .site-nav__links a[aria-current="page"]::after{content:"";position:absolute;left:0;right:0;bottom:-5px;height:1.5px;background:currentColor;opacity:.85}
+
+
+/* footer fade seam — same as interior pages, so About/Brand fade into the footer */
+.site-footer{position:relative}
+.site-footer::before{content:"";position:absolute;left:0;right:0;bottom:100%;height:clamp(6rem,14vh,10.5rem);pointer-events:none;
+  background:linear-gradient(to bottom,
+    color-mix(in srgb, var(--ink-ground) 0%, transparent) 0%,
+    color-mix(in srgb, var(--ink-ground) 6%, transparent) 26%,
+    color-mix(in srgb, var(--ink-ground) 18%, transparent) 44%,
+    color-mix(in srgb, var(--ink-ground) 38%, transparent) 60%,
+    color-mix(in srgb, var(--ink-ground) 64%, transparent) 74%,
+    color-mix(in srgb, var(--ink-ground) 86%, transparent) 87%,
+    var(--ink-ground) 100%)}
