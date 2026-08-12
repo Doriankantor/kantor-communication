@@ -681,3 +681,10 @@ html[lang="de"] .card__title{ hyphens:auto; }
    the is-veiled / is-scrolled states re-apply their own blur. */
 .site-header{backdrop-filter:none;-webkit-backdrop-filter:none}
 .site-nav__links a{letter-spacing:.005em}
+
+/* Match nav item spacing + language switcher to the home page exactly, so the
+   bar doesn't reflow when navigating between kcc-site and kcc-theme pages. */
+.site-nav{gap:1.6rem}
+.site-nav__links{gap:1.35rem}
+.lang-switcher{gap:.35rem}
+.lang-switcher a{padding:0;text-transform:none;border-radius:0}
