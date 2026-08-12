@@ -674,3 +674,10 @@ html[lang="de"] .card__title{ hyphens:auto; }
 .page-intro__light{position:absolute;inset:-25% -12% 0 -12%;z-index:1;pointer-events:none;mix-blend-mode:screen;
   background:radial-gradient(40% 50% at 42% 24%,rgba(200,154,90,.20),transparent 62%);animation:hero-drift 16s ease-in-out infinite alternate;filter:blur(8px)}
 @keyframes hero-drift{0%{transform:translate(-4%,0) scale(1)}100%{transform:translate(10%,-1%) scale(1.06)}}
+
+/* Top-of-page ribbon must be truly transparent like the home page.
+   styles.css leaves a backdrop blur on .site-header that persisted in the
+   is-over-ink state, frosting the dark hero into a brown bar. Reset it here;
+   the is-veiled / is-scrolled states re-apply their own blur. */
+.site-header{backdrop-filter:none;-webkit-backdrop-filter:none}
+.site-nav__links a{letter-spacing:.005em}
