@@ -1,232 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Kantor Communication — advisory, brand, and language, in any language</title>
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
-  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png" />
-  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
-  <link rel="stylesheet" href="assets/css/kcc-site.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kantor Communication | Language, communication, and brand across languages and markets</title>
+<meta name="description" content="Kantor Communication helps professionals and organizations develop the language, arguments, and messages they need to succeed across cultures: Language Institute, Communication Consulting, and Brand &amp; Marketing.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kantor Communication">
+<meta property="og:title" content="Kantor Communication | Language, communication, and brand across languages and markets">
+<meta property="og:description" content="Kantor Communication helps professionals and organizations develop the language, arguments, and messages they need to succeed across cultures: Language Institute, Communication Consulting, and Brand &amp; Marketing.">
+<link rel="icon" href="assets/img/favicon.svg?v=3" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png?v=3" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png?v=3">
+<link rel="preload" href="assets/fonts/spectral-v15-latin_latin-ext-300.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-v20-latin_latin-ext-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/kc-2026.css">
+<style>
+body{margin:0;background:#F8F6F2}
+a{color:#8A6531;text-decoration:none}a:hover{color:#6E4F24}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #C89A5A;outline-offset:3px}
+input,select,textarea{font:inherit;color:#F1EDE6;background:#3A2226;border:1px solid rgba(241,237,230,.28);border-radius:2px;padding:12px 14px;width:100%;box-sizing:border-box}
+select option{color:#23201C;background:#F8F6F2}
+textarea{min-height:120px;resize:vertical}
+.kc-hero{position:relative;isolation:isolate;overflow:hidden;background-color:#2E1A1D;background-image:radial-gradient(58% 46% at 50% 8%,rgba(200,154,90,.34) 0%,rgba(168,124,61,.19) 32%,rgba(168,124,61,.06) 58%,transparent 80%)}
+.kc-hero__grid{position:absolute;inset:0;z-index:0;opacity:.5;pointer-events:none;background-image:linear-gradient(to right,rgba(241,237,230,.15) 1px,transparent 1px),linear-gradient(to bottom,rgba(241,237,230,.15) 1px,transparent 1px);background-size:78px 78px;-webkit-mask-image:radial-gradient(62% 52% at 50% 12%,#000,transparent 76%);mask-image:radial-gradient(62% 52% at 50% 12%,#000,transparent 76%)}
+.kc-hero__light{position:absolute;inset:-25% -12% 0 -12%;z-index:1;pointer-events:none;mix-blend-mode:screen;background:radial-gradient(40% 50% at 40% 26%,rgba(200,154,90,.20),transparent 62%);animation:kc-drift 16s ease-in-out infinite alternate;filter:blur(8px)}
+.kc-hero__beam{position:absolute;top:-10%;bottom:0;left:-30%;width:44%;z-index:1;pointer-events:none;mix-blend-mode:screen;background:linear-gradient(105deg,transparent,rgba(214,168,102,.16) 47%,rgba(214,168,102,.22) 50%,rgba(214,168,102,.16) 53%,transparent);filter:blur(30px);animation:kc-sweep 16s ease-in-out infinite}
+.kc-hero__seam{position:absolute;left:0;right:0;bottom:0;z-index:2;pointer-events:none;height:clamp(5rem,12vh,9rem);background:linear-gradient(to bottom,rgba(248,246,242,0) 0%,rgba(248,246,242,.38) 60%,#F8F6F2 100%)}
+.kc-bar{position:relative}
+.kc-bar::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;pointer-events:none;background:linear-gradient(90deg,transparent 0%,transparent 22%,rgba(200,154,90,.06) 38%,rgba(214,168,102,.85) 49%,rgba(220,180,110,.95) 50%,rgba(214,168,102,.85) 51%,rgba(200,154,90,.06) 62%,transparent 78%,transparent 100%);background-size:240% 100%;opacity:.55;animation:kc-beam 6.5s linear infinite}
+@keyframes kc-drift{0%{transform:translate(-4%,0) scale(1)}100%{transform:translate(10%,-1%) scale(1.06)}}
+@keyframes kc-sweep{0%{transform:translateX(0) skewX(-8deg);opacity:0}18%{opacity:.9}82%{opacity:.9}100%{transform:translateX(320%) skewX(-8deg);opacity:0}}
+@keyframes kc-beam{0%{background-position:130% 0}100%{background-position:-130% 0}}
+.kc-card{transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s cubic-bezier(.2,.7,.2,1),border-color .3s}
+.kc-card:hover{transform:translateY(-3px);border-left-color:#2E1A1D !important;box-shadow:0 14px 34px rgba(46,26,29,.16) !important}
+.kc-programs{background-color:#2E1A1D;background-image:linear-gradient(rgba(46,26,29,.80),rgba(46,26,29,.92)),url("assets/img/expertise.jpg");background-size:cover;background-position:center}
+.kc-float{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.kc-float__track{display:flex;width:max-content;gap:16px}
+.kc-float--rtl .kc-float__track{animation:kc-rtl 44s linear infinite}
+.kc-float--ltr .kc-float__track{animation:kc-ltr 44s linear infinite}
+.kc-float:hover .kc-float__track{animation-play-state:paused}
+@keyframes kc-rtl{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes kc-ltr{from{transform:translateX(-50%)}to{transform:translateX(0)}}
+.kc-cblock{transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s,border-color .3s}
+.kc-cblock:hover{transform:translateY(-3px);border-color:rgba(168,124,61,.40) !important;box-shadow:0 12px 28px rgba(46,26,29,.12) !important}
+.kc-finale{position:relative;isolation:isolate;overflow:hidden;background:#2E1A1D}
+.kc-finale::before{content:"";position:absolute;left:-10%;right:-10%;bottom:0;height:720px;z-index:0;pointer-events:none;background:radial-gradient(46% 44% at 50% 44%,rgba(168,124,61,.16),transparent)}
+.kc-globe-stage{-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 48%,rgba(0,0,0,.72) 66%,rgba(0,0,0,.28) 83%,transparent 97%);mask-image:linear-gradient(to bottom,#000 0%,#000 48%,rgba(0,0,0,.72) 66%,rgba(0,0,0,.28) 83%,transparent 97%)}
+@media (prefers-reduced-motion: reduce){.kc-hero__light,.kc-hero__beam,.kc-bar::after,.kc-float__track{animation:none !important}.kc-card:hover,.kc-cblock:hover{transform:none}}
+h1,h2,.kc-balance{text-wrap:balance}
+.kc-nav a{display:inline-block;padding:6px 0}
+@media (max-width:720px){
+.kc-head{padding-top:12px !important;padding-bottom:8px !important;gap:2px 16px !important}
+.kc-nav{width:100%;gap:0 13px !important;font-size:14px !important}
+.kc-nav .kc-lang{margin-left:auto;gap:6px !important;font-size:12px !important}
+}
+</style>
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kcc-logo" viewBox="0 0 480 480"><path fill="currentColor" fill-rule="evenodd" d="M241.33 342.52 C222.67 339.13 209.53 332.55 197.46 320.51 C190.68 313.76 188.61 310.85 184.26 302.00 C180.99 295.35 178.47 288.48 177.39 283.28 L175.67 275.05 L160.14 254.42 C151.60 243.07 144.00 233.55 143.27 233.27 C142.53 232.99 141.04 233.56 139.96 234.53 C138.09 236.23 138.00 237.78 138.00 267.69 C138.00 297.17 138.12 299.32 140.01 303.03 C142.84 308.57 146.88 310.91 156.30 312.48 C160.07 313.10 160.11 313.15 159.80 317.31 L159.50 321.50 L122.25 321.76 L85.00 322.02 L85.00 317.57 L85.00 313.12 L89.75 312.44 C97.14 311.39 103.61 307.44 105.98 302.53 C107.95 298.47 108.00 296.55 107.98 224.43 C107.96 154.52 107.86 150.28 106.10 146.40 C103.78 141.30 99.02 138.25 91.05 136.77 L85.00 135.65 L85.00 131.32 L85.00 127.00 L121.89 127.00 L158.78 127.00 L159.44 130.52 C160.25 134.87 159.61 136.00 156.31 136.00 C148.49 136.00 140.87 141.24 138.93 147.96 C138.29 150.17 138.02 164.70 138.20 186.50 L138.50 221.50 L170.01 190.00 C187.35 172.68 202.98 156.29 204.76 153.58 C208.92 147.25 209.00 143.33 205.05 139.54 C202.84 137.43 200.81 136.59 197.05 136.23 L192.00 135.75 L192.00 131.36 L192.00 126.98 L228.75 127.24 L265.50 127.50 L265.50 131.45 L265.50 135.41 L259.00 136.71 C250.11 138.50 237.81 144.58 230.00 151.06 C223.25 156.66 166.75 211.57 166.18 213.08 C165.86 213.92 173.82 225.22 183.00 236.99 C185.47 240.17 192.44 249.23 198.47 257.13 C227.68 295.38 234.29 302.54 245.50 308.07 C248.80 309.70 254.35 311.56 257.84 312.21 C264.12 313.38 264.17 313.41 263.59 316.32 C263.26 317.93 263.00 319.87 263.00 320.62 C263.00 321.72 260.38 322.00 250.11 322.00 L237.22 322.00 L231.86 318.38 C228.91 316.39 223.41 311.78 219.63 308.13 L212.75 301.50 L215.57 306.50 C222.48 318.75 231.66 326.32 244.26 330.15 C253.61 332.99 269.00 332.48 276.74 329.07 C291.00 322.79 302.73 308.86 306.94 293.22 C307.57 290.90 308.17 289.01 308.29 289.02 C308.40 289.02 310.52 289.64 313.00 290.40 C316.80 291.55 317.47 292.13 317.29 294.13 C317.17 295.43 316.16 303.42 315.04 311.89 C312.79 328.90 313.35 327.84 303.83 332.97 C286.68 342.22 261.16 346.12 241.33 342.52 Z M321.18 342.45 C312.21 340.81 307.00 339.15 307.00 337.92 C307.00 337.42 307.43 337.00 307.96 337.00 C309.81 337.00 318.00 331.50 318.00 330.26 C318.00 328.62 319.43 328.68 325.50 330.60 C338.00 334.53 356.09 331.80 365.99 324.48 C375.77 317.26 381.10 310.09 385.67 298.04 C389.13 288.92 389.44 288.70 395.41 290.97 C398.55 292.16 398.55 289.67 395.42 314.62 L393.78 327.74 L386.57 331.77 C378.75 336.14 364.02 341.29 354.57 342.95 C346.65 344.35 330.23 344.10 321.18 342.45 Z M272.70 314.68 C260.79 300.14 254.10 277.07 255.30 254.68 C256.54 231.77 263.81 212.77 277.15 197.62 L280.57 193.73 L285.33 198.49 C287.95 201.11 291.15 205.34 292.45 207.90 C294.66 212.26 294.71 212.77 293.31 216.03 C287.46 229.64 284.44 256.89 286.91 273.81 C288.13 282.11 291.90 296.08 293.98 299.97 C294.90 301.67 294.73 302.70 293.12 305.29 C289.81 310.62 280.20 319.00 277.40 319.00 C276.76 319.00 274.65 317.06 272.70 314.68 Z M191.82 237.91 L180.13 222.66 L182.19 218.58 C190.25 202.56 204.80 187.64 219.29 180.52 C233.59 173.50 238.47 172.54 260.00 172.53 C277.84 172.52 278.89 172.63 289.62 175.71 C301.39 179.10 312.00 183.35 312.01 184.69 C312.02 186.67 315.05 220.98 315.58 225.19 L316.17 229.88 L311.98 231.01 C306.81 232.40 305.00 231.78 305.00 228.64 C305.00 224.64 301.04 212.96 297.20 205.59 C288.24 188.45 271.84 180.44 251.05 183.06 C234.41 185.16 223.05 194.12 214.19 212.12 C208.60 223.50 206.57 230.35 204.72 244.09 L203.50 253.16 L191.82 237.91 Z M384.08 222.83 C378.17 198.58 365.49 185.58 345.24 182.99 C338.71 182.16 327.40 183.14 322.64 184.95 C319.01 186.33 319.18 186.40 318.82 183.28 C318.59 181.30 317.41 179.94 314.53 178.33 L310.57 176.11 L313.17 175.13 C317.35 173.54 330.45 172.00 339.85 172.00 C356.88 172.00 369.70 174.56 385.59 181.12 L392.67 184.05 L394.39 204.77 C395.34 216.17 396.31 226.48 396.56 227.68 C397.03 230.00 396.37 230.39 389.93 231.52 L386.35 232.16 L384.08 222.83 Z"/></symbol></svg>
+<div style="font-family: 'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; color: #23201C; background: #F8F6F2; font-size: 18px; line-height: 1.6; width: 100%;">
 
-<!-- HEADER (unchanged structure) -->
-<header class="site-header is-over-ink" id="hdr">
-  <div class="container site-header__inner">
-    <a class="wordmark" href="index.html" aria-label="Kantor Communication — home"><img class="wordmark__mono wm--dark" src="assets/img/kc-on-dark.png" width="30" height="30" alt="" aria-hidden="true" /><img class="wordmark__mono wm--light" src="assets/img/kc-on-light.png" width="30" height="30" alt="" aria-hidden="true" /><span class="wordmark__name"><b>Kantor</b> Communication</span></a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav class="site-nav" id="site-nav" aria-label="Primary">
-      <ul class="site-nav__links">
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="education.html">Language Institute</a></li>
-        <li><a href="consulting.html">Consulting</a></li>
-        <li><a href="marketing.html">Brand &amp; Communication</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="lang-switcher"><a href="index.html" aria-current="true">EN</a><span class="sep">/</span><a href="de/index.html">DE</a><span class="sep">/</span><a href="hu/index.html">HU</a><span class="sep">/</span><a href="es/index.html">ES</a></div>
-    </nav>
-  </div>
-</header>
+  <!-- 1 HERO with header -->
+  
 
-<main>
-<!-- HERO (moved up + moving light) -->
-<section class="hero">
-  <div class="hero__light"></div>
-  <div class="hero__beam"></div>
-  <div class="container hero__inner">
-    <p class="eyebrow center">WELCOME TO KANTOR COMMUNICATION</p>
-    <h1 class="hero__statement">Perfecting communication so it becomes <em>influence.</em></h1>
-    <p class="hero__sub hero__flip" aria-label="Language instruction, communications advisory, and brand positioning">
-      <span class="flip__viewport">
-        <span class="flip__item is-active">Language instruction.</span>
-        <span class="flip__item">Communications advisory.</span>
-        <span class="flip__item">Brand positioning.</span>
-      </span>
-    </p>
-    <p class="hero__fixed">Senior-led and cross-cultural by design &mdash; for leaders and organizations working across languages and borders.</p>
-  </div>
-  <div class="hero__seam"></div>
-</section>
-
-<!-- WHY KC (rolling counters, appear one by one) -->
-<section class="whykcc" aria-label="Why KC">
-  <div class="container">
-    <p class="eyebrow center">Why KC?</p>
-    <div class="whykcc__grid" id="whyGrid">
-      <div class="why"><span class="why__fig" data-count="11" data-suffix="+">11+</span><h4 class="why__head">Countries our clients come from</h4><p class="why__body">Executives, academics and independent learners on four continents.</p></div>
-      <div class="why"><span class="why__stars" aria-label="Five stars"><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span></span><h4 class="why__head">Five-star reviews</h4><p class="why__body">Rated five stars by the people we teach and advise.</p></div>
-      <div class="why"><span class="why__fig" data-count="5" data-suffix="">5</span><h4 class="why__head">Languages</h4><p class="why__body">English &middot; German &middot; Spanish &middot; Hungarian &middot; Italian.</p></div>
-      <div class="why"><svg class="why__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2 4 5v6c0 5 3.4 8.4 8 11 4.6-2.6 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg><h4 class="why__head">Confidentiality</h4><p class="why__body">Absolute discretion on every high-stakes engagement.</p></div>
-      <div class="why"><svg class="why__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3v18M3 8l9-5 9 5M5 10v7M19 10v7M3 21h18"/></svg><h4 class="why__head">Everything under one roof</h4><p class="why__body">One firm delivering the highest standard across communications consulting, brand positioning, and language instruction — no juggling separate vendors.</p></div>
-      <div class="why"><svg class="why__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9S14.5 18.5 12 21c-2.5-2.5-3.8-5.7-3.8-9S9.5 5.5 12 3Z"/></svg><h4 class="why__head">Native &amp; bilingual-level specialists</h4><p class="why__body">Native and bilingual-level experts with extensive industry experience across sectors.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- CAPABILITY TICKER -->
-<div class="ticker" aria-label="What we help you do">
-  <div class="ticker__track">
-    <span class="ticker__item">Lead &amp; Align</span><span class="ticker__item">Negotiate &amp; Persuade</span><span class="ticker__item">Present at the Highest Level</span><span class="ticker__item">Write with Authority</span><span class="ticker__item">Work Across Borders</span><span class="ticker__item">Engage Public &amp; Media</span>
-    <span class="ticker__item">Lead &amp; Align</span><span class="ticker__item">Negotiate &amp; Persuade</span><span class="ticker__item">Present at the Highest Level</span><span class="ticker__item">Write with Authority</span><span class="ticker__item">Work Across Borders</span><span class="ticker__item">Engage Public &amp; Media</span>
-  </div>
-</div>
-
-<!-- BANNER: gold scroll-fill -->
-<section class="banner--a" aria-label="Statement" id="goldBanner">
-  <div class="container">
-    <div class="banner__cols">
-      <div class="banner__col">Be <span class="goldfill" data-word="0">understood.</span></div>
-      <div class="banner__col">Be <span class="goldfill" data-word="1">persuasive.</span></div>
-      <div class="banner__col">Be <span class="goldfill" data-word="2">remembered.</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- CLIENT BLOCKS (floating, two opposite rows) -->
-<section class="clients-band" aria-label="Experience across sectors">
-  <p class="clients-band__label">Experience includes work with professionals and institutions at:</p>
-  <div class="floatrow floatrow--rtl">
-    <div class="floatrow__track">
-      <div class="cblock">George Mason University</div><div class="cblock">Freie Universität Berlin</div><div class="cblock">Goethe-Universität Frankfurt</div><div class="cblock">Florida International University</div><div class="cblock">Pontificia Universidad Javeriana</div><div class="cblock">Education First</div><div class="cblock">Springer Nature</div><div class="cblock">Mercedes-Benz / EvoBus</div><div class="cblock">Siemens Energy</div><div class="cblock">Heidelberg Materials</div>
-      <div class="cblock">George Mason University</div><div class="cblock">Freie Universität Berlin</div><div class="cblock">Goethe-Universität Frankfurt</div><div class="cblock">Florida International University</div><div class="cblock">Pontificia Universidad Javeriana</div><div class="cblock">Education First</div><div class="cblock">Springer Nature</div><div class="cblock">Mercedes-Benz / EvoBus</div><div class="cblock">Siemens Energy</div><div class="cblock">Heidelberg Materials</div>
-    </div>
-  </div>
-  <div class="floatrow floatrow--ltr">
-    <div class="floatrow__track">
-      <div class="cblock">US Southern Command</div><div class="cblock">Colombian Armed Forces</div><div class="cblock">Talveris Security Consulting</div><div class="cblock">Deutsche Welle</div><div class="cblock">El Espectador</div><div class="cblock">El Tiempo</div><div class="cblock">Noticias Caracol</div><div class="cblock">SoundCloud</div><div class="cblock">Elbit Systems</div><div class="cblock">Abbott</div><div class="cblock">Friedrich Ebert Foundation</div>
-      <div class="cblock">US Southern Command</div><div class="cblock">Colombian Armed Forces</div><div class="cblock">Talveris Security Consulting</div><div class="cblock">Deutsche Welle</div><div class="cblock">El Espectador</div><div class="cblock">El Tiempo</div><div class="cblock">Noticias Caracol</div><div class="cblock">SoundCloud</div><div class="cblock">Elbit Systems</div><div class="cblock">Abbott</div><div class="cblock">Friedrich Ebert Foundation</div>
-    </div>
-  </div>
-</section>
-
-<!-- THREE PILLARS (equal weight, one standard) -->
-<section class="cards-section" data-section="pillars">
-  <div class="container">
-    <div class="pillars-head">
-      <p class="eyebrow center">Three practices, one standard</p>
-      <p class="pillars-lead">Communication mastery at every layer — the <em>language</em>, the <em>person</em> in the room, and the <em>brand</em> in public.</p>
-    </div>
-    <div class="split">
-      <div class="card"><div class="card__inner"><span class="card__layer">The language itself</span><h2 class="card__title">Language Institute</h2><p class="card__body">Private, native-expert instruction for executives, academics, and serious learners — building true command of the language your work demands, one-on-one and at your level.</p><a class="card__cta" href="education.html">Explore the Language Institute <span class="arrow">&#8594;</span></a><p class="card-reviews-ref"><a href="education.html#testimonials">&#9733;&#9733;&#9733;&#9733;&#9733; 5.0 · 10 client reviews</a></p></div></div>
-      <a class="card" href="consulting.html"><span class="card__inner"><span class="card__layer">The person in the room</span><span class="card__title">Consulting</span><span class="card__body">Advisory for leaders and organizations who already command the language — sharpening the message, the strategy, and the delivery so it lands in the highest-stakes rooms.</span><span class="card__cta">Explore Consulting <span class="arrow">&#8594;</span></span></span></a>
-      <a class="card" href="marketing.html"><span class="card__inner"><span class="card__layer">The brand in public</span><span class="card__title">Brand &amp; Communication</span><span class="card__body">Positioning, messaging, and brand communication for people already trusted in the room — built to be seen and understood at scale, in every market they enter.</span><span class="card__cta">Explore Brand &amp; Communication <span class="arrow">&#8594;</span></span></span></a>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERTISE BAND (cinematic bg) -->
-<section class="expertise" aria-label="Statement">
-  <div class="expertise__bg"></div>
-  <div class="expertise__glow"></div>
-  <div class="container expertise__inner">
-    <p class="expertise__eyebrow">The KC Difference</p>
-    <p class="expertise__text">Expertise is only as strong as <em>how you communicate it.</em></p>
-    <div class="expertise__rule"></div>
-  </div>
-</section>
-
-<!-- SIGNALS-STYLE SECTION -->
-<section class="signals" aria-label="How KC works">
-  <div class="container signals__inner">
-    <div>
-      <p class="signals__eyebrow">In Focus</p>
-      <ul class="signals__nav" id="sigNav">
-        <li class="active"><button class="signals__navbtn" data-i="0"><span class="num">01</span>Who We Are</button></li>
-        <li><button class="signals__navbtn" data-i="1"><span class="num">02</span>What We Are Not</button></li>
-        <li><button class="signals__navbtn" data-i="2"><span class="num">03</span>Who We Help</button></li>
-        <li><button class="signals__navbtn" data-i="3"><span class="num">04</span>What You Gain</button></li>
-      </ul>
-    </div>
-    <div class="signals__panel" id="sigPanel">
-      <div class="panel show" data-p="0">
-        <h3>Senior-led, cross-cultural, message-first.</h3>
-        <p>You work directly with experienced specialists led by the founder — not an account-management layer. We adapt communication across markets rather than merely translating it, and strategy always comes before presentation.</p>
-        <ul><li>Senior-led — experienced specialists, not junior generalists</li><li>Cross-cultural by design — adapted across markets, not just translated</li><li>Message first — strategy and substance before presentation</li><li>Built around real situations — actual negotiations, launches, and speeches</li></ul>
+  <!-- 1b WHO WE WORK WITH (routing) -->
+  <section id="top" class="kc-hero" style="color: #F1EDE6;">
+    <div class="kc-hero__grid" aria-hidden="true"></div>
+    <div class="kc-hero__light" aria-hidden="true"></div>
+    <div class="kc-hero__beam" aria-hidden="true"></div>
+    <header class="kc-bar" style="position: relative; z-index: 4; color: #F1EDE6;">
+      <div class="kc-head" style="max-width: 1200px; margin: 0 auto; padding: 18px clamp(20px, 5vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px;">
+        <a href="#top" style="display: inline-flex; align-items: center; gap: 10px; color: #F1EDE6;">
+          <img src="assets/img/kc-on-dark.png" alt="" style="width: 34px; height: 34px;">
+          <span style="font-family: 'Spectral', Georgia, serif; font-size: 18px; letter-spacing: .01em;"><b style="font-weight: 600;">Kantor</b> Communication</span>
+        </a>
+        <nav aria-label="Primary" class="kc-nav" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; font-size: 15px;">
+          <a href="education.html" style="color: #F1EDE6;">Language Institute</a>
+          <a href="consulting.html" style="color: #F1EDE6;">Communication Consulting</a>
+          <a href="marketing.html" style="color: #F1EDE6;">Brand &amp; Marketing</a>
+          <a href="#founder" style="color: #F1EDE6;">About</a>
+          <a href="#contact" style="color: #F1EDE6;">Contact</a>
+        </nav>
       </div>
-      <div class="panel" data-p="1">
-        <h3>Not a template shop, not a volume app.</h3>
-        <p>We are not an off-the-shelf course, not a design studio that writes last, and not a one-size communications shop. Every engagement is scoped to the person, the brand, and the stakes in front of them.</p>
-        <ul><li>No scripted, mass-produced curricula</li><li>No pretty site wrapped around an unclear message</li><li>No hand-off to junior generalists</li></ul>
-      </div>
-      <div class="panel" data-p="2">
-        <h3>Leaders, brands, and serious learners.</h3>
-        <p>From C-suite executives preparing for the highest-stakes rooms, to founders positioning a brand for a new market, to PhD candidates and independent learners mastering a language.</p>
-        <ul><li>Executives and organizations</li><li>Founders positioning a brand</li><li>Academics and independent learners</li></ul>
-      </div>
-      <div class="panel" data-p="3">
-        <h3>Communication that becomes influence.</h3>
-        <p>Whether it is a boardroom, a market, or a language, the through-line is the same: communication built to meet career-defining moments — so you are understood, persuasive, and remembered.</p>
-        <ul><li>A message the market repeats back to you</li><li>A brand seen as clearly as you see it</li><li>Command of the language your work demands</li></ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- KC EFFECT — reviews slider -->
-<section class="effect" aria-label="The KC Effect">
-  <div class="container">
-    <div class="effect__head">
-      <p class="eyebrow center">Language Institute: Selected Reviews</p>
-      <h2 class="effect__title">The <em>KC</em> Effect</h2>
-    </div>
-    <div class="slider" id="slider">
-      <div class="slider__viewport">
-        <div class="slider__track" id="slTrack">
-          <div class="slide"><div class="slide__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="slide__quote">"Because he has a strong academic background, he is one of the best teachers for anyone who wants to develop their academic English. I wholeheartedly recommend him."</p><p class="slide__cite"><b>Kento M.</b> · University professor · Japan</p></div>
-          <div class="slide"><div class="slide__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="slide__quote">"Dorian immediately alleviated all my doubts and fears with his open manner from the very first lesson. I look forward to our lessons every time, even if the day has been stressful."</p><p class="slide__cite"><b>Eike G.</b> · Medical doctor · Germany</p></div>
-          <div class="slide"><div class="slide__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="slide__quote">"Dorian is a friendly and helpful teacher. Every time, we work on exciting tasks and discuss current topics. I can confidently recommend him to anyone who would like to improve their language skills."</p><p class="slide__cite"><b>László B.</b> · IT professional · Hungary</p></div>
+    </header>
+    <div style="position: relative; z-index: 3; text-align: center; padding: clamp(44px, 6.5vw, 92px) clamp(20px, 5vw, 48px) clamp(96px, 7.4vw, 106px);">
+      <div style="max-width: 980px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 22px;">
+        <p class="kc-balance" style="margin: 0; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: #C9C1B6;"><span style="flex: none; width: 24px; height: 1px; background: #C89A5A;"></span>Language. Communication. Brand.<span style="flex: none; width: 24px; height: 1px; background: #C89A5A;"></span></p>
+        <h1 style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 300; font-size: clamp(42px, 5.6vw, 76px); line-height: 1.08; letter-spacing: -.02em; max-width: 18ch;">Make your message work <em style="color: #C89A5A; font-style: italic;">across languages and markets.</em></h1>
+        <p style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 300; font-size: clamp(20px, 1.9vw, 26px); line-height: 1.35; color: #E3DDD3; max-width: 44ch;">We help professionals and organizations develop the language, arguments, and messages they need to succeed across cultures.</p>
+        <div style="width: 100%; display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-top: 12px;">
+          <a href="#who" style="display: inline-block; flex: 1 1 260px; max-width: 340px; min-width: 0; box-sizing: border-box; padding: 15px 28px; background: #F1EDE6; color: #2E1A1D; border: 1.5px solid #F1EDE6; font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; text-align: center;">Find the right service</a>
+          <a href="#contact" style="display: inline-block; flex: 1 1 260px; max-width: 340px; min-width: 0; box-sizing: border-box; padding: 15px 28px; background: transparent; color: #F1EDE6; border: 1.5px solid #F1EDE6; font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; text-align: center;">Discuss your needs</a>
         </div>
       </div>
-      <div class="slider__ctrl">
-        <button class="slider__arrow" id="slPrev" aria-label="Previous">&#8592;</button>
-        <div class="slider__dots" id="slDots"></div>
-        <button class="slider__arrow" id="slNext" aria-label="Next">&#8594;</button>
+    </div>
+    <div class="kc-hero__seam" aria-hidden="true"></div>
+  </section><section id="who" style="padding: clamp(20px, 2.8vw, 40px) clamp(20px, 5vw, 48px) clamp(48px, 3.9vw, 56px);">
+    <div style="max-width: 880px; margin: 0 auto;">
+      <p style="margin: 0 0 16px; display: flex; align-items: center; justify-content: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #6E675D;"><span style="width: 42px; height: 1px; background: #A87C3D;"></span>Who we work with<span style="width: 42px; height: 1px; background: #A87C3D;"></span></p>
+      <h2 style="margin: 0 0 36px; text-align: center; font-family: 'Spectral', Georgia, serif; font-weight: 300; font-size: clamp(32px, 3.4vw, 46px); line-height: 1.12; letter-spacing: -.02em;">Which of these describes <em style="color: #A87C3D;">your situation?</em></h2>
+      <ul style="margin: 0; padding: 0; list-style: none; border-top: 1px solid #E4DFD6;">
+        <li style="border-bottom: 1px solid #E4DFD6;">
+          <a href="education.html" style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 32px; padding: 18px 0; min-height: 44px; color: #23201C;">
+            <span style="flex: 1 1 380px; font-family: 'Spectral', Georgia, serif; font-size: clamp(20px, 2vw, 24px); line-height: 1.3;">“I need a language for my work.”</span>
+            <span style="flex: 0 0 auto; text-align: right; font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: #8A6531;">Language Institute&nbsp;→</span>
+          </a>
+        </li>
+        <li style="border-bottom: 1px solid #E4DFD6;">
+          <a href="language-immersion.html" style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 32px; padding: 18px 0; min-height: 44px; color: #23201C;">
+            <span style="flex: 1 1 380px; font-family: 'Spectral', Georgia, serif; font-size: clamp(20px, 2vw, 24px); line-height: 1.3;">“I start a new role or move abroad soon.”</span>
+            <span style="flex: 0 0 auto; text-align: right; font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: #8A6531;">Language Immersion&nbsp;→</span>
+          </a>
+        </li>
+        <li style="border-bottom: 1px solid #E4DFD6;">
+          <a href="consulting.html#engage" style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 32px; padding: 18px 0; min-height: 44px; color: #23201C;">
+            <span style="flex: 1 1 380px; font-family: 'Spectral', Georgia, serif; font-size: clamp(20px, 2vw, 24px); line-height: 1.3;">“I need to prepare for an important presentation, speech, or negotiation.”</span>
+            <span style="flex: 0 0 auto; text-align: right; font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: #8A6531;">Communication Consulting&nbsp;→</span>
+          </a>
+        </li>
+        <li style="border-bottom: 1px solid #E4DFD6;">
+          <a href="consulting.html#academic" style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 32px; padding: 18px 0; min-height: 44px; color: #23201C;">
+            <span style="flex: 1 1 380px; font-family: 'Spectral', Georgia, serif; font-size: clamp(20px, 2vw, 24px); line-height: 1.3;">“I am a researcher or PhD student and need to present, publish, or write a proposal.”</span>
+            <span style="flex: 0 0 auto; text-align: right; font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: #8A6531;">Academic communication&nbsp;→</span>
+          </a>
+        </li>
+        <li style="border-bottom: 1px solid #E4DFD6;">
+          <a href="executive-intensives.html" style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 32px; padding: 18px 0; min-height: 44px; color: #23201C;">
+            <span style="flex: 1 1 380px; font-family: 'Spectral', Georgia, serif; font-size: clamp(20px, 2vw, 24px); line-height: 1.3;">“Our managers negotiate and present internationally.”</span>
+            <span style="flex: 0 0 auto; text-align: right; font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: #8A6531;">Executive Intensives&nbsp;→</span>
+          </a>
+        </li>
+        <li style="border-bottom: 1px solid #E4DFD6;">
+          <a href="marketing.html" style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 32px; padding: 18px 0; min-height: 44px; color: #23201C;">
+            <span style="flex: 1 1 380px; font-family: 'Spectral', Georgia, serif; font-size: clamp(20px, 2vw, 24px); line-height: 1.3;">“We are entering a new market or need to clarify our brand and message.”</span>
+            <span style="flex: 0 0 auto; text-align: right; font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: #8A6531;">Brand &amp; Marketing&nbsp;→</span>
+          </a>
+        </li>
+      </ul>
+      <p style="margin: 28px 0 0; text-align: center; font-size: 16px; color: #6E675D;">None of these? <a href="#contact" style="font-weight: 500;">Tell us where you are starting&nbsp;→</a></p>
+    </div>
+  </section>
+
+  <!-- 2 PRACTICES -->
+  <section id="practices" style="background: #EFEBE4; padding: clamp(48px, 3.9vw, 56px) clamp(20px, 5vw, 48px) clamp(48px, 3.9vw, 56px);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <p style="margin: 0 0 16px; display: flex; align-items: center; justify-content: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #6E675D;"><span style="width: 42px; height: 1px; background: #A87C3D;"></span>The practices<span style="width: 42px; height: 1px; background: #A87C3D;"></span></p>
+      <h2 style="margin: 0 0 48px; text-align: center; font-family: 'Spectral', Georgia, serif; font-weight: 300; font-size: clamp(32px, 3.4vw, 46px); line-height: 1.12; letter-spacing: -.02em;">Three ways to <em style="color: #A87C3D;">work with us</em></h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 24px;">
+        <a href="education.html" class="kc-card" style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 16px; padding: clamp(24px, 6vw, 40px) clamp(20px, 5vw, 34px); background-color: #F8F6F2; background-image: linear-gradient(100deg, rgba(46,26,29,.055) 0%, rgba(168,124,61,.05) 18%, transparent 52%); border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); color: #23201C; min-height: 380px; box-sizing: border-box;">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">01 · The language</span>
+          <span style="font-family: 'Spectral', Georgia, serif; font-size: 32px; line-height: 1.12;">Language Institute</span>
+          <span style="color: #6E675D; flex: 1 1 auto;">Language instruction built around your professional life: individualized programs for professionals, academics, and serious independent learners, from beginner to advanced.</span>
+          <span style="font-weight: 500; color: #8A6531;">Explore the Language Institute&nbsp;→</span>
+        </a>
+        <a href="consulting.html" class="kc-card" style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 16px; padding: clamp(24px, 6vw, 40px) clamp(20px, 5vw, 34px); background-color: #F8F6F2; background-image: linear-gradient(100deg, rgba(46,26,29,.055) 0%, rgba(168,124,61,.05) 18%, transparent 52%); border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); color: #23201C; min-height: 380px; box-sizing: border-box;">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">02 · The message</span>
+          <span style="font-family: 'Spectral', Georgia, serif; font-size: 32px; line-height: 1.12;">Communication Consulting</span>
+          <span style="color: #6E675D; flex: 1 1 auto;">Strengthen the communication itself: the argument, wording, structure, cultural register, and delivery. Commission work on a speech, presentation, negotiation, public message, or campaign, with individual preparation where the task calls for it.</span>
+          <span style="font-weight: 500; color: #8A6531;">Explore Communication Consulting&nbsp;→</span>
+        </a>
+        <a href="marketing.html" class="kc-card" style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 16px; padding: clamp(24px, 6vw, 40px) clamp(20px, 5vw, 34px); background-color: #F8F6F2; background-image: linear-gradient(100deg, rgba(46,26,29,.055) 0%, rgba(168,124,61,.05) 18%, transparent 52%); border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); color: #23201C; min-height: 380px; box-sizing: border-box;">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">03 · The brand</span>
+          <span style="font-family: 'Spectral', Georgia, serif; font-size: 32px; line-height: 1.12;">Brand &amp; Marketing</span>
+          <span style="color: #6E675D; flex: 1 1 auto;">Establish a clear position and message for your market, then carry them into the words and visual expression your audience encounters, including adaptation for a new language or market.</span>
+          <span style="font-weight: 500; color: #8A6531;">Explore Brand &amp; Marketing&nbsp;→</span>
+        </a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- FINALE + GLOBE -->
-<section class="finale" id="contact" aria-label="In any room, in any language">
-  <p class="finale__caption">Our clients and language experts</p>
-  <div class="globe-stage">
-    <svg class="globe" id="globe" viewBox="0 0 400 400" role="img" aria-label="Slowly rotating globe marking the cities where Kantor Communication clients, teachers and consultants are based">
-      <defs><clipPath id="dc"><circle cx="200" cy="200" r="160"/></clipPath></defs>
-      <circle class="globe__disc" cx="200" cy="200" r="160"/>
-      <g id="grat"></g>
-      <g id="coast"></g>
-      <circle class="globe__limb" cx="200" cy="200" r="160"/>
-      <g id="pins"></g>
-    </svg>
-    <div class="globe-tip" id="tip" role="status" aria-live="polite"></div>
-  </div>
-  <div class="finale__close">
-    <div class="container">
-      <p class="eyebrow center">In any room, in any language</p>
-      <h2 class="closing__headline">Be understood. Command the room. <em>Succeed.</em></h2>
-      <div class="closing__tracks">
-        <div class="closing__track"><a class="btn" href="education.html#talk">Language Institute</a><span class="closing__caption">Book a Zoom call or send a message</span></div>
-        <div class="closing__track"><a class="btn" href="consulting.html#talk">Consulting</a><span class="closing__caption">Book a Zoom call or send a message</span></div>
-        <div class="closing__track"><a class="btn" href="marketing.html#talk">Brand &amp; Communication</a><span class="closing__caption">Book a Zoom call or send a message</span></div>
+  <!-- 2b SIGNATURE PROGRAMS (each belongs to a practice) -->
+  <section aria-label="Signature programs" class="kc-programs" style="color: #F1EDE6; padding: clamp(48px, 3.9vw, 56px) clamp(20px, 5vw, 48px);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <p style="margin: 0 0 16px; display: flex; align-items: center; justify-content: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #C9C1B6;"><span style="width: 42px; height: 1px; background: #C89A5A;"></span>Signature programs<span style="width: 42px; height: 1px; background: #C89A5A;"></span></p>
+      <h2 style="margin: 0 auto 48px; max-width: 34ch; text-align: center; font-family: 'Spectral', Georgia, serif; font-weight: 300; font-size: clamp(32px, 3.4vw, 46px); line-height: 1.12; letter-spacing: -.02em; color: #F1EDE6;">Concentrated work <em style="color: #C89A5A;">for decisive moments</em></h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 24px;">
+        <a href="executive-intensives.html" class="kc-card" style="flex: 1 1 440px; display: flex; flex-direction: column; gap: 16px; padding: clamp(24px, 6vw, 40px) clamp(20px, 5vw, 36px); background: rgba(46,26,29,.88); border: 1px solid rgba(241,237,230,.16); border-left: 6px solid #C89A5A; border-radius: 0 4px 4px 0; color: #F1EDE6; box-sizing: border-box;">
+          <span style="align-self: flex-start; padding: 4px 10px; border: 1px solid rgba(200,154,90,.6); border-radius: 2px; font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: #C89A5A;">Communication Consulting</span>
+          <span style="font-family: 'Spectral', Georgia, serif; font-size: 32px; line-height: 1.12;">Executive Intensives</span>
+          <span style="font-family: 'Spectral', Georgia, serif; font-style: italic; font-size: 20px; color: #E3DDD3;">Negotiation, persuasion, and communication under pressure.</span>
+          <span style="font-size: 14px; font-weight: 600; letter-spacing: .04em; color: #C89A5A;">2–3 days · Up to five executives · Led by Dr. Dorian Kantor</span>
+          <span style="color: #E3DDD3; flex: 1 1 auto;">Develop the skills your team needs to defend a position, handle objections, and make a persuasive case, with realistic simulations and direct feedback.</span>
+          <span style="font-weight: 500; color: #C89A5A;">Explore Executive Intensives&nbsp;→</span>
+        </a>
+        <a href="language-immersion.html" class="kc-card" style="flex: 1 1 440px; display: flex; flex-direction: column; gap: 16px; padding: clamp(24px, 6vw, 40px) clamp(20px, 5vw, 36px); background: rgba(46,26,29,.88); border: 1px solid rgba(241,237,230,.16); border-left: 6px solid #C89A5A; border-radius: 0 4px 4px 0; color: #F1EDE6; box-sizing: border-box;">
+          <span style="align-self: flex-start; padding: 4px 10px; border: 1px solid rgba(200,154,90,.6); border-radius: 2px; font-size: 11px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: #C89A5A;">Language Institute</span>
+          <span style="font-family: 'Spectral', Georgia, serif; font-size: 32px; line-height: 1.12;">Language Immersion</span>
+          <span style="font-family: 'Spectral', Georgia, serif; font-style: italic; font-size: 20px; color: #E3DDD3;">Arrive ready to work in the language.</span>
+          <span style="font-size: 14px; font-weight: 600; letter-spacing: .04em; color: #C89A5A;">Daily one-to-one lessons · 2–6 weeks · Before a move or in the first 90 days</span>
+          <span style="color: #E3DDD3; flex: 1 1 auto;">Concentrated one-to-one instruction for professionals starting a new position or relocating, built around the situations they will meet first.</span>
+          <span style="font-weight: 500; color: #C89A5A;">Explore Language Immersion&nbsp;→</span>
+        </a>
+      </div>
+      <p style="margin: 32px 0 0; text-align: center; font-size: 16px; color: #E3DDD3;">Looking for individual communication coaching? <a href="consulting.html#engage" style="color: #C89A5A; font-weight: 500;">Explore our consulting programs&nbsp;→</a></p>
+    </div>
+  </section>
+
+  <!-- 3 FOUNDER -->
+  <section id="founder" style="background: #EFEBE4; padding: clamp(48px, 3.9vw, 56px) clamp(20px, 5vw, 48px);">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px 72px; align-items: center;">
+      <img loading="lazy" decoding="async" src="assets/img/dorian-kantor.jpg" alt="Dr. Dorian Kantor" style="flex: 0 1 340px; width: 340px; max-width: 100%; box-sizing: border-box; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 0 4px 4px 0; border-left: 6px solid #A87C3D; box-shadow: 0 14px 34px rgba(46,26,29,.12);">
+      <div style="flex: 1 1 420px;">
+        <p style="margin: 0 0 16px; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #6E675D;"><span style="width: 42px; height: 1px; background: #A87C3D;"></span>Founder</p>
+        <h2 style="margin: 0 0 20px; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: clamp(30px, 3vw, 40px); line-height: 1.15;">Personal oversight throughout</h2>
+        <p style="margin: 0 0 28px;">Every engagement is led or supervised by Dr. Dorian Kantor, who brings 20 years of teaching experience and 15 years of professional experience. His fields are international law, US foreign policy toward Latin America and Europe, and defense technology. Specialists join when the language, market, or project calls for them.</p>
+        <dl style="margin: 0; display: flex; flex-direction: column; border-top: 1px solid #D6CFC3; font-size: 16px;">
+          <div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 14px 0; border-bottom: 1px solid #D6CFC3;"><dt style="flex: 0 0 140px; font-weight: 600;">Speaking</dt><dd style="margin: 0; flex: 1 1 240px; color: #6E675D;">Regularly delivers speeches and conference talks in English and Spanish</dd></div>
+          <div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 14px 0; border-bottom: 1px solid #D6CFC3;"><dt style="flex: 0 0 140px; font-weight: 600;">Writing and media</dt><dd style="margin: 0; flex: 1 1 240px; color: #6E675D;">Regular contributor to El Espectador · Publishes in English and Spanish · Quoted in Spanish-, English-, and German-language media</dd></div>
+          <div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 14px 0; border-bottom: 1px solid #D6CFC3;"><dt style="flex: 0 0 140px; font-weight: 600;">Advisory work</dt><dd style="margin: 0; flex: 1 1 240px; color: #6E675D;">Founder, Kantor Consulting (political analysis) · Founding Partner, Talveris Security and Defense · Advisory work for the US and Colombian Armed Forces, ambassadors and judges in Colombia, and European political foundations and defense firms</dd></div>
+          <div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 14px 0; border-bottom: 1px solid #D6CFC3;"><dt style="flex: 0 0 140px; font-weight: 600;">Teaching</dt><dd style="margin: 0; flex: 1 1 240px; color: #6E675D;">Former Adjunct Professor of Politics, Freie Universität Berlin · Former Assistant Professor of International Relations, Pontificia Universidad Javeriana · Eötvös Loránd University, Budapest · Education First (EF), Washington, DC · Erasmus+ mobility, University of Hradec Králové (Czech Republic)</dd></div>
+        </dl>
       </div>
     </div>
-  </div>
-</section>
-</main>
+  </section>
 
-<footer class="site-footer">
-  <div class="container site-footer__inner">
-    <div class="footer__brand-row"><img class="wordmark__mono" src="assets/img/kc-on-dark.png" alt="" aria-hidden="true" style="height:26px;width:26px" /><span>Kantor Communication</span></div>
-    <div class="footer__domain">kantor-communication.com</div>
-    <div class="footer__contact">Email: <a href="mailto:info@kantor-communication.com">info@kantor-communication.com</a> · Phone: <a href="tel:+491707070045">+49 170 7070045</a> · Düsseldorf / Berlin · Budapest · Bogotá · Washington, DC</div>
-    <div class="footer__legal"><a href="jobs.html">Careers</a> · <a href="faq.html">FAQ</a> · <a href="impressum.html">Legal Notice</a> · <a href="datenschutz.html">Privacy Policy</a></div>
-  </div>
-</footer>
+  <!-- 4 CUSTOMER JOURNEY (illustration) -->
+  <section style="padding: clamp(48px, 3.9vw, 56px) clamp(20px, 5vw, 48px);">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px 64px; align-items: flex-start;">
+      <div style="flex: 1 1 340px;">
+        <p style="margin: 0 0 16px; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #6E675D;"><span style="width: 42px; height: 1px; background: #A87C3D;"></span>How the practices connect</p>
+        <h2 style="margin: 0 0 20px; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: clamp(30px, 3vw, 40px); line-height: 1.15;">From the first lesson to a new market</h2>
+        <p style="margin: 0 0 16px; color: #23201C;">A client can start in one practice and draw on the others as the need grows.</p>
+        <p style="margin: 0; font-size: 14px; color: #6E675D;">An illustration of how clients can move between the practices. Not a past client case.</p>
+      </div>
+      <ol style="flex: 1 1 520px; list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; border-top: 1px solid #D6CFC3;">
+        <li style="display: flex; gap: 24px; align-items: baseline; padding: 22px 0; border-bottom: 1px solid #D6CFC3;"><span style="font-family: 'Spectral', Georgia, serif; font-size: 28px; color: #A87C3D; width: 40px; flex: none;">1</span><span style="flex: 1 1 0; min-width: 0; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px;"><span style="flex: 1 1 240px;"><b style="font-weight: 600;">Language Immersion</b><br><span style="color: #6E675D;">A professional prepares for a new role abroad.</span></span><span style="font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: #8A6531; flex: none;">Language Institute</span></span></li>
+        <li style="display: flex; gap: 24px; align-items: baseline; padding: 22px 0; border-bottom: 1px solid #D6CFC3;"><span style="font-family: 'Spectral', Georgia, serif; font-size: 28px; color: #A87C3D; width: 40px; flex: none;">2</span><span style="flex: 1 1 0; min-width: 0; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px;"><span style="flex: 1 1 240px;"><b style="font-weight: 600;">Making the Case</b><br><span style="color: #6E675D;">The same professional learns to argue and persuade in the new language.</span></span><span style="font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: #8A6531; flex: none;">Institute + Consulting</span></span></li>
+        <li style="display: flex; gap: 24px; align-items: baseline; padding: 22px 0; border-bottom: 1px solid #D6CFC3;"><span style="font-family: 'Spectral', Georgia, serif; font-size: 28px; color: #A87C3D; width: 40px; flex: none;">3</span><span style="flex: 1 1 0; min-width: 0; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px;"><span style="flex: 1 1 240px;"><b style="font-weight: 600;">Executive Intensive</b><br><span style="color: #6E675D;">Their employer books an intensive for the management team.</span></span><span style="font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: #8A6531; flex: none;">Communication Consulting</span></span></li>
+        <li style="display: flex; gap: 24px; align-items: baseline; padding: 22px 0; border-bottom: 1px solid #D6CFC3;"><span style="font-family: 'Spectral', Georgia, serif; font-size: 28px; color: #A87C3D; width: 40px; flex: none;">4</span><span style="flex: 1 1 0; min-width: 0; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px;"><span style="flex: 1 1 240px;"><b style="font-weight: 600;">Brand &amp; Marketing</b><br><span style="color: #6E675D;">The company commissions positioning and messaging for its international expansion.</span></span><span style="font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: #8A6531; flex: none;">Brand &amp; Marketing</span></span></li>
+      </ol>
+    </div>
+  </section>
 
-<script src="assets/js/kcc-globe.js"></script>
-<script src="assets/js/kcc-home.js"></script>
+  <!-- 5a WHY KC (statistics) -->
+  <section style="background: #EFEBE4; padding: clamp(48px, 3.9vw, 56px) clamp(20px, 5vw, 48px);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <p style="margin: 0 0 40px; display: flex; align-items: center; justify-content: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #6E675D;"><span style="width: 42px; height: 1px; background: #A87C3D;"></span>Why KC?<span style="width: 42px; height: 1px; background: #A87C3D;"></span></p>
+      <div style="display: flex; flex-wrap: wrap; gap: 1px; background: #E4DFD6; border: 1px solid #E4DFD6; border-radius: 4px; overflow: hidden;">
+        <div style="flex: 1 1 320px; background: #F8F6F2; padding: clamp(24px, 4vw, 30px) clamp(20px, 5vw, 32px); box-sizing: border-box; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+          <span style="font-family: 'Spectral', Georgia, serif; font-size: clamp(44px, 9vw, 64px); line-height: .95; letter-spacing: -.03em; color: #8A6531;">11+</span>
+          <span style="font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2;">Countries our clients come from</span>
+          <span style="font-size: 15px; color: #6E675D; line-height: 1.5;">Executives, academics, and independent learners on four continents.</span>
+        </div>
+        <div style="flex: 1 1 320px; background: #F8F6F2; padding: clamp(24px, 4vw, 30px) clamp(20px, 5vw, 32px); box-sizing: border-box; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+          <span style="font-family: 'Spectral', Georgia, serif; font-size: clamp(44px, 9vw, 64px); line-height: .95; letter-spacing: -.03em; color: #8A6531;">4</span>
+          <span style="font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2;">Core languages</span>
+          <span style="font-size: 15px; color: #6E675D; line-height: 1.5;">English · German · Spanish · Hungarian.</span>
+        </div>
+        <div style="flex: 1 1 320px; background: #F8F6F2; padding: clamp(24px, 4vw, 30px) clamp(20px, 5vw, 32px); box-sizing: border-box; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+          <span style="font-family: 'Spectral', Georgia, serif; font-size: clamp(44px, 9vw, 64px); line-height: .95; letter-spacing: -.03em; color: #8A6531;">20</span>
+          <span style="font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2;">Years of teaching</span>
+          <span style="font-size: 15px; color: #6E675D; line-height: 1.5;">The founder's teaching experience, alongside 15 years of professional work. Every trainer brings years of both.</span>
+        </div>
+        <div style="flex: 1 1 320px; background: #F8F6F2; padding: clamp(24px, 4vw, 30px) clamp(20px, 5vw, 32px); box-sizing: border-box; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+          <svg viewBox="0 0 24 24" aria-hidden="true" style="width: 44px; height: 44px; margin-bottom: 8px; fill: none; stroke: #8A6531; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round;"><rect x="5" y="11" width="14" height="10" rx="1.5"></rect><path d="M8 11V8a4 4 0 0 1 8 0v3"></path><path d="M12 15v2"></path></svg>
+          <span style="font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2;">Confidentiality</span>
+          <span style="font-size: 15px; color: #6E675D; line-height: 1.5;">Discretion on every engagement, with the handling of material agreed at the outset.</span>
+        </div>
+        <div style="flex: 1 1 320px; background: #F8F6F2; padding: clamp(24px, 4vw, 30px) clamp(20px, 5vw, 32px); box-sizing: border-box; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 8px;">
+          <svg viewBox="0 0 24 24" aria-hidden="true" style="width: 44px; height: 44px; margin-bottom: 8px; fill: none; stroke: #8A6531; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round;"><circle cx="9" cy="8" r="3.2"></circle><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"></path><circle cx="17" cy="9" r="2.6"></circle><path d="M16 14.2c2.8.3 5 2.7 5 5.8"></path></svg>
+          <span style="font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2;">Native and bilingual-level specialists</span>
+          <span style="font-size: 15px; color: #6E675D; line-height: 1.5;">Experts with professional experience across sectors.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5b REVIEWS (Institute) -->
+  <section style="padding: clamp(48px, 3.9vw, 56px) clamp(20px, 5vw, 48px) clamp(40px, 3.6vw, 52px);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 32px; margin-bottom: 40px;">
+        <div>
+          <p style="margin: 0 0 16px; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #6E675D;"><span style="width: 42px; height: 1px; background: #A87C3D;"></span>Language Institute reviews</p>
+          <h2 style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: clamp(30px, 3vw, 40px); line-height: 1.15;">What learners say</h2>
+        </div>
+        <p style="margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 18px; font-size: 15px; color: #6E675D;"><span><span style="color: #8A6531; letter-spacing: .1em;" aria-hidden="true">★★★★★</span> 5.0 · 10 reviews</span><a href="education.html">More Language Institute reviews&nbsp;→</a></p>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 24px;">
+        <figure style="flex: 1 1 300px; margin: 0; padding: clamp(24px, 6vw, 32px) clamp(20px, 5vw, 32px); box-sizing: border-box; background: #F8F6F2; border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); display: flex; flex-direction: column; gap: 20px;">
+          <blockquote style="margin: 0; font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.45; flex: 1 1 auto;">“Because he has a strong academic background, he is one of the best teachers for anyone who wants to develop their academic English.”</blockquote>
+          <figcaption style="font-size: 14px; color: #6E675D;">Kento M. · University professor · Japan</figcaption>
+        </figure>
+        <figure style="flex: 1 1 300px; margin: 0; padding: clamp(24px, 6vw, 32px) clamp(20px, 5vw, 32px); box-sizing: border-box; background: #F8F6F2; border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); display: flex; flex-direction: column; gap: 20px;">
+          <blockquote style="margin: 0; font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.45; flex: 1 1 auto;">“Each class is well thought out, varied, and tailored to my needs and goals.”</blockquote>
+          <figcaption style="font-size: 14px; color: #6E675D;">Maxi K. · Electrical engineer, sales specialist · Germany</figcaption>
+        </figure>
+        <figure style="flex: 1 1 300px; margin: 0; padding: clamp(24px, 6vw, 32px) clamp(20px, 5vw, 32px); box-sizing: border-box; background: #F8F6F2; border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); display: flex; flex-direction: column; gap: 20px;">
+          <blockquote style="margin: 0; font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.45; flex: 1 1 auto;">“Highly professional, and committed to helping students achieve real progress.”</blockquote>
+          <figcaption style="font-size: 14px; color: #6E675D;">Romulo F. · Financial services specialist · Argentina</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 ORGANIZATIONS -->
+  <section aria-label="Experience across sectors" style="background: #F8F6F2; border-top: 1px solid #E4DFD6; border-bottom: 1px solid #E4DFD6; padding: clamp(40px, 3.6vw, 52px) 0;">
+    <p style="margin: 0 0 28px; padding: 0 20px; text-align: center; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #6E675D;">Experience includes work with professionals from organizations such as</p>
+    <div class="kc-float kc-float--rtl">
+      <div class="kc-float__track">
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">George Mason University</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Freie Universität Berlin</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Goethe-Universität Frankfurt</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Florida International University</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Pontificia Universidad Javeriana</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Education First</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Springer Nature</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Mercedes-Benz / EvoBus</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Siemens Energy</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Heidelberg Materials</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">George Mason University</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Freie Universität Berlin</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Goethe-Universität Frankfurt</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Florida International University</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Pontificia Universidad Javeriana</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Education First</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Springer Nature</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Mercedes-Benz / EvoBus</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Siemens Energy</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Heidelberg Materials</span>
+        
+      </div>
+    </div>
+    <div class="kc-float kc-float--ltr" style="margin-top: 16px;">
+      <div class="kc-float__track">
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">US Armed Forces</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Colombian Armed Forces</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Talveris Security and Defense</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Deutsche Welle</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">El Espectador</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">El Tiempo</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Noticias Caracol</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">SoundCloud</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Elbit Systems</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Abbott</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Friedrich Ebert Foundation</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">US Armed Forces</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Colombian Armed Forces</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Talveris Security and Defense</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Deutsche Welle</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">El Espectador</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">El Tiempo</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Noticias Caracol</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">SoundCloud</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Elbit Systems</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Abbott</span>
+        
+          <span class="kc-cblock" style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Friedrich Ebert Foundation</span>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 REACH + GLOBE + CLAIM (original gradient band to ink) -->
+  <section class="kc-finale" style="text-align: center;">
+    <div style="position: relative; z-index: 1; background: #EFEBE4; padding: clamp(48px, 3.9vw, 56px) clamp(20px, 5vw, 48px) 32px;"><div style="max-width: 720px; margin: 0 auto;">
+      <p class="kc-balance" style="margin: 0 0 16px; display: flex; align-items: center; justify-content: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: #6E675D;"><span style="flex: none; width: 24px; height: 1px; background: #A87C3D;"></span>Our clients and language experts<span style="flex: none; width: 24px; height: 1px; background: #A87C3D;"></span></p>
+      <h2 style="margin: 0 0 16px; font-family: 'Spectral', Georgia, serif; font-weight: 300; font-size: clamp(32px, 3.6vw, 48px); line-height: 1.12; letter-spacing: -.02em;">Based in Europe, <em style="color: #A87C3D;">with a global reach</em></h2>
+      <p style="margin: 0; color: #4A443C;">We are based in Spain, with a presence in Germany and Hungary, and work with clients and language experts around the world. Each engagement is adapted to its country, audience, and setting.</p>
+    </div></div>
+    <div style="position: relative; z-index: 1; padding: 0 clamp(20px, 5vw, 48px); background: linear-gradient(to bottom, #EFEBE4 0%, #EFEBE4 62%, color-mix(in srgb, #2E1A1D 42%, #EFEBE4) 75%, color-mix(in srgb, #2E1A1D 93%, #EFEBE4) 85%, #2E1A1D 91%, #2E1A1D 100%);">
+    <div class="kc-globe-stage" style="position: relative; z-index: 1; width: 100%; max-width: 340px; margin: 0 auto;">
+      <svg id="kc-globe" viewBox="0 0 400 400" role="img" aria-label="Slowly rotating globe marking the cities where Kantor Communication clients, teachers and consultants are based" style="display: block; width: 100%; height: auto; overflow: visible;">
+        <circle cx="200" cy="200" r="160" fill="#23201C" fill-opacity="0.03"></circle>
+        <path d="M0,0" data-globe="gratD" fill="none" stroke="#23201C" stroke-opacity="0.13" stroke-width="0.65"></path>
+        <path d="M0,0" data-globe="coastD" fill="none" stroke="#23201C" stroke-opacity="0.34" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"></path>
+        <circle cx="200" cy="200" r="160" fill="none" stroke="#23201C" stroke-opacity="0.26" stroke-width="1"></circle>
+        <path d="M0,0" data-globe="haloD" fill="#A87C3D" fill-opacity="0.16"></path>
+        <path d="M0,0" data-globe="dotFarD" fill="#8A6531" fill-opacity="0.45"></path>
+        <path d="M0,0" data-globe="dotNearD" fill="#8A6531"></path>
+        <path d="M0,0" data-globe="baseHaloD" fill="#A87C3D" fill-opacity="0.28"></path>
+        <path d="M0,0" data-globe="baseDotD" fill="#8A6531"></path>
+      </svg>
+    </div>
+    </div>
+    <div style="position: relative; z-index: 3; margin-top: -12px; padding: 0 clamp(20px, 5vw, 48px);">
+      <button type="button" data-globe-toggle aria-pressed="false" style="min-height: 44px; padding: 6px 18px; background: transparent; color: #C9C1B6; border: 1px solid rgba(241,237,230,.3); border-radius: 22px; font: inherit; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; cursor: pointer;">Pause globe</button>
+    </div>
+    <div style="padding: 36px clamp(20px, 5vw, 48px) clamp(54px, 4.5vw, 64px);">
+    <div style="position: relative; z-index: 2; color: #F1EDE6; max-width: 1000px; margin: 0 auto;">
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1px; background: rgba(241,237,230,.15); border: 1px solid rgba(241,237,230,.15); margin: 0 0 clamp(48px, 3.9vw, 56px);">
+        <div style="flex: 1 1 320px; background: #2E1A1D; padding: 22px 20px;"><span style="display: block; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #C89A5A;">European bases</span><span style="font-family: 'Spectral', Georgia, serif; font-size: 22px;">Spain · Germany · Hungary</span></div>
+        <div style="flex: 1 1 320px; background: #2E1A1D; padding: 22px 20px;"><span style="display: block; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #C89A5A;">Working across</span><span style="font-family: 'Spectral', Georgia, serif; font-size: 22px;">Europe · the Americas · Asia</span></div>
+      </div>
+      <p class="kc-balance" style="margin: 0 0 20px; display: flex; align-items: center; justify-content: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: #C9C1B6;"><span style="flex: none; width: 24px; height: 1px; background: #C89A5A;"></span>In any room, in any language<span style="flex: none; width: 24px; height: 1px; background: #C89A5A;"></span></p>
+      <p style="margin: 0 auto; font-family: 'Spectral', Georgia, serif; font-weight: 300; font-size: clamp(38px, 4.4vw, 60px); line-height: 1.08; letter-spacing: -.02em;"><span style="display: block;">Be understood.</span><span style="display: block;">Be persuasive.</span><span style="display: block;"><em style="color: #C89A5A;">Be remembered.</em></span></p>
+    </div>
+    </div>
+  </section>
+
+  <!-- 8 CONTACT -->
+  <section id="contact" style="background: #2E1A1D; color: #F1EDE6; border-top: 1px solid rgba(241,237,230,.15); padding: clamp(54px, 4.5vw, 64px) clamp(20px, 5vw, 48px) clamp(54px, 4.5vw, 64px);">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px 72px;">
+      <div style="flex: 1 1 340px;">
+        <p style="margin: 0 0 16px; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #B0A79B;"><span style="width: 42px; height: 1px; background: #C89A5A;"></span>Contact</p>
+        <h2 style="margin: 0 0 20px; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: clamp(30px, 3vw, 40px); line-height: 1.15; color: #F1EDE6;">Tell us what you want to achieve</h2>
+        <p style="margin: 0 0 32px; color: #E3DDD3;">A language you want to develop, a communication task, or a brand project: tell us where you are starting. We will discuss the fit and propose the appropriate next step.</p>
+        <div style="display: flex; flex-direction: column; gap: 14px; font-size: 16px;">
+          <a href="mailto:info@kantor-communication.com" style="color: #F1EDE6;"><span style="color: #B0A79B;">Email</span>  info@kantor-communication.com</a>
+          <a href="https://scheduler.zoom.us/dorian-kantor/kantor-communication" style="color: #C89A5A; font-weight: 500;">Book an introductory call&nbsp;→</a>
+        </div>
+      </div>
+      <form name="home-contact" method="POST" action="https://formspree.io/f/mnjkbbva" style="flex: 1 1 480px; display: flex; flex-direction: column; gap: 18px; font-size: 15px;">
+        <input type="hidden" name="_subject" value="KC website enquiry (homepage)">
+        <input type="hidden" name="_next" value="https://kantor-communication.com/thanks">
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position: absolute; left: -9999px; width: 1px; height: 1px; padding: 0; border: 0;">
+        <div style="display: flex; flex-wrap: wrap; gap: 18px;">
+          <label style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px; color: #E3DDD3;">Name<input type="text" name="name" autocomplete="name" required></label>
+          <label style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px; color: #E3DDD3;">Email<input type="email" name="email" autocomplete="email" required></label>
+        </div>
+        <label style="display: flex; flex-direction: column; gap: 6px; color: #E3DDD3;">What would you like help with?
+          <select name="practice" required>
+            <option>Not sure yet</option>
+            <option>Language Institute</option>
+            <option>Communication Consulting</option>
+            <option>Brand &amp; Marketing</option>
+          </select>
+        </label>
+        <div style="display: flex; flex-wrap: wrap; gap: 18px;">
+          <label style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px; color: #E3DDD3;">Organization (optional)<input type="text" name="organization"></label>
+          <label style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px; color: #E3DDD3;">Language or market (optional)<input type="text" name="language_market"></label>
+        </div>
+        <label style="display: flex; flex-direction: column; gap: 6px; color: #E3DDD3;">Briefly describe your goal or project<textarea name="situation"></textarea></label>
+        <button type="submit" style="flex: 0 0 auto; width: 100%; max-width: 280px; min-height: 48px; padding: 14px 28px; background: #F1EDE6; color: #2E1A1D; border: 1.5px solid #F1EDE6; border-radius: 1px; font: inherit; font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; cursor: pointer;">Send enquiry</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background: #2E1A1D; color: #F1EDE6; padding: 48px clamp(20px, 5vw, 48px) 40px; border-top: 1px solid rgba(241,237,230,.10);">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; font-size: 14px; color: #B0A79B;">
+      <span style="display: inline-flex; align-items: center; gap: 10px; color: #F1EDE6; font-family: 'Spectral', Georgia, serif; font-size: 18px;"><img loading="lazy" decoding="async" src="assets/img/kc-on-dark.png" alt="" style="width: 30px; height: 30px;"><span><b style="font-weight: 600;">Kantor</b> Communication</span></span>
+      <span style="color: #E3DDD3;">Based in Spain. Working across Europe and beyond.</span>
+      <span style="display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 12px;"><a href="mailto:info@kantor-communication.com" style="color: #B0A79B;">info@kantor-communication.com</a><a href="tel:+34711005345" style="color: #B0A79B;">Spain +34 711 005 345</a><a href="tel:+12025006818" style="color: #B0A79B;">US +1 202 500 6818</a></span>
+      <span style="display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 18px;"><a href="faq.html" style="color: #B0A79B;">FAQ</a><a href="jobs.html" style="color: #B0A79B;">Careers</a><a href="impressum.html" style="color: #B0A79B;">Legal Notice</a><a href="datenschutz.html" style="color: #B0A79B;">Privacy Policy</a></span>
+    </div>
+  </footer>
+
+</div>
+<script src="assets/js/kc-2026.js" defer></script>
 </body>
 </html>

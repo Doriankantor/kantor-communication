@@ -1,290 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Brand &amp; Communication — Kantor Communication</title>
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
-  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png" />
-  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
-  <link rel="stylesheet" href="assets/css/kcc-site.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand &amp; Marketing | Kantor Communication</title>
+<meta name="description" content="Positioning, messaging, and brand expression for organizations entering a new market or clarifying what they stand for, in more than one language.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kantor Communication">
+<meta property="og:title" content="Brand &amp; Marketing | Kantor Communication">
+<meta property="og:description" content="Positioning, messaging, and brand expression for organizations entering a new market or clarifying what they stand for, in more than one language.">
+<link rel="icon" href="assets/img/favicon.svg?v=3" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png?v=3" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png?v=3">
+<link rel="preload" href="assets/fonts/spectral-v15-latin_latin-ext-300.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-v20-latin_latin-ext-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/kc-2026.css">
+<style>
+body{margin:0;background:#F8F6F2}
+a{color:#8A6531;text-decoration:none}a:hover{color:#6E4F24}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #C89A5A;outline-offset:3px}
+input,select,textarea{font:inherit;color:#F1EDE6;background:#3A2226;border:1px solid rgba(241,237,230,.28);border-radius:2px;padding:12px 14px;width:100%;box-sizing:border-box}
+select option{color:#23201C;background:#F8F6F2}
+textarea{min-height:120px;resize:vertical}
+.kc-hero{position:relative;isolation:isolate;overflow:hidden;background-color:#2E1A1D;background-image:radial-gradient(58% 46% at 50% 8%,rgba(200,154,90,.34) 0%,rgba(168,124,61,.19) 32%,rgba(168,124,61,.06) 58%,transparent 80%)}
+.kc-hero__grid{position:absolute;inset:0;z-index:0;opacity:.5;pointer-events:none;background-image:linear-gradient(to right,rgba(241,237,230,.15) 1px,transparent 1px),linear-gradient(to bottom,rgba(241,237,230,.15) 1px,transparent 1px);background-size:78px 78px;-webkit-mask-image:radial-gradient(62% 52% at 50% 12%,#000,transparent 76%);mask-image:radial-gradient(62% 52% at 50% 12%,#000,transparent 76%)}
+.kc-hero__light{position:absolute;inset:-25% -12% 0 -12%;z-index:1;pointer-events:none;mix-blend-mode:screen;background:radial-gradient(40% 50% at 40% 26%,rgba(200,154,90,.20),transparent 62%);animation:kc-drift 16s ease-in-out infinite alternate;filter:blur(8px)}
+.kc-hero__beam{position:absolute;top:-10%;bottom:0;left:-30%;width:44%;z-index:1;pointer-events:none;mix-blend-mode:screen;background:linear-gradient(105deg,transparent,rgba(214,168,102,.16) 47%,rgba(214,168,102,.22) 50%,rgba(214,168,102,.16) 53%,transparent);filter:blur(30px);animation:kc-sweep 16s ease-in-out infinite}
+.kc-hero__seam{position:absolute;left:0;right:0;bottom:0;z-index:2;pointer-events:none;height:clamp(5rem,12vh,9rem);background:linear-gradient(to bottom,rgba(248,246,242,0) 0%,rgba(248,246,242,.38) 60%,#F8F6F2 100%)}
+.kc-bar{position:relative}
+.kc-bar::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;pointer-events:none;background:linear-gradient(90deg,transparent 0%,transparent 22%,rgba(200,154,90,.06) 38%,rgba(214,168,102,.85) 49%,rgba(220,180,110,.95) 50%,rgba(214,168,102,.85) 51%,rgba(200,154,90,.06) 62%,transparent 78%,transparent 100%);background-size:240% 100%;opacity:.55;animation:kc-beam 6.5s linear infinite}
+@keyframes kc-drift{0%{transform:translate(-4%,0) scale(1)}100%{transform:translate(10%,-1%) scale(1.06)}}
+@keyframes kc-sweep{0%{transform:translateX(0) skewX(-8deg);opacity:0}18%{opacity:.9}82%{opacity:.9}100%{transform:translateX(320%) skewX(-8deg);opacity:0}}
+@keyframes kc-beam{0%{background-position:130% 0}100%{background-position:-130% 0}}
+.kc-float{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.kc-float__track{display:flex;width:max-content;gap:16px;animation:kc-rtl 44s linear infinite}
+.kc-float:hover .kc-float__track{animation-play-state:paused}
+@keyframes kc-rtl{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.kc-hero__light,.kc-hero__beam,.kc-bar::after,.kc-float__track{animation:none}}
+h1,h2,.kc-balance{text-wrap:balance}
+.kc-nav a{display:inline-block;padding:6px 0}
+@media (max-width:720px){
+.kc-head{padding-top:12px !important;padding-bottom:8px !important;gap:2px 16px !important}
+.kc-nav{width:100%;gap:0 13px !important;font-size:14px !important}
+.kc-nav .kc-lang{margin-left:auto;gap:6px !important;font-size:12px !important}
+}
+</style>
 </head>
-<body class="branch">
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kcc-logo" viewBox="0 0 480 480"><path fill="currentColor" fill-rule="evenodd" d="M241.33 342.52 C222.67 339.13 209.53 332.55 197.46 320.51 C190.68 313.76 188.61 310.85 184.26 302.00 C180.99 295.35 178.47 288.48 177.39 283.28 L175.67 275.05 L160.14 254.42 C151.60 243.07 144.00 233.55 143.27 233.27 C142.53 232.99 141.04 233.56 139.96 234.53 C138.09 236.23 138.00 237.78 138.00 267.69 C138.00 297.17 138.12 299.32 140.01 303.03 C142.84 308.57 146.88 310.91 156.30 312.48 C160.07 313.10 160.11 313.15 159.80 317.31 L159.50 321.50 L122.25 321.76 L85.00 322.02 L85.00 317.57 L85.00 313.12 L89.75 312.44 C97.14 311.39 103.61 307.44 105.98 302.53 C107.95 298.47 108.00 296.55 107.98 224.43 C107.96 154.52 107.86 150.28 106.10 146.40 C103.78 141.30 99.02 138.25 91.05 136.77 L85.00 135.65 L85.00 131.32 L85.00 127.00 L121.89 127.00 L158.78 127.00 L159.44 130.52 C160.25 134.87 159.61 136.00 156.31 136.00 C148.49 136.00 140.87 141.24 138.93 147.96 C138.29 150.17 138.02 164.70 138.20 186.50 L138.50 221.50 L170.01 190.00 C187.35 172.68 202.98 156.29 204.76 153.58 C208.92 147.25 209.00 143.33 205.05 139.54 C202.84 137.43 200.81 136.59 197.05 136.23 L192.00 135.75 L192.00 131.36 L192.00 126.98 L228.75 127.24 L265.50 127.50 L265.50 131.45 L265.50 135.41 L259.00 136.71 C250.11 138.50 237.81 144.58 230.00 151.06 C223.25 156.66 166.75 211.57 166.18 213.08 C165.86 213.92 173.82 225.22 183.00 236.99 C185.47 240.17 192.44 249.23 198.47 257.13 C227.68 295.38 234.29 302.54 245.50 308.07 C248.80 309.70 254.35 311.56 257.84 312.21 C264.12 313.38 264.17 313.41 263.59 316.32 C263.26 317.93 263.00 319.87 263.00 320.62 C263.00 321.72 260.38 322.00 250.11 322.00 L237.22 322.00 L231.86 318.38 C228.91 316.39 223.41 311.78 219.63 308.13 L212.75 301.50 L215.57 306.50 C222.48 318.75 231.66 326.32 244.26 330.15 C253.61 332.99 269.00 332.48 276.74 329.07 C291.00 322.79 302.73 308.86 306.94 293.22 C307.57 290.90 308.17 289.01 308.29 289.02 C308.40 289.02 310.52 289.64 313.00 290.40 C316.80 291.55 317.47 292.13 317.29 294.13 C317.17 295.43 316.16 303.42 315.04 311.89 C312.79 328.90 313.35 327.84 303.83 332.97 C286.68 342.22 261.16 346.12 241.33 342.52 Z M321.18 342.45 C312.21 340.81 307.00 339.15 307.00 337.92 C307.00 337.42 307.43 337.00 307.96 337.00 C309.81 337.00 318.00 331.50 318.00 330.26 C318.00 328.62 319.43 328.68 325.50 330.60 C338.00 334.53 356.09 331.80 365.99 324.48 C375.77 317.26 381.10 310.09 385.67 298.04 C389.13 288.92 389.44 288.70 395.41 290.97 C398.55 292.16 398.55 289.67 395.42 314.62 L393.78 327.74 L386.57 331.77 C378.75 336.14 364.02 341.29 354.57 342.95 C346.65 344.35 330.23 344.10 321.18 342.45 Z M272.70 314.68 C260.79 300.14 254.10 277.07 255.30 254.68 C256.54 231.77 263.81 212.77 277.15 197.62 L280.57 193.73 L285.33 198.49 C287.95 201.11 291.15 205.34 292.45 207.90 C294.66 212.26 294.71 212.77 293.31 216.03 C287.46 229.64 284.44 256.89 286.91 273.81 C288.13 282.11 291.90 296.08 293.98 299.97 C294.90 301.67 294.73 302.70 293.12 305.29 C289.81 310.62 280.20 319.00 277.40 319.00 C276.76 319.00 274.65 317.06 272.70 314.68 Z M191.82 237.91 L180.13 222.66 L182.19 218.58 C190.25 202.56 204.80 187.64 219.29 180.52 C233.59 173.50 238.47 172.54 260.00 172.53 C277.84 172.52 278.89 172.63 289.62 175.71 C301.39 179.10 312.00 183.35 312.01 184.69 C312.02 186.67 315.05 220.98 315.58 225.19 L316.17 229.88 L311.98 231.01 C306.81 232.40 305.00 231.78 305.00 228.64 C305.00 224.64 301.04 212.96 297.20 205.59 C288.24 188.45 271.84 180.44 251.05 183.06 C234.41 185.16 223.05 194.12 214.19 212.12 C208.60 223.50 206.57 230.35 204.72 244.09 L203.50 253.16 L191.82 237.91 Z M384.08 222.83 C378.17 198.58 365.49 185.58 345.24 182.99 C338.71 182.16 327.40 183.14 322.64 184.95 C319.01 186.33 319.18 186.40 318.82 183.28 C318.59 181.30 317.41 179.94 314.53 178.33 L310.57 176.11 L313.17 175.13 C317.35 173.54 330.45 172.00 339.85 172.00 C356.88 172.00 369.70 174.56 385.59 181.12 L392.67 184.05 L394.39 204.77 C395.34 216.17 396.31 226.48 396.56 227.68 C397.03 230.00 396.37 230.39 389.93 231.52 L386.35 232.16 L384.08 222.83 Z"/></symbol></svg>
+<body>
+<div style="font-family: 'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; color: #23201C; background: #F8F6F2; font-size: 18px; line-height: 1.6; width: 100%;">
 
-<header class="site-header is-over-ink" id="hdr">
-  <div class="container site-header__inner">
-    <a class="wordmark" href="index.html" aria-label="Kantor Communication — home"><img class="wordmark__mono wm--dark" src="assets/img/kc-on-dark.png" width="30" height="30" alt="" aria-hidden="true" /><img class="wordmark__mono wm--light" src="assets/img/kc-on-light.png" width="30" height="30" alt="" aria-hidden="true" /><span class="wordmark__name"><b>Kantor</b> Communication</span></a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav class="site-nav" id="site-nav" aria-label="Primary">
-      <ul class="site-nav__links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="education.html">Language Institute</a></li>
-        <li><a href="consulting.html">Consulting</a></li>
-        <li><a href="marketing.html" aria-current="page">Brand &amp; Communication</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#talk">Contact</a></li>
-      </ul>
-      <div class="lang-switcher"><a href="marketing.html" aria-current="true">EN</a><span class="sep">/</span><a href="de/marketing.html">DE</a><span class="sep">/</span><a href="hu/marketing.html">HU</a><span class="sep">/</span><a href="es/marketing.html">ES</a></div>
-    </nav>
-  </div>
-</header>
+  <!-- HERO with header (original lights, grid, beam, seam) -->
+  <section id="top" class="kc-hero" style="color: #F1EDE6;">
+  <div class="kc-hero__grid" aria-hidden="true"></div>
+  <div class="kc-hero__light" aria-hidden="true"></div>
+  <div class="kc-hero__beam" aria-hidden="true"></div>
+  <header class="kc-bar" style="position: relative; z-index: 4; color: #F1EDE6;">
+    <div class="kc-head" style="max-width: 1200px; margin: 0 auto; padding: 18px clamp(20px, 5vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px;">
+      <a href="index.html" style="display: inline-flex; align-items: center; gap: 10px; color: #F1EDE6;">
+        <img src="assets/img/kc-on-dark.png" alt="" style="width: 34px; height: 34px;">
+        <span style="font-family: 'Spectral', Georgia, serif; font-size: 18px; letter-spacing: .01em;"><b style="font-weight: 600;">Kantor</b> Communication</span>
+      </a>
+      <nav class="kc-nav" aria-label="Primary" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; font-size: 15px;">
+        <a href="education.html" style="color: #F1EDE6;">Language Institute</a>
+        <a href="consulting.html" style="color: #F1EDE6;">Communication Consulting</a>
+        <a href="#top" aria-current="page" style="color: #C89A5A; border-bottom: 1px solid #C89A5A; padding-bottom: 2px;">Brand &amp; Marketing</a>
+        <a href="index.html#founder" style="color: #F1EDE6;">About</a>
+        <a href="#talk" style="color: #F1EDE6;">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<main>
-<!-- INK PAGE INTRO -->
-<section class="page-intro" aria-label="Brand and Communication">
-  <div class="page-intro__light"></div>
-  <div class="container page-intro__inner">
-    <p class="eyebrow center">Brand &amp; Communication</p>
-    <h1 class="page-intro__statement">Communication your market can <em>see.</em></h1>
-    <p class="page-intro__sub">Positioning, messaging, and brand communication for people already trusted in the room — built to be understood at scale, across languages and markets.</p>
-  </div>
-  <div class="page-intro__seam"></div>
-</section>
-
-<!-- COST / REFRAME -->
-<section class="section intro-prose" aria-label="What is at stake">
-  <div class="container">
-    <p class="intro-prose__lead">Your reputation is built one conversation at a time. Your brand is what speaks for you in every room you are not in — the website, the deck, the profile, the launch.</p>
-    <p class="claim">Most companies do not have a design problem. They have a <em>message</em> problem.</p>
-    <ul class="pointlist">
-      <li>A value proposition that is obvious to you and invisible to the market.</li>
-      <li>A pitch, a page, or a profile that looks the part but never quite says what you do.</li>
-      <li>A message that works in one language and dissolves in the next.</li>
-    </ul>
-  </div>
-</section>
-
-<!-- WHAT WE DO -->
-<section class="stakes band" aria-label="What we do">
-  <div class="container" style="text-align:center">
-    <p class="stakes__lead" style="max-width:64ch">We help you say who you are — in words, on the page, and on screen. The same discipline that prepares an executive for the boardroom shapes how a brand meets its market: <em>strategy first, then the message, then the way it is delivered.</em> And because we work across English, German, Spanish, Hungarian, and Italian, your message holds its meaning as it crosses borders.</p>
-  </div>
-</section>
-
-<!-- JUMP INDEX -->
-<nav class="jump-index" aria-label="On this page">
-  <div class="container">
-    <ul class="jump-index__list">
-      <li><a href="#experience"><span class="jump-index__num">01</span> Experience</a></li>
-      <li><a href="#approach"><span class="jump-index__num">02</span> How We Work</a></li>
-      <li><a href="#apart"><span class="jump-index__num">03</span> What Sets Us Apart</a></li>
-      <li><a href="#deliver"><span class="jump-index__num">04</span> What We Deliver</a></li>
-      <li><a href="#sprints"><span class="jump-index__num">05</span> Brand &amp; Message Sprints</a></li>
-    </ul>
-  </div>
-</nav>
-
-<!-- 01 EXPERIENCE (floating client blocks) -->
-<section class="section" id="experience" aria-label="Experience">
-  <div class="container">
-    <header class="group-divider"><h2 class="group-divider__title">Experience</h2></header>
-    <p class="claim" style="max-width:62ch">Before we are designers or website builders, we are communication experts — in speaking and in print.</p>
-    <p class="experience__intro" style="margin-top:var(--sp-3)">Our founder has spent his career making messages land in the highest-stakes rooms and on the page — shaping positioning, delivering speeches that move an audience, and growing the readership, visibility, and partnerships of the organizations behind them, across four languages and three continents. That work runs from international media and political organizing to experiential marketing representing brands — with engagements at organizations including:</p>
-  </div>
-  <div class="floatrow floatrow--rtl" style="margin-top:1rem">
-    <div class="floatrow__track">
-      <div class="cblock">Mercedes-Benz / EvoBus</div><div class="cblock">Heidelberg Materials</div><div class="cblock">Siemens Energy</div><div class="cblock">Springer Nature</div><div class="cblock">Education First</div>
-      <div class="cblock">Mercedes-Benz / EvoBus</div><div class="cblock">Heidelberg Materials</div><div class="cblock">Siemens Energy</div><div class="cblock">Springer Nature</div><div class="cblock">Education First</div>
+  <div style="position: relative; z-index: 3; text-align: center; padding: clamp(64px, 8vw, 112px) clamp(20px, 5vw, 48px) clamp(120px, 30vw, 200px);">
+    <div style="max-width: 980px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 26px;">
+      <p style="margin: 0; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #C9C1B6;"><span style="width: 42px; height: 1px; background: #C89A5A;"></span>Brand &amp; Marketing<span style="width: 42px; height: 1px; background: #C89A5A;"></span></p>
+      <h1 style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 300; font-size: clamp(40px, 5.4vw, 74px); line-height: 1.08; letter-spacing: -.02em; max-width: 18ch;">Give your market a clear reason <em style="color: #C89A5A;">to choose you.</em></h1>
+      <p style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 300; font-size: clamp(20px, 1.8vw, 24px); line-height: 1.4; color: #E3DDD3; max-width: 46ch;">Positioning, messaging, and brand communication for founders and organizations establishing or refining their place in a market.</p>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; width: 100%; margin-top: 8px;">
+        <a href="#talk" style="display: inline-block; flex: 1 1 260px; max-width: 340px; min-width: 0; box-sizing: border-box; padding: 15px 28px; background: #F1EDE6; color: #2E1A1D; border: 1.5px solid #F1EDE6; font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; text-align: center;">Discuss your brand project</a>
+        <a href="https://scheduler.zoom.us/dorian-kantor/kantor-communication" style="display: inline-block; flex: 1 1 260px; max-width: 340px; min-width: 0; box-sizing: border-box; padding: 15px 28px; color: #F1EDE6; border: 1.5px solid #F1EDE6; font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; text-align: center;">Book an introductory call</a>
+      </div>
     </div>
   </div>
-  <div class="floatrow floatrow--ltr">
-    <div class="floatrow__track">
-      <div class="cblock">SoundCloud</div><div class="cblock">Elbit Systems</div><div class="cblock">Abbott</div><div class="cblock">Friedrich Ebert Foundation</div><div class="cblock">Pontificia Universidad Javeriana</div>
-      <div class="cblock">SoundCloud</div><div class="cblock">Elbit Systems</div><div class="cblock">Abbott</div><div class="cblock">Friedrich Ebert Foundation</div><div class="cblock">Pontificia Universidad Javeriana</div>
+  <div class="kc-hero__seam" aria-hidden="true"></div>
+  </section>
+
+  <!-- IN THIS ORDER (facts strip) -->
+  <section aria-label="In this order" style="padding: 0 clamp(20px, 5vw, 48px) clamp(56px, 7vw, 88px);">
+    <dl style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 1px; background: #E4DFD6; border: 1px solid #E4DFD6; border-radius: 4px; overflow: hidden;">
+      <div style="flex: 1 1 200px; box-sizing: border-box; background: #F8F6F2; padding: clamp(16px, 4vw, 26px) clamp(18px, 4vw, 24px);"><dt style="font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531; margin-bottom: 6px;">First</dt><dd style="margin: 0; font-family: 'Spectral', Georgia, serif; font-size: 22px; line-height: 1.25;">Strategy</dd></div>
+      <div style="flex: 1 1 200px; box-sizing: border-box; background: #F8F6F2; padding: clamp(16px, 4vw, 26px) clamp(18px, 4vw, 24px);"><dt style="font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531; margin-bottom: 6px;">Second</dt><dd style="margin: 0; font-family: 'Spectral', Georgia, serif; font-size: 22px; line-height: 1.25;">The words</dd></div>
+      <div style="flex: 1 1 200px; box-sizing: border-box; background: #F8F6F2; padding: clamp(16px, 4vw, 26px) clamp(18px, 4vw, 24px);"><dt style="font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531; margin-bottom: 6px;">Third</dt><dd style="margin: 0; font-family: 'Spectral', Georgia, serif; font-size: 22px; line-height: 1.25;">The design</dd></div>
+    </dl>
+  </section>
+
+  <!-- THE SITUATION -->
+  <section style="background: #EFEBE4; padding: clamp(64px, 8vw, 104px) clamp(20px, 5vw, 48px);">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px 72px; align-items: flex-start;">
+      <div style="flex: 1 1 480px;">
+        <p style="margin: 0 0 16px; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #6E675D;"><span style="width: 42px; height: 1px; background: #A87C3D;"></span>The situation</p>
+        <blockquote style="margin: 0; padding-left: 24px; border-left: 3px solid #A87C3D; font-family: 'Spectral', Georgia, serif; font-size: clamp(24px, 2.3vw, 30px); line-height: 1.35;">“At home, customers understand at once what we offer and why it matters. In the new market, the same message is translated correctly and still falls flat.”</blockquote>
+      </div>
+      <div style="flex: 1 1 360px;">
+        <p style="margin: 0 0 16px; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #6E675D;"><span style="flex: 0 0 42px; width: 42px; height: 1px; background: #A87C3D;"></span>Where a brand project often starts</p>
+        <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px;">
+          <li style="padding: 18px 22px; background: #F8F6F2; border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0;">An organization entering a new country with a message written for its home market</li>
+          <li style="padding: 18px 22px; background: #F8F6F2; border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0;">A founder whose offer is clear in conversation and unclear on the website</li>
+          <li style="padding: 18px 22px; background: #F8F6F2; border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0;">A team whose website, presentations, and sales materials each describe the organization differently</li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <div class="container" style="margin-top:var(--sp-4)">
-    <p class="experience__note">The through-line is always the message: what to say, how to say it, and how to make people listen. Everything else — the website, the deck, the campaign — is how that message reaches its market.</p>
-    <p class="experience__note">That experience includes work with the Colombian Armed Forces, US Southern Command, the US Congress, senior European politicians, German political foundations, and political and security publications — conferences around the world, and writing published in four languages.</p>
-    <p class="experience__note">And because it crosses languages and cultures, we make sure your message is not just correct in a new market, but that it actually works there.</p>
-    <p class="section-next"><a href="#approach">See how we work, and in what order ↓</a></p>
-  </div>
-</section>
+  </section>
 
-<!-- 02 HOW WE WORK -->
-<section class="section band" id="approach" aria-label="How we work">
-  <div class="container">
-    <header class="group-divider"><h2 class="group-divider__title">How we work</h2></header>
-    <p class="measure"><strong>Message before medium.</strong> Every engagement begins with a discovery call to understand your market, your audience, and the outcome you need. From there we work in sequence: first the strategy — who you are, who you are for, and why it matters; then the message — the positioning, the narrative, the exact words; and only then the way it is expressed, whether that is a page, a deck, a speech, or a campaign. A polished brand wrapped around an unclear message is an expensive way to stay misunderstood.</p>
-    <p class="claim" style="margin-top:var(--sp-4)">This is brand and marketing led by communication, not decoration. What you get is:</p>
-    <ul class="pointlist measure">
-      <li>A position stated clearly enough that the market repeats it back to you.</li>
-      <li>Words written to persuade — on the page, on stage, or on screen.</li>
-      <li>Expression that serves the message — a page, a deck, a speech, a campaign — never the other way around.</li>
-      <li>A team led by a senior partner who oversees every project — not a relay of juniors.</li>
-    </ul>
-    <figure class="pullquote pullquote--medium pullquote--right">
-      <span class="pullquote__mark">&ldquo;</span>
-      <blockquote class="pullquote__text">A brand is an argument made in public — and I have spent my career winning it. From political foundations and universities to my own political and communications firms, my work has been to raise client satisfaction, attract new clients, manage relationships, and lift brands.</blockquote>
-      <figcaption class="pullquote__cite">— <strong>Dorian Kantor</strong><span class="pullquote__role">Founder &amp; Director</span></figcaption>
-    </figure>
-  </div>
-</section>
-
-<!-- 03 WHAT SETS US APART -->
-<section class="section" id="apart" aria-label="What sets us apart">
-  <div class="container">
-    <header class="group-divider"><h2 class="group-divider__title">What sets us apart</h2></header>
-    <div class="diffs">
-      <div class="diff"><span class="diff__index">01</span><div><span class="diff__lead">A consultancy, not a template shop.</span><p class="diff__support">You are buying judgment about what to say and how to be seen — the website and the design are how that judgment gets delivered, not the product itself.</p></div></div>
-      <div class="diff"><span class="diff__index">02</span><div><span class="diff__lead">Words are the foundation.</span><p class="diff__support">Led by a founder who has edited, published, and broadcast across four languages. Most studios design first and write last; we do the reverse.</p></div></div>
-      <div class="diff"><span class="diff__index">03</span><div><span class="diff__lead">Multilingual and cross-cultural.</span><p class="diff__support">One partner for your brand in English, German, Spanish, Hungarian, and Italian — so entering a new market does not mean starting your message from scratch.</p></div></div>
-      <div class="diff"><span class="diff__index">04</span><div><span class="diff__lead">The proof is in front of you.</span><p class="diff__support">This site is our own. We do not show a portfolio of someone else's work and hope; you can judge the craft by the page you are on.</p></div></div>
-      <div class="diff"><span class="diff__index">05</span><div><span class="diff__lead">Platform-pragmatic.</span><p class="diff__support">We build on what fits you — Squarespace, Webflow, a static site, or your existing stack — not on whatever locks you into us.</p></div></div>
-      <div class="diff"><span class="diff__index">06</span><div><span class="diff__lead">Confidential and senior.</span><p class="diff__support">Positioning, launches, and repositioning handled with the discretion executives and institutions expect — the same standard as our advisory practice.</p></div></div>
+  <!-- SERVICE GROUPS -->
+  <section style="padding: clamp(64px, 8vw, 112px) clamp(20px, 5vw, 48px);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <p style="margin: 0 0 16px; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #6E675D;"><span style="width: 42px; height: 1px; background: #A87C3D;"></span>What you can commission</p>
+      <h2 style="margin: 0 0 48px; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: clamp(32px, 3.4vw, 46px); line-height: 1.12;">Three areas of work</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 24px;">
+        <article style="flex: 1 1 320px; box-sizing: border-box; padding: clamp(24px, 6vw, 36px) clamp(20px, 5vw, 32px); background-color: #F8F6F2; background-image: linear-gradient(100deg, rgba(46,26,29,.055) 0%, rgba(168,124,61,.05) 18%, transparent 52%); border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); display: flex; flex-direction: column; gap: 16px;">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">01</span>
+          <h3 style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 28px; line-height: 1.15;">Positioning and messaging</h3>
+          <p style="margin: 0; color: #6E675D; flex: 1 1 auto;">Define who you serve, the problem you address, and the reason to choose you. Turn that position into a practical message hierarchy and a voice your organization can use.</p>
+          <p style="margin: 8px 0 0; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">Typical outputs</p>
+          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 15px;"><li style="padding: 6px 12px; background: #EFEBE4; border-radius: 2px;">Positioning and value proposition</li><li style="padding: 6px 12px; background: #EFEBE4; border-radius: 2px;">Core narrative</li><li style="padding: 6px 12px; background: #EFEBE4; border-radius: 2px;">Voice guidance</li></ul>
+        </article>
+        <article style="flex: 1 1 320px; box-sizing: border-box; padding: clamp(24px, 6vw, 36px) clamp(20px, 5vw, 32px); background-color: #F8F6F2; background-image: linear-gradient(100deg, rgba(46,26,29,.055) 0%, rgba(168,124,61,.05) 18%, transparent 52%); border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); display: flex; flex-direction: column; gap: 16px;">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">02</span>
+          <h3 style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 28px; line-height: 1.15;">Adaptation for a new market</h3>
+          <p style="margin: 0; color: #6E675D; flex: 1 1 auto;">Review how your position and messages may be understood by a new audience. Adapt the language, register, examples, and priority materials to the country and context.</p>
+          <p style="margin: 8px 0 0; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">Typical outputs</p>
+          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 15px;"><li style="padding: 6px 12px; background: #EFEBE4; border-radius: 2px;">Market and audience review</li><li style="padding: 6px 12px; background: #EFEBE4; border-radius: 2px;">Adapted messaging and terminology</li><li style="padding: 6px 12px; background: #EFEBE4; border-radius: 2px;">Priority asset adaptation</li></ul>
+        </article>
+        <article style="flex: 1 1 320px; box-sizing: border-box; padding: clamp(24px, 6vw, 36px) clamp(20px, 5vw, 32px); background-color: #F8F6F2; background-image: linear-gradient(100deg, rgba(46,26,29,.055) 0%, rgba(168,124,61,.05) 18%, transparent 52%); border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); display: flex; flex-direction: column; gap: 16px;">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">03</span>
+          <h3 style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 28px; line-height: 1.15;">Communication production</h3>
+          <p style="margin: 0; color: #6E675D; flex: 1 1 auto;">Carry the agreed strategy into the materials your audience encounters: a website, presentation, editorial content, launch communication, or visual identity.</p>
+          <p style="margin: 8px 0 0; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">Typical outputs</p>
+          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 15px;"><li style="padding: 6px 12px; background: #EFEBE4; border-radius: 2px;">Website strategy and copy</li><li style="padding: 6px 12px; background: #EFEBE4; border-radius: 2px;">Decks, editorial, launch materials</li><li style="padding: 6px 12px; background: #EFEBE4; border-radius: 2px;">Design and build as scoped</li></ul>
+        </article>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- STATEMENT -->
-<section class="banner--b" aria-label="Statement">
-  <div class="container"><p class="banner__text">Design is how it looks. Communication is whether it <em>lands.</em></p></div>
-</section>
-
-<!-- 04 WHAT WE DELIVER -->
-<section class="section" id="deliver" aria-label="What we deliver">
-  <div class="container">
-    <header class="group-divider"><h2 class="group-divider__title">What we deliver</h2><p class="group-divider__sub">For founders, executives, and organizations positioning themselves to a market.</p></header>
-
-    <article class="outcome" style="border-top:0">
-      <p class="outcome__index">Deliverable 01</p>
-      <h2 class="outcome__title">Positioning &amp; messaging</h2>
-      <p class="outcome__promise">Get clear on who you are, who you are for, and why it matters — in language the market can repeat.</p>
-      <p class="outcome__repr"><span class="label">Representative work:</span> Value-proposition and positioning strategy · Core narrative and messaging framework · Tone-of-voice and naming.</p>
-      <details class="expander"><summary><span class="chev">›</span> See all services in this area</summary>
-        <ul class="expander__list"><li>Brand Positioning and Value-Proposition Strategy</li><li>Core Narrative and Story Development</li><li>Messaging Framework and Message Architecture</li><li>Audience and Segment Messaging</li><li>Tone of Voice and Verbal Identity</li><li>Naming, Tagline, and Slogan Development</li><li>Competitive and Category Positioning</li><li>Rebrand and Repositioning Strategy</li></ul>
-      </details>
-    </article>
-
-    <article class="outcome">
-      <p class="outcome__index">Deliverable 02</p>
-      <h2 class="outcome__title">Political &amp; public communication</h2>
-      <p class="outcome__promise">Messaging, speeches, and public communication built to move people — knowing what works, how to word it, how to make an audience listen, and how to deliver a speech that lands.</p>
-      <p class="outcome__repr"><span class="label">Representative work:</span> Political and campaign messaging · Speechwriting and delivery · Public-affairs, security, and institutional communication.</p>
-      <p class="outcome__repr" style="margin-top:.5rem"><span class="label">Background:</span> Colombian Armed Forces · US Southern Command · US Congress · senior European politicians · German political foundations · political &amp; security publications.</p>
-      <details class="expander"><summary><span class="chev">›</span> See all services in this area</summary>
-        <ul class="expander__list"><li>Political and Campaign Messaging</li><li>Speechwriting and Speaker Coaching</li><li>Public Affairs and Government Communication</li><li>Security and Defense Communication</li><li>Media Training and Spokesperson Preparation</li><li>Op-Ed and Public-Essay Development</li><li>Crisis and Reputation Communication</li><li>Conference and Keynote Development</li></ul>
-      </details>
-    </article>
-
-    <article class="outcome">
-      <p class="outcome__index">Deliverable 03</p>
-      <h2 class="outcome__title">Website &amp; digital presence</h2>
-      <p class="outcome__promise">A site that says what you do, reads as precisely as you think, and is built to last on a platform that fits you.</p>
-      <p class="outcome__repr"><span class="label">Representative work:</span> Website strategy and copywriting · Editorial web design · Build on Squarespace, Webflow, or static hosting.</p>
-      <details class="expander"><summary><span class="chev">›</span> See all services in this area</summary>
-        <ul class="expander__list"><li>Website Strategy and Information Architecture</li><li>Website and Landing-Page Copywriting</li><li>Editorial Web and Interface Design</li><li>Design-System and Component Development</li><li>Build and Deployment (Squarespace, Webflow, static)</li><li>Multilingual Website Structure and Localization</li><li>SEO-Aware Content Structuring</li><li>Accessibility and Performance Review</li></ul>
-      </details>
-    </article>
-
-    <article class="outcome">
-      <p class="outcome__index">Deliverable 04</p>
-      <h2 class="outcome__title">Multilingual marketing &amp; localization</h2>
-      <p class="outcome__promise">Take your brand into a new market with a message adapted for its language and culture — not just translated.</p>
-      <p class="outcome__repr"><span class="label">Representative work:</span> Brand transcreation across EN/DE/ES/HU/IT · Market-entry messaging · Multilingual campaign adaptation.</p>
-      <details class="expander"><summary><span class="chev">›</span> See all services in this area</summary>
-        <ul class="expander__list"><li>Brand and Message Transcreation (EN / DE / ES / HU / IT)</li><li>Market-Entry Communication Strategy</li><li>Multilingual Website and Content Localization</li><li>Cross-Cultural Register and Tone Adaptation</li><li>Multilingual Campaign and Asset Production</li><li>International Naming and Positioning Review</li></ul>
-      </details>
-    </article>
-
-    <article class="outcome">
-      <p class="outcome__index">Deliverable 05</p>
-      <h2 class="outcome__title">Content, editorial &amp; thought leadership</h2>
-      <p class="outcome__promise">Turn your expertise into a public profile — articles, essays, and a founder voice that builds authority over time.</p>
-      <p class="outcome__repr"><span class="label">Representative work:</span> Thought-leadership and article writing · Founder and executive voice · LinkedIn and profile strategy.</p>
-      <details class="expander"><summary><span class="chev">›</span> See all services in this area</summary>
-        <ul class="expander__list"><li>Thought-Leadership Strategy and Editorial Planning</li><li>Article, Essay, and Long-Form Writing</li><li>Founder and Executive Ghostwriting</li><li>LinkedIn and Social Profile Strategy</li><li>Newsletter and Email Content</li><li>Op-Ed and Public-Essay Development</li><li>Case Studies and Customer Stories</li></ul>
-      </details>
-    </article>
-
-    <article class="outcome">
-      <p class="outcome__index">Deliverable 06</p>
-      <h2 class="outcome__title">Brand &amp; visual identity</h2>
-      <p class="outcome__promise">A coherent visual voice — from wordmark direction to an editorial design system your whole team can use.</p>
-      <p class="outcome__repr"><span class="label">Representative work:</span> Verbal-and-visual identity direction · Brand guidelines · Presentation and document templates.</p>
-      <details class="expander"><summary><span class="chev">›</span> See all services in this area</summary>
-        <ul class="expander__list"><li>Verbal and Visual Identity Direction</li><li>Logo and Wordmark Art Direction</li><li>Editorial Design System and Typography</li><li>Brand Guidelines and Usage Standards</li><li>Presentation, Pitch-Deck, and Document Templates</li><li>Marketing Collateral and One-Pagers</li></ul>
-      </details>
-    </article>
-
-    <article class="outcome">
-      <p class="outcome__index">Deliverable 07</p>
-      <h2 class="outcome__title">Campaign &amp; launch communication</h2>
-      <p class="outcome__promise">Bring a product, service, or repositioning to market with a message that is ready before the spotlight is on it.</p>
-      <p class="outcome__repr"><span class="label">Representative work:</span> Launch messaging and rollout · Landing pages and announcements · Email and campaign copy.</p>
-      <details class="expander"><summary><span class="chev">›</span> See all services in this area</summary>
-        <ul class="expander__list"><li>Launch and Go-to-Market Messaging</li><li>Campaign Concept and Copy Development</li><li>Landing-Page and Conversion Copywriting</li><li>Announcement, Press, and Release Communication</li><li>Email and Sequence Copywriting</li><li>Sales and Pitch Support Materials</li></ul>
-      </details>
-    </article>
-  </div>
-</section>
-
-<!-- SELECTED WORK — live. Add more <article class="outcome"> cases here as they land;
-     name a client only with permission, otherwise use sector. -->
-<section class="section" id="selected-work" aria-label="Selected work">
-  <div class="container">
-    <header class="group-divider"><h2 class="group-divider__title">Selected work</h2><p class="group-divider__sub">A few representative engagements.</p></header>
-    <article class="outcome" style="border-top:0">
-      <p class="outcome__index">Case 01</p>
-      <h2 class="outcome__title">Café de Lucre — Berlin</h2>
-      <p class="outcome__promise">A luxury patisserie and café in Berlin-Charlottenburg, positioned as “more than a café — a culinary experience.” We gave the brand a refined, bilingual web presence to match the room: the crystal-and-marble craft translated into a message that reads the same in German and in English.</p>
-      <p class="outcome__repr"><span class="label">Scope:</span> Brand presentation · website · bilingual DE / EN. &nbsp;<a href="https://www.cafedelucre.de" target="_blank" rel="noopener">cafedelucre.de →</a></p>
-    </article>
-  </div>
-</section>
-
-<!-- 05 SPRINTS -->
-<section class="section band" id="sprints" aria-label="Brand and message sprints">
-  <div class="container">
-    <header class="group-divider"><h2 class="group-divider__title">Brand &amp; message sprints</h2></header>
-    <p class="crossborder__text">Compact, focused engagements — a few days to a week — for teams and founders who need to fix the message, ship the site, or land the launch without a six-month agency retainer. We pair our senior people with your specific challenge and leave you with something finished, not a proposal.</p>
-    <div class="workshops">
-      <div class="workshop"><h3 class="workshop__name">Messaging sprint</h3><p class="workshop__desc">Nail your positioning, value proposition, and core narrative — the words everything else is built on.</p></div>
-      <div class="workshop"><h3 class="workshop__name">Website sprint</h3><p class="workshop__desc">Strategy, copy, design, and build for a focused site or landing page — start to finish, in about a week.</p></div>
-      <div class="workshop"><h3 class="workshop__name">Launch sprint</h3><p class="workshop__desc">Get a product, service, or repositioning market-ready: message, page, and announcement.</p></div>
-      <div class="workshop"><h3 class="workshop__name">Market-entry sprint</h3><p class="workshop__desc">Adapt your brand and message for a new language and market, ready to go live.</p></div>
-      <div class="workshop"><h3 class="workshop__name">Market-repositioning sprint</h3><p class="workshop__desc">Reset an established brand for a new stage, market, or message — clarity where perception has drifted.</p></div>
-      <div class="workshop"><h3 class="workshop__name">Political-communication sprint</h3><p class="workshop__desc">Message, speech, and public-communication support for campaigns, institutions, and public figures — from wording to delivery.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- INVITATION + CONTACT -->
-<section class="section" id="talk" aria-label="Let's talk about your brand">
-  <div class="container">
-    <div class="form-wrap">
-      <p class="eyebrow">Get started</p>
-      <h2 style="font-family:var(--serif);font-weight:400;font-size:clamp(1.6rem,1.2rem+1.8vw,2.4rem);margin:0 0 var(--sp-2)">Let's talk about how your brand comes across.</h2>
-      <p class="form-microcopy">Tell us what's ahead — a new website, a repositioning, a launch, a new market — and we'll propose a focused scope. Confidential, no obligation.</p>
-      <form class="form" onsubmit="return false">
-        <div class="field--row">
-          <div class="field"><label>Name <span class="req">*</span></label><input type="text" placeholder=" " required></div>
-          <div class="field"><label>Organization</label><input type="text" placeholder=" "></div>
+  <!-- PROCESS -->
+  <section style="background: #EFEBE4; padding: clamp(64px, 8vw, 104px) clamp(20px, 5vw, 48px);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <p style="margin: 0 0 16px; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #6E675D;"><span style="width: 42px; height: 1px; background: #A87C3D;"></span>How we work</p>
+      <h2 style="margin: 0 0 48px; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: clamp(32px, 3.4vw, 46px); line-height: 1.12;">A clear sequence</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 0 40px;">
+        <div style="flex: 1 1 300px; padding: 28px 0; border-top: 1px solid #D6CFC3; display: flex; flex-direction: column; gap: 12px;">
+          <span style="font-family: 'Spectral', Georgia, serif; font-size: 44px; line-height: 1; color: #A87C3D;">01</span>
+          <h3 style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 26px;">Establish the position</h3>
+          <p style="margin: 0; color: #6E675D;">Understand the audience, the alternatives, and the business objective, then agree on the position.</p>
         </div>
-        <div class="field"><label>What do you need? <span class="req">*</span></label>
-          <select required><option value="" disabled selected>Select an area…</option><option>Positioning &amp; messaging</option><option>Website &amp; digital presence</option><option>Multilingual marketing &amp; localization</option><option>Content, editorial &amp; thought leadership</option><option>Brand &amp; visual identity</option><option>Campaign &amp; launch communication</option><option>Not sure yet</option></select>
+        <div style="flex: 1 1 300px; padding: 28px 0; border-top: 1px solid #D6CFC3; display: flex; flex-direction: column; gap: 12px;">
+          <span style="font-family: 'Spectral', Georgia, serif; font-size: 44px; line-height: 1; color: #A87C3D;">02</span>
+          <h3 style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 26px;">Develop the message</h3>
+          <p style="margin: 0; color: #6E675D;">Write the narrative, the priority messages, and the words the agreed materials need.</p>
         </div>
-        <div class="field"><label>Briefly, what's the situation or goal?</label><textarea placeholder=" "></textarea></div>
-        <div style="display:flex;flex-wrap:wrap;gap:var(--sp-3)">
-          <button class="btn" type="submit">Request a call</button>
-          <a class="btn btn--ghost" href="#">Book a Zoom call</a>
+        <div style="flex: 1 1 300px; padding: 28px 0; border-top: 1px solid #D6CFC3; display: flex; flex-direction: column; gap: 12px;">
+          <span style="font-family: 'Spectral', Georgia, serif; font-size: 44px; line-height: 1; color: #A87C3D;">03</span>
+          <h3 style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 26px;">Express it consistently</h3>
+          <p style="margin: 0; color: #6E675D;">Develop the design and deliver the agreed assets around that message.</p>
         </div>
+      </div>
+      <p style="margin: 20px 0 0; padding-top: 28px; border-top: 1px solid #D6CFC3; font-size: 16px; color: #6E675D;">A team of specialists in branding, communication, and image development works on your project together, which keeps delivery fast. Timelines are agreed with the scope before work begins.</p>
+    </div>
+  </section>
+
+  <!-- INTERNATIONAL -->
+  <section style="background: #2E1A1D; color: #F1EDE6; padding: clamp(64px, 8vw, 104px) clamp(20px, 5vw, 48px);">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px 72px; align-items: flex-start;">
+      <h2 style="flex: 1 1 340px; margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: clamp(30px, 3vw, 40px); line-height: 1.15; color: #F1EDE6;">A message for its actual audience</h2>
+      <p style="flex: 1 1 480px; margin: 0; color: #E3DDD3;">Our Spanish base and experience in European and Colombian settings inform work between European and Spanish-speaking markets. Each brief identifies the specific country, audience, language, and specialist input required.</p>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE (restored) -->
+  <section aria-label="Experience" style="padding: clamp(56px, 7vw, 88px) 0 0;">
+    <p class="kc-balance" style="max-width: 1200px; margin: 0 auto 28px; padding: 0 clamp(20px, 5vw, 48px); text-align: center; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #6E675D;">Experience includes work with professionals from organizations such as</p>
+    <div class="kc-float">
+      <div class="kc-float__track">
+        
+          <span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Mercedes-Benz / EvoBus</span>
+        
+          <span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Heidelberg Materials</span>
+        
+          <span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Siemens Energy</span>
+        
+          <span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Springer Nature</span>
+        
+          <span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Education First</span>
+        
+          <span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">SoundCloud</span>
+        
+          <span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Elbit Systems</span>
+        
+          <span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Abbott</span>
+        
+          <span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Friedrich Ebert Foundation</span>
+        
+          <span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Pontificia Universidad Javeriana</span>
+        
+          <span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Mercedes-Benz / EvoBus</span>
+        
+          <span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Heidelberg Materials</span>
+        
+          <span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Siemens Energy</span>
+        
+          <span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Springer Nature</span>
+        
+          <span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Education First</span>
+        
+          <span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">SoundCloud</span>
+        
+          <span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Elbit Systems</span>
+        
+          <span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Abbott</span>
+        
+          <span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Friedrich Ebert Foundation</span>
+        
+          <span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Pontificia Universidad Javeriana</span>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- SELECTED WORK -->
+  <section id="selected-work" style="padding: clamp(64px, 8vw, 112px) clamp(20px, 5vw, 48px);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <p style="margin: 0 0 16px; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #6E675D;"><span style="width: 42px; height: 1px; background: #A87C3D;"></span>Selected work</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 32px 72px; box-sizing: border-box; padding: clamp(24px, 6vw, 44px) clamp(20px, 5vw, 40px); background-color: #F8F6F2; background-image: linear-gradient(100deg, rgba(46,26,29,.055) 0%, rgba(168,124,61,.05) 18%, transparent 52%); border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05);">
+        <div style="flex: 1 1 340px;">
+          <img loading="lazy" decoding="async" src="assets/img/site/cafe-de-lucre-logo.png" alt="Café de Lucre logo: the name in neon script on a wall of roses" style="display: block; width: 210px; max-width: 100%; height: auto; margin: 0 0 18px;">
+          <h2 style="margin: 0 0 10px; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: clamp(30px, 3vw, 40px); line-height: 1.12;">Café de Lucre</h2>
+          <p style="margin: 0 0 6px; font-size: 15px; color: #6E675D;">Patisserie and café · Berlin-Charlottenburg</p>
+          <p style="margin: 0; font-size: 15px; color: #6E675D;">cafedelucre.de</p>
+        </div>
+        <dl style="flex: 1 1 520px; margin: 0; display: flex; flex-direction: column; border-top: 1px solid #E4DFD6;">
+          <div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 18px 0; border-bottom: 1px solid #E4DFD6;"><dt style="flex: 0 0 130px; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531; padding-top: 4px;">The task</dt><dd style="margin: 0; flex: 1 1 280px;">Give a luxury patisserie, positioned as “more than a café, a culinary experience”, a web presence that matches the room.</dd></div>
+          <div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 18px 0; border-bottom: 1px solid #E4DFD6;"><dt style="flex: 0 0 130px; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531; padding-top: 4px;">Key decision</dt><dd style="margin: 0; flex: 1 1 280px;">Carry the crystal and marble of the room into wording that reads the same in German and in English.</dd></div>
+          <div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 18px 0 0;"><dt style="flex: 0 0 130px; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531; padding-top: 4px;">Delivered</dt><dd style="margin: 0; flex: 1 1 280px;">Brand presentation and a bilingual German / English website.</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHICH PRACTICE LEADS + MODEL -->
+  <section style="background: #EFEBE4; padding: clamp(64px, 8vw, 104px) clamp(20px, 5vw, 48px);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <p style="margin: 0 0 16px; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #6E675D;"><span style="width: 42px; height: 1px; background: #A87C3D;"></span>Which practice leads</p>
+      <h2 style="margin: 0 0 40px; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: clamp(32px, 3.4vw, 46px); line-height: 1.12;">A clear lead for each project</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 24px;">
+        <article style="flex: 1 1 340px; box-sizing: border-box; padding: clamp(24px, 6vw, 36px) clamp(20px, 5vw, 32px); background-color: #F8F6F2; background-image: linear-gradient(100deg, rgba(46,26,29,.055) 0%, rgba(168,124,61,.05) 18%, transparent 52%); border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); display: flex; flex-direction: column; gap: 16px;">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">This practice</span>
+          <h3 style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 28px; line-height: 1.15;">Brand &amp; Marketing leads</h3>
+          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; border-top: 1px solid #E4DFD6; flex: 1 1 auto;">
+            <li style="padding: 12px 0; border-bottom: 1px solid #E4DFD6;">Organizational positioning</li>
+            <li style="padding: 12px 0; border-bottom: 1px solid #E4DFD6;">Market-facing messaging</li>
+            <li style="padding: 12px 0; border-bottom: 1px solid #E4DFD6;">Brand identity and voice</li>
+            <li style="padding: 12px 0; border-bottom: 1px solid #E4DFD6;">Website and marketing content</li>
+            <li style="padding: 12px 0; border-bottom: 1px solid #E4DFD6;">Market-entry communication</li>
+          </ul>
+          <a href="#talk" style="font-weight: 500;">Discuss your brand project&nbsp;→</a>
+        </article>
+        <article style="flex: 1 1 340px; box-sizing: border-box; padding: clamp(24px, 6vw, 36px) clamp(20px, 5vw, 32px); background-color: #F8F6F2; background-image: linear-gradient(100deg, rgba(46,26,29,.055) 0%, rgba(168,124,61,.05) 18%, transparent 52%); border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); display: flex; flex-direction: column; gap: 16px;">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">Our sister practice</span>
+          <h3 style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 28px; line-height: 1.15;">Communication Consulting leads</h3>
+          <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; border-top: 1px solid #E4DFD6; flex: 1 1 auto;">
+            <li style="padding: 12px 0; border-bottom: 1px solid #E4DFD6;">Individual speaker preparation</li>
+            <li style="padding: 12px 0; border-bottom: 1px solid #E4DFD6;">Executive communication</li>
+            <li style="padding: 12px 0; border-bottom: 1px solid #E4DFD6;">Negotiation and persuasion</li>
+            <li style="padding: 12px 0; border-bottom: 1px solid #E4DFD6;">Speeches and presentations</li>
+            <li style="padding: 12px 0; border-bottom: 1px solid #E4DFD6;">Political and institutional messaging</li>
+          </ul>
+          <a href="consulting.html" style="font-weight: 500;">Explore Communication Consulting&nbsp;→</a>
+        </article>
+      </div>
+      <p style="margin: 32px 0 0; font-size: 16px; color: #6E675D; max-width: 72ch;">For a public or institutional message, Communication Consulting leads the message, and Brand&nbsp;&amp;&nbsp;Marketing produces the brand and campaign materials when you need them.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px 72px; align-items: flex-start; margin-top: 48px; padding-top: 40px; border-top: 1px solid #D6CFC3;">
+        <h2 style="flex: 1 1 340px; margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: clamp(26px, 2.4vw, 32px); line-height: 1.15;">Personally overseen</h2>
+        <p style="flex: 1 1 480px; margin: 0;">Every engagement is led or supervised by Dr. Dorian Kantor. Projects are scoped around the decisions and materials you need, with fees, timing, and specialist support agreed before work begins.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="talk" style="background: #2E1A1D; color: #F1EDE6; padding: clamp(72px, 9vw, 120px) clamp(20px, 5vw, 48px);">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px 72px;">
+      <div style="flex: 1 1 340px;">
+        <p style="margin: 0 0 16px; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #B0A79B;"><span style="width: 42px; height: 1px; background: #C89A5A;"></span>Contact</p>
+        <h2 style="margin: 0 0 20px; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: clamp(30px, 3vw, 40px); line-height: 1.15; color: #F1EDE6;">Discuss your brand project</h2>
+        <p style="margin: 0 0 32px; color: #E3DDD3;">Tell us about the organization, the market, and what needs to change. We will discuss whether the right starting point is positioning, message development, market adaptation, or production.</p>
+        <div style="display: flex; flex-direction: column; gap: 14px; font-size: 16px;">
+          <a href="mailto:info@kantor-communication.com" style="color: #F1EDE6;"><span style="color: #B0A79B;">Email</span>  info@kantor-communication.com</a>
+          <a href="https://scheduler.zoom.us/dorian-kantor/kantor-communication" style="color: #C89A5A; font-weight: 500;">Book an introductory call&nbsp;→</a>
+        </div>
+      </div>
+      <form name="marketing-contact" method="POST" action="https://formspree.io/f/mnjkbbva" style="flex: 1 1 480px; display: flex; flex-direction: column; gap: 18px; font-size: 15px;">
+        <input type="hidden" name="_subject" value="KC Brand &amp; Marketing enquiry">
+        <input type="hidden" name="_next" value="https://kantor-communication.com/thanks">
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position: absolute; left: -9999px; width: 1px; height: 1px; padding: 0; border: 0;">
+        <input type="hidden" name="practice" value="Brand &amp; Marketing">
+        <div style="display: flex; flex-wrap: wrap; gap: 18px;">
+          <label style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px; color: #E3DDD3;">Name<input type="text" name="name" autocomplete="name" required></label>
+          <label style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px; color: #E3DDD3;">Email<input type="email" name="email" autocomplete="email" required></label>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 18px;">
+          <label style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px; color: #E3DDD3;">Organization (optional)<input type="text" name="organization"></label>
+          <label style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px; color: #E3DDD3;">Where to start (optional)
+            <select name="area">
+              <option>Not sure yet</option>
+              <option>Positioning and messaging</option>
+              <option>Adaptation for a new market</option>
+              <option>Communication production</option>
+            </select>
+          </label>
+        </div>
+        <label style="display: flex; flex-direction: column; gap: 6px; color: #E3DDD3;">What's ahead? A new website, a repositioning, a launch, a new market…<textarea name="situation"></textarea></label>
+        <button type="submit" style="flex: 0 0 auto; width: 100%; max-width: 280px; min-height: 48px; padding: 14px 28px; background: #F1EDE6; color: #2E1A1D; border: 1.5px solid #F1EDE6; border-radius: 1px; font: inherit; font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; cursor: pointer;">Send enquiry</button>
       </form>
     </div>
-  </div>
-</section>
-</main>
+  </section>
 
-<footer class="site-footer">
-  <div class="container site-footer__inner">
-    <div class="footer__brand-row"><img class="wordmark__mono" src="assets/img/kc-on-dark.png" alt="" aria-hidden="true" style="height:26px;width:26px" /><span>Kantor Communication</span></div>
-    <div class="footer__domain">kantor-communication.com</div>
-    <div class="footer__contact">Email: <a href="mailto:info@kantor-communication.com">info@kantor-communication.com</a> · Phone: <a href="tel:+491707070045">+49 170 7070045</a> · Düsseldorf / Berlin · Budapest · Bogotá · Washington, DC</div>
-    <div class="footer__legal"><a href="jobs.html">Careers</a> · <a href="faq.html">FAQ</a> · <a href="impressum.html">Legal Notice</a> · <a href="datenschutz.html">Privacy Policy</a></div>
-  </div>
-</footer>
+  <!-- FOOTER -->
+  <footer style="background: #2E1A1D; color: #F1EDE6; padding: 48px clamp(20px, 5vw, 48px) 40px; border-top: 1px solid rgba(241,237,230,.10);">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; font-size: 14px; color: #B0A79B;">
+      <span style="display: inline-flex; align-items: center; gap: 10px; color: #F1EDE6; font-family: 'Spectral', Georgia, serif; font-size: 18px;"><img loading="lazy" decoding="async" src="assets/img/kc-on-dark.png" alt="" style="width: 30px; height: 30px;"><span><b style="font-weight: 600;">Kantor</b> Communication</span></span>
+      <span style="color: #E3DDD3;">Based in Spain. Working across Europe and beyond.</span>
+      <span style="display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 12px;"><a href="mailto:info@kantor-communication.com" style="color: #B0A79B;">info@kantor-communication.com</a><a href="tel:+34711005345" style="color: #B0A79B;">Spain +34 711 005 345</a><a href="tel:+12025006818" style="color: #B0A79B;">US +1 202 500 6818</a></span>
+      <span style="display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 18px;"><a href="faq.html" style="color: #B0A79B;">FAQ</a><a href="jobs.html" style="color: #B0A79B;">Careers</a><a href="impressum.html" style="color: #B0A79B;">Legal Notice</a><a href="datenschutz.html" style="color: #B0A79B;">Privacy Policy</a></span>
+    </div>
+  </footer>
 
-<script src="assets/js/kcc-home.js"></script>
+</div>
+<script src="assets/js/kc-2026.js" defer></script>
 </body>
 </html>
