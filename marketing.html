@@ -297,10 +297,9 @@ h1,h2,.kc-balance{text-wrap:balance}
           <a href="https://scheduler.zoom.us/dorian-kantor/kantor-communication" style="color: #C89A5A; font-weight: 500;">Book an introductory call&nbsp;→</a>
         </div>
       </div>
-      <form name="marketing-contact" method="POST" action="https://formspree.io/f/mnjkbbva" style="flex: 1 1 480px; display: flex; flex-direction: column; gap: 18px; font-size: 15px;">
-        <input type="hidden" name="_subject" value="KC Brand &amp; Marketing enquiry">
-        <input type="hidden" name="_next" value="https://kantor-communication.com/thanks">
-        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position: absolute; left: -9999px; width: 1px; height: 1px; padding: 0; border: 0;">
+      <form name="marketing-contact" method="POST" action="/thanks" data-netlify="true" netlify-honeypot="bot-field" style="flex: 1 1 480px; display: flex; flex-direction: column; gap: 18px; font-size: 15px;">
+        <input type="hidden" name="subject" value="KC Brand &amp; Marketing enquiry">
+        <p aria-hidden="true" style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; margin: 0;"><label>Leave this field empty<input type="text" name="bot-field" tabindex="-1" autocomplete="off"></label></p>
         <input type="hidden" name="practice" value="Brand &amp; Marketing">
         <div style="display: flex; flex-wrap: wrap; gap: 18px;">
           <label style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px; color: #E3DDD3;">Name<input type="text" name="name" autocomplete="name" required></label>
