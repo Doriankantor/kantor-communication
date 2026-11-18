@@ -1,108 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>About — Kantor Communication</title>
-  <link rel="icon" href="assets/img/favicon.svg?v=3" type="image/svg+xml" />
-  <link rel="icon" href="assets/img/favicon-32.png?v=3" sizes="32x32" type="image/png" />
-  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png?v=3" />
-  <link rel="stylesheet" href="assets/css/kcc-site.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Dr. Dorian Kantor | Kantor Communication</title>
+<meta name="description" content="Dr. Dorian Kantor, founder of Kantor Communication: political analyst, consultant, university professor, and international speaker, working in English, German, Spanish, and Hungarian.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kantor Communication">
+<meta property="og:title" content="About Dr. Dorian Kantor | Kantor Communication">
+<meta property="og:description" content="Dr. Dorian Kantor, founder of Kantor Communication: political analyst, consultant, university professor, and international speaker, working in English, German, Spanish, and Hungarian.">
+<link rel="icon" href="assets/img/favicon.svg?v=3" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png?v=3" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png?v=3">
+<link rel="preload" href="assets/fonts/spectral-v15-latin_latin-ext-300.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-v20-latin_latin-ext-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/kc-2026.css">
+<style>
+body{margin:0;background:#F8F6F2}
+a{color:#8A6531;text-decoration:none}a:hover{color:#6E4F24}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #C89A5A;outline-offset:3px}
+input,select,textarea{font:inherit;color:#F1EDE6;background:#3A2226;border:1px solid rgba(241,237,230,.28);border-radius:2px;padding:12px 14px;width:100%;box-sizing:border-box}
+select option{color:#23201C;background:#F8F6F2}
+textarea{min-height:120px;resize:vertical}
+.kc-hero{position:relative;isolation:isolate;overflow:hidden;background-color:#2E1A1D;background-image:radial-gradient(58% 46% at 50% 8%,rgba(200,154,90,.34) 0%,rgba(168,124,61,.19) 32%,rgba(168,124,61,.06) 58%,transparent 80%)}
+.kc-hero__grid{position:absolute;inset:0;z-index:0;opacity:.5;pointer-events:none;background-image:linear-gradient(to right,rgba(241,237,230,.15) 1px,transparent 1px),linear-gradient(to bottom,rgba(241,237,230,.15) 1px,transparent 1px);background-size:78px 78px;-webkit-mask-image:radial-gradient(62% 52% at 50% 12%,#000,transparent 76%);mask-image:radial-gradient(62% 52% at 50% 12%,#000,transparent 76%)}
+.kc-hero__light{position:absolute;inset:-25% -12% 0 -12%;z-index:1;pointer-events:none;mix-blend-mode:screen;background:radial-gradient(40% 50% at 40% 26%,rgba(200,154,90,.20),transparent 62%);animation:kc-drift 16s ease-in-out infinite alternate;filter:blur(8px)}
+.kc-hero__beam{position:absolute;top:-10%;bottom:0;left:-30%;width:44%;z-index:1;pointer-events:none;mix-blend-mode:screen;background:linear-gradient(105deg,transparent,rgba(214,168,102,.16) 47%,rgba(214,168,102,.22) 50%,rgba(214,168,102,.16) 53%,transparent);filter:blur(30px);animation:kc-sweep 16s ease-in-out infinite}
+.kc-hero__seam{position:absolute;left:0;right:0;bottom:0;z-index:2;pointer-events:none;height:clamp(5rem,12vh,9rem);background:linear-gradient(to bottom,rgba(248,246,242,0) 0%,rgba(248,246,242,.38) 60%,#F8F6F2 100%)}
+.kc-bar{position:relative}
+.kc-bar::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;pointer-events:none;background:linear-gradient(90deg,transparent 0%,transparent 22%,rgba(200,154,90,.06) 38%,rgba(214,168,102,.85) 49%,rgba(220,180,110,.95) 50%,rgba(214,168,102,.85) 51%,rgba(200,154,90,.06) 62%,transparent 78%,transparent 100%);background-size:240% 100%;opacity:.55;animation:kc-beam 6.5s linear infinite}
+@keyframes kc-drift{0%{transform:translate(-4%,0) scale(1)}100%{transform:translate(10%,-1%) scale(1.06)}}
+@keyframes kc-sweep{0%{transform:translateX(0) skewX(-8deg);opacity:0}18%{opacity:.9}82%{opacity:.9}100%{transform:translateX(320%) skewX(-8deg);opacity:0}}
+@keyframes kc-beam{0%{background-position:130% 0}100%{background-position:-130% 0}}
+@media (prefers-reduced-motion: reduce){.kc-hero__light,.kc-hero__beam,.kc-bar::after{animation:none}}
+h1,h2,.kc-balance{text-wrap:balance}
+.kc-nav a{display:inline-block;padding:6px 0}
+@media (max-width:720px){
+.kc-head{padding-top:12px !important;padding-bottom:8px !important;gap:2px 16px !important}
+.kc-nav{width:100%;gap:0 13px !important;font-size:14px !important}
+.kc-nav .kc-lang{margin-left:auto;gap:6px !important;font-size:12px !important}
+}
+</style>
 </head>
-<body class="branch">
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="kcc-logo" viewBox="0 0 480 480"><path fill="currentColor" fill-rule="evenodd" d="M241.33 342.52 C222.67 339.13 209.53 332.55 197.46 320.51 C190.68 313.76 188.61 310.85 184.26 302.00 C180.99 295.35 178.47 288.48 177.39 283.28 L175.67 275.05 L160.14 254.42 C151.60 243.07 144.00 233.55 143.27 233.27 C142.53 232.99 141.04 233.56 139.96 234.53 C138.09 236.23 138.00 237.78 138.00 267.69 C138.00 297.17 138.12 299.32 140.01 303.03 C142.84 308.57 146.88 310.91 156.30 312.48 C160.07 313.10 160.11 313.15 159.80 317.31 L159.50 321.50 L122.25 321.76 L85.00 322.02 L85.00 317.57 L85.00 313.12 L89.75 312.44 C97.14 311.39 103.61 307.44 105.98 302.53 C107.95 298.47 108.00 296.55 107.98 224.43 C107.96 154.52 107.86 150.28 106.10 146.40 C103.78 141.30 99.02 138.25 91.05 136.77 L85.00 135.65 L85.00 131.32 L85.00 127.00 L121.89 127.00 L158.78 127.00 L159.44 130.52 C160.25 134.87 159.61 136.00 156.31 136.00 C148.49 136.00 140.87 141.24 138.93 147.96 C138.29 150.17 138.02 164.70 138.20 186.50 L138.50 221.50 L170.01 190.00 C187.35 172.68 202.98 156.29 204.76 153.58 C208.92 147.25 209.00 143.33 205.05 139.54 C202.84 137.43 200.81 136.59 197.05 136.23 L192.00 135.75 L192.00 131.36 L192.00 126.98 L228.75 127.24 L265.50 127.50 L265.50 131.45 L265.50 135.41 L259.00 136.71 C250.11 138.50 237.81 144.58 230.00 151.06 C223.25 156.66 166.75 211.57 166.18 213.08 C165.86 213.92 173.82 225.22 183.00 236.99 C185.47 240.17 192.44 249.23 198.47 257.13 C227.68 295.38 234.29 302.54 245.50 308.07 C248.80 309.70 254.35 311.56 257.84 312.21 C264.12 313.38 264.17 313.41 263.59 316.32 C263.26 317.93 263.00 319.87 263.00 320.62 C263.00 321.72 260.38 322.00 250.11 322.00 L237.22 322.00 L231.86 318.38 C228.91 316.39 223.41 311.78 219.63 308.13 L212.75 301.50 L215.57 306.50 C222.48 318.75 231.66 326.32 244.26 330.15 C253.61 332.99 269.00 332.48 276.74 329.07 C291.00 322.79 302.73 308.86 306.94 293.22 C307.57 290.90 308.17 289.01 308.29 289.02 C308.40 289.02 310.52 289.64 313.00 290.40 C316.80 291.55 317.47 292.13 317.29 294.13 C317.17 295.43 316.16 303.42 315.04 311.89 C312.79 328.90 313.35 327.84 303.83 332.97 C286.68 342.22 261.16 346.12 241.33 342.52 Z M321.18 342.45 C312.21 340.81 307.00 339.15 307.00 337.92 C307.00 337.42 307.43 337.00 307.96 337.00 C309.81 337.00 318.00 331.50 318.00 330.26 C318.00 328.62 319.43 328.68 325.50 330.60 C338.00 334.53 356.09 331.80 365.99 324.48 C375.77 317.26 381.10 310.09 385.67 298.04 C389.13 288.92 389.44 288.70 395.41 290.97 C398.55 292.16 398.55 289.67 395.42 314.62 L393.78 327.74 L386.57 331.77 C378.75 336.14 364.02 341.29 354.57 342.95 C346.65 344.35 330.23 344.10 321.18 342.45 Z M272.70 314.68 C260.79 300.14 254.10 277.07 255.30 254.68 C256.54 231.77 263.81 212.77 277.15 197.62 L280.57 193.73 L285.33 198.49 C287.95 201.11 291.15 205.34 292.45 207.90 C294.66 212.26 294.71 212.77 293.31 216.03 C287.46 229.64 284.44 256.89 286.91 273.81 C288.13 282.11 291.90 296.08 293.98 299.97 C294.90 301.67 294.73 302.70 293.12 305.29 C289.81 310.62 280.20 319.00 277.40 319.00 C276.76 319.00 274.65 317.06 272.70 314.68 Z M191.82 237.91 L180.13 222.66 L182.19 218.58 C190.25 202.56 204.80 187.64 219.29 180.52 C233.59 173.50 238.47 172.54 260.00 172.53 C277.84 172.52 278.89 172.63 289.62 175.71 C301.39 179.10 312.00 183.35 312.01 184.69 C312.02 186.67 315.05 220.98 315.58 225.19 L316.17 229.88 L311.98 231.01 C306.81 232.40 305.00 231.78 305.00 228.64 C305.00 224.64 301.04 212.96 297.20 205.59 C288.24 188.45 271.84 180.44 251.05 183.06 C234.41 185.16 223.05 194.12 214.19 212.12 C208.60 223.50 206.57 230.35 204.72 244.09 L203.50 253.16 L191.82 237.91 Z M384.08 222.83 C378.17 198.58 365.49 185.58 345.24 182.99 C338.71 182.16 327.40 183.14 322.64 184.95 C319.01 186.33 319.18 186.40 318.82 183.28 C318.59 181.30 317.41 179.94 314.53 178.33 L310.57 176.11 L313.17 175.13 C317.35 173.54 330.45 172.00 339.85 172.00 C356.88 172.00 369.70 174.56 385.59 181.12 L392.67 184.05 L394.39 204.77 C395.34 216.17 396.31 226.48 396.56 227.68 C397.03 230.00 396.37 230.39 389.93 231.52 L386.35 232.16 L384.08 222.83 Z"/></symbol></svg>
+<body>
+<div style="font-family: 'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; color: #23201C; background: #F8F6F2; font-size: 18px; line-height: 1.6; width: 100%;">
 
-<!-- HEADER (unchanged structure) -->
-<header class="site-header is-over-ink" id="hdr">
-  <div class="container site-header__inner">
-    <a class="wordmark" href="index.html" aria-label="Kantor Communication — home"><img class="wordmark__mono wm--dark" src="assets/img/kc-on-dark.png" width="30" height="30" alt="" aria-hidden="true" /><img class="wordmark__mono wm--light" src="assets/img/kc-on-light.png" width="30" height="30" alt="" aria-hidden="true" /><span class="wordmark__name"><b>Kantor</b> Communication</span></a>
-    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav class="site-nav" id="site-nav" aria-label="Primary">
-      <ul class="site-nav__links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="education.html">Language Institute</a></li>
-        <li><a href="consulting.html">Consulting</a></li>
-        <li><a href="marketing.html">Brand &amp; Communication</a></li>
-        <li><a href="about.html" aria-current="page">About</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-      </ul>
-      <div class="lang-switcher"><a href="index.html" aria-current="true">EN</a><span class="sep">/</span><a href="de/index.html">DE</a><span class="sep">/</span><a href="hu/index.html">HU</a><span class="sep">/</span><a href="es/index.html">ES</a></div>
-    </nav>
-  </div>
-</header>
-
-<main>
-<section class="page-intro" aria-label="About Kantor Communication">
-  <div class="page-intro__light"></div>
-  <div class="container page-intro__inner">
-    <p class="eyebrow center">About Kantor Communication</p>
-    <h1 class="page-intro__statement">One practice, <em>one standard.</em></h1>
-    <p class="page-intro__sub">Advisory, brand, and language under a single roof — founded and led by Dorian Kantor.</p>
-  </div>
-  <div class="page-intro__seam"></div>
-</section>
-
-<section class="section" aria-label="Founder and Director">
-  <div class="container">
-    <header class="group-divider"><h2 class="group-divider__title">Founder &amp; Director</h2><p class="group-divider__sub">Dorian Kantor, Ph.D.</p></header>
-    <div class="founder-grid">
-      <div class="founder-grid__media">
-        <img class="founder-photo" src="assets/img/dorian-kantor.jpg" alt="Dorian Kantor" />
+  <!-- HERO with header -->
+  <section id="top" class="kc-hero" style="color: #F1EDE6;">
+    <div class="kc-hero__grid" aria-hidden="true"></div>
+    <div class="kc-hero__light" aria-hidden="true"></div>
+    <div class="kc-hero__beam" aria-hidden="true"></div>
+    <header class="kc-bar" style="position: relative; z-index: 4; color: #F1EDE6;">
+      <div class="kc-head" style="max-width: 1200px; margin: 0 auto; padding: 18px clamp(20px, 5vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px;">
+        <a href="index.html" style="display: inline-flex; align-items: center; gap: 10px; color: #F1EDE6;">
+          <img src="assets/img/kc-on-dark.png" alt="" style="width: 34px; height: 34px;">
+          <span style="font-family: 'Spectral', Georgia, serif; font-size: 18px; letter-spacing: .01em;"><b style="font-weight: 600;">Kantor</b> Communication</span>
+        </a>
+        <nav class="kc-nav" aria-label="Primary" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; font-size: 15px;">
+          <a href="education.html" style="color: #F1EDE6;">Language Institute</a>
+          <a href="consulting.html" style="color: #F1EDE6;">Communication Consulting</a>
+          <a href="marketing.html" style="color: #F1EDE6;">Brand &amp; Marketing</a>
+          <a href="about.html" aria-current="page" style="color: #C89A5A; border-bottom: 1px solid #C89A5A; padding-bottom: 2px; margin-bottom: 3px;">About</a>
+          <a href="#work-with" style="color: #F1EDE6;">Contact</a>
+        </nav>
       </div>
-      <div class="founder-grid__text">
-        <p class="intro-prose__lead" style="max-width:62ch">Dorian Kantor is an internationally recognized communications professional and academic who has taught and advised across five countries on three continents and in four languages — his clients ranging from independent learners to C-suite leaders to accomplished academics. As founder and head of Kantor Communication, he takes part in the teaching and consulting himself and assembles the right specialists for each client's needs.</p>
-        <p class="measure">He holds a Master's in English Philology and a Ph.D. in political science and public law. He has held professional positions at Education First and the Friedrich Ebert Foundation in Washington, D.C., and academic positions at George Mason University, Freie Universit&auml;t Berlin, Pontificia Universidad Javeriana in Bogot&aacute;, and E&ouml;tv&ouml;s Lor&aacute;nd University in Budapest. As a communications consultant and language trainer he has worked with people at Mercedes-Benz, Springer, SoundCloud, Elbit Systems, Heidelberg Materials, and Siemens Energy, among others. He also directs a political and security consulting practice, is a regular political analyst and contributor to international media, and has published extensively in English, Spanish, German, and Hungarian &mdash; with native or near-native command of all four.</p>
-        <p class="measure">He has helped professionals across sectors hit their communication targets, supported PhD candidates through dissertations and defenses, and readied academics for publications and conference presentations &mdash; drawing on work as a defense consultant, an editor-in-chief of political publications, a business coach, a language instructor, and a university professor. The through-line is always the same: communication built to meet career-defining, high-stakes moments.</p>
-        <figure class="pullquote pullquote--medium pullquote--right">
-          <span class="pullquote__mark">&ldquo;</span>
-          <blockquote class="pullquote__text">Communication is the difference between being right and being understood. Everything we do is built to close that gap &mdash; in any room, in any language.</blockquote>
-          <figcaption class="pullquote__cite">&mdash; <strong>Dorian Kantor</strong><span class="pullquote__role">Founder &amp; Director</span></figcaption>
+    </header>
+    <div style="position: relative; z-index: 3; padding: clamp(56px, 7vw, 96px) clamp(20px, 5vw, 48px) clamp(100px, 22vw, 160px);">
+      <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px 72px; align-items: center;">
+        <img loading="lazy" decoding="async" src="assets/img/dorian-kantor.jpg" alt="Dr. Dorian Kantor" style="flex: 0 1 320px; box-sizing: border-box; width: 320px; max-width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 0 4px 4px 0; border-left: 6px solid #C89A5A; box-shadow: 0 18px 44px rgba(0,0,0,.35);">
+        <div style="flex: 1 1 520px; display: flex; flex-direction: column; gap: 22px;">
+          <p style="margin: 0; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #C9C1B6;"><span style="width: 42px; height: 1px; background: #C89A5A;"></span>About</p>
+          <h1 style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 300; font-size: clamp(42px, 5.4vw, 74px); line-height: 1.08; letter-spacing: -.02em;">Dr. Dorian <em style="color: #C89A5A;">Kantor</em></h1>
+          <p style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 300; font-size: clamp(20px, 1.8vw, 24px); line-height: 1.4; color: #E3DDD3; max-width: 44ch;">Founder of Kantor Communication. Political analyst, consultant, university professor, and international speaker.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 16px 28px; margin-top: 6px;">
+            <div style="flex: 1 1 150px; padding: 14px 0 0; border-top: 1px solid rgba(241,237,230,.22);"><span style="display: block; font-family: 'Spectral', Georgia, serif; font-size: 38px; line-height: 1.1; color: #F1EDE6;">20 years</span><span style="display: block; margin-top: 4px; font-size: 14px; line-height: 1.4; color: #C9C1B6;">of teaching</span></div>
+            <div style="flex: 1 1 150px; padding: 14px 0 0; border-top: 1px solid rgba(241,237,230,.22);"><span style="display: block; font-family: 'Spectral', Georgia, serif; font-size: 38px; line-height: 1.1; color: #F1EDE6;">15 years</span><span style="display: block; margin-top: 4px; font-size: 14px; line-height: 1.4; color: #C9C1B6;">of professional experience</span></div>
+            <div style="flex: 1 1 150px; padding: 14px 0 0; border-top: 1px solid rgba(241,237,230,.22);"><span style="display: block; font-family: 'Spectral', Georgia, serif; font-size: 38px; line-height: 1.1; color: #F1EDE6;">31</span><span style="display: block; margin-top: 4px; font-size: 14px; line-height: 1.4; color: #C9C1B6;">talks and lectures</span></div>
+            <div style="flex: 1 1 150px; padding: 14px 0 0; border-top: 1px solid rgba(241,237,230,.22);"><span style="display: block; font-family: 'Spectral', Georgia, serif; font-size: 38px; line-height: 1.1; color: #F1EDE6;">68</span><span style="display: block; margin-top: 4px; font-size: 14px; line-height: 1.4; color: #C9C1B6;">media quotes and interviews</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="kc-hero__seam" aria-hidden="true"></div>
+  </section>
+
+  <!-- OPENING -->
+  <section style="padding: clamp(24px, 3vw, 40px) clamp(20px, 5vw, 48px) clamp(48px, 5vw, 64px);">
+    <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+      <p style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 300; font-size: clamp(24px, 2.3vw, 32px); line-height: 1.4; color: #23201C;">Dr. Dorian Kantor founded Kantor Communication to bring together two things his own work has always required: <em style="color: #A87C3D;">command of a language and the ability to make an argument land in it.</em></p>
+      <p style="margin: 24px auto 0; max-width: 60ch; color: #4A443C;">With 20 years of teaching and 15 years of professional experience, he works across English, German, Spanish, and Hungarian. Based in Valencia, he works with individuals, businesses, and institutions across Europe and internationally.</p>
+    </div>
+  </section>
+
+  <!-- FULL BIO -->
+  <section style="padding: 0 clamp(20px, 5vw, 48px) clamp(56px, 6vw, 80px);">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px 64px; align-items: flex-start;">
+      <div style="flex: 1 1 640px; min-width: 0; border-top: 1px solid #D6CFC3;">
+        <div style="display: flex; flex-wrap: wrap; gap: 8px 48px; padding: 28px 0; border-bottom: 1px solid #D6CFC3;">
+          <h3 style="flex: 0 0 100%; margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 24px; line-height: 1.25;">Analysis and advisory work</h3>
+          <div style="flex: 1 1 520px; min-width: 0;"><p style="margin: 0 0 14px;">Dr. Kantor is the founder of Kantor Consulting, a political analysis firm, and a founding partner of Talveris Security and Defense. His advisory work includes engagements with the US and Colombian Armed Forces, ambassadors and judges in Colombia, European political foundations, and defense firms.</p><p style="margin: 0 0 14px;">He has represented governmental and nongovernmental clients in diplomatic roles, worked on political campaigns, and advocated on behalf of clients in legal matters. His negotiation experience includes university internationalization efforts, curriculum redesign, public and private project development, and legislative advocacy.</p><p style="margin: 0 0 0px;">He has co-authored commissioned research for US Southern Command on drones and emerging technologies in Latin America. His research and advisory work focus on international law, US foreign policy toward Latin America and Europe, and defense technology.</p></div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px 48px; padding: 28px 0; border-bottom: 1px solid #D6CFC3;">
+          <h3 style="flex: 0 0 100%; margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 24px; line-height: 1.25;">Teaching and academic appointments</h3>
+          <div style="flex: 1 1 520px; min-width: 0;"><p style="margin: 0 0 14px;">Dr. Kantor’s academic career spans university appointments and teaching engagements across the United States, Europe, and Latin America. He served as Lecturer in Politics at Freie Universität Berlin in 2013 and 2026, and as Assistant Professor of International Relations at Pontificia Universidad Javeriana in Bogotá from 2020 to 2025. He was also associate faculty at George Mason University from 2014 to 2020 and taught at Eötvös Loránd University in Budapest from 2007 to 2008. As an Erasmus+ grant recipient, he taught at the University of Hradec Králové in the Czech Republic in 2022. From 2015 to 2018, he taught at Education First in Washington, DC, where he was responsible for developing the institution’s internship program.</p><p style="margin: 0 0 0px;">His academic engagement includes guest lectures at the Heidelberg Center for American Studies in Germany, the Universidade de São Paulo in Brazil, and FLACSO Ecuador, as well as participation in academic conferences across Europe, Latin America, and the United States. He has contributed to academic and professional activities at the Escuela de Inteligencia y Contrainteligencia and the Escuela Superior de Guerra of the Colombian Armed Forces. He has also supervised close to 30 undergraduate and graduate theses in international relations, political science, and international law.</p></div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px 48px; padding: 28px 0; border-bottom: 1px solid #D6CFC3;">
+          <h3 style="flex: 0 0 100%; margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 24px; line-height: 1.25;">The Kantor Method</h3>
+          <div style="flex: 1 1 520px; min-width: 0;"><p style="margin: 0 0 0px;">Drawing on two decades of teaching experience across university education, private instruction, and professional language training, Dr. Kantor developed the Kantor Method: a structured five-step approach to language learning designed around the communication demands of professional life. The method informs every language program at Kantor Communication.</p><a href="education.html" style="display: inline-block; margin-top: 10px; font-size: 16px; font-weight: 500;">See the method&nbsp;→</a></div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px 48px; padding: 28px 0; border-bottom: 1px solid #D6CFC3;">
+          <h3 style="flex: 0 0 100%; margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 24px; line-height: 1.25;">Writing and speaking</h3>
+          <div style="flex: 1 1 520px; min-width: 0;"><p style="margin: 0 0 14px;">Dr. Kantor is a regular contributor to El Espectador, one of Colombia’s leading newspapers. His writing in English, Spanish, and German has also appeared in prominent publications including Revista Credencial, Spotlight Magazine, Pax Lumina, and IPG Journal. His research and policy analysis have been published by the Konrad Adenauer Stiftung, the Friedrich-Ebert-Stiftung, and Florida International University’s Jack D. Gordon Institute.</p><p style="margin: 0 0 0px;">Since 2020, he has been quoted or interviewed 68 times by media outlets including S&amp;P Global, El Tiempo, elDiario.es, Deutsche Welle, and Noticias Caracol. Since 2007, he has delivered 31 talks, panels, and lectures across the Americas and Europe.</p></div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px 48px; padding: 28px 0; border-bottom: 1px solid #D6CFC3;">
+          <h3 style="flex: 0 0 100%; margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 24px; line-height: 1.25;">Marketing and brand work</h3>
+          <div style="flex: 1 1 520px; min-width: 0;"><p style="margin: 0 0 14px;">Dr. Kantor began his career in experiential marketing in the United States, representing major companies and managing large-scale projects. His professional experience spans work with organizations across the private, public, and academic sectors, including those featured on the Kantor Communication <a href="marketing.html">Brand &amp; Marketing page</a>.</p><p style="margin: 0 0 0px;">At Kantor Communication, he personally leads every brand project, shaping its positioning, core message, and communication across languages and markets. A team of specialists in branding, communication, and visual identity develops the websites and materials around the agreed strategy.</p></div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px 48px; padding: 28px 0; border-bottom: 1px solid #D6CFC3;">
+          <h3 style="flex: 0 0 100%; margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 24px; line-height: 1.25;">Across countries</h3>
+          <div style="flex: 1 1 520px; min-width: 0;"><p style="margin: 0 0 0px;">Having lived and worked in six countries and across four languages, Dr. Dorian Kantor brings first-hand understanding of the professional and cultural adjustments involved in working across borders. His experience across Europe and the Americas informs his approach to communication, helping clients navigate differences in language, expectations, and professional culture.</p></div>
+        </div>
+      </div>
+      <div style="flex: 0 1 340px; min-width: 260px; display: flex; flex-direction: column; gap: 32px;">
+        <figure style="margin: 0;">
+          <img loading="lazy" decoding="async" src="assets/img/site/kantor-conference-lectern-bogota-2024.jpg" alt="Dr. Dorian Kantor presenting in Spanish at a lectern" style="box-sizing: border-box; display: block; width: 100%; object-fit: cover; border-radius: 0 4px 4px 0; border-left: 6px solid #A87C3D; box-shadow: 0 14px 34px rgba(46,26,29,.12); aspect-ratio: 4 / 5;">
+          <figcaption style="margin: 10px 0 0; font-size: 13px; line-height: 1.45; color: #6E675D;">Presenting in Spanish at a conference. Bogotá, Colombia, 2024.</figcaption>
         </figure>
-        <p class="measure" style="margin-top:var(--sp-4)"><strong>Founder-led, specialist-supported.</strong> Every engagement is led or supervised by Dorian Kantor. We bring in vetted specialists when a language, market, or sector demands it &mdash; so you get senior judgment on every project, never a hand-off to junior generalists.</p>
+        <figure style="margin: 0;">
+          <img loading="lazy" decoding="async" src="assets/img/site/kantor-conference-panel-bogota-2025.jpg" alt="Dr. Dorian Kantor speaking on a panel, microphone in hand" style="box-sizing: border-box; display: block; width: 100%; object-fit: cover; border-radius: 0 4px 4px 0; border-left: 6px solid #A87C3D; box-shadow: 0 14px 34px rgba(46,26,29,.12); aspect-ratio: 4 / 5;">
+          <figcaption style="margin: 10px 0 0; font-size: 13px; line-height: 1.45; color: #6E675D;">On a conference panel. Bogotá, Colombia, 2025.</figcaption>
+        </figure>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="clients-band" aria-label="Experience across sectors">
-  <p class="clients-band__label">Experience includes work with professionals and institutions at:</p>
-  <div class="floatrow floatrow--rtl">
-    <div class="floatrow__track">
-      <div class="cblock">George Mason University</div><div class="cblock">Freie Universität Berlin</div><div class="cblock">Goethe-Universität Frankfurt</div><div class="cblock">Florida International University</div><div class="cblock">Pontificia Universidad Javeriana</div><div class="cblock">Education First</div><div class="cblock">Springer Nature</div><div class="cblock">Mercedes-Benz / EvoBus</div><div class="cblock">Siemens Energy</div><div class="cblock">Heidelberg Materials</div>
-      <div class="cblock">George Mason University</div><div class="cblock">Freie Universität Berlin</div><div class="cblock">Goethe-Universität Frankfurt</div><div class="cblock">Florida International University</div><div class="cblock">Pontificia Universidad Javeriana</div><div class="cblock">Education First</div><div class="cblock">Springer Nature</div><div class="cblock">Mercedes-Benz / EvoBus</div><div class="cblock">Siemens Energy</div><div class="cblock">Heidelberg Materials</div>
+  <!-- WHAT THIS MEANS FOR CLIENTS -->
+  <section style="background: #EFEBE4; padding: clamp(56px, 6vw, 88px) clamp(20px, 5vw, 48px);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <p style="margin: 0 0 16px; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #6E675D;"><span style="width: 42px; height: 1px; background: #A87C3D;"></span>What this means for clients</p>
+      <h2 style="margin: 0 0 36px; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: clamp(30px, 3vw, 40px); line-height: 1.15;">One background, four kinds of client</h2>
+      <p style="margin: -16px 0 36px; max-width: 72ch; color: #4A443C;">Dr. Kantor combines direct client work with the leadership and oversight of Kantor Communication’s specialist team. He undertakes selected consulting and communication engagements personally and supervises all trainers delivering the company’s language programs. Across its three practice areas, Kantor Communication draws on his analytical, academic, and international experience, bringing in specialist expertise where a project requires it.</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+        <a href="executive-intensives.html" style="flex: 1 1 460px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px; padding: 28px 30px; background-color: #F8F6F2; background-image: linear-gradient(100deg, rgba(46,26,29,.055) 0%, rgba(168,124,61,.05) 18%, transparent 52%); border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); color: #23201C;">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">Executives and teams</span>
+          <span style="font-family: 'Spectral', Georgia, serif; font-size: 24px; line-height: 1.2;">Arguments that hold under scrutiny</span>
+          <span style="flex: 1 1 auto; font-size: 16px; color: #4A443C;">Executive intensives and communication consulting draw on Dr. Kantor’s extensive experience advising armed forces, diplomats, judges, and other clients; leading negotiations; and presenting and defending analyses in academic, media, and governmental settings. These programs address the communication demands of leadership, negotiation, public engagement, and high-stakes professional exchanges.</span>
+          <span style="font-size: 15px; font-weight: 500; color: #8A6531;">Executive Intensives&nbsp;→</span>
+        </a>
+        <a href="education.html" style="flex: 1 1 460px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px; padding: 28px 30px; background-color: #F8F6F2; background-image: linear-gradient(100deg, rgba(46,26,29,.055) 0%, rgba(168,124,61,.05) 18%, transparent 52%); border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); color: #23201C;">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">Language learners</span>
+          <span style="font-family: 'Spectral', Georgia, serif; font-size: 24px; line-height: 1.2;">Lessons built for working life</span>
+          <span style="flex: 1 1 auto; font-size: 16px; color: #4A443C;">Language programs combine decades of teaching and professional experience with the proven Kantor Method, a structured approach to language learning. Lessons are built around the situations learners encounter in professional life, developing the language skills and confidence needed to communicate effectively at work.</span>
+          <span style="font-size: 15px; font-weight: 500; color: #8A6531;">Language Institute&nbsp;→</span>
+        </a>
+        <a href="consulting.html#academic" style="flex: 1 1 460px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px; padding: 28px 30px; background-color: #F8F6F2; background-image: linear-gradient(100deg, rgba(46,26,29,.055) 0%, rgba(168,124,61,.05) 18%, transparent 52%); border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); color: #23201C;">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">Researchers</span>
+          <span style="font-family: 'Spectral', Georgia, serif; font-size: 24px; line-height: 1.2;">Research that persuades its audience</span>
+          <span style="flex: 1 1 auto; font-size: 16px; color: #4A443C;">Close to 30 theses directed and a long record of publishing and presenting research.</span>
+          <span style="font-size: 15px; font-weight: 500; color: #8A6531;">Academic communication&nbsp;→</span>
+        </a>
+        <a href="marketing.html" style="flex: 1 1 460px; box-sizing: border-box; display: flex; flex-direction: column; gap: 12px; padding: 28px 30px; background-color: #F8F6F2; background-image: linear-gradient(100deg, rgba(46,26,29,.055) 0%, rgba(168,124,61,.05) 18%, transparent 52%); border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); color: #23201C;">
+          <span style="font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">Organizations entering a market</span>
+          <span style="font-family: 'Spectral', Georgia, serif; font-size: 24px; line-height: 1.2;">Messaging and marketing</span>
+          <span style="flex: 1 1 auto; font-size: 16px; color: #4A443C;">Clear, credible communication depends on understanding both the subject and the audience. Kantor Communication draws on experience producing original contributions for international media outlets and managing experiential marketing projects for major companies. This combination informs its work helping organizations develop compelling messages, establish their voice, and communicate effectively across languages and markets.</span>
+          <span style="font-size: 15px; font-weight: 500; color: #8A6531;">Brand &amp; Marketing&nbsp;→</span>
+        </a>
+      </div>
     </div>
-  </div>
-  <div class="floatrow floatrow--ltr">
-    <div class="floatrow__track">
-      <div class="cblock">US Southern Command</div><div class="cblock">Colombian Armed Forces</div><div class="cblock">Talveris Security Consulting</div><div class="cblock">Deutsche Welle</div><div class="cblock">El Espectador</div><div class="cblock">El Tiempo</div><div class="cblock">Noticias Caracol</div><div class="cblock">SoundCloud</div><div class="cblock">Elbit Systems</div><div class="cblock">Abbott</div><div class="cblock">Friedrich Ebert Foundation</div>
-      <div class="cblock">US Southern Command</div><div class="cblock">Colombian Armed Forces</div><div class="cblock">Talveris Security Consulting</div><div class="cblock">Deutsche Welle</div><div class="cblock">El Espectador</div><div class="cblock">El Tiempo</div><div class="cblock">Noticias Caracol</div><div class="cblock">SoundCloud</div><div class="cblock">Elbit Systems</div><div class="cblock">Abbott</div><div class="cblock">Friedrich Ebert Foundation</div>
+  </section>
+
+  <!-- WRITING, TALKS, MEDIA -->
+  <section style="padding: clamp(56px, 6vw, 88px) clamp(20px, 5vw, 48px);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <p style="margin: 0 0 16px; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #6E675D;"><span style="width: 42px; height: 1px; background: #A87C3D;"></span>Writing, talks, and media</p>
+      <h2 style="margin: 0 0 32px; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: clamp(30px, 3vw, 40px); line-height: 1.15;">Selected work</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 32px 48px; margin-top: 0;">
+        <div style="flex: 1 1 320px; min-width: 0;">
+          <p style="margin: 0 0 14px; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">Selected writing</p>
+          <ul style="margin: 0; padding: 0; list-style: none; border-top: 1px solid #D6CFC3;"><li style="padding: 12px 0; border-bottom: 1px solid #E4DFD6; font-size: 15px; line-height: 1.45;"><a href="https://www.elespectador.com/mundo/america/el-legado-del-11-s-veinticinco-anos-de-expansion-del-poder-presidencial/" style="color: #23201C; font-family: 'Spectral', Georgia, serif; font-size: 17px; line-height: 1.3;">El legado del 11-S: veinticinco años de expansión del poder presidencial</a><span style="display: block; margin-top: 3px; font-size: 13px; color: #6E675D;">El Espectador · September 2026 · Spanish</span></li><li style="padding: 12px 0; border-bottom: 1px solid #E4DFD6; font-size: 15px; line-height: 1.45;"><a href="https://www.elespectador.com/mundo/mas-paises/probado-en-combate-por-que-israel-vuelve-a-ser-socio-de-colombia/" style="color: #23201C; font-family: 'Spectral', Georgia, serif; font-size: 17px; line-height: 1.3;">Probado en combate: por qué Israel vuelve a ser socio de Colombia</a><span style="display: block; margin-top: 3px; font-size: 13px; color: #6E675D;">El Espectador · September 2026 · Spanish</span></li><li style="padding: 12px 0; border-bottom: 1px solid #E4DFD6; font-size: 15px; line-height: 1.45;"><a href="https://www.kas.de/documents/d/kolumbien/libro-reconfiguracion-del-orden-mundial-1-" style="color: #23201C; font-family: 'Spectral', Georgia, serif; font-size: 17px; line-height: 1.3;">La política hacia Latinoamérica de la administración Biden: promesa y desempeño</a><span style="display: block; margin-top: 3px; font-size: 13px; color: #6E675D;">Book chapter · <i>Reconfiguración del orden mundial</i> · Konrad Adenauer Stiftung · 2024 · Spanish</span></li><li style="padding: 12px 0; border-bottom: 1px solid #E4DFD6; font-size: 15px; line-height: 1.45;"><a href="https://paxlumina.com/wp-content/uploads/2024/03/march24-1.pdf" style="color: #23201C; font-family: 'Spectral', Georgia, serif; font-size: 17px; line-height: 1.3;">The Concerning Trend of US Backsliding Aggravates Global Democratic Decline</a><span style="display: block; margin-top: 3px; font-size: 13px; color: #6E675D;">Pax Lumina · March 2024 · English</span></li><li style="padding: 12px 0; border-bottom: 1px solid #E4DFD6; font-size: 15px; line-height: 1.45;"><a href="https://www.ipg-journal.de/regionen/nordamerika/artikel/produkt-der-polarisierung-4852/" style="color: #23201C; font-family: 'Spectral', Georgia, serif; font-size: 17px; line-height: 1.3;">Produkt der Polarisierung</a><span style="display: block; margin-top: 3px; font-size: 13px; color: #6E675D;">IPG Journal · December 2020 · German</span></li></ul>
+        </div>
+        <div style="flex: 1 1 320px; min-width: 0;">
+          <p style="margin: 0 0 14px; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">Recent talks</p>
+          <ul style="margin: 0; padding: 0; list-style: none; border-top: 1px solid #D6CFC3;"><li style="padding: 12px 0; border-bottom: 1px solid #E4DFD6; font-size: 15px; line-height: 1.45;"><span style="color: #23201C;">Borderland Security Conference</span><span style="display: block; margin-top: 3px; font-size: 13px; color: #6E675D;">Panelist · FIU and UTEP · El Paso, Texas · 2025</span></li><li style="padding: 12px 0; border-bottom: 1px solid #E4DFD6; font-size: 15px; line-height: 1.45;"><span style="color: #23201C;">V Congreso Internacional de Inteligencia Estratégica</span><span style="display: block; margin-top: 3px; font-size: 13px; color: #6E675D;">Speaker · Bogotá · 2024</span></li><li style="padding: 12px 0; border-bottom: 1px solid #E4DFD6; font-size: 15px; line-height: 1.45;"><span style="color: #23201C;">What the 2024 US elections mean for Latin America</span><span style="display: block; margin-top: 3px; font-size: 13px; color: #6E675D;">Panelist · FLACSO Ecuador · Quito · 2024</span></li></ul>
+          <a href="https://www.talveris.org/talkspanelsconferences" style="display: inline-block; margin-top: 14px; font-size: 15px; font-weight: 500;">All 31 talks, panels, and lectures since 2007&nbsp;→</a>
+        </div>
+        <div style="flex: 1 1 260px; min-width: 0;">
+          <p style="margin: 0 0 14px; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">In the media</p>
+          <p style="margin: 0; padding-top: 12px; border-top: 1px solid #D6CFC3; font-size: 16px; line-height: 1.55; color: #4A443C;">Quoted and interviewed by S&amp;P Global, El Espectador, El Tiempo, Cambio, La República, La Silla Vacía, elDiario.es, Deutsche Welle, and Noticias Caracol, among others.</p>
+          <a href="https://www.talveris.org/media" style="display: inline-block; margin-top: 14px; font-size: 15px; font-weight: 500;">All 68 media quotes and interviews since 2020&nbsp;→</a>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section band" aria-label="Work with us">
-  <div class="container" style="text-align:center">
-    <p class="eyebrow center">Three practices, one standard</p>
-    <h2 class="stakes__lead" style="max-width:24ch;margin:0 auto var(--sp-4)">Wherever your next high-stakes moment is, we meet it.</h2>
-    <div class="closing__tracks" style="justify-content:center">
-      <div class="closing__track"><a class="btn" href="education.html">Language Institute</a></div>
-      <div class="closing__track"><a class="btn" href="consulting.html">Consulting</a></div>
-      <div class="closing__track"><a class="btn" href="marketing.html">Brand &amp; Communication</a></div>
+  <!-- TEACHING PHOTO + CTA -->
+  <section id="work-with" style="background: #2E1A1D; color: #F1EDE6; padding: clamp(64px, 8vw, 104px) clamp(20px, 5vw, 48px);">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px 72px; align-items: center;">
+      <figure style="flex: 0 1 460px; margin: 0;">
+        <img loading="lazy" decoding="async" src="assets/img/site/kantor-students-javeriana-2023.jpg" alt="Dr. Dorian Kantor with his students" style="box-sizing: border-box; display: block; width: 100%; object-fit: cover; border-radius: 0 4px 4px 0; border-left: 6px solid #C89A5A; aspect-ratio: 3 / 2;">
+        <figcaption style="margin: 10px 0 0; font-size: 13px; line-height: 1.45; color: #B0A79B;">With students at Pontificia Universidad Javeriana. Bogotá, Colombia, 2023.</figcaption>
+      </figure>
+      <div style="flex: 1 1 420px;">
+        <p style="margin: 0 0 16px; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #B0A79B;"><span style="width: 42px; height: 1px; background: #C89A5A;"></span>Work with Dr. Kantor</p>
+        <h2 style="margin: 0 0 20px; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: clamp(30px, 3vw, 40px); line-height: 1.15; color: #F1EDE6;">Tell us what you need to say, and to whom</h2>
+        <p style="margin: 0 0 28px; color: #E3DDD3;">Every engagement starts with a short conversation about your situation, your audience, and your language.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 16px;">
+          <a href="https://scheduler.zoom.us/dorian-kantor/kantor-communication" style="display: inline-block; padding: 15px 28px; background: #F1EDE6; color: #2E1A1D; border: 1.5px solid #F1EDE6; font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;">Book an introductory call</a>
+          <a href="index.html#contact" style="display: inline-block; padding: 15px 28px; color: #F1EDE6; border: 1.5px solid #F1EDE6; font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;">Send an enquiry</a>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
-</main>
+  </section>
 
-<footer class="site-footer">
-  <div class="container site-footer__inner">
-    <div class="footer__brand-row"><img class="wordmark__mono" src="assets/img/kc-on-dark.png" alt="" aria-hidden="true" style="height:26px;width:26px" /><span>Kantor Communication</span></div>
-    <div class="footer__domain">kantor-communication.com</div>
-    <div class="footer__contact">Email: <a href="mailto:info@kantor-communication.com">info@kantor-communication.com</a> · Phone: <a href="tel:+491707070045">+49 170 7070045</a> · Düsseldorf / Berlin · Budapest · Bogotá · Washington, DC</div>
-    <div class="footer__legal"><a href="jobs.html">Careers</a> · <a href="faq.html">FAQ</a> · <a href="impressum.html">Legal Notice</a> · <a href="datenschutz.html">Privacy Policy</a></div>
-  </div>
-</footer>
+  <!-- FOOTER -->
+  <footer style="background: #2E1A1D; color: #F1EDE6; padding: 48px clamp(20px, 5vw, 48px) 40px; border-top: 1px solid rgba(241,237,230,.10);">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; font-size: 14px; color: #B0A79B;">
+      <div style="width: 100%; box-sizing: border-box; display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; gap: 6px 20px; padding: 0 0 26px; margin: 0 0 14px; border-bottom: 1px solid rgba(241,237,230,.10);"><span style="font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #C89A5A;">Work with us</span><span style="font-size: 15px; color: #E3DDD3;">We hire language trainers and communication specialists at native or bilingual level.</span><a href="jobs.html" style="font-size: 15px; font-weight: 500; color: #C89A5A;">See open positions&nbsp;→</a></div>
+      <span style="display: inline-flex; align-items: center; gap: 10px; color: #F1EDE6; font-family: 'Spectral', Georgia, serif; font-size: 18px;"><img loading="lazy" decoding="async" src="assets/img/kc-on-dark.png" alt="" style="width: 30px; height: 30px;"><span><b style="font-weight: 600;">Kantor</b> Communication</span></span>
+      <span style="color: #E3DDD3;">Based in Spain. Working across Europe and beyond.</span>
+      <span style="display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 12px;"><a href="mailto:info@kantor-communication.com" style="color: #B0A79B;">info@kantor-communication.com</a><a href="tel:+34711005345" style="color: #B0A79B;">Spain +34 711 005 345</a><a href="tel:+12025006818" style="color: #B0A79B;">US +1 202 500 6818</a></span>
+      <span style="display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 18px;"><a href="faq.html" style="color: #B0A79B;">FAQ</a><a href="jobs.html" style="color: #B0A79B;">Work with us</a><a href="impressum.html" style="color: #B0A79B;">Legal Notice</a><a href="datenschutz.html" style="color: #B0A79B;">Privacy Policy</a></span>
+    </div>
+  </footer>
 
-<script src="assets/js/kcc-globe.js"></script>
-<script src="assets/js/kcc-home.js"></script>
+</div>
+<script src="assets/js/kc-2026.js" defer></script>
 </body>
 </html>

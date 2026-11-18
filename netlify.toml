@@ -17,20 +17,10 @@
 
 # ---------------------------------------------------------------------------
 # English-first launch (November 2026): the German, Spanish and Hungarian pages
-# and the old About page still carry the previous design and copy. Until they are re-translated, their
+# still carry the previous design and copy. Until they are re-translated, their
 # addresses lead to the matching English page. The German legal pages stay
 # reachable because the English legal notice refers to them as binding.
 # Remove this block once the translated pages are rebuilt.
-[[redirects]]
-  from = "/about.html"
-  to = "/#founder"
-  status = 302
-  force = true
-[[redirects]]
-  from = "/about"
-  to = "/#founder"
-  status = 302
-  force = true
 [[redirects]]
   from = "/de/impressum.html"
   to = "/de/impressum.html"
