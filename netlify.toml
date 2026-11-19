@@ -87,12 +87,32 @@
   status = 302
   force = true
 [[redirects]]
-  from = "/hu"
-  to = "/"
+  from = "/hu/faq.html"
+  to = "/faq.html"
   status = 302
   force = true
 [[redirects]]
-  from = "/hu/*"
-  to = "/:splat"
+  from = "/hu/faq"
+  to = "/faq.html"
+  status = 302
+  force = true
+[[redirects]]
+  from = "/hu/impressum.html"
+  to = "/impressum.html"
+  status = 302
+  force = true
+[[redirects]]
+  from = "/hu/impressum"
+  to = "/impressum.html"
+  status = 302
+  force = true
+[[redirects]]
+  from = "/hu/datenschutz.html"
+  to = "/datenschutz.html"
+  status = 302
+  force = true
+[[redirects]]
+  from = "/hu/datenschutz"
+  to = "/datenschutz.html"
   status = 302
   force = true

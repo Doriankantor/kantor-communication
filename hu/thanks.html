@@ -1,81 +1,101 @@
 <!DOCTYPE html>
+
 <html lang="hu">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Köszönjük — Kantor Communication Consulting</title>
-  <meta http-equiv="refresh" content="10;url=/hu/" />
-  <meta name="robots" content="noindex" />
-  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
-  <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png" />
-  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" />  <link rel="stylesheet" href="../assets/css/styles.css" />
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Köszönjük | Kantor Communication</title>
+<meta content="Üzenetét megkaptuk, és hamarosan felvesszük Önnel a kapcsolatot." name="description"/>
+
+
+
+
+<link href="/assets/img/favicon.svg?v=3" rel="icon" type="image/svg+xml"/>
+<link href="/assets/img/favicon-32.png?v=3" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/assets/img/apple-touch-icon.png?v=3" rel="apple-touch-icon"/>
+<link as="font" crossorigin="" href="/assets/fonts/spectral-v15-latin_latin-ext-300.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/inter-v20-latin_latin-ext-regular.woff2" rel="preload" type="font/woff2"/>
+<link href="/assets/css/kc-2026.css" rel="stylesheet"/>
+<style>
+body{margin:0;background:#F8F6F2}
+a{color:#8A6531;text-decoration:none}a:hover{color:#6E4F24}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #C89A5A;outline-offset:3px}
+input,select,textarea{font:inherit;color:#F1EDE6;background:#3A2226;border:1px solid rgba(241,237,230,.28);border-radius:2px;padding:12px 14px;width:100%;box-sizing:border-box}
+select option{color:#23201C;background:#F8F6F2}
+textarea{min-height:120px;resize:vertical}
+.kc-hero{position:relative;isolation:isolate;overflow:hidden;background-color:#2E1A1D;background-image:radial-gradient(58% 46% at 50% 8%,rgba(200,154,90,.34) 0%,rgba(168,124,61,.19) 32%,rgba(168,124,61,.06) 58%,transparent 80%)}
+.kc-hero__grid{position:absolute;inset:0;z-index:0;opacity:.5;pointer-events:none;background-image:linear-gradient(to right,rgba(241,237,230,.15) 1px,transparent 1px),linear-gradient(to bottom,rgba(241,237,230,.15) 1px,transparent 1px);background-size:78px 78px;-webkit-mask-image:radial-gradient(62% 52% at 50% 12%,#000,transparent 76%);mask-image:radial-gradient(62% 52% at 50% 12%,#000,transparent 76%)}
+.kc-hero__light{position:absolute;inset:-25% -12% 0 -12%;z-index:1;pointer-events:none;mix-blend-mode:screen;background:radial-gradient(40% 50% at 40% 26%,rgba(200,154,90,.20),transparent 62%);animation:kc-drift 16s ease-in-out infinite alternate;filter:blur(8px)}
+.kc-hero__beam{position:absolute;top:-10%;bottom:0;left:-30%;width:44%;z-index:1;pointer-events:none;mix-blend-mode:screen;background:linear-gradient(105deg,transparent,rgba(214,168,102,.16) 47%,rgba(214,168,102,.22) 50%,rgba(214,168,102,.16) 53%,transparent);filter:blur(30px);animation:kc-sweep 16s ease-in-out infinite}
+.kc-hero__seam{position:absolute;left:0;right:0;bottom:0;z-index:2;pointer-events:none;height:clamp(5rem,12vh,9rem);background:linear-gradient(to bottom,rgba(248,246,242,0) 0%,rgba(248,246,242,.38) 60%,#F8F6F2 100%)}
+.kc-bar{position:relative}
+.kc-bar::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;pointer-events:none;background:linear-gradient(90deg,transparent 0%,transparent 22%,rgba(200,154,90,.06) 38%,rgba(214,168,102,.85) 49%,rgba(220,180,110,.95) 50%,rgba(214,168,102,.85) 51%,rgba(200,154,90,.06) 62%,transparent 78%,transparent 100%);background-size:240% 100%;opacity:.55;animation:kc-beam 6.5s linear infinite}
+@keyframes kc-drift{0%{transform:translate(-4%,0) scale(1)}100%{transform:translate(10%,-1%) scale(1.06)}}
+@keyframes kc-sweep{0%{transform:translateX(0) skewX(-8deg);opacity:0}18%{opacity:.9}82%{opacity:.9}100%{transform:translateX(320%) skewX(-8deg);opacity:0}}
+@keyframes kc-beam{0%{background-position:130% 0}100%{background-position:-130% 0}}
+@media (prefers-reduced-motion: reduce){.kc-hero__light,.kc-hero__beam,.kc-bar::after{animation:none}}
+h1,h2,.kc-balance{text-wrap:balance}
+.kc-nav a{display:inline-block;padding:6px 0}
+@media (max-width:720px){
+.kc-head{padding-top:12px !important;padding-bottom:8px !important;gap:2px 16px !important}
+.kc-nav{width:100%;gap:0 13px !important;font-size:14px !important}
+.kc-nav .kc-lang{margin-left:auto;gap:6px !important;font-size:12px !important}
+}
+</style>
+<meta content="noindex" name="robots"/></head>
 <body>
-  <a class="skip-link" href="#main">Ugrás a tartalomhoz</a>
+<div style="font-family: 'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; color: #23201C; background: #F8F6F2; font-size: 18px; line-height: 1.6; width: 100%;">
+<!-- HERO with header -->
+<section class="kc-hero" id="top" style="color: #F1EDE6;">
+<div aria-hidden="true" class="kc-hero__grid"></div>
+<div aria-hidden="true" class="kc-hero__light"></div>
+<div aria-hidden="true" class="kc-hero__beam"></div>
+<header class="kc-bar" style="position: relative; z-index: 4; color: #F1EDE6;">
+<div class="kc-head" style="max-width: 1200px; margin: 0 auto; padding: 18px clamp(20px, 5vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px;">
+<a href="/hu/" style="display: inline-flex; align-items: center; gap: 10px; color: #F1EDE6;">
+<img alt="" src="/assets/img/kc-on-dark.png" style="width: 34px; height: 34px;"/>
+<span style="font-family: 'Spectral', Georgia, serif; font-size: 18px; letter-spacing: .01em;"><b style="font-weight: 600;">Kantor</b> Communication</span>
+</a>
+<nav aria-label="Főmenü" class="kc-nav" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; font-size: 15px;">
+<a href="/hu/education.html" style="color: #F1EDE6;">Nyelvi Intézet</a>
+<a href="/hu/consulting.html" style="color: #F1EDE6;">Kommunikációs Tanácsadás</a>
+<a href="/hu/marketing.html" style="color: #F1EDE6;">Márka &amp; Marketing</a>
+<a href="/hu/about.html" style="color: #F1EDE6;">Rólunk</a>
+<a href="/hu/#contact" style="color: #F1EDE6;">Kapcsolat</a>
+<details class="kc-lang kc-langmenu"><summary aria-label="Nyelv kiválasztása">HU</summary><ul><li><a data-kc-lang="en" href="/thanks.html" hreflang="en" lang="en">English</a></li><li><a data-kc-lang="es" href="/es/thanks.html" hreflang="es" lang="es">Español</a></li><li><a data-kc-lang="de" href="/de/thanks.html" hreflang="de" lang="de">Deutsch</a></li><li><a aria-current="true" data-kc-lang="hu" href="/hu/thanks.html" hreflang="hu" lang="hu">Magyar</a></li></ul></details></nav>
+</div>
+</header>
+<div style="position: relative; z-index: 3; text-align: center; padding: clamp(64px, 8vw, 112px) clamp(20px, 5vw, 48px) clamp(120px, 26vw, 180px);">
+<div style="max-width: 980px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 26px;">
+<p style="margin: 0; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #C9C1B6;"><span style="width: 42px; height: 1px; background: #C89A5A;"></span>Üzenetét megkaptuk<span style="width: 42px; height: 1px; background: #C89A5A;"></span></p>
+<h1 style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 300; font-size: clamp(42px, 5.4vw, 74px); line-height: 1.08; letter-spacing: -.02em; max-width: 17ch;">Köszönjük <em style="color: #C89A5A;">üzenetét.</em></h1>
+<p style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 300; font-size: clamp(20px, 1.8vw, 24px); line-height: 1.4; color: #E3DDD3; max-width: 46ch;">Üzenetét megkaptuk, és hamarosan felvesszük Önnel a kapcsolatot.</p>
+<a href="/hu/" style="display: inline-block; margin-top: 8px; padding: 15px 28px; background: #F1EDE6; color: #2E1A1D; border: 1.5px solid #F1EDE6; font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; text-align: center;">Vissza a főoldalra</a>
+</div></div>
+<div aria-hidden="true" class="kc-hero__seam"></div>
+</section>
+<!-- FOUNDER NOTE -->
 
-  <!-- ============================ HEADER ============================ -->
-  <header class="site-header">
-    <div class="container site-header__inner">
-      <a class="wordmark" href="index.html" aria-label="Kantor Communication Consulting — home">
-        <img class="wordmark__mono" src="../assets/img/kcc-logo.svg" alt="" aria-hidden="true" />
-        <span class="wordmark__name"><b>Kantor</b> Communication Consulting</span>
-      </a>
+<!-- WHO WE ARE LOOKING FOR + STANDARD -->
 
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menü</button>
+<!-- TWO TRACKS -->
 
-      <nav class="site-nav" id="site-nav" aria-label="Primary">
-        <ul class="site-nav__links">
-          <li><a href="index.html">Főoldal</a></li>
-          <li><a href="consulting.html">Kommunikációs tanácsadás</a></li>
-          <li><a href="education.html">Nyelviskola</a></li>
-          <li><a href="jobs.html">Állások</a></li>
-          <li><a href="index.html#contact">Kapcsolat</a></li>
-        </ul>
-        <div class="lang-switcher" aria-label="Language">
-          <a href="../thanks.html" hreflang="en">EN</a><span class="sep">/</span>
-          <a href="../de/thanks.html" hreflang="de">DE</a><span class="sep">/</span>
-          <a href="thanks.html" aria-current="true" hreflang="hu">HU</a><span class="sep">/</span>
-          <a href="../es/thanks.html" hreflang="es">ES</a>
-        </div>
-      </nav>
-    </div>
-  </header>
+<!-- WHY WORK WITH US -->
 
-  <main id="main">
-    <section class="section">
-      <div class="container measure">
-        <h1>Köszönjük megkeresését.</h1>
-        <p>Megkaptuk üzenetét, és a lehető leghamarabb felvesszük Önnel a kapcsolatot.</p>
-        <p class="muted">Néhány másodperc múlva visszairányítjuk a kezdőlapra, vagy
-          <a href="/hu/">kattintson ide</a> az azonnali visszatéréshez.</p>
-      </div>
-    </section>
-  </main>
+<!-- OPEN POSITIONS -->
 
-  <!-- ============================ FOOTER ============================ -->
-  <footer class="site-footer">
-    <div class="container site-footer__inner">
-      <div class="footer__brand-row">
-        <img src="../assets/img/kcc-logo.svg" alt="" aria-hidden="true" />
-        <span>Kantor Communication Consulting</span>
-      </div>
-      <div class="footer__domain">kantor-communication.com</div>
-      <div class="footer__contact"><span data-i18n="email-label">E-mail</span>: <a href="mailto:info@kantor-communication.com">info@kantor-communication.com</a> · <span data-i18n="phone-label">Telefon</span>: <a href="tel:+491707070045">+49 170 7070045</a> · <span data-i18n="location">Helyszín</span>: Düsseldorf / Berlin · Budapest · Bogotá · Washington, DC</div>
-      <div class="footer__legal">
-        <a href="../impressum.html" data-i18n="legal">Jogi közlemény</a> ·
-        <a href="../datenschutz.html" data-i18n="privacy">Adatvédelmi irányelvek</a>
-      </div>
-      <ul class="site-footer__nav">
-        <li><a href="index.html#principal" data-i18n="nav-about">Rólunk</a></li>
-        <li><a href="consulting.html" data-i18n="nav-consulting">Tanácsadás</a></li>
-        <li><a href="education.html" data-i18n="nav-education">Nyelviskola</a></li>
-        <li><a href="jobs.html" data-i18n="nav-jobs">Állások</a></li>
-        <li><a href="faq.html" data-i18n="nav-faq">GYIK</a></li>
-        <li><a href="index.html#contact" data-i18n="nav-contact">Kapcsolat</a></li>
-      </ul>
-    </div>
-  </footer>
+<!-- APPLY -->
 
-  <script src="../assets/js/main.js"></script>
+<!-- FOOTER -->
+<footer style="background: #2E1A1D; color: #F1EDE6; padding: 48px clamp(20px, 5vw, 48px) 40px; border-top: 1px solid rgba(241,237,230,.10);">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; font-size: 14px; color: #B0A79B;">
+<span style="display: inline-flex; align-items: center; gap: 10px; color: #F1EDE6; font-family: 'Spectral', Georgia, serif; font-size: 18px;"><img alt="" decoding="async" loading="lazy" src="/assets/img/kc-on-dark.png" style="width: 30px; height: 30px;"/><span><b style="font-weight: 600;">Kantor</b> Communication</span></span>
+<span style="color: #E3DDD3;">Spanyolországi székhellyel, nemzetközi jelenléttel.</span>
+<span style="display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 12px;"><a href="mailto:info@kantor-communication.com" style="color: #B0A79B;">info@kantor-communication.com</a><a href="tel:+34711005345" style="color: #B0A79B;">Spanyolország +34 711 005 345</a><a href="tel:+12025006818" style="color: #B0A79B;">USA +1 202 500 6818</a></span>
+<span style="display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 18px;"><a href="/faq.html" style="color: #B0A79B;">GYIK</a><a href="/hu/jobs.html" style="color: #B0A79B;">Karrier</a><a href="/impressum.html" style="color: #B0A79B;">Impresszum</a><a href="/datenschutz.html" style="color: #B0A79B;">Adatvédelem</a></span>
+</div>
+</footer>
+</div>
+<script defer="" src="/assets/js/kc-2026.js"></script>
 </body>
 </html>

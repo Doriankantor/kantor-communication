@@ -1,542 +1,334 @@
-<!-- DRAFT TRANSLATION: human review required -->
 <!DOCTYPE html>
+
 <html lang="hu">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kommunikációs tanácsadás — Kantor Communication Consulting</title>
-  <meta name="description" content="Stratégiai kommunikációs tanácsadás vezetőknek, intézményeknek és kutatóknak. Felkészítjük Önt az Ön előtt álló beszélgetésre, dokumentumra vagy közönségre — nyelveken és kultúrákon át." />
-  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
-  <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png" />
-  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" />  <link rel="stylesheet" href="../assets/css/styles.css" />
-  <link rel="stylesheet" href="../assets/css/kcc-theme.css" />
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Kommunikációs Tanácsadás | Kantor Communication</title>
+<meta content="Felkészítés beszédekre, prezentációkra, tárgyalásokra és írásos üzenetekre különböző nyelveken és kultúrákban, többek között a Does It Land?, Making the Case és Sounding Board programokkal." name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="Kantor Communication" property="og:site_name"/>
+<meta content="Kommunikációs Tanácsadás | Kantor Communication" property="og:title"/>
+<meta content="Felkészítés beszédekre, prezentációkra, tárgyalásokra és írásos üzenetekre különböző nyelveken és kultúrákban, többek között a Does It Land?, Making the Case és Sounding Board programokkal." property="og:description"/>
+<link href="/assets/img/favicon.svg?v=3" rel="icon" type="image/svg+xml"/>
+<link href="/assets/img/favicon-32.png?v=3" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/assets/img/apple-touch-icon.png?v=3" rel="apple-touch-icon"/>
+<link as="font" crossorigin="" href="/assets/fonts/spectral-v15-latin_latin-ext-300.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/inter-v20-latin_latin-ext-regular.woff2" rel="preload" type="font/woff2"/>
+<link href="/assets/css/kc-2026.css" rel="stylesheet"/>
+<style>
+body{margin:0;background:#F8F6F2}
+a{color:#8A6531;text-decoration:none}a:hover{color:#6E4F24}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #C89A5A;outline-offset:3px}
+input,select,textarea{font:inherit;color:#F1EDE6;background:#3A2226;border:1px solid rgba(241,237,230,.28);border-radius:2px;padding:12px 14px;width:100%;box-sizing:border-box}
+select option{color:#23201C;background:#F8F6F2}
+textarea{min-height:120px;resize:vertical}
+.kc-hero{position:relative;isolation:isolate;overflow:hidden;background-color:#2E1A1D;background-image:radial-gradient(58% 46% at 50% 8%,rgba(200,154,90,.34) 0%,rgba(168,124,61,.19) 32%,rgba(168,124,61,.06) 58%,transparent 80%)}
+.kc-hero__grid{position:absolute;inset:0;z-index:0;opacity:.5;pointer-events:none;background-image:linear-gradient(to right,rgba(241,237,230,.15) 1px,transparent 1px),linear-gradient(to bottom,rgba(241,237,230,.15) 1px,transparent 1px);background-size:78px 78px;-webkit-mask-image:radial-gradient(62% 52% at 50% 12%,#000,transparent 76%);mask-image:radial-gradient(62% 52% at 50% 12%,#000,transparent 76%)}
+.kc-hero__light{position:absolute;inset:-25% -12% 0 -12%;z-index:1;pointer-events:none;mix-blend-mode:screen;background:radial-gradient(40% 50% at 40% 26%,rgba(200,154,90,.20),transparent 62%);animation:kc-drift 16s ease-in-out infinite alternate;filter:blur(8px)}
+.kc-hero__beam{position:absolute;top:-10%;bottom:0;left:-30%;width:44%;z-index:1;pointer-events:none;mix-blend-mode:screen;background:linear-gradient(105deg,transparent,rgba(214,168,102,.16) 47%,rgba(214,168,102,.22) 50%,rgba(214,168,102,.16) 53%,transparent);filter:blur(30px);animation:kc-sweep 16s ease-in-out infinite}
+.kc-hero__seam{position:absolute;left:0;right:0;bottom:0;z-index:2;pointer-events:none;height:clamp(5rem,12vh,9rem);background:linear-gradient(to bottom,rgba(248,246,242,0) 0%,rgba(248,246,242,.38) 60%,#F8F6F2 100%)}
+.kc-bar{position:relative}
+.kc-bar::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;pointer-events:none;background:linear-gradient(90deg,transparent 0%,transparent 22%,rgba(200,154,90,.06) 38%,rgba(214,168,102,.85) 49%,rgba(220,180,110,.95) 50%,rgba(214,168,102,.85) 51%,rgba(200,154,90,.06) 62%,transparent 78%,transparent 100%);background-size:240% 100%;opacity:.55;animation:kc-beam 6.5s linear infinite}
+@keyframes kc-drift{0%{transform:translate(-4%,0) scale(1)}100%{transform:translate(10%,-1%) scale(1.06)}}
+@keyframes kc-sweep{0%{transform:translateX(0) skewX(-8deg);opacity:0}18%{opacity:.9}82%{opacity:.9}100%{transform:translateX(320%) skewX(-8deg);opacity:0}}
+@keyframes kc-beam{0%{background-position:130% 0}100%{background-position:-130% 0}}
+.kc-float{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.kc-float__track{display:flex;width:max-content;gap:16px;animation:kc-rtl 44s linear infinite}
+.kc-float:hover .kc-float__track{animation-play-state:paused}
+@keyframes kc-rtl{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.kc-hero__light,.kc-hero__beam,.kc-bar::after,.kc-float__track{animation:none}}
+h1,h2,.kc-balance{text-wrap:balance}
+.kc-nav a{display:inline-block;padding:6px 0}
+@media (max-width:720px){
+.kc-head{padding-top:12px !important;padding-bottom:8px !important;gap:2px 16px !important}
+.kc-nav{width:100%;gap:0 13px !important;font-size:14px !important}
+.kc-nav .kc-lang{margin-left:auto;gap:6px !important;font-size:12px !important}
+}
+</style>
+<link href="https://kantor-communication.com/consulting.html" hreflang="en" rel="alternate"/><link href="https://kantor-communication.com/es/consulting.html" hreflang="es" rel="alternate"/><link href="https://kantor-communication.com/de/consulting.html" hreflang="de" rel="alternate"/><link href="https://kantor-communication.com/hu/consulting.html" hreflang="hu" rel="alternate"/><link href="https://kantor-communication.com/consulting.html" hreflang="x-default" rel="alternate"/></head>
 <body>
-  <a class="skip-link" href="#main">Ugrás a tartalomhoz</a>
-
-  <!-- ============================ HEADER ============================ -->
-  <header class="site-header">
-    <div class="container site-header__inner">
-      <a class="wordmark" href="index.html" aria-label="Kantor Communication Consulting — home">
-        <img class="wordmark__mono" src="../assets/img/kcc-logo.svg" alt="" aria-hidden="true" />
-        <span class="wordmark__name"><b>Kantor</b> Communication Consulting</span>
-      </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menü</button>
-      <nav class="site-nav" id="site-nav" aria-label="Primary">
-        <ul class="site-nav__links">
-          <li><a href="index.html">Főoldal</a></li>
-          <li><a href="consulting.html" aria-current="page">Kommunikációs tanácsadás</a></li>
-          <li><a href="education.html">Nyelviskola</a></li>
-          <li><a href="jobs.html">Állások</a></li>
-          <li><a href="#talk">Kapcsolat</a></li>
-        </ul>
-        <div class="lang-switcher" aria-label="Language">
-          <a href="../consulting.html" hreflang="en">EN</a><span class="sep">/</span>
-          <a href="../de/consulting.html" hreflang="de">DE</a><span class="sep">/</span>
-          <a href="consulting.html" aria-current="true" hreflang="hu">HU</a><span class="sep">/</span>
-          <a href="../es/consulting.html" hreflang="es">ES</a>
-        </div>
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-    <!-- ===================== FOUNDER VIDEO + COMPANY INTRO (Page intro) ===================== -->
-    <section class="page-intro" aria-label="Kommunikációs tanácsadás">
-      <div class="container">
-        <p class="eyebrow center">Kommunikációs tanácsadás</p>
-        <h1 class="page-intro__statement">Szakértelmet csiszolni, hogy <em>tekintéllyé</em> váljon.
-          <span class="page-intro__sub">Pontosság, hangnem és magabiztosság &mdash; azokhoz a beszélgetésekhez, amelyek eldöntik a kimenetelt.</span>
-        </h1>
-      </div>
-      <div class="seam seam--intro" aria-hidden="true"></div>
-    </section>
-
-    <!-- ============ THE COST, then THE REFRAME — beside the founder video ============
-         The reframe's three failure modes were buried in one sentence; surfaced
-         as a list they are scanned instead of parsed. Same words. -->
-    <section class="section intro-prose reveal" aria-label="A tét">
-      <div class="container">
-        <div class="intro-prose__grid">
-          <div class="intro-prose__text">
-            <p class="intro-prose__lead">Amikor félreértik Önt — vagy egy nagy tétű pillanatban leblokkol —, ennek ára elveszített szerződésekben, megrekedt karrierben vagy olyan vitaindító előadásban mérhető, amely éppen azok előtt nem hat, akik a legfontosabbak.</p>
-            <p class="claim">A legtöbb szakmai visszaesés nem a szaktudás hiányából fakad, hanem kommunikációs kudarc.</p>
-            <ul class="pointlist">
-              <li>A jó érv, amely rossz regiszterben hangzik el.</li>
-              <li>Az erős álláspont, amely az előadás során meggyengül.</li>
-              <li>Az üzenet, amely nem megy át egy másik nyelven vagy kultúrán.</li>
-            </ul>
-          </div>
-          <!-- Real recorded footage; HeyGen used only to localize into DE/HU/ES.
-               Put the `hidden` attribute back until the video exists. -->
-          <div class="founder-video" hidden role="img" aria-label="Alapítói videó (helykitöltő) — Dorian Kantor bemutatja a tanácsadási tevékenységet">Alapítói videó — helykitöltő · Dorian Kantor bemutatja a KCC tanácsadást</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ WHAT WE DO — one paragraph, given room ============ -->
-    <section class="stakes band reveal" aria-label="Amit csinálunk">
-      <div class="container">
-        <p class="stakes__lead" style="max-width:64ch;margin-inline:auto;text-align:center;">Vezetőkkel, intézményekkel és kutatókkal dolgozunk azon, hogy ezt a rést bezárjuk. Tanácsadásunk gyakorlatias és bizalmas: felkészítjük Önt az Ön előtt álló konkrét beszélgetésre, dokumentumra vagy közönségre, és közben azt az alapkompetenciát is fejlesztjük, amely a következő helyzetet már könnyebbé teszi. Nyelvek és kulturális közegek között dolgozunk — ott, ahol a legtöbb nemzetközi szakember a leginkább kiszolgáltatott.</p>
-      </div>
-    </section>
-
-    <!-- ===================== JUMP INDEX (guided sequence — seven equal sections) ===================== -->
-    <nav class="jump-index" aria-label="On this page">
-      <div class="container">
-        <ul class="jump-index__list">
-          <li><a href="#experience"><span class="jump-index__num">01</span> Tapasztalat</a></li>
-          <li><a href="#premium"><span class="jump-index__num">02</span> Prémium szolgáltatások, prémium trénerek</a></li>
-          <li><a href="#what-sets-apart"><span class="jump-index__num">03</span> Mi különböztet meg minket</a></li>
-          <li><a href="#outcomes"><span class="jump-index__num">04</span> Szakmai eredmények</a></li>
-          <li><a href="#workshops"><span class="jump-index__num">05</span> Intenzív műhelyek</a></li>
-          <!-- HIDDEN 2026 — Cross-Border Partnerships, re-enable when it becomes a real offering
-          <li><a href="#partnerships"><span class="jump-index__num">06</span> Határokon átívelő partnerségek</a></li>
-          -->
-          <li hidden><a href="#testimonials"><span class="jump-index__num">07</span> Ajánlások</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- ====================== 01 · EXPERIENCE ====================== -->
-    <section class="section experience reveal" id="experience" aria-label="Tapasztalat">
-      <div class="container">
-        <header class="group-divider"><h2 class="group-divider__title">Tapasztalat</h2></header>
-        <p class="experience__intro">Tanácsadóink és oktatóink többek között az alábbi szervezetek szakembereivel dolgoztak:</p>
-        <!-- Running marquee of organization names — styled TEXT, never logos. Each name is a
-             non-breaking unit; JS duplicates the track for a seamless loop; under
-             prefers-reduced-motion the CSS shows the static wrapped list instead. -->
-        <div class="marquee" aria-label="Organizations our people have worked with">
-          <div class="marquee__track" aria-hidden="false">
-            <span class="marquee__item">Mercedes-Benz / EvoBus</span>
-            <span class="marquee__item">Heidelberg Materials</span>
-            <span class="marquee__item">Siemens Energy</span>
-            <span class="marquee__item">Heidelberger Druckmaschinen</span>
-            <span class="marquee__item">Springer Nature</span>
-            <span class="marquee__item">SoundCloud</span>
-            <span class="marquee__item">Elbit Systems</span>
-            <span class="marquee__item">Abbott</span>
-            <span class="marquee__item">German Federal Ministry for Economic Affairs and Energy</span>
-          </div>
-          <div class="marquee__static container">
-            <span class="marquee__item">Mercedes-Benz / EvoBus</span>
-            <span class="marquee__item">Heidelberg Materials</span>
-            <span class="marquee__item">Siemens Energy</span>
-            <span class="marquee__item">Heidelberger Druckmaschinen</span>
-            <span class="marquee__item">Springer Nature</span>
-            <span class="marquee__item">SoundCloud</span>
-            <span class="marquee__item">Elbit Systems</span>
-            <span class="marquee__item">Abbott</span>
-            <span class="marquee__item">German Federal Ministry for Economic Affairs and Energy</span>
-          </div>
-        </div>
-        <p class="experience__note">Tanáraink és tanácsadóink közösségi oktatásban és különböző iparágak vezető vállalatainak szakértőivel egyaránt dolgoztak.</p>
-        <p class="experience__note">Szakértőink az Egyesült Államokból, Németországból, Kolumbiából, Magyarországról és Olaszországból érkeznek — és a csapat bővülésével további nyelvek is csatlakoznak. Mindannyian anyanyelvi szintű nyelvtudást hoznak, gyakran két- vagy háromnyelvű jártassággal.</p>
-        <p class="experience__note">Közvetlen szakmai tapasztalat Európában, Észak-Amerikában és Dél-Amerikában — annak megértése, hogy az egyes munkakultúrák valójában hogyan működnek, nem csupán azé, hogyan hangzik a nyelvük.</p>
-        <p class="section-next"><a href="#premium">Nézze meg, hogyan dolgozunk — és ismerje meg azokat, akik a munkát végzik <span class="arrow" aria-hidden="true">↓</span></a></p>
-      </div>
-    </section>
-
-    <!-- ====================== 02 · PREMIUM SERVICES, PREMIUM TRAINERS ====================== -->
-    <!-- Order within Premium: How we work → founder pull-quote → "command the room" line → the five points -->
-    <section class="section band reveal" id="premium" aria-label="Prémium szolgáltatások, prémium trénerek">
-      <div class="container">
-        <header class="group-divider"><h2 class="group-divider__title">Prémium szolgáltatások, prémium trénerek</h2></header>
-        <p class="measure"><strong>Hogyan dolgozunk.</strong> Minden együttműködés egy feltáró beszélgetéssel kezdődik, hogy megértsük a téteket, a közönséget és az Ön által kívánt eredményt. Innen célzott munkaterjedelmet javaslunk a megfelelő szolgáltatáscsomaggal. Végig bizalmasan. Üléseinket úgy építjük fel, hogy növeljék a magabiztosságot, a folyékonyságot és a pontosságot — és a tréner és az ügyfél közösen alakítja ki őket, így minden a lényegre szorítkozik, és az Ön munkája szempontjából releváns marad. Házon belül kifejlesztett anyagokat használunk, és az Ön szakterületéhez igazítjuk őket, legyen szó akár erősebb kommunikációs eszközökről és eredményekről a politikában, az orvostudományban, az üzleti életben, az oktatásban vagy azon túl.</p>
-
-        <p class="claim" style="margin-top:var(--sp-4);">Szakmai kommunikációs megbízásaink nem nyelvórák, és nem is annak készülnek. Ezek az adott helyzetre szabott eszközök:</p>
-        <ul class="pointlist pointlist--tight measure">
-          <li>Valós anyagokra épülő felkészítés.</li>
-          <li>Valódi körülmények között próbára tett nyelvhasználat.</li>
-          <li>Diszkréten kezelt érzékeny dokumentumok.</li>
-          <li>Szakértő, aki már állt ott, ahol Ön most áll.</li>
-        </ul>
-        <p class="muted measure" style="margin-top:var(--sp-2);">Szolgáltatáscsomagjaink az Ön sikerébe való befektetések &mdash; abba, hogy felkészülten lépjen be egy nagy tétű helyzetbe, helytálljon, és kiaknázza a lehetőséget.</p>
-
-        <figure class="pullquote pullquote--medium pullquote--right">
-          <span class="pullquote__mark" aria-hidden="true">"</span>
-          <blockquote class="pullquote__text">A magas szintű nyelvtudás stratégiai eszköz. Hitelességet teremt, befolyást növel és lehetőségeket nyit meg. Négy országban dolgoztam angolul, németül, spanyolul és magyarul, és első kézből láttam a hatását. A megközelítésünk túlmutat a nyelvtanon. Olyan nyelvet építünk, amely pontos, magabiztossággal és tekintéllyel szólal meg, és megfelel azoknak a pillanatoknak, amelyekben karrierek és szerződések dőlnek el.</blockquote>
-          <figcaption class="pullquote__cite">— <strong>Dorian Kantor</strong><span class="pullquote__role">Alapító, tanulmányi igazgató</span></figcaption>
-        </figure>
-
-        <p class="stakes__lead" style="max-width:34ch;">Nem egyszerűen nyelvet tanítunk Önnek — arra készítjük fel, hogy azon a nyelven uralja a helyzetet.</p>
-        <p class="crossborder__text" style="margin-bottom:var(--sp-5);">Szakmai kommunikációs tanácsadás olyan vezetőknek, akik már nemzetközi közegben működnek, és akiknek üzenetét pontosan, tekintéllyel és kulturális érzékenységgel kell célba juttatniuk.</p>
-        <div class="diffs">
-          <div class="diff"><span class="diff__index">01</span><div class="diff__body"><span class="diff__lead">Interkulturális kompetencia</span><p class="diff__support">Igazodjon el a megbeszélések, tárgyalások és levelezés kultúrákon átívelő, kimondatlan szabályaiban, hogy szándéka soha ne vesszen el a fordításban, és ne olvassák félre a regisztert.</p></div></div>
-          <div class="diff"><span class="diff__index">02</span><div class="diff__body"><span class="diff__lead">Vezetői jelenlét és magabiztosság</span><p class="diff__support">Lépjen túl a habozáson, és szólaljon meg tekintéllyel a meghatározó pillanatokban: az igazgatótanácsi teremben, az előadói pulpitusnál, a sajtónyilatkozatban vagy a nagy tétű telefonhívásban.</p></div></div>
-          <div class="diff"><span class="diff__index">03</span><div class="diff__body"><span class="diff__lead">Célzott áttörések</span><p class="diff__support">Azonosítjuk és lebontjuk azokat a konkrét pontokat, ahol a felkészült szakemberek elakadnak — a hiányzó megfogalmazást, a rendre gyengébben sikerülő helyzeteket —, és erősséggé alakítjuk őket.</p></div></div>
-          <div class="diff"><span class="diff__index">04</span><div class="diff__body"><span class="diff__lead">Kontextusra szabott nyelvi eszköztárak</span><p class="diff__support">Az Ön helyzetéhez illő pontos kifejezések, keretezések és retorikai megoldások — legyen szó részvényesi tájékoztatóról, tudományos panelről vagy diplomáciai eszmecseréről.</p></div></div>
-          <div class="diff"><span class="diff__index">05</span><div class="diff__body"><span class="diff__lead">Életszerű szimuláció és próba</span><p class="diff__support">Próbára tesszük kommunikációját szimulált tárgyalásokon, interjúkon és prezentációkon, mielőtt éles helyzetbe kerülne, hogy a vizsgálódás alatti teljesítmény természetessé váljon.</p></div></div>
-        </div>
-        <p class="section-next"><a href="#what-sets-apart">Nézze meg, mi különböztet meg minket valójában <span class="arrow" aria-hidden="true">↓</span></a></p>
-      </div>
-    </section>
-
-    <!-- ====================== 03 · WHAT SETS US APART ====================== -->
-    <section class="section reveal" id="what-sets-apart" aria-label="Mi különböztet meg minket">
-      <div class="container">
-        <header class="group-divider"><h2 class="group-divider__title">Mi különböztet meg minket</h2></header>
-        <div class="diffs">
-          <div class="diff"><span class="diff__index">01</span><div class="diff__body"><span class="diff__lead">Önre szabott rugalmasság.</span><p class="diff__support">Online és bárhol, ahol Ön van, az Ön céljaihoz szabott anyaggal, a naptárához igazodó időbeosztással és rendszeres visszajelzéssel, hogy a munka folyamatosan Önhöz igazodjon.</p></div></div>
-          <div class="diff"><span class="diff__index">02</span><div class="diff__body"><span class="diff__lead">Ellenőrzött, képzett szakemberek.</span><p class="diff__support">Minden tanácsadónkat előzetesen kiválasztjuk és saját, házon belüli módszertanunk szerint képezzük — így a minőség soha nem azon múlik, éppen kihez kerül.</p></div></div>
-          <div class="diff"><span class="diff__index">03</span><div class="diff__body"><span class="diff__lead">Valós tapasztalat.</span><p class="diff__support">Szakembereink valódi szakmai tapasztalatot, külföldi munkatapasztalatot és erős tudományos hátteret hoznak. Nemcsak tanították a területet, hanem dolgoztak is benne.</p></div></div>
-          <div class="diff"><span class="diff__index">04</span><div class="diff__body"><span class="diff__lead">Interkulturális kompetencia, nem csupán nyelv.</span><p class="diff__support">Arra készítjük fel, hogy kultúrákon át is megértsék — nem pusztán arra, hogy nyelvtanilag helyes legyen —, mert az, hogy tudja, hogyan mondjon valamit, csak a fele annak, hogy meg is értsék.</p></div></div>
-          <div class="diff"><span class="diff__index">05</span><div class="diff__body"><span class="diff__lead">Közösen kialakított alkalmak.</span><p class="diff__support">Az alkalmakat Önnel együtt, az Ön valódi anyagai köré építjük — a tényleges prezentációja, tárgyalása vagy kézirata köré —, így semmi sem általános.</p></div></div>
-          <div class="diff"><span class="diff__index">06</span><div class="diff__body"><span class="diff__lead">Végig bizalmas kezelés.</span><p class="diff__support">A megbízásokat azzal a diszkrécióval kezeljük, amelyet a vezetők, intézmények és kutatók elvárnak.</p></div></div>
-          <div class="diff"><span class="diff__index">07</span><div class="diff__body"><span class="diff__lead">Eredményorientált.</span><p class="diff__support">Konkrét eredményre készítjük fel — vitaindító előadásra, tárgyalásra, védésre vagy költözésre —, nem pedig egy nyitott végű, célvonal nélküli kurzusra.</p></div></div>
-        </div>
-        <p class="section-next"><a href="#outcomes">Nézze meg, milyen eredményeket érünk el különböző ügyfeleinknél <span class="arrow" aria-hidden="true">↓</span></a></p>
-      </div>
-    </section>
-
-    <section class="banner banner--b reveal" aria-label="Statement">
-      <div class="container">
-        <p class="banner__text">Megadni a szakértelemnek a szavakat, amelyeket <em>megérdemel.</em></p>
-      </div>
-    </section>
-
-    <!-- ====================== 04 · PROFESSIONAL OUTCOMES ====================== -->
-    <section class="section--tight" id="outcomes" aria-label="Szakmai eredmények">
-      <div class="container">
-        <header class="group-divider">
-          <h2 class="group-divider__title">Szakmai eredmények</h2>
-          <p class="group-divider__sub">Vezetőknek, szervezeteknek és szakembereknek.</p>
-        </header>
-
-        <article class="outcome" style="border-top:0;">
-          <p class="outcome__index">Eredmény 01</p>
-          <h2 class="outcome__title">Vezesse és hangolja össze szervezetét</h2>
-          <p class="outcome__promise">Kommunikáljon olyan világosan és tekintéllyel, amilyet a vezetői szerep megkövetel — az igazgatótanács, a csapatok és a külső érintettek felé.</p>
-          <p class="outcome__repr"><span class="label">Példák a munkánkra:</span> Kommunikáció a szervezeti vezetéssel és felsővezetőkkel · Stratégiai kommunikáció összetett szervezetekben · Vezetői jelenlét és kommunikációs stílus.</p>
-          <details class="expander">
-            <summary><span class="chev" aria-hidden="true">›</span> Az összes szolgáltatás megtekintése ezen a területen</summary>
-            <ul class="expander__list">
-              <li>Vezetői és intézményi kommunikációs tanácsadás</li>
-              <li>Kommunikáció a szervezeti vezetéssel és felsővezetőkkel</li>
-              <li>Intézményi kapcsolatok és érintetti kommunikációs tanácsadás</li>
-              <li>Stratégiai kommunikáció összetett szervezetekben</li>
-              <li>Belső összehangolási és döntéskommunikációs tanácsadás</li>
-              <li>Vezetői kommunikációs stratégia szakmai környezetben</li>
-              <li>Szervezeti változás- és átmenetkommunikációs tanácsadás</li>
-              <li>Vezetői jelenléttel és kommunikációs stílussal kapcsolatos tanácsadás</li>
-              <li>Tekintély, világosság és meggyőzés szakmai helyzetekben</li>
-              <li>Nagy tétű beszélgetések strukturálása</li>
-              <li>Kommunikáció nyomás és szoros határidők mellett</li>
-              <li>Szakmai pozicionálási és láthatósági tanácsadás</li>
-              <li>Média- és nyilvános szereplési kommunikációs tanácsadás</li>
-            </ul>
-          </details>
-        </article>
-
-        <article class="outcome">
-          <p class="outcome__index">Eredmény 02</p>
-          <h2 class="outcome__title">Tárgyaljon és győzzön meg</h2>
-          <p class="outcome__promise">Lépjen be felkészülten a tárgyalásokba, szerződéses egyeztetésekbe és nehéz beszélgetésekbe, hogy meg tudja tartani álláspontját és hatni tudjon a jelenlévőkre.</p>
-          <p class="outcome__repr"><span class="label">Példák a munkánkra:</span> Beszállítói tárgyalási kommunikáció · Szerződéses egyeztetés és pozicionálási stratégia · Konfliktuskezelő és nehéz beszélgetésekhez kapcsolódó kommunikáció.</p>
-          <details class="expander">
-            <summary><span class="chev" aria-hidden="true">›</span> Az összes szolgáltatás megtekintése ezen a területen</summary>
-            <ul class="expander__list">
-              <li>Beszállítói tárgyalási kommunikációs tanácsadás</li>
-              <li>Szerződéses egyeztetési és pozicionálási stratégiai tanácsadás</li>
-              <li>Külső érintetti kommunikáció strukturálása</li>
-              <li>Meggyőző kommunikáció üzleti interakciókban</li>
-              <li>Partner- és ügyfélkommunikációs tanácsadás</li>
-              <li>Konfliktusokhoz és nehéz beszélgetésekhez kapcsolódó kommunikációs tanácsadás</li>
-            </ul>
-          </details>
-        </article>
-
-        <article class="outcome">
-          <p class="outcome__index">Eredmény 03</p>
-          <h2 class="outcome__title">Adjon elő a legmagasabb szinten</h2>
-          <p class="outcome__promise">Tartson olyan vitaindító előadásokat, konferencia-előadásokat és panelhozzászólásokat, amelyek célba érnek — és kezelje magabiztosan az utánuk következő kérdéseket.</p>
-          <p class="outcome__repr"><span class="label">Példák a munkánkra:</span> Konferencia-előadások kommunikációja · Vitaindító előadások felépítése és előadása · Kérdések kezelése és közönséginterakció.</p>
-          <details class="expander">
-            <summary><span class="chev" aria-hidden="true">›</span> Az összes szolgáltatás megtekintése ezen a területen</summary>
-            <ul class="expander__list">
-              <li>Konferencia-előadásokhoz kapcsolódó kommunikációs tanácsadás</li>
-              <li>Szakmai előadásmóddal és prezentációval kapcsolatos tanácsadás</li>
-              <li>Panelrészvételi és hozzászólási stratégiai tanácsadás</li>
-              <li>Kérdéskezelési és közönséginterakciós tanácsadás</li>
-              <li>Kommunikációs felkészítés nemzetközi szimpóziumokra</li>
-              <li>Vitaindító előadás felépítésével és megtartásával kapcsolatos tanácsadás</li>
-            </ul>
-          </details>
-        </article>
-
-        <article class="outcome">
-          <p class="outcome__index">Eredmény 04</p>
-          <h2 class="outcome__title">Írjon tekintéllyel</h2>
-          <p class="outcome__promise">Írjon olyan e-maileket, jelentéseket, ajánlatokat és állásfoglalásokat, amelyek ugyanolyan pontosak, mint az Ön gondolkodása.</p>
-          <p class="outcome__repr"><span class="label">Példák a munkánkra:</span> Magas szintű e-mailes és írásbeli kommunikáció · Jelentések és briefingek strukturálása · Vezetői összefoglalók és állásfoglalások.</p>
-          <details class="expander">
-            <summary><span class="chev" aria-hidden="true">›</span> Az összes szolgáltatás megtekintése ezen a területen</summary>
-            <ul class="expander__list">
-              <li>Magas szintű e-mailes és írásbeli kommunikációs tanácsadás</li>
-              <li>Intézményi kommunikáció és üzenetkezelés felülvizsgálata</li>
-              <li>Jelentések és briefingek kommunikációs strukturálása</li>
-              <li>Kommunikáció formális és hivatalos kontextusokban</li>
-              <li>Formális ajánlatok és beadványok kommunikációs tanácsadása</li>
-              <li>Vezetői összefoglalókkal és állásfoglalásokkal kapcsolatos tanácsadás</li>
-              <li>Hatásnyilatkozattal és társadalmi relevanciával kapcsolatos tanácsadás</li>
-              <li>Projektösszefoglalási és disszeminációs stratégiai tanácsadás</li>
-            </ul>
-          </details>
-        </article>
-
-        <article class="outcome">
-          <p class="outcome__index">Eredmény 05</p>
-          <h2 class="outcome__title">Dolgozzon kultúrákon és határokon átívelően</h2>
-          <p class="outcome__promise">Kommunikáljon hatékonyan külföldi kollégákkal, partnerekkel és intézményekkel — nyelveken, regisztereken és kulturális elvárásokon átívelően.</p>
-          <p class="outcome__repr"><span class="label">Példák a munkánkra:</span> Kultúrák közötti szakmai kommunikáció · Kommunikáció multinacionális környezetben · Interkulturális tárgyalás és párbeszéd.</p>
-          <details class="expander">
-            <summary><span class="chev" aria-hidden="true">›</span> Az összes szolgáltatás megtekintése ezen a területen</summary>
-            <ul class="expander__list">
-              <li>Kommunikáció külföldi kollégákkal és intézményekkel</li>
-              <li>Kultúrák közötti szakmai kommunikációs tanácsadás</li>
-              <li>Nemzetközi együttműködési és koordinációs tanácsadás</li>
-              <li>Kommunikáció multinacionális szakmai környezetben</li>
-              <li>Interkulturális tárgyalásokkal és párbeszéddel kapcsolatos tanácsadás</li>
-              <li>Kulturális regiszterrel és protokollkommunikációval kapcsolatos tanácsadás</li>
-            </ul>
-          </details>
-        </article>
-
-        <article class="outcome">
-          <p class="outcome__index">Eredmény 06</p>
-          <h2 class="outcome__title">Szólítsa meg a nyilvánosságot, a szakpolitikai szereplőket és a médiát</h2>
-          <p class="outcome__promise">Szólaljon meg újságírók, szakpolitikai közönségek és a nyilvánosság előtt olyan üzenetekkel, amelyek az alapos vizsgálatot is kiállják.</p>
-          <p class="outcome__repr"><span class="label">Példák a munkánkra:</span> Felkészítés médiainterjúkra és üzenetformálás · Válságkommunikációs stratégia · Véleménycikkek és közéleti esszék strukturálása.</p>
-          <details class="expander">
-            <summary><span class="chev" aria-hidden="true">›</span> Az összes szolgáltatás megtekintése ezen a területen</summary>
-            <ul class="expander__list">
-              <li>Médiainterjú-felkészítés és üzenetformálási tanácsadás</li>
-              <li>Nyilvános nyilatkozat és sajtókommunikációs tanácsadás</li>
-              <li>Szakpolitikai közönségnek szóló kommunikációs tanácsadás</li>
-              <li>Felkészítés szakértői tanúvallomásra és hivatalos meghallgatásra</li>
-              <li>Válságkommunikációs stratégiai tanácsadás</li>
-              <li>Szakértői láthatósági és nyilvánosprofil-tanácsadás</li>
-              <li>Szakpolitikai fordítással és szakértői kommunikációval kapcsolatos tanácsadás</li>
-              <li>Véleménycikkek és közéleti esszék strukturálásával kapcsolatos tanácsadás</li>
-              <li>Stratégiai kommunikáció nyilvános platformokon</li>
-            </ul>
-          </details>
-        </article>
-      </div>
-    </section>
-
-    <!-- ====================== ACADEMIC OUTCOMES ====================== -->
-    <section class="section" aria-label="Tudományos eredmények">
-      <div class="container">
-        <header class="group-divider">
-          <h2 class="group-divider__title">Tudományos eredmények</h2>
-          <p class="group-divider__sub">Doktoranduszoknak, kutatóknak és kutatóintézeteknek.</p>
-        </header>
-
-        <article class="outcome" style="border-top:0;">
-          <h2 class="outcome__title">Tudományos és kutatási terület</h2>
-          <p class="outcome__promise">Doktoranduszoknak, kutatóknak és kutatóintézeteknek: kommunikálja munkáját bírálók, finanszírozók, bizottságok és a nyilvánosság felé — világos, jól pozicionált angol nyelven.</p>
-          <p class="outcome__repr"><span class="label">Példák a munkánkra:</span> Kutatási kéziratok és folyóirat-benyújtás · Válasz lektori véleményekre és átdolgozás · Disszertációvédési stratégia és érvelés.</p>
-          <details class="expander">
-            <summary><span class="chev" aria-hidden="true">›</span> Az összes tudományos és kutatási szolgáltatás megtekintése</summary>
-            <ul class="expander__list">
-              <li>Kutatási kéziratok kommunikációs tanácsadása</li>
-              <li>Tudományos folyóirat-benyújtási stratégiai tanácsadás</li>
-              <li>Lektori véleményekre adott válaszokkal és átdolgozással kapcsolatos tanácsadás</li>
-              <li>Könyvfejezet és monográfia kommunikációjának felülvizsgálata</li>
-              <li>Kutatási absztraktok és pályázatok keretezési tanácsadása</li>
-              <li>Tudományos érvelési és pozicionálási tanácsadás</li>
-              <li>Szakirodalmi áttekintés pozicionálásával és szintetizálásával kapcsolatos tanácsadás</li>
-              <li>Elméleti keret megfogalmazásával kapcsolatos tanácsadás</li>
-              <li>Tudományos fordítási és regisztertanácsadás</li>
-              <li>Kutatásfinanszírozási stratégiai és pozicionálási tanácsadás</li>
-              <li>Pályázati beszámolók és megfelelőségi kommunikáció felülvizsgálata</li>
-              <li>Tudományos profil- és láthatósági stratégiai tanácsadás</li>
-              <li>Angol nyelvű tudományos pozicionálási tanácsadás</li>
-              <li>Nemzetközi partnerségi tárgyalások támogatása</li>
-              <li>Vendégkutatói és ösztöndíj-kommunikációs felkészítés</li>
-              <li>Doktori projekt kommunikációs és strukturálási tanácsadása</li>
-              <li>Disszertációvédési stratégiai és érvelési tanácsadás</li>
-              <li>Vizsgabizottsági dokumentáció és kommunikáció felülvizsgálata</li>
-              <li>Doktoranduszi kutatási eredményekkel kapcsolatos tanácsadás</li>
-              <li>Tudományos eredmények nyilvános kommunikációjával kapcsolatos tanácsadás</li>
-              <li>Intézményi sajtó- és külső kommunikáció felülvizsgálata</li>
-            </ul>
-          </details>
-        </article>
-        <p class="section-next"><a href="#workshops">Ismerje meg tömör, nagy hatású intenzív műhelyeinket <span class="arrow" aria-hidden="true">↓</span></a></p>
-      </div>
-    </section>
-
-    <!-- ====================== 05 · INTENSIVE WORKSHOPS ====================== -->
-    <section class="section band reveal" id="workshops" aria-label="Intenzív műhelyek">
-      <div class="container">
-        <header class="group-divider"><h2 class="group-divider__title">Intenzív műhelyek</h2></header>
-        <p class="crossborder__text" style="max-width:66ch;">Tömör, rendkívül intenzív műhelyek — 2–3 nap, 1–5 résztvevő. Csapatoknak és magánszemélyeknek, akiknek fejleszteniük kell prezentációs készségeiket, el kell sajátítaniuk egy nagy tétű tárgyalás eszközeit, fel kell készülniük egy költözésre, vagy elébe kell menniük egy új piac követelményeinek. Legerősebb szakembereinket az Ön konkrét kihívásához rendeljük, hogy koncentrált, fókuszált környezetben nagy hatású fejlesztési programot nyújtsunk.</p>
-        <p style="margin:var(--sp-3) 0 var(--sp-4);"><strong>Csomagokért forduljon csapatunkhoz a <a href="mailto:info@kantor-communication.com">info@kantor-communication.com</a> címen.</strong></p>
-        <div class="workshops">
-          <div class="workshop"><h3 class="workshop__name">Prezentációs készségek</h3><p class="workshop__desc">Építsen fel és próbáljon be elejétől a végéig egy nagy tétű előadást, vitaindító előadást vagy pitchet.</p></div>
-          <div class="workshop"><h3 class="workshop__name">Tárgyalási készségek</h3><p class="workshop__desc">Felkészülés egy konkrét tárgyalásra: pozicionálás, nyelvhasználat nyomás alatt, a helyzet kezelése kultúrákon átívelően.</p></div>
-          <div class="workshop"><h3 class="workshop__name">Költözésre való felkészülés</h3><p class="workshop__desc">Kommunikációs és kulturális felkészültség egy új országba költözéshez.</p></div>
-          <div class="workshop"><h3 class="workshop__name">Piacbővítés</h3><p class="workshop__desc">Az új piacra lépés kommunikációs és kultúrák közötti rétege.</p></div>
-        </div>
-        <!-- HIDDEN 2026 — Cross-Border Partnerships, re-enable when it becomes a real offering
-        <p class="section-next"><a href="#partnerships">Nézze meg, hogyan működünk együtt határokon át <span class="arrow" aria-hidden="true">↓</span></a></p>
-        -->
-      </div>
-    </section>
-
-    <!-- ====================== 06 · CROSS-BORDER PARTNERSHIPS ====================== -->
-    <!-- HIDDEN 2026 — Cross-Border Partnerships, re-enable when it becomes a real offering
-    <section class="section reveal" id="partnerships" aria-label="Határokon átívelő partnerségek">
-      <div class="container">
-        <header class="group-divider"><h2 class="group-divider__title">Határokon átívelő partnerségek</h2></header>
-        <p class="crossborder__text">Más professzionális szolgáltató cégekkel működünk együtt, hogy támogassuk a határokon és kultúrákon átívelő átmeneteket. A KCC a kommunikációs, nyelvi és kulturális rétegért felel — azért a részért, amely eldönti, hogy megértik-e Önt és bíznak-e Önben —, miközben partnereink a jogi, adózási és logisztikai oldalt kezelik. Ön összehangolt átmenetet kap, nem egymástól elszigetelt szolgáltatók halmazát.</p>
-        <p class="section-next" hidden><a href="#testimonials">Olvassa el azok véleményét, akikkel együtt dolgoztunk <span class="arrow" aria-hidden="true">↓</span></a></p>
-      </div>
-    </section>
-    -->
-
-    <!-- ====================== 07 · TESTIMONIALS ====================== -->
-    <section class="section band reveal" id="testimonials" hidden aria-label="Ajánlások">
-      <div class="container">
-        <header class="group-divider"><h2 class="group-divider__title">Ajánlások</h2></header>
-        <p class="placeholder-note">Helykitöltő — az idézetek az engedélyalapú visszajelzési űrlapunkból származnak majd. Ahol bizalmas kezelés szükséges, ott név helyett szerepkör és ágazat szerint jelöljük őket, és kizárólag kifejezett engedéllyel tesszük közzé.</p>
-        <div class="testimonials__grid">
-          <figure class="quote">
-            <blockquote class="quote__text">„[Rövid, konkrét idézet egy kézzelfogható eredményről — egy célba ért vitaindító, egy elfogadott kézirat, egy jól kezelt tárgyalás.]"</blockquote>
-            <figcaption class="quote__cite">— Vezető tanácsadó, szövetségi intézmény</figcaption>
-          </figure>
-          <figure class="quote">
-            <blockquote class="quote__text">„[Idézet.]"</blockquote>
-            <figcaption class="quote__cite">— Posztdoktori kutató, élettudományok</figcaption>
-          </figure>
-          <figure class="quote">
-            <blockquote class="quote__text">„[Idézet.]"</blockquote>
-            <figcaption class="quote__cite">— [Név vagy szerepkör, szervezet vagy ágazat]</figcaption>
-          </figure>
-        </div>
-        <p class="section-next"><a href="#talk">Készen áll a kezdésre? Foglaljon feltáró beszélgetést <span class="arrow" aria-hidden="true">↓</span></a></p>
-      </div>
-    </section>
-
-    <!-- ====================== INVITATION ====================== -->
-    <section class="section reveal" id="talk" aria-label="Beszéljünk a kommunikációs céljairól">
-      <div class="container">
-        <div class="form-wrap">
-          <h2>Beszéljünk a kommunikációs céljairól.</h2>
-          <p class="form-microcopy">Foglaljon egy első beszélgetést, vagy küldjön üzenetet — ahogyan Önnek kényelmesebb.</p>
-          <div style="display:flex;flex-wrap:wrap;gap:var(--sp-3);margin-top:var(--sp-3);">
-            <a class="btn" href="https://scheduler.zoom.us/dorian-kantor/kantor-communication" target="_blank" rel="noopener">Zoom-hívás foglalása</a>
-            <a class="btn btn--ghost" href="#contact-consulting">Üzenet küldése</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ====================== CONTACT FORM (Consulting · native Netlify) ====================== -->
-    <section class="section reveal" id="contact-consulting" aria-label="Book a discovery call">
-      <div class="container">
-        <div class="form-wrap">
-          <p class="eyebrow">Kezdje el</p>
-          <h2>Foglaljon feltáró beszélgetést</h2>
-          <p class="form-microcopy">Mondja el, mi áll Ön előtt — egy tárgyalás, egy vitaindító előadás, egy kézirat, egy igazgatótanácsi prezentáció —, mi pedig célzott munkakeretet javaslunk. Bizalmasan, kötelezettség nélkül.</p>
-
-          <!-- Native Netlify form. Set the notification email + subject in
-               Netlify → Forms → Notifications (route to languages@kantor-communication.com). -->
-          <form class="form" name="consulting-contact" method="POST" action="https://formspree.io/f/mnjkbbva" data-kc-form>
-            <input type="hidden" name="_subject" value="KCC discovery call request" />
-            <input type="hidden" name="_next" value="https://kantor-communication.com/hu/thanks" />
-            <p class="visually-hidden" aria-hidden="true"><label>Don't fill this out if you're human: <input name="_gotcha" /></label></p>
-            <div class="field--row">
-              <div class="field">
-                <label for="c-name">Név <span class="req" aria-hidden="true">*</span></label>
-                <input id="c-name" name="name" type="text" autocomplete="name" placeholder=" " required />
-              </div>
-              <div class="field">
-                <label for="c-org">Szervezet</label>
-                <input id="c-org" name="organization" type="text" autocomplete="organization" placeholder=" " />
-              </div>
-            </div>
-
-            <div class="field--row">
-              <div class="field">
-                <label for="c-role">Szerepkör / beosztás</label>
-                <input id="c-role" name="role" type="text" autocomplete="organization-title" placeholder=" " />
-              </div>
-              <div class="field">
-                <label for="c-email">E-mail <span class="req" aria-hidden="true">*</span></label>
-                <input id="c-email" name="email" type="email" autocomplete="email" placeholder=" " required />
-              </div>
-            </div>
-
-            <div class="field">
-              <label for="c-area">Érdeklődési terület <span class="req" aria-hidden="true">*</span></label>
-              <select id="c-area" name="area_of_interest" required>
-                <option value="" disabled selected>Válasszon területet…</option>
-                <option>Vezetés és összehangolás</option>
-                <option>Tárgyalás és meggyőzés</option>
-                <option>Előadás a legmagasabb szinten</option>
-                <option>Írás tekintéllyel</option>
-                <option>Munka kultúrákon átívelően</option>
-                <option>Nyilvánosság/szakpolitika/média megszólítása</option>
-                <option>Tudományos és kutatási terület</option>
-                <option>Még nem tudom</option>
-              </select>
-            </div>
-
-            <div class="field">
-              <label for="c-lang">A szolgáltatás preferált nyelve <span class="req" aria-hidden="true">*</span></label>
-              <select id="c-lang" name="language_of_service" required>
-                <option value="" disabled selected>Válasszon nyelvet…</option>
-                <option>EN</option>
-                <option>DE</option>
-                <option>HU</option>
-                <option>ES</option>
-                <option>IT</option>
-                <option>Egyéb</option>
-              </select>
-            </div>
-
-            <div class="field">
-              <label for="c-situation">Röviden: mi a helyzet vagy a cél?</label>
-              <textarea id="c-situation" name="situation" placeholder=" "></textarea>
-            </div>
-
-            <button class="btn" type="submit">Feltáró beszélgetés igénylése</button>
-            <p class="form-status" role="status" aria-live="polite"></p>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ============================ FOOTER ============================ -->
-    <!-- ============================ FOOTER ============================ -->
-  <footer class="site-footer">
-    <div class="container site-footer__inner">
-      <div class="footer__brand-row">
-        <img src="../assets/img/kcc-logo.svg" alt="" aria-hidden="true" />
-        <span>Kantor Communication Consulting</span>
-      </div>
-      <div class="footer__domain">kantor-communication.com</div>
-      <div class="footer__contact"><span data-i18n="email-label">E-mail</span>: <a href="mailto:info@kantor-communication.com">info@kantor-communication.com</a> · <span data-i18n="phone-label">Telefon</span>: <a href="tel:+491707070045">+49 170 7070045</a> · <span data-i18n="location">Helyszín</span>: Düsseldorf / Berlin · Budapest · Bogotá · Washington, DC</div>
-      <div class="footer__legal">
-        <a href="../impressum.html" data-i18n="legal">Jogi közlemény</a> ·
-        <a href="../datenschutz.html" data-i18n="privacy">Adatvédelmi irányelvek</a>
-      </div>
-      <ul class="site-footer__nav">
-        <li><a href="index.html#principal" data-i18n="nav-about">Rólunk</a></li>
-        <li><a href="consulting.html" data-i18n="nav-consulting">Tanácsadás</a></li>
-        <li><a href="education.html" data-i18n="nav-education">Nyelviskola</a></li>
-        <li><a href="jobs.html" data-i18n="nav-jobs">Állások</a></li>
-        <li><a href="faq.html" data-i18n="nav-faq">GYIK</a></li>
-        <li><a href="index.html#contact" data-i18n="nav-contact">Kapcsolat</a></li>
-      </ul>
-    </div>
-  </footer>
-
-  <script src="../assets/js/main.js"></script>
-  <script src="../assets/js/kcc-theme.js"></script>
+<div style="font-family: 'Inter', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif; color: #23201C; background: #F8F6F2; font-size: 18px; line-height: 1.6; width: 100%;">
+<!-- HERO with header (original lights, grid, beam, seam) -->
+<section class="kc-hero" id="top" style="color: #F1EDE6;">
+<div aria-hidden="true" class="kc-hero__grid"></div>
+<div aria-hidden="true" class="kc-hero__light"></div>
+<div aria-hidden="true" class="kc-hero__beam"></div>
+<header class="kc-bar" style="position: relative; z-index: 4; color: #F1EDE6;">
+<div class="kc-head" style="max-width: 1200px; margin: 0 auto; padding: 18px clamp(20px, 5vw, 48px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px;">
+<a href="/hu/" style="display: inline-flex; align-items: center; gap: 10px; color: #F1EDE6;">
+<img alt="" src="/assets/img/kc-on-dark.png" style="width: 34px; height: 34px;"/>
+<span style="font-family: 'Spectral', Georgia, serif; font-size: 18px; letter-spacing: .01em;"><b style="font-weight: 600;">Kantor</b> Communication</span>
+</a>
+<nav aria-label="Főmenü" class="kc-nav" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; font-size: 15px;">
+<a href="/hu/education.html" style="color: #F1EDE6;">Nyelvi Intézet</a>
+<a aria-current="page" href="#top" style="color: #C89A5A; border-bottom: 1px solid #C89A5A; padding-bottom: 2px;">Kommunikációs Tanácsadás</a>
+<a href="/hu/marketing.html" style="color: #F1EDE6;">Márka &amp; Marketing</a>
+<a href="/hu/about.html" style="color: #F1EDE6;">Rólunk</a>
+<a href="#contact-consulting" style="color: #F1EDE6;">Kapcsolat</a>
+<details class="kc-lang kc-langmenu"><summary aria-label="Nyelv kiválasztása">HU</summary><ul><li><a data-kc-lang="en" href="/consulting.html" hreflang="en" lang="en">English</a></li><li><a data-kc-lang="es" href="/es/consulting.html" hreflang="es" lang="es">Español</a></li><li><a data-kc-lang="de" href="/de/consulting.html" hreflang="de" lang="de">Deutsch</a></li><li><a aria-current="true" data-kc-lang="hu" href="/hu/consulting.html" hreflang="hu" lang="hu">Magyar</a></li></ul></details></nav>
+</div>
+</header>
+<div style="position: relative; z-index: 3; text-align: center; padding: clamp(64px, 8vw, 112px) clamp(20px, 5vw, 48px) clamp(120px, 30vw, 200px);">
+<div style="max-width: 980px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 26px;">
+<p style="margin: 0; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: clamp(1.9px, .5vw, 2.88px); text-transform: uppercase; color: #C9C1B6;"><span style="flex: 0 0 auto; width: clamp(20px, 6vw, 42px); height: 1px; background: #C89A5A;"></span>Kommunikációs Tanácsadás<span style="flex: 0 0 auto; width: clamp(20px, 6vw, 42px); height: 1px; background: #C89A5A;"></span></p>
+<h1 style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 300; font-size: clamp(40px, 5.2vw, 72px); line-height: 1.08; letter-spacing: -.02em; max-width: 22ch;">A jó érvhez <em style="display: block; color: #C89A5A;">a megfelelő szavak kellenek.</em></h1>
+<p style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 300; font-size: clamp(20px, 1.8vw, 24px); line-height: 1.4; color: #E3DDD3; max-width: 46ch;">Áttekintjük, kidolgozzuk és finomítjuk az Ön kommunikációját a megszólítani kívánt közönséghez, a nyelvi és kulturális környezet figyelembevételével.</p>
+<div style="width: 100%; display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-top: 8px;">
+<a class="kc-balance" href="#contact-consulting" style="display: inline-block; flex: 1 1 260px; max-width: 340px; min-width: 0; box-sizing: border-box; padding: 15px 14px; background: #F1EDE6; color: #2E1A1D; border: 1.5px solid #F1EDE6; font-size: 13px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; text-align: center;">Beszéljük meg kommunikációs projektjét</a>
+<a href="https://scheduler.zoom.us/dorian-kantor/kantor-communication" style="display: inline-block; flex: 1 1 260px; max-width: 340px; min-width: 0; box-sizing: border-box; padding: 15px 14px; color: #F1EDE6; border: 1.5px solid rgba(241,237,230,.7); font-size: 13px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; text-align: center;">Bemutatkozó beszélgetés foglalása</a>
+</div>
+</div>
+</div>
+<div aria-hidden="true" class="kc-hero__seam"></div>
+</section>
+<!-- ESSENTIAL FACTS: what we can work on -->
+<section aria-label="Amivel foglalkozunk" style="padding: 0 clamp(20px, 5vw, 48px);">
+<dl style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 1px; background: #E4DFD6; border: 1px solid #E4DFD6; border-radius: 4px; overflow: hidden;">
+<div style="flex: 1 1 200px; box-sizing: border-box; background: #F8F6F2; padding: clamp(16px, 4vw, 26px) clamp(18px, 4vw, 24px);"><dt style="font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531; margin-bottom: 6px;">Előadó</dt><dd style="margin: 0; font-family: 'Spectral', Georgia, serif; font-size: 22px; line-height: 1.25;">Felkészítés egy meghatározott alkalomra</dd></div>
+<div style="flex: 1 1 200px; box-sizing: border-box; background: #F8F6F2; padding: clamp(16px, 4vw, 26px) clamp(18px, 4vw, 24px);"><dt style="font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531; margin-bottom: 6px;">Üzenet vagy dokumentum</dt><dd style="margin: 0; font-family: 'Spectral', Georgia, serif; font-size: 22px; line-height: 1.25;">Áttekintés, újraszerkesztés, megírás vagy adaptálás</dd></div>
+<div style="flex: 1 1 200px; box-sizing: border-box; background: #F8F6F2; padding: clamp(16px, 4vw, 26px) clamp(18px, 4vw, 24px);"><dt style="font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531; margin-bottom: 6px;">Átfogóbb kampány</dt><dd style="margin: 0; font-family: 'Spectral', Georgia, serif; font-size: 22px; line-height: 1.25;">Tanácsadás egyeztetett időszakon keresztül</dd></div>
+</dl>
+</section>
+<!-- INTRO -->
+<section style="padding: clamp(56px, 8vw, 104px) clamp(20px, 5vw, 48px);">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 32px 72px;">
+<h2 style="flex: 1 1 320px; margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: clamp(32px, 3.4vw, 46px); line-height: 1.12;">Magával az üzenettel dolgozunk</h2>
+<div style="flex: 1 1 520px;">
+<p style="margin: 0 0 16px; font-family: 'Spectral', Georgia, serif; font-size: 23px; line-height: 1.5;">A világos érvelés hatását gyengítheti a rossz szerkezet, a nem megfelelő megfogalmazás vagy a helytelenül megválasztott nyelvi regiszter.</p>
+<p style="margin: 0 0 16px; color: #6E675D;">Minden megbízást a konkrét kommunikációs feladat köré építünk. A megállapodott célhoz igazodva felkészítés, egyéni alkalmak, anyagfejlesztés és próba is szerepelhet a munkában.</p>
+<p style="margin: 0; font-size: 16px; font-weight: 500;"><a href="#engage">Ismerje meg a három egyéni programot →</a></p>
+</div>
+</div>
+</section>
+<!-- EXECUTIVE INTENSIVES FEATURE -->
+<section aria-label="Intenzív vezetői tréningek" style="padding: 0 clamp(20px, 5vw, 48px) clamp(56px, 7vw, 88px);">
+<a href="/hu/executive-intensives.html" style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 24px 48px; padding: clamp(24px, 6vw, 48px) clamp(20px, 5vw, 48px); background: #2E1A1D; color: #F1EDE6; border-radius: 4px; box-shadow: 0 14px 34px rgba(46,26,29,.16); box-sizing: border-box;">
+<span style="flex: 1 1 520px; display: flex; flex-direction: column; gap: 12px;">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #C89A5A;">Csoportos forma · Intenzív vezetői tréningek</span>
+<span style="font-family: 'Spectral', Georgia, serif; font-weight: 300; font-size: clamp(28px, 2.8vw, 38px); line-height: 1.15;">Két- vagy háromnapos intenzív tréningek tárgyalásról és meggyőzésről kis létszámú vezetői csoportoknak.</span>
+<span style="font-size: 15px; color: #C9C1B6;">2–3 nap · Legfeljebb öt vezető egy szervezettől · Dr. Dorian Kantor vezetésével</span>
+</span>
+<span style="flex: 0 1 auto; box-sizing: border-box; padding: 14px 16px; background: #F1EDE6; color: #2E1A1D; font-size: 13px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; text-align: center;">Intenzív vezetői tréningek →</span>
+</a>
+</section>
+<!-- SERVICE FAMILIES -->
+<section style="padding: 0 clamp(20px, 5vw, 48px) clamp(64px, 8vw, 112px);">
+<div style="max-width: 1200px; margin: 0 auto;">
+<p style="margin: 0 0 16px; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #6E675D;"><span style="width: 42px; height: 1px; background: #A87C3D;"></span>Milyen munkát rendelhet meg?</p>
+<h2 style="margin: 0 0 clamp(28px, 4vw, 40px); font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: clamp(32px, 3.4vw, 46px); line-height: 1.12;">Négy szakterület</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 24px;">
+<article style="flex: 1 1 460px; min-width: 0; box-sizing: border-box; padding: clamp(24px, 6vw, 36px) clamp(20px, 5vw, 34px); background-color: #F8F6F2; background-image: linear-gradient(100deg, rgba(46,26,29,.055) 0%, rgba(168,124,61,.05) 18%, transparent 52%); border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); display: flex; flex-direction: column; gap: 16px;">
+<h3 style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 28px; line-height: 1.15;">Beszédek, plenáris előadások és prezentációk</h3>
+<p style="margin: 0; color: #6E675D;">A központi érvtől a szövegkönyvön és a diáksoron át az előadásmódig kidolgozzuk beszédét. Felkészítjük az azt követő kérdésekre és vitára is.</p>
+<p style="margin: 8px 0 0; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">Jellemző eredmények</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px;"><li style="padding: 6px 10px; background: #EFEBE4; border-radius: 2px;">Érvelés és szerkezet</li><li style="padding: 6px 10px; background: #EFEBE4; border-radius: 2px;">Beszédszöveg vagy előadói jegyzetek</li><li style="padding: 6px 10px; background: #EFEBE4; border-radius: 2px;">A prezentáció narratívája</li><li style="padding: 6px 10px; background: #EFEBE4; border-radius: 2px;">Próba és felkészülés a kérdésekre</li></ul>
+</article>
+<article style="flex: 1 1 460px; min-width: 0; box-sizing: border-box; padding: clamp(24px, 6vw, 36px) clamp(20px, 5vw, 34px); background-color: #F8F6F2; background-image: linear-gradient(100deg, rgba(46,26,29,.055) 0%, rgba(168,124,61,.05) 18%, transparent 52%); border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); display: flex; flex-direction: column; gap: 16px;">
+<h3 style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 28px; line-height: 1.15;">Vezetői, tárgyalási és érintetti kommunikáció</h3>
+<p style="margin: 0; color: #6E675D;">Tisztázzuk, milyen álláspontot kell közölnie az igazgatósággal, befektetővel, partnerrel, csapattal vagy tárgyalópartnerrel, az adott helyzetnek megfelelő nyelven.</p>
+<p style="margin: 8px 0 0; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">Jellemző eredmények</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px;"><li style="padding: 6px 10px; background: #EFEBE4; border-radius: 2px;">Üzenetkeret</li><li style="padding: 6px 10px; background: #EFEBE4; border-radius: 2px;">Dokumentum vagy prezentáció áttekintése</li><li style="padding: 6px 10px; background: #EFEBE4; border-radius: 2px;">Felkészítés egy meghatározott beszélgetésre</li><li style="padding: 6px 10px; background: #EFEBE4; border-radius: 2px;">Csapatműhely</li></ul>
+</article>
+<article style="flex: 1 1 460px; min-width: 0; box-sizing: border-box; padding: clamp(24px, 6vw, 36px) clamp(20px, 5vw, 34px); background-color: #F8F6F2; background-image: linear-gradient(100deg, rgba(46,26,29,.055) 0%, rgba(168,124,61,.05) 18%, transparent 52%); border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); display: flex; flex-direction: column; gap: 16px;">
+<h3 style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 28px; line-height: 1.15;">Politikai, közéleti és kampánykommunikáció</h3>
+<p style="margin: 0; color: #6E675D;">Beszédeket, nyilatkozatokat és kampányüzeneteket dolgozunk ki a nyilvánosság és az intézményi közönség számára, figyelembe véve, hogyan értelmezhetik azokat az adott környezetben.</p>
+<p style="margin: 8px 0 0; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">Jellemző eredmények</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px;"><li style="padding: 6px 10px; background: #EFEBE4; border-radius: 2px;">Üzenetkeret és narratíva</li><li style="padding: 6px 10px; background: #EFEBE4; border-radius: 2px;">Beszéd vagy nyilatkozat</li><li style="padding: 6px 10px; background: #EFEBE4; border-radius: 2px;">Kampánykommunikáció áttekintése</li></ul>
+</article>
+<article id="academic" style="flex: 1 1 460px; min-width: 0; box-sizing: border-box; padding: clamp(24px, 6vw, 36px) clamp(20px, 5vw, 34px); background-color: #F8F6F2; background-image: linear-gradient(100deg, rgba(46,26,29,.055) 0%, rgba(168,124,61,.05) 18%, transparent 52%); border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); display: flex; flex-direction: column; gap: 16px;">
+<h3 style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 28px; line-height: 1.15;">Tudományos és szakértői kommunikáció</h3>
+<p style="margin: 0; color: #6E675D;">Tegye világossá kutatása jelentőségét a bírálók, konferenciaközönség és a szélesebb nyilvánosság számára: konferencia-előadás, pályázat, cikk vagy kutatási eredményeinek közérthető bemutatása révén.</p>
+<p style="margin: 0; font-size: 15px; color: #4A443C;">Dr. Kantor közel 30 alap- és mesterszakos szakdolgozatot témavezetett nemzetközi kapcsolatok és nemzetközi jog területén.</p>
+<p style="margin: 8px 0 0; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">Jellemző eredmények</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px;"><li style="padding: 6px 10px; background: #EFEBE4; border-radius: 2px;">Az érvelés és a szerkezet áttekintése</li><li style="padding: 6px 10px; background: #EFEBE4; border-radius: 2px;">Konferencia-előadás vagy prezentáció</li><li style="padding: 6px 10px; background: #EFEBE4; border-radius: 2px;">Pályázat vagy cikk</li><li style="padding: 6px 10px; background: #EFEBE4; border-radius: 2px;">Felkészülés a közönségre és a kérdésekre</li></ul>
+</article>
+</div>
+<div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid #E4DFD6; display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 48px;">
+<p style="flex: 0 1 auto; margin: 0; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">Melyik szakterület vezet?</p>
+<p style="flex: 1 1 520px; margin: 0; font-size: 16px; color: #4A443C;">A Kommunikációs Tanácsadás vezeti az egyéni előadói felkészítést, a vezetői kommunikációt, a tárgyalási és meggyőzési munkát, a beszédek és prezentációk előkészítését, valamint a politikai és intézményi üzenetek kidolgozását. <a href="/hu/marketing.html" style="font-weight: 500;">Pozicionálásért, márkahangért és piaci tartalmakért tekintse meg a Márka &amp; Marketing szolgáltatásait →</a></p>
+</div>
+</div>
+</section>
+<!-- INDIVIDUAL PROGRAMS -->
+<section id="engage" style="background: #EFEBE4; padding: clamp(64px, 8vw, 104px) clamp(20px, 5vw, 48px);">
+<div style="max-width: 1200px; margin: 0 auto;">
+<p style="margin: 0 0 16px; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #6E675D;"><span style="width: 42px; height: 1px; background: #A87C3D;"></span>Egyéni programok</p>
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; gap: 16px 72px; margin: 0 0 40px;">
+<h2 style="flex: 1 1 320px; margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: clamp(32px, 3.4vw, 46px); line-height: 1.12;">Három program, egymásra épülő fejlődés</h2>
+<p style="flex: 1 1 420px; margin: 0; color: #4A443C;">Kezdje azzal, amelyik megfelel helyzetének. Mindegyik a következő szinthez vezethet. A programok olyanoknak szólnak, akik már használják az adott nyelvet. <a href="/hu/education.html" style="font-weight: 500;">Még fejleszti nyelvtudását? Kezdje a Nyelvi Intézetnél →</a></p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 24px;">
+<article style="flex: 1 1 300px; min-width: 0; box-sizing: border-box; padding: clamp(24px, 6vw, 30px) clamp(20px, 5vw, 28px) clamp(22px, 5vw, 26px); background-color: #F8F6F2; background-image: linear-gradient(100deg, rgba(46,26,29,.055) 0%, rgba(168,124,61,.05) 18%, transparent 52%); border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); display: flex; flex-direction: column; gap: 14px;">
+<p style="margin: 0; min-height: 34px; display: flex; align-items: center; gap: 12px; font-size: 12px; line-height: 1.4; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: #8A6531;"><span style="font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 26px; line-height: 1; letter-spacing: 0; color: #A87C3D;">01</span><span style="flex: 1 1 0; min-width: 0;">Egy konkrét kihívás</span></p>
+<span aria-hidden="true" style="display: block; height: 3px; background: #E4DFD6;"><span style="display: block; width: 33.3%; height: 3px; background: #A87C3D;"></span></span>
+<h3 style="margin: 6px 0 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 30px; line-height: 1.12;">Does It Land?</h3>
+<p style="margin: -6px 0 0; font-family: 'Spectral', Georgia, serif; font-style: italic; font-size: 20px; line-height: 1.3; color: #8A6531;">Felkészítés egy döntő pillanatra</p>
+<p style="margin: 0; font-size: 16px; color: #6E675D;">Plenáris előadás, igazgatósági prezentáció, tárgyalás, médiainterjú vagy fontos intézményi megbeszélés.</p>
+<p style="margin: 4px 0 -6px; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">A program tartalma</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; font-size: 16px; line-height: 1.45;"><li style="display: flex; align-items: flex-start; gap: 12px; padding: 7px 0; border-top: 1px solid #E4DFD6;"><span aria-hidden="true" style="flex: 0 0 14px; height: 1px; margin-top: .7em; background: #A87C3D;"></span><span style="flex: 1 1 0; min-width: 0;">Első egyeztetés</span></li><li style="display: flex; align-items: flex-start; gap: 12px; padding: 7px 0; border-top: 1px solid #E4DFD6;"><span aria-hidden="true" style="flex: 0 0 14px; height: 1px; margin-top: .7em; background: #A87C3D;"></span><span style="flex: 1 1 0; min-width: 0;">Az anyagok és az érvelés áttekintése</span></li><li style="display: flex; align-items: flex-start; gap: 12px; padding: 7px 0; border-top: 1px solid #E4DFD6;"><span aria-hidden="true" style="flex: 0 0 14px; height: 1px; margin-top: .7em; background: #A87C3D;"></span><span style="flex: 1 1 0; min-width: 0;">Két vagy három felkészítő alkalom</span></li><li style="display: flex; align-items: flex-start; gap: 12px; padding: 7px 0; border-top: 1px solid #E4DFD6;"><span aria-hidden="true" style="flex: 0 0 14px; height: 1px; margin-top: .7em; background: #A87C3D;"></span><span style="flex: 1 1 0; min-width: 0;">Záró próba visszajelzéssel</span></li></ul>
+<div style="margin-top: auto; padding: 16px 18px 18px; background: #EFEBE4; border-radius: 2px; display: flex; flex-direction: column; gap: 10px;">
+<p style="margin: 0; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">A program végére Ön rendelkezik</p>
+<ul class="kc-balance" style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-family: 'Spectral', Georgia, serif; font-size: 19px; line-height: 1.3; color: #23201C;"><li style="display: flex; align-items: flex-start; gap: 12px;"><span aria-hidden="true" style="flex: 0 0 14px; height: 1px; margin-top: .7em; background: #A87C3D;"></span><span style="flex: 1 1 0; min-width: 0;">Újraszerkesztett érveléssel</span></li><li style="display: flex; align-items: flex-start; gap: 12px;"><span aria-hidden="true" style="flex: 0 0 14px; height: 1px; margin-top: .7em; background: #A87C3D;"></span><span style="flex: 1 1 0; min-width: 0;">A legnehezebb kérdésekre begyakorolt válaszokkal</span></li><li style="display: flex; align-items: flex-start; gap: 12px;"><span aria-hidden="true" style="flex: 0 0 14px; height: 1px; margin-top: .7em; background: #A87C3D;"></span><span style="flex: 1 1 0; min-width: 0;">Egyoldalas összefoglalóval az adott alkalomra</span></li></ul>
+</div>
+<p style="margin: auto 0 0; padding-top: 14px; border-top: 1px solid #D6CFC3; display: flex; flex-direction: column; gap: 4px; font-size: 15px; color: #4A443C;"><span style="font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #6E675D;">Időkeret</span><span>Általában az esemény előtti egy-három hét</span></p>
+</article>
+<article style="flex: 1 1 300px; min-width: 0; box-sizing: border-box; padding: clamp(24px, 6vw, 30px) clamp(20px, 5vw, 28px) clamp(22px, 5vw, 26px); background-color: #F8F6F2; background-image: linear-gradient(100deg, rgba(46,26,29,.055) 0%, rgba(168,124,61,.05) 18%, transparent 52%); border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); display: flex; flex-direction: column; gap: 14px;">
+<p style="margin: 0; min-height: 34px; display: flex; align-items: center; gap: 12px; font-size: 12px; line-height: 1.4; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: #8A6531;"><span style="font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 26px; line-height: 1; letter-spacing: 0; color: #A87C3D;">02</span><span style="flex: 1 1 0; min-width: 0;">Hosszabb távú program</span></p>
+<span aria-hidden="true" style="display: block; height: 3px; background: #E4DFD6;"><span style="display: block; width: 66.6%; height: 3px; background: #A87C3D;"></span></span>
+<h3 style="margin: 6px 0 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 30px; line-height: 1.12;">Making the Case</h3>
+<p style="margin: -6px 0 0; font-family: 'Spectral', Georgia, serif; font-style: italic; font-size: 20px; line-height: 1.3; color: #8A6531;">Három hónapos program a meggyőző kommunikáció fejlesztésére</p>
+<p style="margin: 0; font-size: 16px; color: #6E675D;"><span style="font-weight: 600; color: #23201C;">Fejlessze meggyőző kommunikációját.</span> Olyan szakembereknek, akiknek munkakörében egyre fontosabb az álláspontok megvédése, az érintettek meggyőzése és az összetett gondolatok elmagyarázása. Ide tartoznak a második nyelven felsővezetői szinten dolgozó vezetők és a vezetői szerepkörbe lépő szakemberek is.</p>
+<p style="margin: 4px 0 -6px; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">A program tartalma</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; font-size: 16px; line-height: 1.45;"><li style="display: flex; align-items: flex-start; gap: 12px; padding: 7px 0; border-top: 1px solid #E4DFD6;"><span aria-hidden="true" style="flex: 0 0 14px; height: 1px; margin-top: .7em; background: #A87C3D;"></span><span style="flex: 1 1 0; min-width: 0;">Kiinduló szintfelmérés</span></li><li style="display: flex; align-items: flex-start; gap: 12px; padding: 7px 0; border-top: 1px solid #E4DFD6;"><span aria-hidden="true" style="flex: 0 0 14px; height: 1px; margin-top: .7em; background: #A87C3D;"></span><span style="flex: 1 1 0; min-width: 0;">Hat-nyolc egyéni alkalom az Ön naptárában szereplő valós feladatokkal</span></li><li style="display: flex; align-items: flex-start; gap: 12px; padding: 7px 0; border-top: 1px solid #E4DFD6;"><span aria-hidden="true" style="flex: 0 0 14px; height: 1px; margin-top: .7em; background: #A87C3D;"></span><span style="flex: 1 1 0; min-width: 0;">Záró felmérés</span></li></ul>
+<div style="margin-top: auto; padding: 16px 18px 18px; background: #EFEBE4; border-radius: 2px; display: flex; flex-direction: column; gap: 10px;">
+<p style="margin: 0; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">A program végére Ön rendelkezik</p>
+<ul class="kc-balance" style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-family: 'Spectral', Georgia, serif; font-size: 19px; line-height: 1.3; color: #23201C;"><li style="display: flex; align-items: flex-start; gap: 12px;"><span aria-hidden="true" style="flex: 0 0 14px; height: 1px; margin-top: .7em; background: #A87C3D;"></span><span style="flex: 1 1 0; min-width: 0;">Írásos fejlesztési tervvel</span></li></ul>
+</div>
+<p style="margin: 0; font-size: 15px; line-height: 1.5;"><a href="/hu/education.html">Második nyelven dolgozik? A Nyelvi Intézet haladó nyelvi képzéssel egészíti ki ezt a programot →</a></p>
+<p style="margin: auto 0 0; padding-top: 14px; border-top: 1px solid #D6CFC3; display: flex; flex-direction: column; gap: 4px; font-size: 15px; color: #4A443C;"><span style="font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #6E675D;">Időkeret</span><span>Három hónap</span></p>
+</article>
+<article style="flex: 1 1 300px; min-width: 0; box-sizing: border-box; padding: clamp(24px, 6vw, 30px) clamp(20px, 5vw, 28px) clamp(22px, 5vw, 26px); background-color: #F8F6F2; background-image: linear-gradient(100deg, rgba(46,26,29,.055) 0%, rgba(168,124,61,.05) 18%, transparent 52%); border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); display: flex; flex-direction: column; gap: 14px;">
+<p style="margin: 0; min-height: 34px; display: flex; align-items: center; gap: 12px; font-size: 12px; line-height: 1.4; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: #8A6531;"><span style="font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 26px; line-height: 1; letter-spacing: 0; color: #A87C3D;">03</span><span style="flex: 1 1 0; min-width: 0;">Folyamatos tanácsadói együttműködés</span></p>
+<span aria-hidden="true" style="display: block; height: 3px; background: #E4DFD6;"><span style="display: block; width: 100%; height: 3px; background: #A87C3D;"></span></span>
+<h3 style="margin: 6px 0 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 30px; line-height: 1.12;">Sounding Board</h3>
+<p style="margin: -6px 0 0; font-family: 'Spectral', Georgia, serif; font-style: italic; font-size: 20px; line-height: 1.3; color: #8A6531;">Folyamatos kommunikációs tanácsadás</p>
+<p style="margin: 0; font-size: 16px; color: #6E675D;">Havi konstrukció felsővezetőknek és tapasztalt szakembereknek.</p>
+<p style="margin: 4px 0 -6px; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">A szolgáltatás tartalma</p>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; font-size: 16px; line-height: 1.45;"><li style="display: flex; align-items: flex-start; gap: 12px; padding: 7px 0; border-top: 1px solid #E4DFD6;"><span aria-hidden="true" style="flex: 0 0 14px; height: 1px; margin-top: .7em; background: #A87C3D;"></span><span style="flex: 1 1 0; min-width: 0;">Üzenetek áttekintése</span></li><li style="display: flex; align-items: flex-start; gap: 12px; padding: 7px 0; border-top: 1px solid #E4DFD6;"><span aria-hidden="true" style="flex: 0 0 14px; height: 1px; margin-top: .7em; background: #A87C3D;"></span><span style="flex: 1 1 0; min-width: 0;">Felkészítés nehéz beszélgetésekre</span></li><li style="display: flex; align-items: flex-start; gap: 12px; padding: 7px 0; border-top: 1px solid #E4DFD6;"><span aria-hidden="true" style="flex: 0 0 14px; height: 1px; margin-top: .7em; background: #A87C3D;"></span><span style="flex: 1 1 0; min-width: 0;">Stratégiai kommunikációs tanácsadás</span></li></ul>
+<div style="margin-top: auto; padding: 16px 18px 18px; background: #EFEBE4; border-radius: 2px; display: flex; flex-direction: column; gap: 10px;">
+<p style="margin: 0; font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #8A6531;">Működés</p>
+<ul class="kc-balance" style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-family: 'Spectral', Georgia, serif; font-size: 19px; line-height: 1.3; color: #23201C;"><li style="display: flex; align-items: flex-start; gap: 12px;"><span aria-hidden="true" style="flex: 0 0 14px; height: 1px; margin-top: .7em; background: #A87C3D;"></span><span style="flex: 1 1 0; min-width: 0;">Egyeztetett rendelkezésre állás <span style="white-space: nowrap;">sürgős</span> kérdések esetén</span></li><li style="display: flex; align-items: flex-start; gap: 12px;"><span aria-hidden="true" style="flex: 0 0 14px; height: 1px; margin-top: .7em; background: #A87C3D;"></span><span style="flex: 1 1 0; min-width: 0;">Legalább három hónapos időtartam</span></li></ul>
+</div>
+<p style="margin: auto 0 0; padding-top: 14px; border-top: 1px solid #D6CFC3; display: flex; flex-direction: column; gap: 4px; font-size: 15px; color: #4A443C;"><span style="font-size: 12px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: #6E675D;">Időkeret</span><span>Havi, folyamatos együttműködés</span></p>
+</article>
+</div>
+<p style="margin: 32px 0 0; font-size: 16px; color: #6E675D;">Minden program fix díjas. Az összeget a feladatról szóló első beszélgetést követően javasoljuk. <a href="/hu/executive-intensives.html" style="font-weight: 500;">Ha egy szervezet legfeljebb öt vezetőjének szóló csoportos programot keres, tekintse meg az Intenzív vezetői tréningeket →</a></p>
+</div>
+</section>
+<!-- WHICH ONE DO I NEED? (same block on Institute and Consulting) -->
+<section id="which" style="background: #F8F6F2; padding: clamp(64px, 8vw, 104px) clamp(20px, 5vw, 48px) clamp(8px, 2vw, 24px);">
+<div style="max-width: 1200px; margin: 0 auto;">
+<p style="margin: 0 0 16px; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #6E675D;"><span style="width: 42px; height: 1px; background: #A87C3D;"></span>Melyikre van szükségem?</p>
+<h2 style="margin: 0 0 40px; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: clamp(32px, 3.4vw, 46px); line-height: 1.12;">Nyelvi Intézet vagy <em style="color: #A87C3D;">Kommunikációs Tanácsadás?</em></h2>
+<div style="display: flex; flex-wrap: wrap; gap: 24px;">
+<div style="flex: 1 1 340px; box-sizing: border-box; padding: clamp(24px, 6vw, 36px) clamp(20px, 5vw, 34px); background-color: #F8F6F2; background-image: linear-gradient(100deg, rgba(46,26,29,.055) 0%, rgba(168,124,61,.05) 18%, transparent 52%); border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); display: flex; flex-direction: column; gap: 6px;">
+<h3 style="margin: 0 0 10px; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 28px; line-height: 1.15;">Nyelvi Intézet</h3>
+<dl style="margin: 0 0 14px; display: flex; flex-direction: column; border-bottom: 1px solid #E4DFD6;"><div style="display: flex; flex-wrap: wrap; gap: 2px 20px; padding: 13px 0; border-top: 1px solid #E4DFD6;"><dt style="flex: 0 0 150px; font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: #8A6531; padding-top: 4px;">Kiindulópont</dt><dd style="margin: 0; flex: 1 1 200px;">Magát a nyelvet szeretné jobban elsajátítani</dd></div><div style="display: flex; flex-wrap: wrap; gap: 2px 20px; padding: 13px 0; border-top: 1px solid #E4DFD6;"><dt style="flex: 0 0 150px; font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: #8A6531; padding-top: 4px;">Amivel foglalkozik</dt><dd style="margin: 0; flex: 1 1 200px;">A nyelv, óráról órára</dd></div><div style="display: flex; flex-wrap: wrap; gap: 2px 20px; padding: 13px 0; border-top: 1px solid #E4DFD6;"><dt style="flex: 0 0 150px; font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: #8A6531; padding-top: 4px;">Időtartam</dt><dd style="margin: 0; flex: 1 1 200px;">Folyamatos képzés, bármely szinten</dd></div><div style="display: flex; flex-wrap: wrap; gap: 2px 20px; padding: 13px 0; border-top: 1px solid #E4DFD6;"><dt style="flex: 0 0 150px; font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: #8A6531; padding-top: 4px;">Eredmény</dt><dd style="margin: 0; flex: 1 1 200px;">Magabiztosabb nyelvhasználat</dd></div></dl>
+<p style="margin: auto 0 0;"><a href="/hu/education.html" style="font-weight: 500;">Nyelvi Intézet →</a></p>
+</div>
+<div style="flex: 1 1 340px; box-sizing: border-box; padding: clamp(24px, 6vw, 36px) clamp(20px, 5vw, 34px); background-color: #F8F6F2; background-image: linear-gradient(100deg, rgba(46,26,29,.055) 0%, rgba(168,124,61,.05) 18%, transparent 52%); border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); display: flex; flex-direction: column; gap: 6px;">
+<h3 style="margin: 0 0 10px; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: 28px; line-height: 1.15;">Kommunikációs Tanácsadás</h3>
+<dl style="margin: 0 0 14px; display: flex; flex-direction: column; border-bottom: 1px solid #E4DFD6;"><div style="display: flex; flex-wrap: wrap; gap: 2px 20px; padding: 13px 0; border-top: 1px solid #E4DFD6;"><dt style="flex: 0 0 150px; font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: #8A6531; padding-top: 4px;">Kiindulópont</dt><dd style="margin: 0; flex: 1 1 200px;">A nyelvet a mindennapi helyzetekben már használja</dd></div><div style="display: flex; flex-wrap: wrap; gap: 2px 20px; padding: 13px 0; border-top: 1px solid #E4DFD6;"><dt style="flex: 0 0 150px; font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: #8A6531; padding-top: 4px;">Amivel foglalkozik</dt><dd style="margin: 0; flex: 1 1 200px;">Egy konkrét helyzet, dokumentum vagy szerepkör</dd></div><div style="display: flex; flex-wrap: wrap; gap: 2px 20px; padding: 13px 0; border-top: 1px solid #E4DFD6;"><dt style="flex: 0 0 150px; font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: #8A6531; padding-top: 4px;">Időtartam</dt><dd style="margin: 0; flex: 1 1 200px;">Meghatározott program vagy projekt</dd></div><div style="display: flex; flex-wrap: wrap; gap: 2px 20px; padding: 13px 0; border-top: 1px solid #E4DFD6;"><dt style="flex: 0 0 150px; font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: #8A6531; padding-top: 4px;">Eredmény</dt><dd style="margin: 0; flex: 1 1 200px;">Előkészített előadás, tárgyalás vagy üzenet</dd></div></dl>
+<p style="margin: auto 0 0;"><span style="font-size: 12px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: #6E675D;">Ez az oldal</span></p>
+</div>
+</div>
+<p style="margin: 28px 0 0; font-size: 16px; color: #4A443C;">A Making the Case összekapcsolja a két területet: a haladó nyelvi munkát a meggyőző kommunikációval.</p>
+</div>
+</section>
+<!-- METHOD + CULTURAL REVIEW -->
+<section style="padding: clamp(64px, 8vw, 104px) clamp(20px, 5vw, 48px);">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 40px 72px; align-items: center;">
+<img alt="Három ember közösen áttekint egy dokumentumot az asztalnál" decoding="async" loading="lazy" src="/assets/img/site/document-review.jpg" style="box-sizing: border-box; display: block; width: 100%; object-fit: cover; border-radius: 0 4px 4px 0; border-left: 6px solid #A87C3D; box-shadow: 0 14px 34px rgba(46,26,29,.12); flex: 1 1 400px; width: auto; min-width: 0; max-width: 520px; aspect-ratio: 5 / 4;"/>
+<div style="flex: 1 1 440px; display: flex; flex-direction: column; gap: 36px;">
+<div>
+<h2 style="margin: 0 0 18px; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: clamp(28px, 2.6vw, 36px); line-height: 1.15;">Első a közönség és a cél</h2>
+<p style="margin: 0;">A munka megkezdése előtt egyeztetjük a közönséget, a nyelvet, a helyzetet, az elérni kívánt eredményt és a szükséges anyagokat. Minden megbízást Dr. Dorian Kantor vezet vagy felügyel, szükség esetén további szakértők bevonásával. A projekt terjedelmét, ütemezését, díját és az anyagok megosztásának szabályait a kezdetkor rögzítjük.</p>
+</div>
+<div>
+<h2 style="margin: 0 0 18px; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: clamp(28px, 2.6vw, 36px); line-height: 1.15;">Hogyan értelmezhetik ezt az üzenetet?</h2>
+<p style="margin: 0;">A kultúrák közötti üzenetértékelés a feltételezéseket, a megfogalmazást, a nyelvi regisztert és a kontextust vizsgálja. Szakértői értékelést ad a várható értelmezésről. Ha a kérdés megválaszolásához ez a megfelelő módszer, külön projektként a célközönség tagjaival végzett kutatás is tervezhető.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- EXPERIENCE (restored) -->
+<section aria-label="Tapasztalat" style="padding: 0 0 clamp(56px, 7vw, 88px);">
+<p class="kc-balance" style="max-width: 1200px; margin: 0 auto 28px; padding: 0 clamp(20px, 5vw, 48px); text-align: center; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #6E675D;">Tapasztalatunk kiterjed az alábbi szervezetek szakembereivel végzett munkára is:</p>
+<div class="kc-float">
+<div class="kc-float__track">
+<span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Mercedes-Benz / EvoBus</span>
+<span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Heidelberg Materials</span>
+<span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Siemens Energy</span>
+<span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Heidelberger Druckmaschinen</span>
+<span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Springer Nature</span>
+<span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">SoundCloud</span>
+<span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Elbit Systems</span>
+<span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Abbott</span>
+<span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">German Federal Ministry for Economic Affairs and Energy</span>
+<span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Mercedes-Benz / EvoBus</span>
+<span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Heidelberg Materials</span>
+<span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Siemens Energy</span>
+<span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Heidelberger Druckmaschinen</span>
+<span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Springer Nature</span>
+<span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">SoundCloud</span>
+<span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Elbit Systems</span>
+<span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">Abbott</span>
+<span style="flex: 0 0 auto; display: flex; align-items: center; justify-content: center; text-align: center; box-sizing: border-box; height: 96px; width: 280px; padding: 0 20px; border: 1px solid #E4DFD6; background: #F8F6F2; border-radius: 3px; box-shadow: 0 2px 10px rgba(60,45,25,.05); font-family: 'Spectral', Georgia, serif; font-size: 21px; line-height: 1.2; color: #23201C;">German Federal Ministry for Economic Affairs and Energy</span>
+</div>
+</div>
+</section>
+<!-- PROOF PLACEHOLDER -->
+<section style="padding: 0 clamp(20px, 5vw, 48px) clamp(64px, 8vw, 104px);">
+<div style="max-width: 1200px; margin: 0 auto; box-sizing: border-box; padding: clamp(24px, 6vw, 44px) clamp(20px, 5vw, 40px); background-color: #F8F6F2; background-image: linear-gradient(100deg, rgba(46,26,29,.055) 0%, rgba(168,124,61,.05) 18%, transparent 52%); border: 1px solid #E4DFD6; border-left: 6px solid #A87C3D; border-radius: 0 4px 4px 0; box-shadow: 0 2px 10px rgba(60,45,25,.05); display: flex; flex-wrap: wrap; gap: 28px 56px; align-items: center;">
+<figure style="flex: 0 1 250px; margin: 0;">
+<img alt="Dr. Dorian Kantor panelbeszélgetésen, kezében mikrofonnal" decoding="async" loading="lazy" src="/assets/img/site/kantor-conference-panel-bogota-2025.jpg" style="box-sizing: border-box; display: block; width: 100%; object-fit: cover; border-radius: 0 4px 4px 0; border-left: 6px solid #A87C3D; box-shadow: 0 14px 34px rgba(46,26,29,.12); aspect-ratio: 4 / 5;"/>
+<figcaption style="margin: 10px 0 0; font-size: 13px; line-height: 1.45; color: #6E675D;">Dr. Dorian Kantor konferenciapanel résztvevőjeként. Bogotá, Kolumbia, 2025.</figcaption>
+</figure>
+<div style="flex: 2 1 400px;">
+<p style="margin: 0 0 12px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #8A6531;">Szakmai háttér</p>
+<h2 style="margin: 0; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: clamp(26px, 2.6vw, 34px); line-height: 1.2;">Felkészítés azokra a pillanatokra, amikor az érvelés igazán számít</h2>
+<p style="margin: 16px 0 0; font-size: 16px; color: #4A443C;">Dr. Dorian Kantor és csapata vezetőket és szakértőket készít fel nagy téttel járó tárgyalásokra, vezetői prezentációkra és konferencia-előadásokra. Saját tanácsadói tapasztalatára építve Dr. Kantor biztonsági és védelmi kérdésekben dolgozott együtt az Egyesült Államok és Kolumbia fegyveres erőivel, külpolitikai ügyekben nagyköveteknek, jogi kérdésekben bíráknak adott tanácsot, továbbá egyetemi stratégiával, projektfejlesztéssel és jogi ügyekkel kapcsolatos tárgyalásokat vezetett vagy támogatott. Rendszeresen publikált napilapokban, és szakpolitikai tanulmányokat készített kormányzati és nem kormányzati döntéshozók számára. Angolul, spanyolul, németül és magyarul tart előadásokat és szólal fel konferenciákon.</p>
+<p style="margin: 12px 0 0; font-size: 16px; color: #4A443C;">Közösen elemzői mélységet, szakterületi tudást és meggyőző kommunikációt visznek azokba a helyzetekbe, ahol minden érv számít.</p>
+<a href="/hu/about.html" style="display: inline-block; margin-top: 16px; font-size: 16px; font-weight: 500; color: #8A6531;">Teljes szakmai életrajz →</a>
+</div>
+<ul style="flex: 1 1 250px; margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; border-top: 1px solid #E4DFD6;">
+<li style="padding: 14px 0; border-bottom: 1px solid #E4DFD6; font-family: 'Spectral', Georgia, serif; font-size: 21px;">Nagy téttel járó tárgyalások</li>
+<li style="padding: 14px 0; border-bottom: 1px solid #E4DFD6; font-family: 'Spectral', Georgia, serif; font-size: 21px;">Vezetői prezentációk</li>
+<li style="padding: 14px 0; border-bottom: 1px solid #E4DFD6; font-family: 'Spectral', Georgia, serif; font-size: 21px;">Konferencia- és plenáris előadások</li>
+</ul>
+</div>
+</section>
+<!-- CONTACT -->
+<section id="contact-consulting" style="background: #2E1A1D; color: #F1EDE6; padding: clamp(72px, 9vw, 120px) clamp(20px, 5vw, 48px);">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px 72px;">
+<div style="flex: 1 1 340px;">
+<p style="margin: 0 0 16px; display: flex; align-items: center; gap: 14px; font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #B0A79B;"><span style="width: 42px; height: 1px; background: #C89A5A;"></span>Kapcsolat</p>
+<h2 style="margin: 0 0 20px; font-family: 'Spectral', Georgia, serif; font-weight: 400; font-size: clamp(30px, 3vw, 40px); line-height: 1.15; color: #F1EDE6;">Beszéljük meg kommunikációs projektjét</h2>
+<p style="margin: 0 0 32px; color: #E3DDD3;">Írja meg, mit kell közölni, kivel, milyen nyelven és mikor. Megbeszéljük a megfelelő projektterjedelmet és a következő lépést.</p>
+<div style="display: flex; flex-direction: column; gap: 14px; font-size: 16px;">
+<a href="mailto:info@kantor-communication.com" style="color: #F1EDE6;"><span style="color: #B0A79B;">E-mail</span> info@kantor-communication.com</a>
+<a href="https://scheduler.zoom.us/dorian-kantor/kantor-communication" style="color: #C89A5A; font-weight: 500;">Bemutatkozó beszélgetés foglalása →</a>
+</div>
+</div>
+<form action="/hu/thanks" data-netlify="true" method="POST" name="consulting-contact" netlify-honeypot="bot-field" style="flex: 1 1 480px; display: flex; flex-direction: column; gap: 18px; font-size: 15px;">
+<input name="subject" type="hidden" value="KC Communication Consulting enquiry (HU)"/>
+<p aria-hidden="true" style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; margin: 0;"><label>Hagyja üresen ezt a mezőt<input autocomplete="off" name="bot-field" tabindex="-1" type="text"/></label></p>
+<input name="practice" type="hidden" value="Communication Consulting"/>
+<div style="display: flex; flex-wrap: wrap; gap: 18px;">
+<label style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px; color: #E3DDD3;">Név<input autocomplete="name" name="name" required="" type="text"/></label>
+<label style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px; color: #E3DDD3;">E-mail<input autocomplete="email" name="email" required="" type="email"/></label>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 18px;">
+<label style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px; color: #E3DDD3;">Szervezet (nem kötelező)<input name="organization" type="text"/></label>
+<label style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px; color: #E3DDD3;">Határidő (nem kötelező)<input name="deadline" type="text"/></label>
+</div>
+<label style="display: flex; flex-direction: column; gap: 6px; color: #E3DDD3;">Mit kell közölni, és kivel?<textarea name="situation"></textarea></label>
+<button style="flex: 0 0 auto; width: 100%; max-width: 280px; min-height: 48px; padding: 14px 28px; background: #F1EDE6; color: #2E1A1D; border: 1.5px solid #F1EDE6; border-radius: 1px; font: inherit; font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; cursor: pointer;" type="submit">Érdeklődés küldése</button>
+</form>
+</div>
+</section>
+<!-- FOOTER -->
+<footer style="background: #2E1A1D; color: #F1EDE6; padding: 48px clamp(20px, 5vw, 48px) 40px; border-top: 1px solid rgba(241,237,230,.10);">
+<div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; font-size: 14px; color: #B0A79B;">
+<div style="width: 100%; box-sizing: border-box; display: flex; flex-wrap: wrap; justify-content: center; align-items: baseline; gap: 6px 20px; padding: 0 0 26px; margin: 0 0 14px; border-bottom: 1px solid rgba(241,237,230,.10);"><span style="font-size: 12px; font-weight: 600; letter-spacing: .24em; text-transform: uppercase; color: #C89A5A;">Karrier</span><span style="font-size: 15px; color: #E3DDD3;">Anyanyelvi vagy kétnyelvű szinten beszélő nyelvtrénereket és kommunikációs szakembereket keresünk.</span><a href="/hu/jobs.html" style="font-size: 15px; font-weight: 500; color: #C89A5A;">Álláslehetőségek →</a></div>
+<span style="display: inline-flex; align-items: center; gap: 10px; color: #F1EDE6; font-family: 'Spectral', Georgia, serif; font-size: 18px;"><img alt="" decoding="async" loading="lazy" src="/assets/img/kc-on-dark.png" style="width: 30px; height: 30px;"/><span><b style="font-weight: 600;">Kantor</b> Communication</span></span>
+<span style="color: #E3DDD3;">Spanyolországi székhellyel, nemzetközi jelenléttel.</span>
+<span style="display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 12px;"><a href="mailto:info@kantor-communication.com" style="color: #B0A79B;">info@kantor-communication.com</a><a href="tel:+34711005345" style="color: #B0A79B;">Spanyolország +34 711 005 345</a><a href="tel:+12025006818" style="color: #B0A79B;">USA +1 202 500 6818</a></span>
+<span style="display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 18px;"><a href="/faq.html" style="color: #B0A79B;">GYIK</a><a href="/hu/jobs.html" style="color: #B0A79B;">Karrier</a><a href="/impressum.html" style="color: #B0A79B;">Impresszum</a><a href="/datenschutz.html" style="color: #B0A79B;">Adatvédelem</a></span>
+</div>
+</footer>
+</div>
+<script defer="" src="/assets/js/kc-2026.js"></script>
 </body>
 </html>
