@@ -11,3 +11,14 @@ html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 [id]{scroll-margin-top:24px}
 img{max-width:100%}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+
+/* Language menu (header) */
+.kc-langmenu{position:relative;font-size:13px}
+.kc-langmenu summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border:1px solid rgba(241,237,230,.28);border-radius:2px;color:#F1EDE6;letter-spacing:.08em;font-weight:500}
+.kc-langmenu summary::-webkit-details-marker{display:none}
+.kc-langmenu summary::after{content:"";width:5px;height:5px;border-right:1.5px solid #C89A5A;border-bottom:1.5px solid #C89A5A;transform:translateY(-2px) rotate(45deg)}
+.kc-langmenu[open] summary::after{transform:translateY(1px) rotate(-135deg)}
+.kc-langmenu ul{position:absolute;right:0;top:calc(100% + 8px);z-index:30;margin:0;padding:6px 0;list-style:none;min-width:150px;background:#2E1A1D;border:1px solid rgba(241,237,230,.18);border-radius:2px;box-shadow:0 14px 34px rgba(0,0,0,.35)}
+.kc-langmenu li a{display:block;padding:8px 16px;color:#F1EDE6;font-size:14px}
+.kc-langmenu li a:hover{background:rgba(241,237,230,.07);color:#F1EDE6}
+.kc-langmenu li a[aria-current]{color:#C89A5A}

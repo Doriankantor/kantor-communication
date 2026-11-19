@@ -16,7 +16,7 @@
   status = 301
 
 # ---------------------------------------------------------------------------
-# English-first launch (November 2026): the German, Spanish and Hungarian pages
+# English-first launch (November 2026): the German and Hungarian pages
 # still carry the previous design and copy. Until they are re-translated, their
 # addresses lead to the matching English page. The German legal pages stay
 # reachable because the English legal notice refers to them as binding.
@@ -51,14 +51,36 @@
   to = "/:splat"
   status = 302
   force = true
+# Spanish (November 2026): the redesigned pages are live under /es/. The FAQ and the
+# legal pages are not translated yet, so their old Spanish copies lead to English.
 [[redirects]]
-  from = "/es"
-  to = "/"
+  from = "/es/faq.html"
+  to = "/faq.html"
   status = 302
   force = true
 [[redirects]]
-  from = "/es/*"
-  to = "/:splat"
+  from = "/es/faq"
+  to = "/faq.html"
+  status = 302
+  force = true
+[[redirects]]
+  from = "/es/impressum.html"
+  to = "/impressum.html"
+  status = 302
+  force = true
+[[redirects]]
+  from = "/es/impressum"
+  to = "/impressum.html"
+  status = 302
+  force = true
+[[redirects]]
+  from = "/es/datenschutz.html"
+  to = "/datenschutz.html"
+  status = 302
+  force = true
+[[redirects]]
+  from = "/es/datenschutz"
+  to = "/datenschutz.html"
   status = 302
   force = true
 [[redirects]]

@@ -65,7 +65,7 @@
   if (btn) {
     btn.addEventListener('click', function () {
       paused = !paused;
-      btn.textContent = paused ? 'Play globe' : 'Pause globe';
+      btn.textContent = paused ? (btn.getAttribute('data-label-play') || 'Play globe') : (btn.getAttribute('data-label-pause') || 'Pause globe');
       btn.setAttribute('aria-pressed', paused ? 'true' : 'false');
     });
   }
@@ -82,4 +82,28 @@
     window.requestAnimationFrame(tick);
   }
   window.requestAnimationFrame(tick);
+})();
+
+/* Language menu: remember the visitor's choice and keep internal navigation in that language. */
+(function () {
+  var KEY = 'kc-lang-pref';
+  function get() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+  function set(v) { try { localStorage.setItem(KEY, v); } catch (e) {} }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('[data-kc-lang]');
+    if (a) set(a.getAttribute('data-kc-lang'));
+    document.querySelectorAll('details.kc-langmenu[open]').forEach(function (d) { if (!d.contains(e.target)) d.removeAttribute('open'); });
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') document.querySelectorAll('details.kc-langmenu[open]').forEach(function (d) { d.removeAttribute('open'); });
+  });
+  var lang = (document.documentElement.getAttribute('lang') || 'en').slice(0, 2);
+  var pref = get();
+  if (!pref) { set(lang); return; }
+  if (pref !== lang) {
+    var internal = document.referrer && document.referrer.indexOf(location.origin) === 0;
+    var alt = document.querySelector('link[rel="alternate"][hreflang="' + pref + '"]');
+    if (alt && internal) { location.replace(alt.getAttribute('href').replace(/^https?:\/\/[^/]+/, '') + location.hash); return; }
+    if (!alt || !internal) set(lang);
+  }
 })();
